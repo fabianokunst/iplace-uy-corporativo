@@ -1,5 +1,11 @@
 // Eleventy só junta cabeçalho, rodapé e blocos repetidos; o resultado em _site/ é HTML puro.
+import { HtmlBasePlugin } from '@11ty/eleventy';
+
 export default function (eleventyConfig) {
+  // Prefixa os links "/..." quando o build roda com --pathprefix (preview no GitHub Pages).
+  // Sem o parâmetro, o prefixo é "/" e o HTML sai igual ao do domínio.
+  eleventyConfig.addPlugin(HtmlBasePlugin);
+
   eleventyConfig.addPassthroughCopy({ 'src/assets': 'assets' });
   eleventyConfig.addPassthroughCopy({ 'src/static': '/' });
 
