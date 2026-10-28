@@ -1,10 +1,25 @@
 // Eleventy só junta cabeçalho, rodapé e blocos repetidos; o resultado em _site/ é HTML puro.
-import { HtmlBasePlugin } from '@11ty/eleventy';
+
+// Os templates escrevem os links a partir da raiz ("/contacto/", "/assets/..."); o build os converte
+// em relativos à página ("../contacto/"). Assim o mesmo _site/ funciona na raiz do domínio, numa
+// subpasta (preview do GitHub Pages) ou em qualquer servidor estático, sem configurar nada.
+function relativeUrl(url, pageUrl) {
+  if (!pageUrl || !url.startsWith('/') || url.startsWith('//')) return url;
+  // "/" e "/404.html" → 0 níveis, "/contacto/" → 1, "/productos/ipad-para-empresas/" → 2
+  const rel = '../'.repeat(pageUrl.split('/').length - 2) + url.slice(1);
+  return rel === '' || /^[?#]/.test(rel) ? `./${rel}` : rel;
+}
 
 export default function (eleventyConfig) {
-  // Prefixa os links "/..." quando o build roda com --pathprefix (preview no GitHub Pages).
-  // Sem o parâmetro, o prefixo é "/" e o HTML sai igual ao do domínio.
-  eleventyConfig.addPlugin(HtmlBasePlugin);
+  // href, src, srcset, action etc. de todo HTML gerado. CSS e JS não passam por aqui: neles,
+  // use caminhos relativos ao próprio arquivo.
+  eleventyConfig.htmlTransformer.addUrlTransform('html', function (url) {
+    return relativeUrl(url.trim(), this.url);
+  });
+  // Para URLs fora de atributos, como dentro de um <script>.
+  eleventyConfig.addFilter('relative', function (url) {
+    return relativeUrl(url, this.page.url);
+  });
 
   eleventyConfig.addPassthroughCopy({ 'src/assets': 'assets' });
   eleventyConfig.addPassthroughCopy({ 'src/static': '/' });

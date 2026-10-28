@@ -12,6 +12,13 @@
       "runtimeExecutable": "node",
       "runtimeArgs": ["node_modules/@11ty/eleventy/cmd.cjs", "--serve", "--port=5590"],
       "port": 5590
+    },
+    {
+      "name": "site-pronto",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "5585", "--bind", "127.0.0.1", "--directory", "_site"],
+      "port": 5585,
+      "autoPort": false
     }
   ]
 }

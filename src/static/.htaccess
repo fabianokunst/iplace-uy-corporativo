@@ -7,10 +7,12 @@ DirectorySlash On
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  # HTTPS e domínio sem www (o canônico do WordPress era https://iplacecorp.com.uy)
+  # HTTPS e domínio sem www (o canônico do WordPress era https://iplacecorp.com.uy).
+  # Usa o domínio da própria requisição: num domínio temporário da Hostinger, o teste não pula para o site no ar.
   RewriteCond %{HTTPS} off [OR]
   RewriteCond %{HTTP_HOST} ^www\. [NC]
-  RewriteRule ^ https://iplacecorp.com.uy%{REQUEST_URI} [R=301,L]
+  RewriteCond %{HTTP_HOST} ^(www\.)?(.+)$ [NC]
+  RewriteRule ^ https://%2%{REQUEST_URI} [R=301,L]
 
   # Busca interna do WordPress (?s=) não existe mais
   RewriteCond %{QUERY_STRING} (^|&)s= [NC]

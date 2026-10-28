@@ -1,7 +1,10 @@
-# Preview do site no GitHub Pages: a cada push na main, gera o _site/ e publica em
-# https://fabianokunst.github.io/iplace-uy-corporativo/
+# A cada push na main, gera o _site/ e:
+# - publica o preview em https://fabianokunst.github.io/iplace-uy-corporativo/
+# - guarda o mesmo HTML na branch "site", pronto para enviar a qualquer hospedagem
+#   (Code > Download ZIP na branch "site", ou o Git da Hostinger apontando para ela).
+# O build é um só: os links saem relativos e funcionam na raiz ou em subpasta.
 # Requer Settings > Pages > Source = "GitHub Actions".
-name: Preview no GitHub Pages
+name: Publicar site
 
 on:
   push:
@@ -9,7 +12,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write # atualizar a branch "site"
   pages: write
   id-token: write
 
@@ -26,16 +29,26 @@ jobs:
         with:
           node-version: 24
           cache: npm
-      - id: pages
-        uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v5
       - run: npm ci
-      # O Pages serve o site em /iplace-uy-corporativo/, então os links "/..." ganham esse prefixo.
-      - run: npm run build -- --pathprefix="${{ steps.pages.outputs.base_path }}/"
-      # A política é copiada como está (não passa pelo Eleventy), então o prefixo vai aqui.
-      - run: sed -i 's#src="/integrations/#src="${{ steps.pages.outputs.base_path }}/integrations/#g' _site/politica-de-privacidad.html
+      - run: npm run build
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
+      # Um commit por mudança no HTML, sem reescrever o histórico da branch.
+      - name: Atualizar a branch "site"
+        env:
+          REPO_URL: https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git
+        run: |
+          dir="$RUNNER_TEMP/site"
+          git clone -q --depth=1 --branch site "$REPO_URL" "$dir" 2>/dev/null || git init -q -b site "$dir"
+          rsync -a --delete --exclude=.git _site/ "$dir/"
+          cd "$dir"
+          git add -A
+          if git diff --cached --quiet HEAD 2>/dev/null; then echo "HTML sem mudanças"; exit 0; fi
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -q -m "Site gerado a partir de ${GITHUB_SHA::7}"
+          git push -q "$REPO_URL" HEAD:site
 
   deploy:
     needs: build

@@ -19,8 +19,8 @@
   <link rel="stylesheet" href="/assets/css/ds.css">
   <link rel="stylesheet" href="/assets/css/site.css">
   {#- Consentimento de cookies primeiro: GTM e GA4 só carregam depois do aceite. Ver integrations/README.md. #}
-  {#- Link da política no banner com o mesmo prefixo das demais URLs (preview no GitHub Pages). #}
-  <script>window.IPLACE_CONSENT = { policyUrl: '{{ "/politica-de-privacidad.html" | url }}' };</script>
+  {#- Link da política no banner relativo à página, como as demais URLs. #}
+  <script>window.IPLACE_CONSENT = { policyUrl: '{{ "/politica-de-privacidad.html" | relative }}' };</script>
   <script src="/integrations/consent.js"></script>
   <script src="/integrations/integrations.js"></script>
   <script src="/assets/js/site.js" defer></script>

@@ -3,7 +3,14 @@
 Substitui o WordPress de `iplacecorp.com.uy`. Mesmas páginas e URLs, sem o blog.
 Visual do **iPlace Uruguai Design System** (classes `ds-*`, tokens `--ds-*`).
 
-## Rodar e publicar
+## Como funciona
+
+O Eleventy (11ty) só monta o site: junta cabeçalho, rodapé e blocos repetidos de `src/` e gera HTML
+puro em `_site/`. Ele roda no computador ou no GitHub Actions; a hospedagem recebe só arquivos
+estáticos (HTML, CSS, JS, imagens), sem Node, PHP ou banco de dados.
+
+Os links saem **relativos** (`../contacto/`, `../assets/...`), então o mesmo `_site/` funciona na raiz
+de um domínio, numa subpasta ou em qualquer hospedagem estática, sem configurar nada.
 
 ```bash
 npm install
@@ -11,8 +18,25 @@ npm start          # http://localhost:5590, recarrega ao salvar
 npm run build      # gera _site/
 ```
 
-Publicar = enviar **o conteúdo de `_site/`** para `public_html` na Hostinger (inclui `.htaccess`).
-Antes, apague o WordPress do `public_html` (guarde um backup completo).
+## Publicar
+
+A cada push na `main`, o GitHub Actions gera o site, publica o preview em
+<https://fabianokunst.github.io/iplace-uy-corporativo/> e grava o mesmo HTML na branch **`site`**.
+
+- **Hostinger ou qualquer hospedagem:** no GitHub, troque para a branch `site` > Code > Download ZIP e
+  envie o conteúdo da pasta de dentro do ZIP para `public_html` (ou envie o conteúdo de `_site/`).
+  Não precisa de Node. Na Hostinger, o recurso Git do hPanel também pode implantar a branch `site` direto.
+- Antes da primeira publicação, apague o WordPress do `public_html` (guarde um backup completo).
+- O `.htaccess` (redirects do blog, HTTPS) só vale em Apache/LiteSpeed, como a Hostinger. Em outros
+  servidores é ignorado e o site funciona igual, só sem esses redirects.
+
+## Ao editar
+
+- Em atributos HTML (`href`, `src`, `srcset`, `action`), escreva links a partir da raiz (`/contacto/`,
+  `/assets/img/...`): o build converte. Não use o filtro `url`; dentro de `<script>`, use `| relative`.
+- CSS, JS e `manifest.webmanifest` não passam pela conversão: neles, use caminhos relativos ao próprio arquivo.
+- `politica-de-privacidad.html` é copiada como está: caminhos relativos e sem `/` no início.
+- `404.njk` é uma página própria, sem o layout, porque aparece em qualquer endereço (ver o comentário no arquivo).
 
 ## Estrutura
 

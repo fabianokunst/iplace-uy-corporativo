@@ -1,22 +1,63 @@
 ---
-layout: layouts/base.njk
-title: Página no encontrada
-description: La página que buscás no existe o cambió de dirección.
 permalink: /404.html
 eleventyExcludeFromCollections: true
 ---
-<section class="section">
-  <div class="ds-container">
-    <div class="section__head">
-      <p class="eyebrow">Error 404</p>
-      <h1 class="site-display">No encontramos esta página</h1>
-      <p class="lead">Puede que la dirección haya cambiado. Estas son las secciones principales del sitio.</p>
+{#- Página própria, sem o layout: o servidor a mostra no endereço que não existe, em qualquer
+    profundidade (/a/b/c), e os caminhos relativos precisam de um <base> na raiz do site.
+    O <base> também afetaria os "#..." do layout (ícones do sprite, link "Saltar al contenido"),
+    por isso aqui não há sprite nem âncoras. -#}
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  {#- Raiz: "/" no domínio; "/<repositório>/" no preview do GitHub Pages. Aberta como .../404.html,
+      os caminhos relativos já funcionam e o <base> não é criado. #}
+  <script>
+    (function (path) {
+      if (/\/404\.html$/.test(location.pathname)) return;
+      var base = document.createElement('base');
+      base.href = /\.github\.io$/.test(location.hostname) && path.length > 2 ? '/' + path[1] + '/' : '/';
+      document.head.appendChild(base);
+    })(location.pathname.split('/'));
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Página no encontrada | {{ site.name }}</title>
+  <meta name="description" content="La página que buscás no existe o cambió de dirección.">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/tokens.css">
+  <link rel="stylesheet" href="/assets/css/ds.css">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script>window.IPLACE_CONSENT = { policyUrl: '{{ "/politica-de-privacidad.html" | relative }}' };</script>
+  <script src="/integrations/consent.js"></script>
+  <script src="/integrations/integrations.js"></script>
+</head>
+<body class="ds">
+  <header class="site-header">
+    <div class="ds-container site-header__bar">
+      <a class="site-header__logo" href="/" aria-label="{{ site.name }}, inicio">
+        <img src="/assets/img/brand/corporativo-white.png" alt="iPlace Corporativo, Apple Premium Reseller" width="84" height="40">
+      </a>
     </div>
-    <div class="ds-cluster">
-      <a class="ds-btn ds-btn--primary" href="/">Ir al inicio</a>
-      {%- for item in site.nav %}
-      <a class="ds-btn ds-btn--outline" href="{{ item.url }}">{{ item.label }}</a>
-      {%- endfor %}
-    </div>
-  </div>
-</section>
+  </header>
+  <main>
+    <section class="section">
+      <div class="ds-container">
+        <div class="section__head">
+          <p class="eyebrow">Error 404</p>
+          <h1 class="site-display">No encontramos esta página</h1>
+          <p class="lead">Puede que la dirección haya cambiado. Estas son las secciones principales del sitio.</p>
+        </div>
+        <div class="ds-cluster">
+          <a class="ds-btn ds-btn--primary" href="/">Ir al inicio</a>
+          {%- for item in site.nav %}
+          <a class="ds-btn ds-btn--outline" href="{{ item.url }}">{{ item.label }}</a>
+          {%- endfor %}
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
