@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es-UY">
+<head>
+  <meta charset="utf-8">
+  <script>
+    (function (path) {
+      if (/\/404\.html$/.test(location.pathname)) return;
+      var base = document.createElement('base');
+      base.href = /\.github\.io$/.test(location.hostname) && path.length > 2 ? '/' + path[1] + '/' : '/';
+      document.head.appendChild(base);
+    })(location.pathname.split('/'));
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Página no encontrada | iPlace Corporativo</title>
+  <meta name="description" content="La página que buscás no existe o cambió de dirección.">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/ds.css">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>window.IPLACE_CONSENT = { policyUrl: 'politica-de-privacidad.html' };</script>
+  <script src="integrations/consent.js"></script>
+  <script src="integrations/integrations.js"></script>
+</head>
+<body class="ds">
+  <header class="site-header">
+    <div class="ds-container site-header__bar">
+      <a class="site-header__logo" href="./" aria-label="iPlace Corporativo, inicio">
+        <img src="assets/img/brand/corporativo-white.png" alt="iPlace Corporativo, Apple Premium Reseller" width="84" height="40">
+      </a>
+    </div>
+  </header>
+  <main>
+    <section class="section">
+      <div class="ds-container">
+        <div class="section__head">
+          <p class="eyebrow">Error 404</p>
+          <h1 class="site-display">No encontramos esta página</h1>
+          <p class="lead">Puede que la dirección haya cambiado. Estas son las secciones principales del sitio.</p>
+        </div>
+        <div class="ds-cluster">
+          <a class="ds-btn ds-btn--primary" href="./">Ir al inicio</a>
+          <a class="ds-btn ds-btn--outline" href="quienes-somos/">Quienes somos</a>
+          <a class="ds-btn ds-btn--outline" href="productos/">Productos</a>
+          <a class="ds-btn ds-btn--outline" href="soluciones/">Soluciones</a>
+          <a class="ds-btn ds-btn--outline" href="lanzamientos/">Lanzamientos</a>
+          <a class="ds-btn ds-btn--outline" href="contacto/">Contacto</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
