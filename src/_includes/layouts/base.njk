@@ -3,18 +3,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if title %}{{ title }} | {% endif %}{{ site.name }}</title>
+  {#- seoTitle: título para buscadores (o title curto fica nas migalhas). #}
+  {%- set headTitle = seoTitle or title %}
+  <title>{% if headTitle %}{{ headTitle }} | {% endif %}{{ site.name }}</title>
   <meta name="description" content="{{ description }}">
+  {%- if noindex %}
+  <meta name="robots" content="noindex, follow">
+  {%- else %}
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  {#- O mesmo HTML vai para o preview no GitHub Pages, que não deve entrar no Google (o canônico já aponta para o domínio). #}
+  <script>if (/\.github\.io$/.test(location.hostname)) document.head.appendChild(Object.assign(document.createElement('meta'), { name: 'robots', content: 'noindex' }));</script>
+  {%- endif %}
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_UY">
   <meta property="og:site_name" content="{{ site.name }}">
-  <meta property="og:title" content="{{ title or site.name }}">
+  <meta property="og:title" content="{{ headTitle or site.name }}">
   <meta property="og:description" content="{{ description }}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:image" content="{{ site.url }}{{ ogImage or '/assets/img/og-default.jpg' }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{ ogImageAlt or 'iPlace Corporativo, Apple Premium Reseller: Apple TV, MacBook Pro, iPad Pro, iPhone, AirPods Pro y Apple Watch' }}">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#000000">
-  <link rel="icon" href="/assets/img/brand/favicon.svg" type="image/svg+xml">
+  {#- Ícones gerados por scripts/favicons.py. #}
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  {%- if jsonLd %}
+  <script type="application/ld+json">{{ jsonLd | dump | replace("</", "<\\/") | safe }}</script>
+  {%- endif %}
   <link rel="stylesheet" href="/assets/css/tokens.css">
   <link rel="stylesheet" href="/assets/css/ds.css">
   <link rel="stylesheet" href="/assets/css/site.css">

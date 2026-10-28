@@ -1,0 +1,19 @@
+---
+permalink: /llms-full.txt
+eleventyExcludeFromCollections: true
+---
+{#- Texto de todas as páginas em Markdown, para assistentes de IA. Índice em llms.txt. -#}
+# {{ site.name }} (Uruguay): contenido completo del sitio
+
+> {{ site.description }}
+
+Texto de todas las páginas de {{ site.url }}/, generado a partir del sitio. Índice: {{ site.url }}/llms.txt
+{%- for item in collections.all | navOrder(site.nav) %}
+
+---
+
+Página: {{ item.data.seoTitle or item.data.title }}
+URL: {{ site.url }}{{ item.url }}
+
+{{ item.content | markdown(item.url, site.url) | safe }}
+{%- endfor %}

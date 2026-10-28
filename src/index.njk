@@ -1,8 +1,28 @@
 ---
 layout: layouts/base.njk
 title: Soluciones corporativas Apple
-description: iPlace Corporativo, el único Apple Premium Reseller del Uruguay para empresas. Mac, iPad, iPhone y servicios para que tu empresa trabaje mejor.
+seoTitle: Apple para empresas en Uruguay
+description: iPlace Corporativo, el único Apple Premium Reseller del Uruguay para empresas. Mac, iPad, iPhone, soporte y facilidades de pago para tu negocio.
 permalink: /
+# Preguntas frecuentes: aparecen al final de la página y en los datos estructurados (FAQPage).
+# Solo información que ya está en el sitio.
+faq:
+  - q: ¿Qué es iPlace Corporativo?
+    a: iPlace Corporativo es el canal especializado de iPlace para el mercado corporativo en Uruguay y el único Apple Premium Reseller del país dedicado a empresas. Ofrece productos Apple, servicios y soluciones a medida para empresas de todos los tamaños y sectores.
+  - q: ¿Qué productos Apple ofrecen para empresas?
+    a: Mac (MacBook Air, MacBook Pro, iMac, Mac mini y Mac Studio), iPad, iPhone, Apple Watch y AirPods, además de los accesorios Originales iPlace, como mochilas y fundas premium con la personalidad de tu empresa.
+  - q: ¿Quién puede comprar en iPlace Corporativo?
+    a: Empresas e instituciones. iPlace Corporativo es el canal de atención a empresas y ventas por volumen. Si representás a una persona jurídica con un proyecto Apple de más de 5 unidades, completá el formulario y nuestros especialistas se contactan con vos.
+  - q: ¿Qué servicios incluye?
+    a: Un paquete completo para adoptar el ecosistema Apple, desde la elección de los dispositivos hasta el soporte y el acompañamiento durante toda la migración. Incluye soporte técnico y para la infraestructura de TI, y la implementación y gestión de equipos con Apple Business Manager y soluciones MDM.
+  - q: ¿Ofrecen facilidades de pago, recompra o leasing de equipos?
+    a: Sí. Además de formas de pago diferenciadas, la recompra de equipos permite usar los dispositivos actuales de tu empresa como crédito para comprar nuevos, y el leasing operacional permite renovar el parque de dispositivos en cuotas mensuales. Consultá las condiciones con nuestros especialistas.
+  - q: ¿Por qué elegir Apple para mi empresa?
+    a: Mac, iPad e iPhone ofrecen mayor productividad, mejor retorno sobre la inversión, compatibilidad con las principales herramientas del mercado, seguridad integrada e integración entre dispositivos y colaboradores.
+  - q: ¿Cómo me entero de los nuevos lanzamientos de Apple?
+    a: Hacé tu pre registro en la página de Lanzamientos y recibí de primera mano las novedades sobre la llegada de los nuevos productos Apple a Uruguay.
+  - q: ¿Cómo hablo con un especialista?
+    a: Escribinos por WhatsApp o por correo a nuestros especialistas, o completá el formulario de la página de Contacto. También estamos en Instagram, Facebook y LinkedIn.
 ---
 {% import "macros.njk" as m with context %}
 
@@ -113,6 +133,23 @@ permalink: /
         <h2 class="ds-h3">¡Registrate y recibí contenidos exclusivos sobre productos Apple!</h2>
       </div>
       {{ m.leadForm('contenidos-uy', 'Registrarme', false, true) }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--sunken" aria-labelledby="faq-title">
+  <div class="ds-container">
+    <div class="section__head">
+      <h2 class="site-title" id="faq-title">Preguntas frecuentes</h2>
+      <p class="lead">Lo que más nos preguntan las empresas sobre trabajar con Apple e iPlace Corporativo.</p>
+    </div>
+    <div class="ds-accordion">
+      {%- for item in faq %}
+      <details class="ds-accordion__item">
+        <summary>{{ item.q }}</summary>
+        <div class="ds-accordion__panel"><p>{{ item.a }}</p></div>
+      </details>
+      {%- endfor %}
     </div>
   </div>
 </section>

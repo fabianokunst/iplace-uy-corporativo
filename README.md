@@ -51,6 +51,19 @@ A cada push na `main`, o GitHub Actions gera o site, publica o preview em
 | `assets-src/wp-uploads/` | Imagens originais do WordPress. `npm run images` gera os WebP em `src/assets/img/`. |
 | `integrations/`, `politica-de-privacidad.html` | Cookies, GTM/GA4, formulários e política. Mantidos por outra frente: ver `integrations/README.md`. |
 
+## SEO, IA e ícones
+
+- Cada página tem `title` (nome curto, usado nas migalhas) e, se preciso, `seoTitle` (o `<title>` do Google,
+  até ~55 caracteres com o " | iPlace Corporativo"). `description` com até ~155 caracteres.
+- Dados estruturados (schema.org) saem de `src/_data/eleventyComputed.js`: organização, site, página e migalhas.
+  `schemaType` no front matter muda o tipo da página (AboutPage, ContactPage); `faq` vira FAQPage (home).
+- `llms.txt` e `llms-full.txt` (resumo e texto completo para assistentes de IA) são gerados das páginas;
+  os dados fixos do resumo estão em `src/llms.njk`. `robots.txt` libera buscadores e robôs de IA.
+- `sitemap.xml` usa a data do último commit de cada página (`src/src.11tydata.json`).
+- O preview no GitHub Pages recebe `noindex` no navegador; o canônico de todas as páginas é `iplacecorp.com.uy`.
+- Favicon e ícones: `python scripts/favicons.py` gera `favicon.svg/.ico`, `apple-touch-icon.png` e os ícones do
+  `manifest.webmanifest` a partir do "iP" e do anel do logo.
+
 ## Formulários
 
 - Contato, Soluciones, iPad e newsletter da home usam `<form data-lead-form>`; o envio é do

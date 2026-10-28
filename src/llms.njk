@@ -1,0 +1,37 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+{#- Resumo do site para assistentes de IA (formato https://llmstxt.org). As páginas entram sozinhas, com title e description. -#}
+# {{ site.name }} (Uruguay)
+
+> {{ site.description }}
+
+Datos clave:
+
+- Sitio oficial: {{ site.url }}/ (en español de Uruguay).
+- iPlace Corporativo es el canal corporativo de iPlace, el mayor Apple Premium Reseller de Brasil, y el único Apple Premium Reseller del Uruguay dedicado a empresas.
+- Atiende a empresas e instituciones (personas jurídicas) y ventas por volumen. Para proyectos Apple de más de 5 unidades, los especialistas contactan a la empresa después del formulario.
+- Productos: Mac (MacBook Air, MacBook Pro, iMac, Mac mini y Mac Studio), iPad, iPhone, Apple Watch, AirPods y accesorios Originales iPlace (mochilas, fundas y accesorios premium).
+- Servicios: asesoría en la elección de los dispositivos, implementación y gestión con Apple Business Manager y MDM, soporte técnico y de infraestructura de TI, acompañamiento en la migración a Apple, recompra de equipos, leasing operacional, formas de pago diferenciadas y envío gratis.
+- El sitio no vende en línea ni publica precios: las compras se cotizan con los especialistas por WhatsApp, correo o formulario.
+- Empresas e instituciones que confían en iPlace Corporativo: Itaú, CUSAI, Cámara de Diseño de Uruguay, Light iT, Universidad Católica del Uruguay y CEDU, entre otras.
+
+## Páginas
+
+{% for item in collections.all | navOrder(site.nav) -%}
+- [{{ item.data.seoTitle or item.data.title }}]({{ site.url }}{{ item.url }}): {{ item.data.description | safe }}
+{% endfor %}
+## Contacto
+
+{% for p in site.people -%}
+- {{ p.name }}, especialista iPlace Corporativo: WhatsApp {{ p.phone }} (https://wa.me/{{ p.whatsapp }}), {{ p.email }}
+{% endfor -%}
+{% for s in site.social -%}
+- {{ s.label }}: {{ s.url }}
+{% endfor %}
+## Optional
+
+- [Contenido completo del sitio]({{ site.url }}/llms-full.txt): el texto de todas las páginas en Markdown, en un solo archivo.
+- [Mapa del sitio]({{ site.url }}/sitemap.xml)
+- [Política de Privacidad]({{ site.url }}/politica-de-privacidad.html)

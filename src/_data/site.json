@@ -2,9 +2,10 @@
   "name": "iPlace Corporativo",
   "url": "https://iplacecorp.com.uy",
   "lang": "es-UY",
+  "description": "iPlace Corporativo es el canal de iPlace para empresas en Uruguay y el único Apple Premium Reseller del país dedicado al mercado corporativo. Vende Mac, iPad, iPhone, Apple Watch, AirPods y accesorios Originales iPlace a empresas e instituciones, con asesoría de especialistas, implementación, soporte técnico y facilidades de pago.",
   "whatsappText": "Hola, todo bien? Me gustaría saber más sobre iPlace Corporativo.",
   "nav": [
-    { "label": "Quienes somos", "url": "/quienes-somos/" },
+    { "label": "Quiénes somos", "url": "/quienes-somos/" },
     { "label": "Productos", "url": "/productos/" },
     { "label": "Soluciones", "url": "/soluciones/" },
     { "label": "Lanzamientos", "url": "/lanzamientos/" },

@@ -1,4 +1,5 @@
 // Eleventy só junta cabeçalho, rodapé e blocos repetidos; o resultado em _site/ é HTML puro.
+import { htmlToMarkdown, navOrder } from './src/_config/llms.js';
 
 // Os templates escrevem os links a partir da raiz ("/contacto/", "/assets/..."); o build os converte
 // em relativos à página ("../contacto/"). Assim o mesmo _site/ funciona na raiz do domínio, numa
@@ -38,6 +39,10 @@ export default function (eleventyConfig) {
   eleventyConfig.addGlobalData('year', () => new Date().getFullYear());
 
   eleventyConfig.addFilter('find', (list, key, value) => list.find((item) => item[key] === value));
+
+  // llms.txt e llms-full.txt: páginas na ordem do menu e conteúdo de cada uma em Markdown.
+  eleventyConfig.addFilter('navOrder', navOrder);
+  eleventyConfig.addFilter('markdown', htmlToMarkdown);
 
   return {
     dir: { input: 'src', output: '_site', includes: '_includes', data: '_data' },
