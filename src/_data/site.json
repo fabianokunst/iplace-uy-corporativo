@@ -1,0 +1,49 @@
+{
+  "name": "iPlace Corporativo",
+  "url": "https://iplacecorp.com.uy",
+  "lang": "es-UY",
+  "whatsappText": "Hola, todo bien? Me gustaría saber más sobre iPlace Corporativo.",
+  "nav": [
+    { "label": "Quienes somos", "url": "/quienes-somos/" },
+    { "label": "Productos", "url": "/productos/" },
+    { "label": "Soluciones", "url": "/soluciones/" },
+    { "label": "Lanzamientos", "url": "/lanzamientos/" },
+    { "label": "Contacto", "url": "/contacto/" }
+  ],
+  "social": [
+    { "label": "Instagram", "url": "https://www.instagram.com/iplaceuy/" },
+    { "label": "Facebook", "url": "https://www.facebook.com/iplaceuy" },
+    { "label": "LinkedIn", "url": "https://uy.linkedin.com/company/iplace-corporativo-uy" }
+  ],
+  "footerPhones": [
+    { "label": "+55 51 4042 1345", "href": "tel:+555140421345" },
+    { "label": "+598 96 438 030", "href": "tel:+59896438030" }
+  ],
+  "footerEmail": "rodrigo.ferullo@iplace.com.uy",
+  "people": [
+    {
+      "id": "rodrigo",
+      "name": "Rodrigo Silvera",
+      "initials": "RS",
+      "phone": "+598 96 438 030",
+      "whatsapp": "59896438030",
+      "email": "rodrigo.ferullo@iplace.com.uy"
+    },
+    {
+      "id": "diego",
+      "name": "Diego Coll",
+      "photo": "/assets/img/equipo/diego-coll.webp",
+      "phone": "+598 97 967 082",
+      "whatsapp": "59897967082",
+      "email": "diego.coll@iplace.com.uy"
+    },
+    {
+      "id": "marcos",
+      "name": "Marcos de Pena",
+      "photo": "/assets/img/equipo/marcos-de-pena.webp",
+      "phone": "+598 96 438 030",
+      "whatsapp": "59896438030",
+      "email": "marcos.depena@iplace.com.uy"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+<header class="site-header">
+  <div class="ds-container site-header__bar">
+    <a class="site-header__logo" href="/" aria-label="{{ site.name }}, inicio">
+      <img src="/assets/img/brand/corporativo-white.png" alt="iPlace Corporativo, Apple Premium Reseller" width="84" height="40">
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Principal">
+      <ul class="site-nav__list">
+        {%- for item in site.nav %}
+        <li><a class="site-nav__link" href="{{ item.url }}"{% if page.url == item.url or (item.url != '/' and page.url.startsWith(item.url)) %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+        {%- endfor %}
+      </ul>
+      <a class="ds-btn ds-btn--brand ds-btn--small site-nav__cta" href="/contacto/">Contactate aquí</a>
+    </nav>
+    <button class="site-header__toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
+      <svg class="ds-icon" aria-hidden="true"><use href="#i-menu"/></svg>
+    </button>
+  </div>
+</header>

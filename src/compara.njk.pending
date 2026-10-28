@@ -1,0 +1,101 @@
+---
+layout: layouts/base.njk
+families:
+  - { slug: mac, label: Mac }
+  - { slug: ipad, label: iPad }
+  - { slug: iphone, label: iPhone }
+  - { slug: watch, label: Apple Watch }
+pagination:
+  data: families
+  size: 1
+  alias: fam
+permalink: "/productos/compara-{{ fam.slug }}/"
+eleventyComputed:
+  title: "Compará los modelos de {{ fam.label }}"
+  description: "Compará los modelos de {{ fam.label }} lado a lado: pantalla, chip, cámaras, batería y más. Consultá con iPlace Corporativo para tu empresa."
+---
+{% import "macros.njk" as m with context %}
+{%- set data = compare[fam.slug] %}
+{%- set cols = [0, 1, 2] %}
+
+{{ m.pageHero(fam.label, 'Comparador', data.title, 'Elegí los modelos en cada columna para ver sus diferencias.', '', '', {label: 'Productos', url: '/productos/'}) }}
+
+{#- Comparador: sem JavaScript mostra os modelos padrão; com JS, cada <select> troca a coluna (assets/js/site.js). #}
+<div class="compare" data-compare>
+  <script type="application/json">{{ { models: data.models, sections: data.sections } | dump | replace("</", "<\\/") | safe }}</script>
+
+  <div class="compare__pickers">
+    <div class="ds-container">
+      <div class="compare__row">
+        {%- for c in cols %}
+        {%- set model = data.models | find('id', data.defaults[c]) %}
+        <div class="compare__col compare__col--{{ c }}">
+          <label class="ds-visually-hidden" for="cmp-{{ fam.slug }}-{{ c }}">Modelo {{ c + 1 }}</label>
+          <select class="ds-select" id="cmp-{{ fam.slug }}-{{ c }}" data-col="{{ c }}">
+            {%- for opt in data.models %}
+            <option value="{{ opt.id }}"{% if opt.id == model.id %} selected{% endif %}>{{ opt.name }}</option>
+            {%- endfor %}
+          </select>
+        </div>
+        {%- endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div class="ds-container">
+    <div class="compare__section">
+      <div class="compare__row">
+        {%- for c in cols %}
+        {%- set model = data.models | find('id', data.defaults[c]) %}
+        <div class="compare__model compare__col--{{ c }}" data-col="{{ c }}" data-kind="head">
+          <img src="{{ model.image or '' }}" alt="{{ model.name }}" loading="lazy"{% if not model.image %} hidden{% endif %}>
+          <p class="compare__name">{{ model.name }}</p>
+          <p class="compare__price">{{ model.price or '' }}</p>
+          <a class="ds-btn ds-btn--primary ds-btn--small" data-buy href="{{ model.buyUrl or '#' }}" target="_blank" rel="noopener"{% if not model.buyUrl or model.available === false %} hidden{% endif %}>Comprar</a>
+        </div>
+        {%- endfor %}
+      </div>
+    </div>
+
+    {%- for section in data.sections %}
+    {%- set s = loop.index0 %}
+    <section class="compare__section" aria-label="{{ section.title }}">
+      <h2 class="ds-h3">{{ section.title }}</h2>
+      <div class="compare__row">
+        {%- for row in section.rows %}
+        {%- set r = loop.index0 %}
+        {%- if row.label %}<p class="compare__label">{{ row.label }}</p>{% endif %}
+        {%- for c in cols %}
+        {%- set values = row.values[data.defaults[c]] or ['—'] %}
+        <div class="compare__cell compare__col--{{ c }}" data-col="{{ c }}" data-kind="cell" data-s="{{ s }}" data-r="{{ r }}">
+          {%- for v in values %}<span{% if v == '—' %} class="muted" aria-label="No aplicable"{% endif %}>{{ v }}</span>{% endfor -%}
+        </div>
+        {%- endfor %}
+        {%- endfor %}
+      </div>
+    </section>
+    {%- endfor %}
+
+    {%- if data.footnotes and data.footnotes.length %}
+    <details class="ds-accordion__item compare__notes">
+      <summary>Avisos legales</summary>
+      <ol>
+        {%- for note in data.footnotes %}<li>{{ note }}</li>{% endfor %}
+      </ol>
+    </details>
+    {%- endif %}
+  </div>
+</div>
+
+<section class="section section--sunken" aria-labelledby="contacto-title">
+  <div class="ds-container">
+    <div class="section__head">
+      <h2 class="site-title" id="contacto-title">¿Querés una propuesta para tu empresa?</h2>
+      <p class="lead">Hablá con un especialista de iPlace Corporativo.</p>
+    </div>
+    <div class="band-stack">
+      {{ m.people(['diego']) }}
+      {{ m.social() }}
+    </div>
+  </div>
+</section>

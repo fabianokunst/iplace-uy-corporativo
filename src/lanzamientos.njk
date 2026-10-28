@@ -1,0 +1,59 @@
+---
+layout: layouts/base.njk
+title: Lanzamientos
+description: Hacé tu pre registro y recibí de primera mano las novedades sobre la llegada de los nuevos lanzamientos de Apple para empresas en Uruguay.
+permalink: /lanzamientos/
+---
+{% import "macros.njk" as m with context %}
+
+{{ m.pageHero('Lanzamientos', 'Lanzamientos', 'Lanzamientos Apple', '', '/assets/img/hero/lanzamientos.webp', 'iPhone e iPad sobre un fondo gris') }}
+
+<section class="section" aria-labelledby="registro-title">
+  <div class="ds-container media-split media-split--top">
+    <div class="media-split__copy">
+      <p class="eyebrow">Pre registro</p>
+      <h2 class="site-title" id="registro-title">Hacé tu pre registro</h2>
+      <p class="lead">Registrate ahora y recibí de primera mano todas las notificaciones sobre la llegada de los nuevos lanzamientos de Apple. ¡No te lo pierdas!</p>
+    </div>
+    <div class="form-card">
+      <div class="form-card__head">
+        <h3 class="ds-h3">Quiero más información</h3>
+      </div>
+      {#- Formulário Responsys (iplaceuycorp_lancamentos_2023), o mesmo do WordPress: envia direto, sem integrations.js.
+          O aceite abaixo não tem "name" para não ir ao Responsys; só bloqueia o envio até ser marcado. #}
+      <form class="lead-form" id="iplaceuycorp_lancamentos_2023" name="iplaceuycorp_lancamentos_2023" action="https://a.newsiplace.com.uy/pub/rf" method="post">
+        <input type="hidden" name="_ri_" value="X0Gzc2X%3DAQpglLjHJlDQGza0Ma3ze3R4oH1bkbpzfo22uOnEKtHtD3TqBXuVwjpnpgHlpgneHmgJoXX0Gzc2X%3DAQpglLjHJlDQG4vqh9zeUazbho5iYzfJFTv8M5nEKtHtD3TqBXu">
+        <input type="hidden" name="_ei_" value="ETBGZZ9VFHl8YVdvw-jG6Nk">
+        <input type="hidden" name="_di_" value="o480btvtf38ppnscj0vqs7gjqss0cu19pm2e0pq8rubkigktrqbg">
+        <div class="ds-field">
+          <label class="ds-field__label" for="NOMBRE">Nombre</label>
+          <input class="ds-input" id="NOMBRE" name="NOMBRE" type="text" autocomplete="given-name" required>
+        </div>
+        <div class="ds-field">
+          <label class="ds-field__label" for="APELLIDO">Apellido <span class="optional">(opcional)</span></label>
+          <input class="ds-input" id="APELLIDO" name="APELLIDO" type="text" autocomplete="family-name">
+        </div>
+        <div class="ds-field">
+          <label class="ds-field__label" for="EMPRESA">Empresa</label>
+          <input class="ds-input" id="EMPRESA" name="EMPRESA" type="text" autocomplete="organization" required>
+        </div>
+        <div class="ds-field">
+          <label class="ds-field__label" for="RUT">RUT</label>
+          <input class="ds-input" id="RUT" name="RUT" type="text" inputmode="numeric" required>
+        </div>
+        <div class="ds-field">
+          <label class="ds-field__label" for="TELEFONO">Teléfono</label>
+          <input class="ds-input" id="TELEFONO" name="TELEFONO" type="tel" autocomplete="tel" inputmode="tel" placeholder="+598" required>
+        </div>
+        <div class="ds-field">
+          <label class="ds-field__label" for="EMAIL_ADDRESS_">E-mail</label>
+          <input class="ds-input" id="EMAIL_ADDRESS_" name="EMAIL_ADDRESS_" type="email" autocomplete="email" required>
+        </div>
+        <div class="lead-form__actions">
+          <label class="consent-check"><input type="checkbox" required> <span>Leí y acepto la <a href="/politica-de-privacidad.html" target="_blank" rel="noopener">Política de Privacidad</a>. Usaremos estos datos para avisarte de los lanzamientos.</span></label>
+          <button class="ds-btn ds-btn--primary" type="submit">Finalizar registro</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

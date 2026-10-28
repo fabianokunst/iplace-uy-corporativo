@@ -1,0 +1,90 @@
+{#- Blocos reutilizados pelas páginas. Importe com: {% import "macros.njk" as m with context %} -#}
+
+{#- Topo das páginas internas: migalhas, título, texto de apoio e faixa fotográfica. -#}
+{% macro pageHero(crumb, eyebrow, title, lead, image, imageAlt, parent) %}
+<section class="page-hero">
+  <div class="ds-container">
+    <nav aria-label="Ruta de navegación">
+      <ol class="ds-breadcrumb">
+        <li><a href="/">Inicio</a></li>
+        {%- if parent %}<li><a href="{{ parent.url }}">{{ parent.label }}</a></li>{% endif %}
+        <li aria-current="page">{{ crumb }}</li>
+      </ol>
+    </nav>
+    <div class="page-hero__copy">
+      {%- if eyebrow %}<p class="eyebrow">{{ eyebrow }}</p>{% endif %}
+      <h1 class="site-display">{{ title | safe }}</h1>
+      {%- if lead %}<p class="lead">{{ lead | safe }}</p>{% endif %}
+      {%- if caller %}{{ caller() }}{% endif %}
+    </div>
+    {%- if image %}
+    <img class="page-hero__media" src="{{ image }}" alt="{{ imageAlt }}" width="1920" height="270" fetchpriority="high">
+    {%- endif %}
+  </div>
+</section>
+{% endmacro %}
+
+{#- Cartões dos especialistas comerciais (dados em _data/site.json). -#}
+{% macro people(ids) %}
+<div class="people{% if ids.length > 1 %} people--2{% endif %}">
+  {%- for id in ids %}
+  {%- set p = site.people | find('id', id) %}
+  <div class="person">
+    <div class="person__avatar">
+      {%- if p.photo %}<img src="{{ p.photo }}" alt="" width="72" height="72" loading="lazy">{% else %}<span aria-hidden="true">{{ p.initials }}</span>{% endif %}
+    </div>
+    <div class="person__body">
+      <p class="person__name">{{ p.name }}</p>
+      <p class="person__role">Especialista iPlace Corporativo</p>
+      <div class="person__links">
+        <a class="icon-link" href="{{ p.whatsapp | whatsapp(site.whatsappText) }}" target="_blank" rel="noopener" aria-label="WhatsApp de {{ p.name }}: {{ p.phone }}"><svg class="ds-icon ds-icon--small" aria-hidden="true"><use href="#i-sms"/></svg>{{ p.phone }}</a>
+        <a class="icon-link" href="mailto:{{ p.email }}" aria-label="Enviar un correo a {{ p.name }}"><svg class="ds-icon ds-icon--small" aria-hidden="true"><use href="#i-email"/></svg>Enviar un correo</a>
+      </div>
+    </div>
+  </div>
+  {%- endfor %}
+</div>
+{% endmacro %}
+
+{% macro social() %}
+<ul class="social" aria-label="Redes sociales">
+  {%- for s in site.social %}
+  <li><a href="{{ s.url }}" target="_blank" rel="noopener"><svg class="ds-icon ds-icon--small" aria-hidden="true"><use href="#i-{{ s.label | lower }}"/></svg>{{ s.label }}</a></li>
+  {%- endfor %}
+</ul>
+{% endmacro %}
+
+{#- Formulário de lead. O envio é feito por integrations/integrations.js (data-lead-form);
+    o consent.js insere o aceite da política antes do botão. Campos: name, email, company_name, mobile_phone, message. -#}
+{% macro leadForm(id, submitLabel, withMessage=true, compact=false) %}
+<form class="lead-form" data-lead-form="{{ id }}" method="post" action="#">
+  <div class="ds-field">
+    <label class="ds-field__label" for="{{ id }}-name">Nombre y apellido</label>
+    <input class="ds-input" id="{{ id }}-name" name="name" type="text" autocomplete="name" required>
+  </div>
+  <div class="ds-field">
+    <label class="ds-field__label" for="{{ id }}-email">E-mail</label>
+    <input class="ds-input" id="{{ id }}-email" name="email" type="email" autocomplete="email" required>
+  </div>
+  <div class="ds-field">
+    <label class="ds-field__label" for="{{ id }}-company">Empresa{% if compact %} <span class="optional">(opcional)</span>{% endif %}</label>
+    <input class="ds-input" id="{{ id }}-company" name="company_name" type="text" autocomplete="organization"{% if not compact %} required{% endif %}>
+  </div>
+  {%- if not compact %}
+  <div class="ds-field">
+    <label class="ds-field__label" for="{{ id }}-phone">Teléfono</label>
+    <input class="ds-input" id="{{ id }}-phone" name="mobile_phone" type="tel" autocomplete="tel" inputmode="tel" required>
+  </div>
+  {%- endif %}
+  {%- if withMessage %}
+  <div class="ds-field ds-field--full">
+    <label class="ds-field__label" for="{{ id }}-message">Mensaje <span class="optional">(opcional)</span></label>
+    <textarea class="ds-textarea" id="{{ id }}-message" name="message" rows="4" placeholder="Contanos qué necesita tu empresa: productos, cantidades, plazos."></textarea>
+  </div>
+  {%- endif %}
+  <div class="lead-form__actions">
+    <button class="ds-btn ds-btn--primary" type="submit">{{ submitLabel }}</button>
+  </div>
+  <p data-lead-status aria-live="polite"></p>
+</form>
+{% endmacro %}

@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+title: Contacto
+description: Hablá con los especialistas de iPlace Corporativo por WhatsApp, correo o formulario. Soluciones Apple para empresas en Uruguay.
+permalink: /contacto/
+---
+{% import "macros.njk" as m with context %}
+
+{{ m.pageHero('Contacto', 'Contacto', 'Hablá con nosotros', 'Estamos siempre listos para servirte.', '/assets/img/hero/contacto.webp', 'Teclado Magic Keyboard y Magic Mouse sobre un escritorio') }}
+
+<section class="section" aria-label="Formulario y canales de contacto">
+  <div class="ds-container media-split media-split--top">
+    <div class="form-card">
+      <div class="form-card__head">
+        <h2 class="ds-h3">Completá el formulario y entrá en contacto con nuestros canales de atención.</h2>
+      </div>
+      {{ m.leadForm('contacto-uy', 'Enviar') }}
+    </div>
+    <div class="media-split__copy">
+      <h2 class="site-title">Contactanos ahora mismo</h2>
+      <p class="text">¿Preferís hablar directamente? Escribinos por WhatsApp o por correo.</p>
+      {{ m.people(['rodrigo']) }}
+      {{ m.social() }}
+    </div>
+  </div>
+</section>

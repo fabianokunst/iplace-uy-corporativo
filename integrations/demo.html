@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es-UY">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Integraciones — prueba</title>
+  <script>
+    // Testar outros modos: demo.html?leadEndpoint=/__lead ou demo.html?rdPublicToken=SEU_TOKEN
+    var q = new URLSearchParams(location.search);
+    window.IPLACE_INTEGRATIONS = {};
+    ['leadEndpoint', 'rdPublicToken', 'whatsappNumber'].forEach(function (k) {
+      if (q.get(k)) window.IPLACE_INTEGRATIONS[k] = q.get(k);
+    });
+  </script>
+  <script src="consent.js"></script>
+  <script src="integrations.js"></script>
+  <style>
+    body { font: 16px/1.5 system-ui, sans-serif; max-width: 480px; margin: 40px auto; padding: 0 16px; }
+    label { display: block; margin-top: 12px; font-size: 14px; }
+    input, textarea, button { width: 100%; box-sizing: border-box; padding: 10px; font: inherit; }
+    button { margin-top: 16px; cursor: pointer; }
+    form[data-state="error"] [data-lead-status] { color: #b00020; }
+    form[data-state="sent"] [data-lead-status] { color: #0a7a2f; }
+  </style>
+</head>
+<body>
+  <h1>Prueba de integraciones</h1>
+  <p>Página de prueba de <code>integrations.js</code>: carga GTM + GA4 y envía el formulario de lead.</p>
+
+  <form data-lead-form="contacto-uy">
+    <label>Nombre <input name="name" required></label>
+    <label>Empresa <input name="company_name"></label>
+    <label>Email <input name="email" type="email" required></label>
+    <label>Teléfono <input name="mobile_phone" type="tel"></label>
+    <label>Mensaje <textarea name="message" rows="3"></textarea></label>
+    <button type="submit">Enviar</button>
+    <p data-lead-status aria-live="polite"></p>
+  </form>
+</body>
+</html>

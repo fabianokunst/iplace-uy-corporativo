@@ -1,0 +1,787 @@
+/* iPlace Uruguai Design System — components/bundle.css, sem alterações. Não edite aqui: ajustes do site vão em site.css. */
+/* iPlace Uruguay — bridge from the generated tokens.css to the names the ds-* classes read.
+   Font stacks come from type.families (--font-display, --font-text, --font-mono); motion has no token family. */
+:root {
+  --ds-font-display: var(--font-display);
+  --ds-font-text: var(--font-text);
+  --ds-font-mono: var(--font-mono);
+  --ds-duration: 160ms;
+  --ds-ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* iPlace DS — component & utility classes (sections 2–15 of source/ds_styles.css, verbatim). Tokens live in /tokens. */
+
+/* -----------------------------------------------------------------------------
+   2. RESET — escopado em .ds para não afetar o tema
+----------------------------------------------------------------------------- */
+.ds {
+  background-color: var(--ds-bg);
+  color: var(--ds-text);
+  font-family: var(--ds-font-text);
+  font-size: var(--ds-medium-text);  /* P Medium, o mais usado no arquivo */
+  font-weight: var(--ds-weight-regular);
+  line-height: var(--ds-lh-p);
+  -webkit-font-smoothing: antialiased;
+}
+
+.ds *,
+.ds *::before,
+.ds *::after { box-sizing: border-box; }
+
+.ds :where(h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+.ds :where(img, svg, video) { display: block; max-width: 100%; height: auto; }
+.ds :where(ul, ol) { list-style: none; padding: 0; }
+.ds :where(input, button, textarea, select) { font: inherit; color: inherit; }
+.ds :where(button) { background: none; border: 0; }
+.ds :where(p, li) { text-wrap: pretty; }
+
+.ds hr,
+.ds-divider { border: 0; border-top: 1px solid var(--ds-border); height: 0; }
+
+.ds a { color: var(--ds-link); text-decoration: underline; text-underline-offset: 3px; }
+.ds a:hover { text-decoration-thickness: 2px; }
+
+.ds :focus-visible {
+  outline: 2px solid var(--ds-black);
+  outline-offset: 2px;
+  border-radius: var(--ds-radius-sm);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ds *, .ds *::before, .ds *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+   3. TEXT STYLES — uma classe por estilo do painel
+----------------------------------------------------------------------------- */
+.ds :where(h1, h2, h3, h4, h5, h6),
+.ds-h1, .ds-h1-mini,
+.ds-h2, .ds-h2-mini,
+.ds-h3, .ds-h3-mini,
+.ds-h4, .ds-h4-mini,
+.ds-h5, .ds-h5-mini {
+  font-family: var(--ds-font-display);
+  font-weight: var(--ds-weight-heading);
+  line-height: var(--ds-lh-heading);
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+.ds h1, .ds-h1 { font-size: var(--ds-h1); }
+.ds h2, .ds-h2 { font-size: var(--ds-h2); }
+.ds h3, .ds-h3 { font-size: var(--ds-h3); }
+.ds h4, .ds-h4 { font-size: var(--ds-h4); }
+.ds h5, .ds h6,
+.ds-h5 { font-size: var(--ds-h5); }
+
+.ds-h1-mini { font-size: var(--ds-h1-mini); }
+.ds-h2-mini { font-size: var(--ds-h2-mini); }
+.ds-h3-mini { font-size: var(--ds-h3-mini); }
+.ds-h4-mini { font-size: var(--ds-h4-mini); }
+.ds-h5-mini { font-size: var(--ds-h5-mini); }
+
+@media (max-width: 767px) {
+  .ds h1, .ds-h1 { font-size: var(--ds-h3); }
+  .ds h2, .ds-h2 { font-size: var(--ds-h4); }
+  .ds h3, .ds-h3 { font-size: var(--ds-h5); }
+}
+
+.ds-p-extrabig, .ds-p-extrabig-bold,
+.ds-p-big, .ds-p-big-bold,
+.ds-p-medium, .ds-p-medium-bold,
+.ds-p-small, .ds-p-small-bold,
+.ds-p-extrasmall, .ds-p-extrasmall-bold {
+  font-family: var(--ds-font-text);
+  line-height: var(--ds-lh-p);
+}
+
+.ds-p-extrabig, .ds-p-big, .ds-p-medium,
+.ds-p-small, .ds-p-extrasmall { font-weight: var(--ds-weight-regular); }
+
+.ds-p-extrabig-bold, .ds-p-big-bold, .ds-p-medium-bold,
+.ds-p-small-bold, .ds-p-extrasmall-bold { font-weight: var(--ds-weight-bold); }
+
+.ds-p-extrabig,   .ds-p-extrabig-bold   { font-size: var(--ds-extrabig); }
+.ds-p-big,        .ds-p-big-bold        { font-size: var(--ds-big-text); }
+.ds-p-medium,     .ds-p-medium-bold     { font-size: var(--ds-medium-text); }
+.ds-p-small,      .ds-p-small-bold      { font-size: var(--ds-small-text); }
+.ds-p-extrasmall, .ds-p-extrasmall-bold { font-size: var(--ds-extrasmall); }
+
+/* Os P têm lh 120, apertado para texto longo */
+.ds-prose { line-height: 1.5; max-width: 68ch; }
+.ds-prose > * + * { margin-top: var(--ds-medium); }
+
+.ds-text-secondary { color: var(--ds-text-secondary); }
+.ds-text-positive  { color: var(--ds-positive); }
+.ds-text-negative  { color: var(--ds-negative); }
+.ds-text-warning   { color: var(--ds-warning); }
+.ds-text-info      { color: var(--ds-info); }
+.ds-text-center    { text-align: center; }
+
+/* -----------------------------------------------------------------------------
+   4. LAYOUT
+----------------------------------------------------------------------------- */
+.ds-container {
+  width: 100%;
+  max-width: var(--ds-container);
+  margin-inline: auto;
+  padding-inline: var(--ds-medium);
+}
+.ds-container--narrow { max-width: 760px; }
+
+@media (min-width: 1024px) {
+  .ds-container { padding-inline: var(--ds-x-big); }
+}
+
+.ds-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--ds-gutter);
+}
+@media (max-width: 767px) {
+  .ds-grid { grid-template-columns: minmax(0, 1fr); }
+  .ds-grid > [class*="ds-col-"] { grid-column: span 1; }
+}
+@media (min-width: 768px) {
+  .ds-col-2  { grid-column: span 2; }
+  .ds-col-3  { grid-column: span 3; }
+  .ds-col-4  { grid-column: span 4; }
+  .ds-col-6  { grid-column: span 6; }
+  .ds-col-8  { grid-column: span 8; }
+  .ds-col-9  { grid-column: span 9; }
+  .ds-col-12 { grid-column: span 12; }
+}
+
+.ds-autogrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--ds-gutter);
+}
+.ds-autogrid--small { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+
+.ds-section { padding-block: var(--ds-x-big); }
+.ds-section--sunken { background-color: var(--ds-surface-sunken); }
+.ds-section--dark { background-color: var(--ds-surface-dark); color: var(--ds-text-on-dark); }
+.ds-section--brand { background-color: var(--ds-brand); color: var(--ds-black); }
+@media (min-width: 1024px) {
+  .ds-section { padding-block: var(--ds-giant); }
+}
+
+.ds-split { display: grid; gap: var(--ds-x-big); }
+@media (min-width: 1024px) {
+  .ds-split { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); }
+  .ds-split--even { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* Empilhamento e agrupamento — gap sempre das variables */
+.ds-stack { display: flex; flex-direction: column; gap: var(--ds-medium); }
+.ds-stack--x-small { gap: var(--ds-x-small); }
+.ds-stack--small   { gap: var(--ds-small); }
+.ds-stack--big     { gap: var(--ds-big); }
+.ds-stack--x-big   { gap: var(--ds-x-big); }
+.ds-stack--giant   { gap: var(--ds-giant); }
+
+.ds-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--ds-control-gap);
+}
+.ds-cluster--between { justify-content: space-between; }
+.ds-cluster--big { gap: var(--ds-big); }
+
+/* -----------------------------------------------------------------------------
+   5. ÍCONES — 30×30, traço, herdando a cor do texto (na ATOM: Gray #1)
+----------------------------------------------------------------------------- */
+.ds-icon {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.ds-icon--small { width: 20px; height: 20px; stroke-width: 1.8; }
+.ds-icon--big   { width: 40px; height: 40px; stroke-width: 1.3; }
+.ds-icon--fill  { fill: currentColor; stroke: none; }
+.ds-icon--flip  { transform: rotate(180deg); }
+
+/* -----------------------------------------------------------------------------
+   6. BOTÕES — iPlace CTA Big: 47px · pad 14/26 · r8 · gap 10 · P Big Bold
+----------------------------------------------------------------------------- */
+.ds-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--ds-control-gap);
+  min-height: var(--ds-control-h);
+  padding: var(--ds-x-small) var(--ds-control-pad-x);
+  border: 1px solid transparent;
+  border-radius: var(--ds-radius-md);
+  font-family: var(--ds-font-text);
+  font-size: var(--ds-big-text);
+  font-weight: var(--ds-weight-bold);
+  line-height: var(--ds-lh-p);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color var(--ds-duration) var(--ds-ease),
+              border-color var(--ds-duration) var(--ds-ease),
+              color var(--ds-duration) var(--ds-ease);
+}
+.ds-btn:hover { text-decoration: none; }
+
+/* Link com cara de botão: o reset do .ds sublinha todo <a> (".ds a" ganha do
+   ".ds-btn" por especificidade), então o CTA precisa desfazer isso. O
+   CTA Big=URL continua sublinhado — lá o sublinhado É o botão. */
+.ds a.ds-btn { text-decoration: none; }
+.ds a.ds-btn--link { text-decoration: underline; }
+
+/* A mesma armadilha vale para a cor: ".ds a { color: inherit }" também ganha
+   das variantes, então o <a> com cara de botão herdava a cor do que estava
+   em volta — texto branco sobre o verde da marca, texto preto sobre o CTA
+   escuro. Cada variante repete aqui a sua cor com a especificidade certa. */
+.ds a.ds-btn--primary { color: var(--ds-white); }
+.ds a.ds-btn--primary:hover:not(:disabled) { color: var(--ds-white); }
+.ds a.ds-btn--outline { color: var(--ds-gray-1); }
+.ds a.ds-btn--outline:hover:not(:disabled) { color: var(--ds-black); }
+.ds a.ds-btn--subtle { color: var(--ds-gray-1); }
+.ds a.ds-btn--brand { color: var(--ds-black); }
+.ds a.ds-btn--alpha { color: var(--ds-text-on-dark); }
+.ds a.ds-btn--link { color: var(--ds-gray-1); }
+.ds a.ds-btn--link:hover:not(:disabled) { color: var(--ds-black); }
+.ds a.ds-btn[aria-disabled="true"] { color: var(--ds-text-disabled); }
+
+/* Principal — preto, hover Gray #2 */
+.ds-btn--primary {
+  background-color: var(--ds-action);
+  color: var(--ds-white);
+}
+.ds-btn--primary:hover:not(:disabled) {
+  background-color: var(--ds-action-hover);
+  color: var(--ds-white);
+}
+
+/* Secundário — CTA Big=White → hover CTA Big=White hover (borda preta) */
+.ds-btn--outline {
+  background-color: var(--ds-white);
+  border-color: var(--ds-gray-1);
+  color: var(--ds-gray-1);
+}
+.ds-btn--outline:hover:not(:disabled) {
+  border-color: var(--ds-black);
+  color: var(--ds-black);
+}
+
+/* Terciário — CTA Big=Light Gray */
+.ds-btn--subtle {
+  background-color: var(--ds-gray-5);
+  color: var(--ds-gray-1);
+}
+.ds-btn--subtle:hover:not(:disabled) { background-color: var(--ds-gray-4); }
+
+/* Campanha — verde iPlace como fundo, para hotsite */
+.ds-btn--brand {
+  background-color: var(--ds-brand);
+  color: var(--ds-black);
+}
+.ds-btn--brand:hover:not(:disabled) { background-color: var(--ds-iplace-dark); }
+
+/* CTA Big=Alpha — sobre imagem ou faixa escura */
+.ds-btn--alpha {
+  background-color: transparent;
+  border-color: currentColor;
+  color: var(--ds-text-on-dark);
+}
+.ds-btn--alpha:hover:not(:disabled) { background-color: rgba(255, 255, 255, 0.12); }
+
+/* CTA Big=URL — texto, sem caixa. Equivale ao mini-button. */
+.ds-btn--link {
+  min-height: 0;
+  padding: var(--ds-x-small) 0;
+  color: var(--ds-gray-1);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.ds-btn--link:hover:not(:disabled) { color: var(--ds-black); text-decoration-thickness: 2px; }
+
+/* CTA Big=block — bloqueado */
+.ds-btn:disabled,
+.ds-btn[aria-disabled="true"] {
+  background-color: var(--ds-gray-4);
+  border-color: transparent;
+  color: var(--ds-gray-3);
+  cursor: not-allowed;
+}
+
+.ds-btn--small {
+  min-height: var(--ds-control-h-sm);
+  padding-inline: var(--ds-medium);
+  font-size: var(--ds-medium-text);
+}
+.ds-btn--block { width: 100%; }
+
+/* Botão só de ícone */
+.ds-btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--ds-input-h);
+  height: var(--ds-input-h);
+  border-radius: var(--ds-radius-md);
+  cursor: pointer;
+  transition: background-color var(--ds-duration) var(--ds-ease);
+}
+.ds-btn-icon:hover { background-color: var(--ds-gray-5); }
+
+/* directions ball 40×40 e fechar 36×36 da ATOM */
+.ds-btn-round {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--ds-gray-1);
+  color: var(--ds-white);
+  cursor: pointer;
+  transition: background-color var(--ds-duration) var(--ds-ease);
+}
+.ds-btn-round:hover { background-color: var(--ds-black); }
+.ds-btn-round--light {
+  background-color: var(--ds-gray-5);
+  color: var(--ds-gray-1);
+}
+.ds-btn-round--light:hover { background-color: var(--ds-gray-4); }
+.ds-btn-round--close { width: 36px; height: 36px; }
+
+/* -----------------------------------------------------------------------------
+   7. CAMPOS — TextField 40px · r8 · texto P Big · estados da ATOM:
+   default · preenchido · selecionado (foco) · erro · bloqueado
+----------------------------------------------------------------------------- */
+.ds-field { display: flex; flex-direction: column; gap: var(--ds-x-small); }
+.ds-field__label { font-size: var(--ds-small-text); font-weight: var(--ds-weight-bold); }
+.ds-field__hint { font-size: var(--ds-small-text); color: var(--ds-text-secondary); }
+.ds-field__error {
+  display: none;
+  font-size: var(--ds-small-text);
+  font-weight: var(--ds-weight-bold);
+  color: var(--ds-negative);
+}
+
+.ds-input,
+.ds-select,
+.ds-textarea {
+  width: 100%;
+  min-height: var(--ds-input-h);
+  padding: var(--ds-small) var(--ds-medium);
+  background-color: var(--ds-white);
+  border: 1px solid var(--ds-border);
+  border-radius: var(--ds-radius-md);
+  font-size: var(--ds-big-text);
+  color: var(--ds-text);
+  transition: border-color var(--ds-duration) var(--ds-ease);
+}
+.ds-textarea { min-height: 120px; line-height: 1.5; resize: vertical; }
+.ds-input::placeholder,
+.ds-textarea::placeholder { color: var(--ds-text-secondary); }
+
+.ds-input:focus,
+.ds-select:focus,
+.ds-textarea:focus {
+  outline: none;
+  border-color: var(--ds-black);
+  box-shadow: inset 0 0 0 1px var(--ds-black);
+}
+
+.ds-input:disabled,
+.ds-select:disabled,
+.ds-textarea:disabled {
+  background-color: var(--ds-gray-5);
+  color: var(--ds-text-disabled);
+  cursor: not-allowed;
+}
+
+.ds-select {
+  appearance: none;
+  padding-right: var(--ds-x-big);
+  background-image: linear-gradient(45deg, transparent 50%, var(--ds-gray-1) 50%),
+                    linear-gradient(135deg, var(--ds-gray-1) 50%, transparent 50%);
+  background-position: calc(100% - 18px) 50%, calc(100% - 12px) 50%;
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.ds-field--error :where(.ds-input, .ds-select, .ds-textarea) { border-color: var(--ds-negative); }
+.ds-field--error .ds-field__error { display: block; }
+
+/* Campo com ícone à esquerda — busca */
+.ds-input-group { position: relative; display: flex; align-items: center; }
+.ds-input-group > .ds-input { padding-left: 46px; }
+.ds-input-group > .ds-icon {
+  position: absolute;
+  left: var(--ds-small);
+  color: var(--ds-gray-3);
+  pointer-events: none;
+}
+
+/* -----------------------------------------------------------------------------
+   8. SELEÇÃO — check e radio 20×20, marcados em #000000 (frame Design system)
+----------------------------------------------------------------------------- */
+.ds-choice { display: flex; align-items: flex-start; gap: var(--ds-control-gap); cursor: pointer; }
+.ds-choice > input {
+  appearance: none;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  border: 1px solid var(--ds-border);
+  background-color: var(--ds-white);
+  cursor: pointer;
+  transition: background-color var(--ds-duration) var(--ds-ease),
+              border-color var(--ds-duration) var(--ds-ease);
+}
+.ds-choice > input[type="checkbox"] { border-radius: 1px; }
+.ds-choice > input[type="radio"] { border-radius: 50%; }
+
+.ds-choice > input[type="checkbox"]:checked {
+  background-color: var(--ds-black);
+  border-color: var(--ds-black);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%23fff' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4.5 10.5l3.5 3.5 7.5-7.5'/%3E%3C/svg%3E");
+  background-size: 100%;
+}
+.ds-choice > input[type="radio"]:checked {
+  border-color: var(--ds-black);
+  background-image: radial-gradient(circle at center, var(--ds-black) 0 5px, transparent 5.5px);
+}
+.ds-choice__text { font-size: var(--ds-small-text); line-height: 1.5; }
+
+/* Cartão selecionável */
+.ds-choice-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--ds-control-gap);
+  padding: var(--ds-medium);
+  background-color: var(--ds-white);
+  border: 1px solid var(--ds-border);
+  border-radius: var(--ds-radius-md);
+  cursor: pointer;
+  transition: border-color var(--ds-duration) var(--ds-ease);
+}
+.ds-choice-card:hover { border-color: var(--ds-border-strong); }
+.ds-choice-card:has(input:checked) {
+  border-color: var(--ds-black);
+  box-shadow: inset 0 0 0 1px var(--ds-black);
+}
+
+/* Contador de quantidade */
+.ds-stepper {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--ds-border);
+  border-radius: var(--ds-radius-md);
+  overflow: hidden;
+}
+.ds-stepper button {
+  width: var(--ds-input-h);
+  height: var(--ds-input-h);
+  cursor: pointer;
+}
+.ds-stepper button:hover { background-color: var(--ds-gray-5); }
+.ds-stepper__value {
+  min-width: 40px;
+  text-align: center;
+  font-weight: var(--ds-weight-bold);
+  border-inline: 1px solid var(--ds-border);
+  line-height: var(--ds-input-h);
+}
+
+/* -----------------------------------------------------------------------------
+   9. SELOS E PREÇO
+----------------------------------------------------------------------------- */
+.ds-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ds-x-small);
+  padding: var(--ds-x-small) var(--ds-small);
+  border-radius: var(--ds-radius-pill);
+  background-color: var(--ds-gray-5);
+  color: var(--ds-gray-1);
+  font-size: var(--ds-small-text);
+  font-weight: var(--ds-weight-bold);
+  line-height: 1;
+  white-space: nowrap;
+}
+.ds-badge--brand    { background-color: var(--ds-brand); color: var(--ds-black); }
+.ds-badge--dark     { background-color: var(--ds-gray-1); color: var(--ds-white); }
+.ds-badge--warning  { background-color: var(--ds-warning); color: var(--ds-white); }
+.ds-badge--positive { background-color: var(--ds-positive); color: var(--ds-white); }
+.ds-badge--negative { background-color: var(--ds-negative); color: var(--ds-white); }
+.ds-badge--outline  {
+  background-color: transparent;
+  border: 1px solid var(--ds-border);
+  color: var(--ds-text-secondary);
+}
+
+.ds-price { display: flex; flex-direction: column; gap: var(--ds-x-small); }
+.ds-price__from {
+  color: var(--ds-text-secondary);
+  font-size: var(--ds-small-text);
+  text-decoration: line-through;
+}
+.ds-price__value {
+  font-family: var(--ds-font-display);
+  font-size: var(--ds-h5);
+  font-weight: var(--ds-weight-heading);
+  line-height: var(--ds-lh-heading);
+}
+/* O preço não muda de cor em oferta: quem sinaliza a promoção é o selo
+   .ds-badge--brand (% OFF), e o valor continua preto. A classe permanece para não
+   quebrar o HTML que já a usa. */
+.ds-price__value--promo { color: var(--ds-text); }
+.ds-price__note { color: var(--ds-text-secondary); font-size: var(--ds-small-text); }
+
+/* -----------------------------------------------------------------------------
+   10. NAVEGAÇÃO
+----------------------------------------------------------------------------- */
+.ds-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--ds-control-gap);
+  padding-block: var(--ds-small);
+  font-size: var(--ds-medium-text);
+}
+.ds-breadcrumb li { display: flex; align-items: center; gap: var(--ds-control-gap); }
+.ds-breadcrumb a { color: var(--ds-text-secondary); text-decoration: none; }
+.ds-breadcrumb a:hover { text-decoration: underline; }
+.ds-breadcrumb li:first-child a { color: var(--ds-text); font-weight: var(--ds-weight-bold); }
+.ds-breadcrumb li:last-child { color: var(--ds-text-secondary); }
+.ds-breadcrumb li:not(:last-child)::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-right: 1.5px solid var(--ds-gray-3);
+  border-bottom: 1.5px solid var(--ds-gray-3);
+  transform: rotate(-45deg);
+}
+
+.ds-steps { display: flex; align-items: center; gap: var(--ds-small); counter-reset: step; }
+.ds-steps__item {
+  display: flex;
+  align-items: center;
+  gap: var(--ds-small);
+  color: var(--ds-text-secondary);
+  font-size: var(--ds-small-text);
+}
+.ds-steps__item::before {
+  counter-increment: step;
+  content: counter(step);
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--ds-border);
+  font-weight: var(--ds-weight-bold);
+}
+.ds-steps__item:not(:last-child)::after {
+  content: "";
+  width: clamp(16px, 5vw, 64px);
+  height: 1px;
+  background-color: var(--ds-border);
+}
+.ds-steps__item--current { color: var(--ds-text); font-weight: var(--ds-weight-bold); }
+.ds-steps__item--current::before {
+  background-color: var(--ds-black);
+  border-color: var(--ds-black);
+  color: var(--ds-white);
+}
+.ds-steps__item--done::before {
+  background-color: var(--ds-brand);
+  border-color: var(--ds-brand);
+  color: var(--ds-black);
+}
+
+.ds-tabs {
+  display: flex;
+  gap: var(--ds-big);
+  border-bottom: 1px solid var(--ds-border);
+  overflow-x: auto;
+}
+.ds-tabs button {
+  padding-block: var(--ds-small);
+  font-size: var(--ds-medium-text);
+  font-weight: var(--ds-weight-bold);
+  color: var(--ds-text-secondary);
+  white-space: nowrap;
+  cursor: pointer;
+}
+.ds-tabs button[aria-selected="true"] {
+  color: var(--ds-text);
+  box-shadow: inset 0 -2px 0 var(--ds-black);
+}
+
+/* -----------------------------------------------------------------------------
+   11. AVISOS
+----------------------------------------------------------------------------- */
+.ds-alert {
+  display: flex;
+  gap: var(--ds-control-gap);
+  padding: var(--ds-small) var(--ds-medium);
+  border-radius: var(--ds-radius-md);
+  border-left: 4px solid var(--ds-gray-3);
+  background-color: var(--ds-gray-5);
+  font-size: var(--ds-medium-text);
+  line-height: 1.5;
+}
+.ds-alert__title { font-weight: var(--ds-weight-bold); }
+.ds-alert--positive { border-left-color: var(--ds-positive); }
+.ds-alert--warning  { border-left-color: var(--ds-warning); }
+.ds-alert--info     { border-left-color: var(--ds-info); }
+.ds-alert--negative { border-left-color: var(--ds-negative); }
+
+/* -----------------------------------------------------------------------------
+   12. CARDS
+----------------------------------------------------------------------------- */
+.ds-card {
+  background-color: var(--ds-surface);
+  border: 1px solid var(--ds-border);
+  border-radius: var(--ds-radius-md);
+  padding: var(--ds-medium);
+}
+.ds-card--raised { border-color: transparent; box-shadow: var(--ds-shadow); }
+.ds-card--sunken { background-color: var(--ds-gray-5); border-color: transparent; }
+
+.ds-product {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ds-small);
+  padding: var(--ds-medium);
+  background-color: var(--ds-surface);
+  border: 1px solid transparent;
+  border-radius: var(--ds-radius-md);
+  transition: border-color var(--ds-duration) var(--ds-ease);
+}
+.ds-product:hover { border-color: var(--ds-border); }
+.ds-product__media {
+  position: relative;
+  aspect-ratio: 1;
+  background-color: var(--ds-gray-5);
+  border-radius: var(--ds-radius-md);
+  overflow: hidden;
+}
+.ds-product__media > img { width: 100%; height: 100%; object-fit: contain; }
+.ds-product__badges {
+  position: absolute;
+  top: var(--ds-small);
+  left: var(--ds-small);
+  display: flex;
+  gap: var(--ds-x-small);
+}
+.ds-product__title {
+  font-size: var(--ds-medium-text);
+  font-weight: var(--ds-weight-bold);
+  line-height: 1.5;
+}
+.ds-product__title a { color: inherit; text-decoration: none; }
+.ds-product__title a:hover { text-decoration: underline; }
+.ds-product > .ds-btn { margin-top: auto; }
+
+/* -----------------------------------------------------------------------------
+   13. MODAL — Modal da ATOM: 800px · r24 · padding 32 · gap 64 · título H2
+----------------------------------------------------------------------------- */
+.ds-modal { border: 0; padding: 0; background: none; max-width: none; }
+/* Véu dos modais: preto 24% sobre o fundo desfocado (ds-backdrop, ds-backdrop-blur,
+   ds-backdrop-saturate). Valores literais de propósito: em navegadores mais antigos o
+   ::backdrop não herda as variáveis do :root. */
+.ds-modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.24);
+  -webkit-backdrop-filter: blur(12px) saturate(0.92);
+  backdrop-filter: blur(12px) saturate(0.92);
+}
+.ds-modal__panel {
+  width: min(var(--ds-modal-w), calc(100vw - var(--ds-x-big)));
+  max-height: calc(100vh - var(--ds-x-big));
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--ds-x-big);
+  padding: var(--ds-x-big);
+  background-color: var(--ds-white);
+  border-radius: var(--ds-radius-lg);
+  box-shadow: var(--ds-shadow);
+}
+.ds-modal__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--ds-medium);
+}
+.ds-modal__foot {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--ds-control-gap);
+}
+
+/* -----------------------------------------------------------------------------
+   14. ACORDEÃO E TABELA
+----------------------------------------------------------------------------- */
+.ds-accordion { border-top: 1px solid var(--ds-border); }
+.ds-accordion__item { border-bottom: 1px solid var(--ds-border); }
+.ds-accordion__item > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--ds-medium);
+  padding-block: var(--ds-medium);
+  font-size: var(--ds-big-text);
+  font-weight: var(--ds-weight-bold);
+  cursor: pointer;
+  list-style: none;
+}
+.ds-accordion__item > summary::-webkit-details-marker { display: none; }
+.ds-accordion__item > summary::after {
+  content: "";
+  flex: 0 0 auto;
+  width: 8px;
+  height: 8px;
+  border-right: 1.5px solid var(--ds-gray-3);
+  border-bottom: 1.5px solid var(--ds-gray-3);
+  transform: rotate(45deg);
+  transition: transform var(--ds-duration) var(--ds-ease);
+}
+.ds-accordion__item[open] > summary::after { transform: rotate(-135deg); }
+.ds-accordion__panel { padding-bottom: var(--ds-medium); line-height: 1.5; }
+
+.ds-table { width: 100%; border-collapse: collapse; font-size: var(--ds-medium-text); }
+.ds-table :where(th, td) {
+  padding: var(--ds-small) var(--ds-medium);
+  text-align: left;
+  border-bottom: 1px solid var(--ds-border);
+  vertical-align: top;
+}
+.ds-table th { width: 35%; font-weight: var(--ds-weight-bold); color: var(--ds-text-secondary); }
+
+/* -----------------------------------------------------------------------------
+   15. UTILITÁRIOS
+----------------------------------------------------------------------------- */
+.ds-hidden { display: none !important; }
+.ds-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+@media (min-width: 768px) { .ds-hide-desktop { display: none !important; } }
+@media (max-width: 767px) { .ds-hide-mobile  { display: none !important; } }

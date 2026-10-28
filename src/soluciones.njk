@@ -1,0 +1,63 @@
+---
+layout: layouts/base.njk
+title: Soluciones
+description: iPlace Corporativo ofrece un paquete completo de servicios para que su empresa adopte el ecosistema Apple, desde la elección de los dispositivos hasta el soporte en la migración.
+permalink: /soluciones/
+---
+{% import "macros.njk" as m with context %}
+
+{% call m.pageHero('Soluciones', 'Soluciones iPlace Corporativo', 'Suba de nivel con iPlace Corporativo', '', '/assets/img/hero/soluciones.webp', 'Manos escribiendo en el teclado de una MacBook') %}
+  <div class="ds-cluster"><a class="ds-btn ds-btn--primary" href="#form">Quiero revolucionar mi negocio con iPlace Corporativo</a></div>
+{% endcall %}
+
+<section class="section" aria-labelledby="experiencia-title">
+  <div class="ds-container">
+    <div class="section__head">
+      <h2 class="site-title" id="experiencia-title">Un mundo de beneficios para su empresa al obtener la mejor experiencia Apple</h2>
+    </div>
+    <div class="prose-cols">
+      <p class="text">Innovar para mejorar y crecer. Y es con esta mentalidad que cada vez más gestores están adoptando la plataforma Apple en sus empresas. Al final, dispositivos como Mac, iPad e iPhone son verdaderas máquinas de productividad, prontas para viabilizar negocios de todos los tamaños.</p>
+      <p class="text">Sin embargo, hacer la migración al ecosistema de Apple puede eventualmente causar miedo a aquellos que nunca han usado la plataforma. Esto se debe a que los profesionales acostumbrados al entorno Windows, incluso insatisfechos con el servicio, suelen creer que la adaptación a un nuevo sistema será difícil.</p>
+      <p class="text">Este miedo puede incluso ser comprensible como una reacción puramente emocional, pero no es realidad. Sobre todo cuando la migración se hace a través de quien más sabe del tema: iPlace, el Apple Premium Reseller más grande de Brasil.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sunken" aria-labelledby="beneficios-title">
+  <div class="ds-container media-split media-split--reverse">
+    <div class="media-split__copy">
+      <h2 class="site-title" id="beneficios-title">Un mundo de beneficios</h2>
+      <p class="lead">iPlace Corporativo ofrece un paquete completo de servicios para que su empresa adopte el ecosistema Apple. Desde la elección de los dispositivos hasta el soporte y acompañamiento durante todo el proceso de migración. ¡Cuente con nosotros!</p>
+      <p class="text">iPlace ayuda a cada cliente a entender cuál es su real necesidad a la hora de adquirir o renovar su paquete de dispositivos. Así, consigue ofrecer la mejor configuración para su empresa, incluyendo soporte para la infraestructura de TI.</p>
+      <p class="text">El iPhone viene listo para el trabajo, ofreciendo apps de productividad ya instaladas en el dispositivo. El sistema incluye desde herramientas básicas, como el calendario y la calculadora, hasta las más avanzadas. Con las apps nativas de iOS Pages, Numbers y Keynote, es posible crear y editar textos, planillas y presentaciones en cualquier lugar.</p>
+      <a class="ds-btn ds-btn--primary" href="#form">Quiero revolucionar mi negocio con iPlace Corporativo</a>
+    </div>
+    <div class="media-split__media">
+      <img src="/assets/img/fotos/especialista.webp" alt="Profesional trabajando con iMac e iPhone" width="800" height="533" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="productividad-title">
+  <div class="ds-container">
+    <div class="section__head section__head--center">
+      <h2 class="site-title" id="productividad-title">Gane más productividad gastando menos</h2>
+      <p class="lead">iPlace Corporativo ofrece un paquete completo de servicios para su empresa.</p>
+    </div>
+    <img src="/assets/img/productos/familia-mac-menor.webp" alt="MacBook, iMac, iPad, iPhone y Apple Watch" width="1020" height="371" loading="lazy" class="img-center">
+  </div>
+</section>
+
+<section class="section section--sunken" id="form" aria-labelledby="form-title">
+  <div class="ds-container media-split media-split--top">
+    <div class="media-split__copy">
+      <h2 class="site-title" id="form-title">Contactanos ahora mismo</h2>
+      <p class="text">Completá el formulario o hablá directamente con nuestros especialistas.</p>
+      {{ m.people(['diego', 'marcos']) }}
+      {{ m.social() }}
+    </div>
+    <div class="form-card">
+      {{ m.leadForm('soluciones-uy', 'Enviar consulta') }}
+    </div>
+  </div>
+</section>

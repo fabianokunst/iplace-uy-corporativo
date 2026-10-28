@@ -1,0 +1,41 @@
+<footer class="site-footer">
+  <div class="ds-container">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <img src="/assets/img/brand/corporativo-white.png" alt="iPlace Corporativo, Apple Premium Reseller" width="101" height="48">
+        <p>El canal especializado de iPlace para el mercado corporativo en Uruguay.</p>
+      </div>
+      <nav aria-label="Sitio">
+        <h2 class="site-footer__title">iPlace Corporativo</h2>
+        <ul class="site-footer__list">
+          {%- for item in site.nav %}
+          <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+          {%- endfor %}
+          <li><a href="/productos/originales-iplace/">Originales iPlace</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="site-footer__title">Contacto</h2>
+        <ul class="site-footer__list">
+          {%- for phone in site.footerPhones %}
+          <li><a href="{{ phone.href }}">{{ phone.label }}</a></li>
+          {%- endfor %}
+          <li><a href="mailto:{{ site.footerEmail }}">{{ site.footerEmail }}</a></li>
+          <li><a href="/contacto/">Hablá con nuestros especialistas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="site-footer__title">Redes sociales</h2>
+        <ul class="site-footer__social">
+          {%- for s in site.social %}
+          <li><a href="{{ s.url }}" target="_blank" rel="noopener" aria-label="{{ s.label }}"><svg class="ds-icon ds-icon--small" aria-hidden="true"><use href="#i-{{ s.label | lower }}"/></svg><span>{{ s.label }}</span></a></li>
+          {%- endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__legal">
+      <p>© {{ year }} iPlace Corporativo · Apple Premium Reseller</p>
+      <p><a href="/politica-de-privacidad.html">Política de Privacidad</a> · <a href="#" data-cookie-settings>Configuración de cookies</a></p>
+    </div>
+  </div>
+</footer>

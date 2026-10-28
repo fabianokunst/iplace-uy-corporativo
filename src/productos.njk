@@ -1,0 +1,111 @@
+---
+layout: layouts/base.njk
+title: Productos
+description: Mac, iPad, iPhone, Apple Watch, AirPods y Originales iPlace para empresas. Una línea de productos completa para negocios de alta performance.
+permalink: /productos/
+lines:
+  - name: Mac
+    image: /assets/img/productos/mac.webp
+    alt: MacBook Air, MacBook Pro, iMac, Mac mini y Mac Studio
+    w: 1000
+    h: 357
+    text: No importa cuál Mac escoja, tendrá un desempeño increíble, pantalla Retina brillante, recursos de seguridad integrados y el sistema operativo más avanzado del mundo. Trabajan mucho, para que trabajes mucho mejor.
+    cta: Compará los modelos de Mac
+    url: /productos/compara-mac/
+  - name: iPad
+    image: /assets/img/productos/ipad.webp
+    alt: Familia iPad
+    w: 1000
+    h: 765
+    text: Con desempeño excelente, diseño portátil y los recursos de productividad de iPadOS, el iPad es tu asociado de trabajo en cualquier lugar.
+    cta: Compará los modelos de iPad
+    url: /productos/compara-ipad/
+    extra:
+      label: iPad para empresas
+      url: /productos/ipad-para-empresas/
+  - name: iPhone
+    image: /assets/img/productos/iphone.webp
+    alt: Familia iPhone
+    w: 524
+    h: 476
+    text: El chip más rápido e inteligente en un smartphone, batería con una duración impresionante* y las herramientas incluidas de productividad en el iOS 14. Con el iPhone 11 o iPhone 11 Pro, va a poder trabajar desde cualquier lugar.
+    cta: Compará los modelos de iPhone
+    url: /productos/compara-iphone/
+  - name: Apple Watch
+    image: /assets/img/productos/watch.webp
+    alt: Apple Watch
+    w: 1000
+    h: 600
+    text: Tu compañero ideal es aún más poderoso. Viene con un sensor de temperatura que ofrece información detallada sobre la salud de la mujer, Detección de Choques para pedir ayuda ante una emergencia y Fases del Sueño para comprender mejor tus hábitos al dormir. Un futuro más saludable está a la vista.
+    cta: Compará los modelos de Apple Watch
+    url: /productos/compara-watch/
+  - name: AirPods
+    image: /assets/img/productos/airpods.webp
+    alt: Familia AirPods
+    w: 1000
+    h: 719
+    text: Los nuevos AirPods traen una experiencia nueva en auriculares sin cable. Basta solo sacarlos del estuche y están listos para usarlos con su iPhone, Apple Watch, iPad o Mac. Con el chip H1, usan sensores ópticos y acelerómetros de movimiento para detectar cuando están en sus oídos.
+    cta: Contáctanos para saber más
+    url: /contacto/
+  - name: Originales iPlace
+    image: /assets/img/productos/originales.webp
+    alt: Mochila, funda y accesorios de cuero Originales iPlace
+    w: 629
+    h: 455
+    text: La personalidad de tu empresa estampada con los Originales iPlace. Productos Premium, con acabados impecables y tecnología de vanguardia para tu día a día. Diseño, tecnología y calidad iPlace Corporativo. Inspirado para vos.
+    cta: Ver todos los productos
+    url: /productos/originales-iplace/
+---
+{% import "macros.njk" as m with context %}
+
+<section class="hero" aria-labelledby="productos-title">
+  <div class="ds-container hero__grid">
+    <div class="hero__copy">
+      <nav aria-label="Ruta de navegación">
+        <ol class="ds-breadcrumb"><li><a href="/">Inicio</a></li><li aria-current="page">Productos</li></ol>
+      </nav>
+      <h1 class="site-display" id="productos-title">Una línea de productos completa para negocios de alta performance</h1>
+      <p class="hero__lead">iPlace Corporativo, canal especializado en venta de productos Apple para empresas, posee en su portafolio las mejores soluciones para que los profesionales trabajen de forma intuitiva, segura y productiva, ampliando la creatividad y colaboración en cualquier segmento de mercado.</p>
+    </div>
+    <div class="hero__media hero__media--contain">
+      <img src="/assets/img/hero/productos.webp" alt="Apple TV, MacBook Pro, iPad Pro, iPhone, AirPods Pro y Apple Watch" width="859" height="500" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="lineas-title">
+  <div class="ds-container">
+    <div class="section__head">
+      <h2 class="site-title" id="lineas-title">Conozca nuestros productos y plataformas</h2>
+    </div>
+    <div>
+      {%- for line in lines %}
+      <article class="product-row" id="{{ line.name | slugify }}">
+        <div class="product-row__media">
+          <img src="{{ line.image }}" alt="{{ line.alt }}" width="{{ line.w }}" height="{{ line.h }}" loading="lazy">
+        </div>
+        <div class="product-row__copy">
+          <h3 class="site-title">{{ line.name }}</h3>
+          <p class="text">{{ line.text }}</p>
+          <div class="ds-cluster">
+            <a class="ds-btn ds-btn--primary" href="{{ line.url }}">{{ line.cta }}</a>
+            {%- if line.extra %}<a class="ds-btn ds-btn--outline" href="{{ line.extra.url }}">{{ line.extra.label }}</a>{% endif %}
+          </div>
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--sunken" aria-labelledby="contacto-title">
+  <div class="ds-container">
+    <div class="section__head">
+      <h2 class="site-title" id="contacto-title">Contacto</h2>
+    </div>
+    <div class="band-stack">
+      {{ m.people(['diego', 'marcos']) }}
+      {{ m.social() }}
+    </div>
+  </div>
+</section>

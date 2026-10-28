@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title %}{{ title }} | {% endif %}{{ site.name }}</title>
+  <meta name="description" content="{{ description }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_UY">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:title" content="{{ title or site.name }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}{{ ogImage or '/assets/img/og-default.jpg' }}">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="/assets/img/brand/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/tokens.css">
+  <link rel="stylesheet" href="/assets/css/ds.css">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  {#- Consentimento de cookies primeiro: GTM e GA4 só carregam depois do aceite. Ver integrations/README.md. #}
+  <script src="/integrations/consent.js"></script>
+  <script src="/integrations/integrations.js"></script>
+  <script src="/assets/js/site.js" defer></script>
+</head>
+<body class="ds">
+  {% include "partials/icons.njk" %}
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  {% include "partials/header.njk" %}
+  <main id="contenido">
+    {{ content | safe }}
+  </main>
+  {% include "partials/footer.njk" %}
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "site-estatico",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "5580", "--bind", "127.0.0.1"],
+      "port": 5580
+    },
+    {
+      "name": "site-11ty",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["node_modules/@11ty/eleventy/cmd.cjs", "--serve", "--port=5590"],
+      "port": 5590
+    }
+  ]
+}

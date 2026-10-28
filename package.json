@@ -1,0 +1,14 @@
+{
+  "name": "iplace-corporativo-uy",
+  "private": true,
+  "description": "Sitio institucional estático de iPlace Corporativo Uruguay (iplacecorp.com.uy).",
+  "type": "module",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve --port=5590",
+    "images": "python scripts/images.py"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.2"
+  }
+}

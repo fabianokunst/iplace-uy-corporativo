@@ -1,0 +1,68 @@
+# iPlace Corporativo UY — sitio estático (Apache / LiteSpeed, Hostinger).
+# As páginas mantêm as URLs do WordPress; aqui só redirecionamos o que deixou de existir.
+
+ErrorDocument 404 /404.html
+Options -Indexes
+DirectorySlash On
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # HTTPS e domínio sem www (o canônico do WordPress era https://iplacecorp.com.uy)
+  RewriteCond %{HTTPS} off [OR]
+  RewriteCond %{HTTP_HOST} ^www\. [NC]
+  RewriteRule ^ https://iplacecorp.com.uy%{REQUEST_URI} [R=301,L]
+
+  # Busca interna do WordPress (?s=) não existe mais
+  RewriteCond %{QUERY_STRING} (^|&)s= [NC]
+  RewriteRule ^$ /? [R=301,L]
+</IfModule>
+
+<IfModule mod_alias.c>
+  # --- Blog (fora do site estático) -------------------------------------------
+  RedirectMatch 301 ^/blog/?$ /
+  RedirectMatch 301 ^/(category|tag|author)/ /
+  RedirectMatch 301 ^/(feed|comments/feed)/?$ /
+  RedirectMatch 301 ^/shop/?$ /productos/
+
+  # Posts sobre produtos
+  RedirectMatch 301 ^/ipad-para-empresas/?$ /productos/ipad-para-empresas/
+  RedirectMatch 301 ^/(iphone-para-empresas|iphone-empresas)/?$ /productos/
+  RedirectMatch 301 ^/(mac-computadora-para-empresas|mac-para-empresas|macbook-o-imac-empresa|eficacia-empresarial-mac|presupuesto-de-la-empresa-migre-hacia-mac|motivos-cambiarse-mac|mayor-productividad-mac|liberar-espacio-en-el-mac-sin-eliminar-archivos|dia-del-arquitecto-mac|mac-noche-de-la-nostalgia)/?$ /productos/
+  RedirectMatch 301 ^/apple-watch-aliado-trabajo/?$ /productos/
+  RedirectMatch 301 ^/rutina-trabajo-accesorios/?$ /productos/originales-iplace/
+
+  # Posts institucionais e de soluções
+  RedirectMatch 301 ^/(ventas-b2b-iplace-corporativo-trae-su-portfolio-a-uruguay|diferenciales-iplace-coporativo|uruguay-y-iplace-corporativo-tecnologia-para-evolucionar|iplace-corporativo-diferenciales-para-optimizar-tu-inversion|herval-empresa-detras-iplace|primer-ano-iplace-corporativo|iplace-itau-tecnologia)/?$ /quienes-somos/
+  RedirectMatch 301 ^/(apple-para-empresas|impulsa-tu-negocio|razones-elegir-tecnologia-apple|asistencia-tecnica-iplace|seguridad-digital-apple(-2|-3)?|hace-backup-seguridad|gestion-de-equipos|trabajo-remoto|trabajo-remoto-y-presencial-y-la-postpandemia|movilidad-y-productividad|sustentabilidad-empresas-esg)/?$ /soluciones/
+
+  # Posts de lançamentos Apple
+  RedirectMatch 301 ^/(apple-anuncia-la-nueva-generacion-de-airpods-pro|apple-revela-el-apple-watch-series-8-y-el-nuevo-apple-watch-se|presentamos-ell-apple-watch-ultra|apple-presenta-el-iphone-14-y-el-iphone-14-plus|apple-estrena-el-iphone-14-pro-y-el-iphone-14-pro-max|apple-presenta-los-chips-m2-pro-y-m2-max|nueva-mac-mini-chipm2-chipm2pro|macbookpro-m2pro-m2max|amarillo-maravilloso-apple-presenta-los-nuevos-iphone-14-y-iphone-14-plus|apple-lanza-el-iphone-15-y-el-iphone-15-plus|apple-presenta-el-iphone-15-pro-y-el-iphone-15-pro-max|apple-presenta-el-nuevo-y-avanzado-apple-watch-series-9|apple-presenta-macos-sequoia|nuevo-ios-18-iphone|apple-intelligence-sistema-de-inteligencia-personal|macos-ventura-innovacion)/?$ /lanzamientos/
+
+  # Demais posts do blog
+  RedirectMatch 301 ^/(desahogarse-es-preciso-feedback|influenciadores|modo-enfoque|mercado-audiovisual|zoom-pasos-para-organizar-reuniones|tendencias-2022-trabajo|economia-creativa-apple|innovacion-tendencias-tecnologicas|productividad-extensiones-safari|musica-en-el-trabajo|apple-mejor-opcion-programadores|apps-para-autores-revisores-traductores|negocios-metaverso|obsequios-fin-de-ano|apple-para-publicidad|ecosistema-apple-hecho-para-todas-las-formas-de-publicidad|agencia_pimod_equipos_apple|llega-la-tercera-edicion-de-iplace-talks-con-referentes-destacados-en-sustentabilidad-tecnologia-y-liderazgo-inscripciones-abiertas)/?$ /
+
+  # Endereço em português que o carrossel antigo usava
+  RedirectMatch 301 ^/solucoes/?$ /soluciones/
+
+  # Áreas do WordPress que deixaram de existir
+  RedirectMatch 410 ^/(wp-admin|wp-login\.php|xmlrpc\.php|wp-json|wp-includes)
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  <FilesMatch "\.(css|js|webp|png|jpg|svg|woff2)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/xml text/plain
+</IfModule>
+
+AddType image/webp .webp

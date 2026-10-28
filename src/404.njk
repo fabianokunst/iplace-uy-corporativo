@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+title: Página no encontrada
+description: La página que buscás no existe o cambió de dirección.
+permalink: /404.html
+eleventyExcludeFromCollections: true
+---
+<section class="section">
+  <div class="ds-container">
+    <div class="section__head">
+      <p class="eyebrow">Error 404</p>
+      <h1 class="site-display">No encontramos esta página</h1>
+      <p class="lead">Puede que la dirección haya cambiado. Estas son las secciones principales del sitio.</p>
+    </div>
+    <div class="ds-cluster">
+      <a class="ds-btn ds-btn--primary" href="/">Ir al inicio</a>
+      {%- for item in site.nav %}
+      <a class="ds-btn ds-btn--outline" href="{{ item.url }}">{{ item.label }}</a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
