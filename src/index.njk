@@ -52,7 +52,7 @@ faq:
           <span class="avatars__initials">RS</span>
         </div>
         <p class="hero__team-title">Especialistas en todo el ecosistema Apple</p>
-        <a class="more-link more-link--light" href="/contacto/">Escribinos por WhatsApp <svg class="ds-icon" aria-hidden="true"><use href="#i-seta"/></svg></a>
+        <a class="more-link more-link--light" href="{{ (site.people | find('id', 'rodrigo')).whatsapp | whatsapp(site.whatsappText) }}" target="_blank" rel="noopener">Escribinos por WhatsApp <svg class="ds-icon" aria-hidden="true"><use href="#i-seta"/></svg></a>
       </div>
     </div>
   </div>

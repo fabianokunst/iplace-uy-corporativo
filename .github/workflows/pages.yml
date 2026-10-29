@@ -25,6 +25,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+        with:
+          # Histórico completo: o lastmod do sitemap.xml é a data do último commit de cada página.
+          fetch-depth: 0
       - uses: actions/setup-node@v5
         with:
           node-version: 24

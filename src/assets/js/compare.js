@@ -75,5 +75,7 @@
 
   root.querySelectorAll('select[data-col]').forEach(function (select) {
     select.addEventListener('change', function () { render(select.getAttribute('data-col'), select.value); });
+    // Ao recarregar ou voltar, o navegador pode restaurar outra escolha no <select>; a coluna acompanha.
+    if (!select.options[select.selectedIndex].defaultSelected) render(select.getAttribute('data-col'), select.value);
   });
 })();

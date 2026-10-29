@@ -6,27 +6,35 @@ description: Mochilas, fundas y accesorios premium Originales iPlace con la pers
 permalink: /productos/originales-iplace/
 lines:
   - id: pampas
+    logo: [315, 111]
     name: Línea Pampas
     text: Representa la región de donde nacen estos productos. Lo más destacado es el proceso de producción, mochilas y fundas hechas a mano, con materia prima brasileña, 100% en cuero noble y confeccionadas por artesanos de Río Grande del Sur.
   - id: sampa
+    logo: [324, 85]
     name: Línea Sampa
     text: Los productos de la línea SAMPA tienen un estilo audaz y un material ultrarresistente y diferenciado, que representan la tenacidad de la gran metrópolis brasileña.
   - id: beaga
+    logo: [304, 86]
     name: Línea Beagá
     text: Mezcla lo tradicional y lo moderno, como la capital de Minas Gerais. Los productos se han desarrollado para ofrecer protección, durabilidad y belleza.
   - id: noronha
+    logo: [325, 97]
     name: Línea Noronha
     text: Nuestras fundas de silicona transparente se inspiran en la belleza y pureza del paraíso brasileño. Diseñadas para proteger y mejorar el aspecto de tu iPhone.
   - id: floripa
+    logo: [326, 112]
     name: Línea Floripa
     text: Productos coloridos y sencillos, como debe ser la vida en la playa.
   - id: fortaleza
+    logo: [477, 320]
     name: Línea Fortaleza
     text: Hace referencia a la capital de Ceará. En referencia al Fuerte Schoonenborch, así son las fundas de esta línea, fuertes, robustas y súper seguras.
   - id: rio
+    logo: [272, 91]
     name: Línea Rio
     text: Productos coloridos e irreverentes, como la capital carioca. Fueron desarrollados para acompañarte en el ajetreo diario.
   - id: celeste
+    logo: [287, 84]
     name: Línea Celeste
     text: Es exclusiva para nuestra marca en Uruguay. Está inspirada en los símbolos y lugares más turísticos que representan el país.
 ---
@@ -42,9 +50,9 @@ lines:
       <nav aria-label="Líneas Originales iPlace">
         <ul class="line-nav">
           {%- for line in lines %}
-          <li><a href="#linea{{ line.id }}"><img src="/assets/img/originales/logo-{{ line.id }}.webp" alt="{{ line.name }}" height="40" loading="lazy"></a></li>
+          <li><a href="#linea{{ line.id }}"><img src="/assets/img/originales/logo-{{ line.id }}.webp" alt="{{ line.name }}" width="{{ line.logo[0] }}" height="{{ line.logo[1] }}" loading="lazy"></a></li>
           {%- endfor %}
-          <li><a href="#lineaoriginales"><img src="/assets/img/originales/marca-accesorios.webp" alt="Accesorios Originales iPlace" height="40" loading="lazy"></a></li>
+          <li><a href="#lineaoriginales"><img src="/assets/img/originales/marca-accesorios.webp" alt="Accesorios Originales iPlace" width="300" height="240" loading="lazy"></a></li>
         </ul>
       </nav>
     </div>
@@ -53,7 +61,7 @@ lines:
       <article class="line" id="linea{{ line.id }}">
         <img class="line__photo" src="/assets/img/originales/{{ line.id }}.webp" alt="Productos de la {{ line.name }}" width="630" height="450" loading="lazy">
         <div class="line__body">
-          <h3><img class="line__logo" src="/assets/img/originales/logo-{{ line.id }}.webp" alt="{{ line.name }}" loading="lazy"></h3>
+          <h3><img class="line__logo" src="/assets/img/originales/logo-{{ line.id }}.webp" alt="{{ line.name }}" width="{{ line.logo[0] }}" height="{{ line.logo[1] }}" loading="lazy"></h3>
           <p>{{ line.text }}</p>
           <a class="ds-btn ds-btn--outline ds-btn--small" href="/contacto/" aria-label="Saber más sobre la {{ line.name }}">Saber más</a>
         </div>
@@ -63,7 +71,7 @@ lines:
         <img class="line__photo" src="/assets/img/originales/accesorios.webp" alt="Accesorios Originales iPlace" width="630" height="450" loading="lazy">
         <div class="line__body">
           <h3 class="ds-h4">Accesorios Originales iPlace</h3>
-          <p>Consulta la línea completa de Accesorios Originales.</p>
+          <p>Consultá la línea completa de Accesorios Originales.</p>
           <a class="ds-btn ds-btn--outline ds-btn--small" href="/contacto/" aria-label="Saber más sobre los Accesorios Originales iPlace">Saber más</a>
         </div>
       </article>
@@ -75,7 +83,7 @@ lines:
   <div class="ds-container">
     <div class="section__head">
       <h2 class="site-title" id="registro-title">¡Registrá tu empresa aquí!</h2>
-      <p class="lead">Conectá a nuestros especialistas. Escríbanos al WhatsApp o hablá con un especialista al +598 97 967 082.</p>
+      <p class="lead">Conectate con nuestros especialistas. Escribinos por WhatsApp o hablá con un especialista al +598 97 967 082.</p>
     </div>
     <div class="band-stack">
       {{ m.people(['diego']) }}

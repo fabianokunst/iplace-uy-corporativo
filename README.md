@@ -45,6 +45,8 @@ Não envie o `_site/` do computador, que pode ter mudanças ainda fora da `main`
 - Em atributos HTML (`href`, `src`, `srcset`, `action`), escreva links a partir da raiz (`/contacto/`,
   `/assets/img/...`): o build converte. Não use o filtro `url`; dentro de `<script>`, use `| relative`.
 - CSS, JS e `manifest.webmanifest` não passam pela conversão: neles, use caminhos relativos ao próprio arquivo.
+- Os links para `.css` e `.js` ganham `?v=` com o hash do arquivo: o `.htaccess` guarda esses arquivos por 30 dias
+  no navegador, e a versão nova entra junto com o HTML novo.
 - `404.njk` é uma página própria, sem o layout, porque aparece em qualquer endereço (ver o comentário no arquivo).
 
 ## Estrutura
@@ -71,14 +73,15 @@ Não envie o `_site/` do computador, que pode ter mudanças ainda fora da `main`
   `schemaType` no front matter muda o tipo da página (AboutPage, ContactPage); `faq` vira FAQPage (home).
 - `llms.txt` e `llms-full.txt` (resumo e texto completo para assistentes de IA) são gerados das páginas;
   os dados fixos do resumo estão em `src/llms.njk`. `robots.txt` libera buscadores e robôs de IA.
-- `sitemap.xml` usa a data do último commit de cada página (`src/src.11tydata.json`).
+- `sitemap.xml` usa a data do último commit de cada página (`src/src.11tydata.json`; por isso o workflow faz
+  checkout com o histórico completo).
 - O preview no GitHub Pages recebe `noindex` no navegador; o canônico de todas as páginas é `iplacecorp.com.uy`.
 - Favicon e ícones: `python scripts/favicons.py` gera `favicon.svg/.ico`, `apple-touch-icon.png` e os ícones do
   `manifest.webmanifest` a partir do anel do logo (sem letras).
 
 ## Formulários
 
-- Contato, Soluciones, iPad e newsletter da home usam `<form data-lead-form>`; o envio é do
+- Só a página de Contacto tem formulário de lead (`<form data-lead-form>`); as demais levam a ela. O envio é do
   `integrations/integrations.js` (hoje abre o WhatsApp; RD Station ou endpoint por configuração).
 - Lanzamientos continua postando direto no Responsys (`a.newsiplace.com.uy`), como no WordPress.
 

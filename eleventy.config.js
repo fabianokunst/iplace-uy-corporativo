@@ -1,5 +1,18 @@
 // Eleventy só junta cabeçalho, rodapé e blocos repetidos; o resultado em _site/ é HTML puro.
+import { createHash } from 'node:crypto';
+import { readFileSync } from 'node:fs';
 import { htmlToMarkdown, navOrder } from './src/_config/llms.js';
+
+// CSS e JS ficam 30 dias no cache do navegador (.htaccess). O "?v=" com o hash do conteúdo muda
+// quando o arquivo muda, e o visitante recebe a versão nova junto com o HTML novo.
+const ASSET_SOURCES = { '/assets/': 'src/assets/', '/integrations/': 'integrations/' };
+function versioned(url) {
+  if (!/\.(css|js)$/.test(url)) return url;
+  const prefix = Object.keys(ASSET_SOURCES).find((p) => url.startsWith(p));
+  if (!prefix) return url;
+  const file = ASSET_SOURCES[prefix] + url.slice(prefix.length);
+  return `${url}?v=${createHash('md5').update(readFileSync(file)).digest('hex').slice(0, 8)}`;
+}
 
 // Os templates escrevem os links a partir da raiz ("/contacto/", "/assets/..."); o build os converte
 // em relativos à página ("../contacto/"). Assim o mesmo _site/ funciona na raiz do domínio, numa
@@ -15,7 +28,7 @@ export default function (eleventyConfig) {
   // href, src, srcset, action etc. de todo HTML gerado. CSS e JS não passam por aqui: neles,
   // use caminhos relativos ao próprio arquivo.
   eleventyConfig.htmlTransformer.addUrlTransform('html', function (url) {
-    return relativeUrl(url.trim(), this.url);
+    return relativeUrl(versioned(url.trim()), this.url);
   });
   // Para URLs fora de atributos, como dentro de um <script>.
   eleventyConfig.addFilter('relative', function (url) {
