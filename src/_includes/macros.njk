@@ -64,20 +64,21 @@
 {% endmacro %}
 
 {#- Formulário de lead. O envio é feito por integrations/integrations.js (data-lead-form);
-    o consent.js insere o aceite da política antes do botão. Campos: name, email, company_name, mobile_phone, message. -#}
+    o consent.js insere o aceite da política antes do botão.
+    Campos: first_name, last_name, email, company_name, mobile_phone, message (o integrations.js junta o nome completo em name). -#}
 {% macro leadForm(id, submitLabel, withMessage=true, compact=false) %}
 <form class="lead-form{% if compact %} lead-form--single{% endif %}" data-lead-form="{{ id }}" method="post" action="#">
   <div class="ds-field">
-    <label class="ds-field__label" for="{{ id }}-name">Nombre y apellido</label>
-    <input class="ds-input" id="{{ id }}-name" name="name" type="text" autocomplete="name" required>
+    <label class="ds-field__label" for="{{ id }}-first-name">Nombre</label>
+    <input class="ds-input" id="{{ id }}-first-name" name="first_name" type="text" autocomplete="given-name" required>
+  </div>
+  <div class="ds-field">
+    <label class="ds-field__label" for="{{ id }}-last-name">Apellido{% if compact %} <span class="optional">(opcional)</span>{% endif %}</label>
+    <input class="ds-input" id="{{ id }}-last-name" name="last_name" type="text" autocomplete="family-name"{% if not compact %} required{% endif %}>
   </div>
   <div class="ds-field">
     <label class="ds-field__label" for="{{ id }}-email">E-mail</label>
     <input class="ds-input" id="{{ id }}-email" name="email" type="email" autocomplete="email" required>
-  </div>
-  <div class="ds-field">
-    <label class="ds-field__label" for="{{ id }}-company">Empresa{% if compact %} <span class="optional">(opcional)</span>{% endif %}</label>
-    <input class="ds-input" id="{{ id }}-company" name="company_name" type="text" autocomplete="organization"{% if not compact %} required{% endif %}>
   </div>
   {%- if not compact %}
   <div class="ds-field">
@@ -85,6 +86,10 @@
     <input class="ds-input" id="{{ id }}-phone" name="mobile_phone" type="tel" autocomplete="tel" inputmode="tel" required>
   </div>
   {%- endif %}
+  <div class="ds-field{% if not compact %} ds-field--full{% endif %}">
+    <label class="ds-field__label" for="{{ id }}-company">Empresa{% if compact %} <span class="optional">(opcional)</span>{% endif %}</label>
+    <input class="ds-input" id="{{ id }}-company" name="company_name" type="text" autocomplete="organization"{% if not compact %} required{% endif %}>
+  </div>
   {%- if withMessage %}
   <div class="ds-field ds-field--full">
     <label class="ds-field__label" for="{{ id }}-message">Mensaje <span class="optional">(opcional)</span></label>

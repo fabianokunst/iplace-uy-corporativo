@@ -24,7 +24,9 @@ Em `localhost`, `*.localhost`, `*.test` e `file://` as tags carregam, mas o envi
 ## Formulário de contato
 
 Qualquer `<form data-lead-form="ID">` é tratado pelo script. Use estes nomes de campo:
-`name`, `email`, `company_name`, `mobile_phone`, `message` (outros campos também são enviados).
+`first_name`, `last_name`, `email`, `company_name`, `mobile_phone`, `message` (outros campos também são enviados).
+O script junta nome e sobrenome em `name`, que é o campo usado pelo RD Station e pela mensagem do WhatsApp;
+um form com um único campo `name` também funciona.
 Um elemento `[data-lead-status]` dentro do form recebe a mensagem de retorno, e o form ganha
 `data-state="sending|sent|error"` para estilização.
 
