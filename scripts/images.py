@@ -18,7 +18,6 @@ JOBS = {
     'home/socios': ('home-iplacecorpuy-socios-desk.jpg', (436, 34, 1258, 226), 822),
     'home/video': ('video-iplace-corp.jpg', None, 1000),
     # Faixas fotográficas do topo das páginas (sem o texto gravado)
-    'hero/lanzamientos': ('iplace-corp-uy-lanzamientos-desk-min.jpg', (0, 0, 1920, 285), 1920),
     'hero/originales': ('banner-originales-desk-1.jpg', (0, 0, 1920, 300), 1920),
     'hero/productos': ('Produtos-desk-1.jpg', None, 859),
     # Quienes somos / Soluciones
