@@ -97,7 +97,7 @@
 
 {#- Formulário de lead. O envio é feito por integrations/integrations.js (data-lead-form);
     o consent.js insere o aceite da política antes do botão. Com emarsysForm (ID do formulário no Emarsys), vai para lá.
-    Campos: first_name, last_name, email, company_name, mobile_phone, message (o integrations.js junta o nome completo em name).
+    Campos: first_name, last_name, email, company_name, mobile_phone, rut, message (o integrations.js junta o nome completo em name).
     Os maxlength são os limites dos campos no Emarsys. -#}
 {% macro leadForm(id, submitLabel, withMessage=true, compact=false, emarsysForm) %}
 <form class="lead-form{% if compact %} lead-form--single{% endif %}" data-lead-form="{{ id }}" method="post" action="#">
@@ -120,10 +120,16 @@
     {{ phoneInput(id + '-phone') }}
   </div>
   {%- endif %}
-  <div class="ds-field{% if not compact %} ds-field--full{% endif %}">
+  <div class="ds-field">
     <label class="ds-field__label" for="{{ id }}-company">Empresa{% if compact %} <span class="optional">(opcional)</span>{% endif %}</label>
     <input class="ds-input" id="{{ id }}-company" name="company_name" type="text" autocomplete="organization" maxlength="255"{% if not compact %} required{% endif %}>
   </div>
+  {%- if not compact %}
+  <div class="ds-field">
+    <label class="ds-field__label" for="{{ id }}-rut">RUT</label>
+    <input class="ds-input" id="{{ id }}-rut" name="rut" type="text" inputmode="numeric" maxlength="255" required>
+  </div>
+  {%- endif %}
   {%- if withMessage %}
   <div class="ds-field ds-field--full">
     <label class="ds-field__label" for="{{ id }}-message">Mensaje <span class="optional">(opcional)</span></label>
