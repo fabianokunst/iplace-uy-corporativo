@@ -55,7 +55,7 @@ sem eles o Emarsys responde "No user could be found" e não cadastra (testado em
 |---|---|
 | `first_name`, `last_name`, `email` | `inp_1`, `inp_2`, `inp_3` |
 | `company_name` | `inp_18` |
-| `mobile_phone` | `inp_37`, só dígitos e com `598` na frente (`099 123 456` → `59899123456`); número com `+`/`00` de outro país fica como veio |
+| `mobile_phone` | `inp_37`, só dígitos e com `598` na frente (`099 123 456` → `59899123456`); número com `+`/`00` de outro país fica como veio. No campo, o `+598` fica fixo à esquerda (macro `phoneInput`) e a pessoa digita só o número |
 | `rut` | `inp_13176` (o campo CPF do Emarsys) |
 | `message` | `inp_17834` (até 255 caracteres) |
 | `acepta_comunicaciones=si` (consent.js) | `optin=y` |

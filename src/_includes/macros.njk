@@ -87,6 +87,14 @@
 {%- endif %}
 {% endmacro %}
 
+{#- Telefone com o +598 fixo na frente: a pessoa digita só o número, e o integrations.js manda com o 598. -#}
+{% macro phoneInput(id) %}
+<div class="ds-input-group">
+  <span class="phone-prefix" id="{{ id }}-prefix">+598</span>
+  <input class="ds-input" id="{{ id }}" name="mobile_phone" type="tel" autocomplete="tel-national" inputmode="tel" maxlength="60" aria-describedby="{{ id }}-prefix" required>
+</div>
+{% endmacro %}
+
 {#- Formulário de lead. O envio é feito por integrations/integrations.js (data-lead-form);
     o consent.js insere o aceite da política antes do botão. Com emarsysForm (ID do formulário no Emarsys), vai para lá.
     Campos: first_name, last_name, email, company_name, mobile_phone, message (o integrations.js junta o nome completo em name).
@@ -109,7 +117,7 @@
   {%- if not compact %}
   <div class="ds-field">
     <label class="ds-field__label" for="{{ id }}-phone">Teléfono</label>
-    <input class="ds-input" id="{{ id }}-phone" name="mobile_phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="60" required>
+    {{ phoneInput(id + '-phone') }}
   </div>
   {%- endif %}
   <div class="ds-field{% if not compact %} ds-field--full{% endif %}">

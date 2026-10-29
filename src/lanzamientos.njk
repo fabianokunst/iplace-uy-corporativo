@@ -43,7 +43,7 @@ permalink: /lanzamientos/
         </div>
         <div class="ds-field">
           <label class="ds-field__label" for="lanzamientos-phone">Teléfono</label>
-          <input class="ds-input" id="lanzamientos-phone" name="mobile_phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+598" maxlength="60" required>
+          {{ m.phoneInput('lanzamientos-phone') }}
         </div>
         <div class="ds-field">
           <label class="ds-field__label" for="lanzamientos-email">E-mail</label>
