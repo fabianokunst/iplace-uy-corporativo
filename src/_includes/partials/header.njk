@@ -4,12 +4,13 @@
       <img src="/assets/img/brand/corporativo-black.png" alt="iPlace Corporativo, Apple Premium Reseller" width="92" height="44">
     </a>
     <nav class="site-nav" id="site-nav" aria-label="Principal">
+      {#- Contacto fica só no botão à direita; o rodapé e a 404 continuam listando site.nav inteiro. #}
       <ul class="site-nav__list">
-        {%- for item in site.nav %}
+        {%- for item in site.nav %}{% if item.url != '/contacto/' %}
         <li><a class="site-nav__link" href="{{ item.url }}"{% if page.url == item.url or (item.url != '/' and page.url.startsWith(item.url)) %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
-        {%- endfor %}
+        {%- endif %}{% endfor %}
       </ul>
-      <a class="ds-btn ds-btn--primary ds-btn--small site-nav__cta" href="/contacto/">Contactate aquí</a>
+      <a class="ds-btn ds-btn--primary ds-btn--small site-nav__cta" href="/contacto/"{% if page.url == '/contacto/' %} aria-current="page"{% endif %}>Contactate aquí</a>
     </nav>
     <button class="site-header__toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
       <svg class="ds-icon" aria-hidden="true"><use href="#i-menu"/></svg>

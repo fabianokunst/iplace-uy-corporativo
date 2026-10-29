@@ -33,7 +33,7 @@ motivos:
       <div class="page-hero__copy">
         <p class="eyebrow">iPad para empresas</p>
         <h1 class="site-display">Movilidad para un mundo de negocios que no para.</h1>
-        <a class="ds-btn ds-btn--primary" href="#form">Quiero elevar el nivel de mis negocios con iPad</a>
+        <a class="ds-btn ds-btn--primary" href="/contacto/">Quiero elevar el nivel de mis negocios con iPad</a>
       </div>
       <div class="page-hero__product">
         <img src="/assets/img/ipad/hero.webp" alt="Dos iPad Pro con Magic Keyboard" width="1000" height="465" fetchpriority="high">
@@ -84,7 +84,7 @@ motivos:
       <h2 class="site-title" id="todo-title">Todo lo que su empresa necesita está en el iPad</h2>
       <p class="lead">Conozca las diferentes familias de iPad y sus accesorios, que conectados con iPadOS garantizan una completa experiencia al usuario.</p>
       <p class="text">Con recursos nativos de productividad que facilitan el trabajo en el día a día, como iWork, o las apps Pages, Numbers y Keynote, su colaborador puede editar y compartir textos, planillas y presentaciones desde cualquier sitio. La App Store posee aún más posibilidades y disponibiliza millones de aplicaciones específicas para negocios, y lo mejor, muchas de ellas son gratuitas. Descubra varias soluciones profesionales para la gestión financiera, análisis de riesgos, sistemas de ventas, colaboración, entre otras.</p>
-      <a class="ds-btn ds-btn--primary" href="#form">Quiero elevar el nivel de mis negocios con iPad</a>
+      <a class="ds-btn ds-btn--primary" href="/contacto/">Quiero elevar el nivel de mis negocios con iPad</a>
     </div>
     <div class="media-split__media media-split__media--contain">
       <img src="/assets/img/productos/ipad.webp" alt="Familia iPad: iPad Pro, iPad Air, iPad e iPad mini" width="1000" height="765" loading="lazy">
@@ -125,7 +125,7 @@ motivos:
         <span class="icon-disc" aria-hidden="true"><svg class="ds-icon"><use href="#i-prazo"/></svg></span>
         <h3 class="ds-h3">Recompra de equipos</h3>
         <p>Esta posibilidad ofrecida por iPlace permite que los dispositivos actuales de su empresa sean utilizados como crédito para la compra de nuevos aparatos. Así, los costos de compra disminuyen, mitigando el impacto financiero de la operación. Consulte por los dispositivos elegibles.</p>
-        <a class="ds-btn ds-btn--outline" href="#form">Saber más</a>
+        <a class="ds-btn ds-btn--outline" href="/contacto/">Saber más</a>
       </article>
       <article class="tile">
         <span class="icon-disc" aria-hidden="true"><svg class="ds-icon"><use href="#i-dinheiro"/></svg></span>
@@ -137,14 +137,17 @@ motivos:
   </div>
 </section>
 
-<section class="section" id="form" aria-labelledby="form-title">
-  <div class="ds-container media-split media-split--top">
-    <div class="media-split__copy">
-      <h2 class="site-title" id="form-title">Contáctenos ahora mismo y obtenga toda la ayuda que necesita para colocar su empresa en la vanguardia de la movilidad.</h2>
-      <p class="text">iPlace Corporativo es el canal exclusivo de atención a empresas y ventas por volumen. Si usted representa una persona jurídica y posee un proyecto Apple de más de 5 unidades de producto, complete el formulario y nuestros especialistas se contactarán con usted.</p>
+{#- O formulário do site fica só na página de Contacto; aqui, o link para ele e os especialistas. #}
+<section class="section" id="especialistas" aria-labelledby="especialistas-title">
+  <div class="ds-container split">
+    <div class="split__aside">
+      <h2 class="site-title--sm" id="especialistas-title">Contáctenos ahora mismo y obtenga toda la ayuda que necesita para colocar su empresa en la vanguardia de la movilidad.</h2>
+      <p class="text">iPlace Corporativo es el canal exclusivo de atención a empresas y ventas por volumen. Si usted representa una persona jurídica y posee un proyecto Apple de más de 5 unidades de producto, complete el formulario de contacto y nuestros especialistas se contactarán con usted.</p>
+      <a class="ds-btn ds-btn--primary" href="/contacto/">Ir al formulario de contacto</a>
     </div>
-    <div class="form-card">
-      {{ m.leadForm('ipad-uy', 'Enviar consulta') }}
+    <div class="split__main band-stack">
+      {{ m.people(['diego', 'marcos']) }}
+      {{ m.social() }}
     </div>
   </div>
 </section>

@@ -15,7 +15,7 @@ permalink: /soluciones/
         <h1 class="site-display" id="soluciones-title">Suba de nivel con <span class="marker">iPlace Corporativo</span>.</h1>
         <p class="lead">Un paquete completo de servicios para que su empresa adopte el ecosistema Apple: desde la elección de los dispositivos hasta el soporte y el acompañamiento durante toda la migración.</p>
         <div class="ds-cluster">
-          <a class="ds-btn ds-btn--primary" href="#form">Quiero revolucionar mi negocio</a>
+          <a class="ds-btn ds-btn--primary" href="/contacto/">Quiero revolucionar mi negocio</a>
           <a class="ds-btn ds-btn--outline" href="/productos/">Ver productos</a>
         </div>
       </div>
@@ -62,7 +62,7 @@ permalink: /soluciones/
           <p class="eyebrow">Cómo trabajamos</p>
           <h2 class="site-title--sm" id="proceso-title">De la elección de los dispositivos al soporte, en un solo socio.</h2>
         </div>
-        <a class="ds-btn ds-btn--brand" href="#form">Hablá con un especialista</a>
+        <a class="ds-btn ds-btn--brand" href="#especialistas">Hablá con un especialista</a>
       </div>
       <ol class="steps">
         <li class="step">
@@ -114,17 +114,18 @@ permalink: /soluciones/
   </div>
 </section>
 
-<section class="section section--sunken" id="form" aria-labelledby="form-title">
+{#- O formulário do site fica só na página de Contacto; aqui, o link para ele e os especialistas. #}
+<section class="section section--sunken" id="especialistas" aria-labelledby="especialistas-title">
   <div class="ds-container split">
     <div class="split__aside">
       <p class="eyebrow">Contacto</p>
-      <h2 class="site-title" id="form-title">Contactanos ahora mismo.</h2>
-      <p class="lead">Completá el formulario o hablá directamente con nuestros especialistas.</p>
+      <h2 class="site-title" id="especialistas-title">Contactanos ahora mismo.</h2>
+      <p class="lead">Completá el formulario de contacto o hablá directamente con nuestros especialistas.</p>
+      <a class="ds-btn ds-btn--primary" href="/contacto/">Ir al formulario de contacto</a>
+    </div>
+    <div class="split__main band-stack">
       {{ m.people(['diego', 'marcos']) }}
       {{ m.social() }}
-    </div>
-    <div class="split__main form-card">
-      {{ m.leadForm('soluciones-uy', 'Enviar consulta') }}
     </div>
   </div>
 </section>
