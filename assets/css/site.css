@@ -369,6 +369,8 @@ main { flex: 1 0 auto; overflow-x: clip; }
 }
 .ds .subnav a:hover { background: var(--ds-gray-4); }
 .ds .subnav a[aria-current="true"] { background: var(--ds-black); color: var(--ds-white); }
+/* Âncoras dos atalhos: param abaixo do cabeçalho e da própria barra (40px + 2 × 12px + bordas). */
+.product-row[id] { scroll-margin-top: calc(var(--site-header-h) + 66px + 24px); }
 
 /* ---------- Vídeo (YouTube só carrega no clique) ---------- */
 .video { position: relative; display: block; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; padding: 0; border: 0; border-radius: var(--ds-radius-md); background: var(--ds-black); cursor: pointer; }
@@ -480,7 +482,7 @@ form[data-state="error"] [data-lead-status] { padding: var(--ds-small) var(--ds-
 .line-nav { display: flex; flex-wrap: wrap; gap: var(--ds-small); }
 .ds .line-nav a { display: grid; place-items: center; height: 64px; padding: var(--ds-small) var(--ds-medium); border-radius: var(--ds-radius-md); background: var(--ds-white); border: 1px solid var(--ds-border); transition: border-color var(--ds-duration) var(--ds-ease); }
 .ds .line-nav a:hover { border-color: var(--ds-border-strong); }
-.line-nav img { max-height: 40px; width: auto; }
+.line-nav img { height: 40px; width: auto; }
 .lines { display: grid; gap: var(--ds-medium); grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
 .line { display: flex; flex-direction: column; overflow: hidden; border-radius: var(--site-radius); background: var(--ds-white); border: 1px solid transparent; transition: border-color var(--ds-duration) var(--ds-ease); }
 .line:hover { border-color: var(--ds-gray-4); }

@@ -22,7 +22,7 @@ Todo el ecosistema Apple
 
 Especialistas en todo el ecosistema Apple
 
-[Escribinos por WhatsApp](https://iplacecorp.com.uy/contacto/)
+[Escribinos por WhatsApp](https://api.whatsapp.com/send/?phone=59896438030&text=Hola%2C%20todo%20bien%3F%20Me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20iPlace%20Corporativo.)
 
 - Beneficios especiales
 - Soporte técnico
@@ -396,7 +396,7 @@ Compatible con el Magic Keyboard Folio
 - **Accesorios:** Los accesorios se venden por separado. La compatibilidad varía según la generación. Se requiere un adaptador de USB-C a Apple Pencil para que el Apple Pencil (primera generación) funcione con el iPad (décima generación). Sujeto a disponibilidad.
 - **Capacidad:** El espacio disponible es menor y varía según distintos factores. La capacidad de almacenamiento está sujeta a cambios dependiendo de la versión de software, la configuración y el modelo de iPad. 1 GB = 1,000 millones de bytes; 1 TB = 1 millón de millones de bytes. La capacidad formateada real es menor.
 
-## Conectá a nuestros especialistas
+## Conectate con nuestros especialistas
 
 Consultá precios, plazos y condiciones para tu empresa.
 
@@ -511,7 +511,7 @@ Compatible con 5G
 - **Energía y batería:** La duración de la batería depende de la configuración de la red y de muchos otros factores; los resultados reales pueden ser diferentes. La batería tiene ciclos de carga limitados y eventualmente necesitará ser reemplazada. La duración de la batería y el número de ciclos de carga varían según el uso y la configuración. Para obtener más información, visita [apple.com/la/batteries](https://www.apple.com/la/batteries/) y [apple.com/la/iphone/battery.html](https://www.apple.com/la/iphone/battery.html).
 - **Conexión celular e inalámbrica:** Se requiere un plan de datos. 5G, Gigabit LTE y LTE están disponibles en algunos mercados y a través de operadores específicos. Las velocidades se basan en un rendimiento teórico y varían según las condiciones del lugar y el operador. Para obtener más información sobre la compatibilidad con 5G y LTE, comunícate con tu operador y visita [apple.com/la/iphone/cellular](https://www.apple.com/la/iphone/cellular/).
 
-## Conectá a nuestros especialistas
+## Conectate con nuestros especialistas
 
 Consultá precios, plazos y condiciones para tu empresa.
 
@@ -622,7 +622,7 @@ Touch Bar y Touch ID
 - **Almacenamiento:** 1 GB = 1,000 millones de bytes y 1 TB = 1 millón de millones de bytes. La capacidad formateada real es menor.
 - **Batería:** La duración de la batería varía según el uso y la configuración. Para obtener más información, visita [apple.com/la/batteries](https://www.apple.com/la/batteries).
 
-## Conectá a nuestros especialistas
+## Conectate con nuestros especialistas
 
 Consultá precios, plazos y condiciones para tu empresa.
 
@@ -772,7 +772,7 @@ Hasta 36 horasCarga rápida
 - **Compatibilidad:** El Apple Watch Series 8, Apple Watch SE (segunda generación) y Apple Watch Ultra requieren un iPhone 8 o posterior con la última versión de iOS.
 - **Disponibilidad de funcionalidades:** Las funcionalidades están sujetas a cambios. Algunas funcionalidades, aplicaciones y servicios podrían no estar disponibles en todas las regiones o idiomas. Para ver la lista completa, visita [apple.com/la/watchos/feature‑availability](https://www.apple.com/la/watchos/feature-availability)
 
-## Conectá a nuestros especialistas
+## Conectate con nuestros especialistas
 
 Consultá precios, plazos y condiciones para tu empresa.
 
@@ -947,13 +947,13 @@ Es exclusiva para nuestra marca en Uruguay. Está inspirada en los símbolos y l
 
 ### Accesorios Originales iPlace
 
-Consulta la línea completa de Accesorios Originales.
+Consultá la línea completa de Accesorios Originales.
 
 [Saber más](https://iplacecorp.com.uy/contacto/)
 
 ## ¡Registrá tu empresa aquí!
 
-Conectá a nuestros especialistas. Escríbanos al WhatsApp o hablá con un especialista al +598 97 967 082.
+Conectate con nuestros especialistas. Escribinos por WhatsApp o hablá con un especialista al +598 97 967 082.
 
 Diego Coll
 
