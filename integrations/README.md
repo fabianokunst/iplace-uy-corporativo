@@ -24,7 +24,7 @@ Em `localhost`, `*.localhost`, `*.test` e `file://` as tags carregam, mas o envi
 ## Formulário de contato
 
 Qualquer `<form data-lead-form="ID">` é tratado pelo script. Use estes nomes de campo:
-`first_name`, `last_name`, `email`, `company_name`, `mobile_phone`, `message` (outros campos também são enviados).
+`first_name`, `last_name`, `email`, `company_name`, `mobile_phone`, `rut`, `message` (outros campos também são enviados).
 O script junta nome e sobrenome em `name`, que é o campo usado pelo RD Station e pela mensagem do WhatsApp;
 um form com um único campo `name` também funciona.
 Um elemento `[data-lead-status]` dentro do form recebe a mensagem de retorno, e o form ganha
@@ -34,11 +34,34 @@ Destino do lead, por ordem de prioridade (configurar em `integrations.js` ou via
 
 | Configuração | Destino |
 |---|---|
+| campos ocultos do Emarsys no form | Emarsys (`emarsysUrl`, ver abaixo). É o que Contacto e Lanzamientos usam. |
 | `rdPublicToken` | RD Station Marketing (API de conversões, `conversion_identifier` = ID do form). Campos fora do padrão RD vão como `cf_<nome>` e precisam existir na conta. |
 | `leadEndpoint` | POST JSON para qualquer serviço (Formspree, Getform, backend próprio), com UTMs. |
 | nenhum (padrão) | Abre o WhatsApp `+598 96 438 030` com a mensagem pronta. |
 
 Todo envio bem-sucedido dispara `generate_lead` (GA4) e `lead_submit` (dataLayer, para gatilhos no GTM).
+`data-lead-sent` no form troca a mensagem de sucesso.
+
+### Emarsys
+
+Os formulários foram gerados no Emarsys (conta `CID=1095776552`); o site manda os mesmos parâmetros por GET para
+`https://link.iplace.com.uy/u/register.php`, em segundo plano, e mostra a mensagem de sucesso na própria página.
+O macro `emarsysFields(f)` (`src/_includes/macros.njk`) põe no form os campos ocultos `CID`, `f`, `p=2`, `a=r` e
+`inp_17832=SIM` ("Formulário iPlace Corp UY", marca a origem); `leadForm(..., emarsysForm=ID)` já o inclui.
+
+| Campo do site | Emarsys |
+|---|---|
+| `first_name`, `last_name`, `email` | `inp_1`, `inp_2`, `inp_3` |
+| `company_name` | `inp_18` |
+| `mobile_phone` | `inp_37`, só dígitos e com `598` na frente (`099 123 456` → `59899123456`); número com `+`/`00` de outro país fica como veio |
+| `rut` | `inp_13176` (o campo CPF do Emarsys) |
+| `message` | `inp_17834` (até 255 caracteres) |
+| `acepta_comunicaciones=si` (consent.js) | `optin=y` |
+
+O aceite da política e a `politica_version` não vão ao Emarsys. No Lanzamientos o opt-in vai sempre (`emarsysFields(1557, optin=true)`):
+o aceite obrigatório do form já diz que avisaremos dos lançamentos por email. Os interesses (`interest[]`) do form gerado não são usados.
+Como a resposta vem de outro domínio, o script não sabe se o Emarsys aceitou o cadastro, só se a requisição saiu:
+ao mudar campos, faça um envio de teste e confira o contato no Emarsys.
 
 O `consent.js` acrescenta a cada form, antes do botão de envio, o aceite obrigatório da Política de Privacidade
 (`acepta_privacidad=si`), o opt-in opcional de comunicações (`acepta_comunicaciones=si`) e a versão da política aceita
@@ -60,7 +83,7 @@ Teste: `integrations/demo.html`, `demo.html?leadEndpoint=URL` ou `demo.html?rdPu
 | WooCommerce (atribuição de pedidos) | Não replicado: o carrinho não é usado; UTMs agora vão com o lead |
 | Busca interna do WordPress (`?s=`) | Não existe no estático |
 | WhatsApp, e-mails (`mailto:`), Instagram, Facebook, LinkedIn | Links estáticos, funcionam como estão |
-| Emarsys | Não existe no site corporativo (só na loja `iplace.com.uy`) |
+| Emarsys | Recebe os formulários de Contacto (form 1558) e Lanzamientos (form 1557); antes iam ao WhatsApp e ao Oracle Responsys |
 
 ## Cookies e privacidade (Uruguai)
 
@@ -90,9 +113,11 @@ precisa da mesma configuração (`ad_storage` para publicidade).
    of. 102 e `contacto@iplace.com.uy`, tirados do rodapé e da política de `iplace.com.uy`. A conservação está por
    critério, sem prazo fixo. Se `rdPublicToken` ou `leadEndpoint` for configurado, incluir o serviço na política.
 2. Registrar a base de dados de contatos/leads na URCDP (art. 28) e acrescentar o número na política. Não existe equivalente na LGPD.
-3. Transferência internacional (art. 23): Google, WhatsApp e Oracle Responsys (EUA) e Hostinger (servidor no Brasil). Confirmar se o país é
-   considerado adequado pela URCDP; se não, usar cláusulas contratuais.
+3. Transferência internacional (art. 23): Google e WhatsApp (EUA), SAP Emarsys e Hostinger (servidor no Brasil). Confirmar se o país é
+   considerado adequado pela URCDP; se não, usar cláusulas contratuais. A política cita a Emarsys eMarketing Systems GmbH
+   (Áustria): confirmar com o contrato a empresa e onde ficam os dados.
 4. Procedimento interno para notificar incidentes à URCDP em até 72 horas (Decreto 64/020).
 5. Verificar se a empresa precisa nomear Delegado de Proteção de Dados (Decreto 64/020).
 6. Atender pedidos de acesso e retificação em até 5 dias úteis (arts. 14 e 15).
-7. Só enviar comunicações de marketing a leads com `acepta_comunicaciones=si`.
+7. Só enviar comunicações de marketing a contatos com opt-in no Emarsys: no Contacto, quem marcou "Quiero recibir novedades";
+   no Lanzamientos, todos, só para os avisos de lançamentos.

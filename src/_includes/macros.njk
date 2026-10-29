@@ -63,37 +63,54 @@
 </ul>
 {% endmacro %}
 
+{#- Campos ocultos dos formulários do Emarsys (link.iplace.com.uy), como no HTML gerado lá: conta (CID),
+    formulário (f), página e ação de cadastro (p, a) e "Formulário iPlace Corp UY" (inp_17832) sempre SIM.
+    optin=true manda o opt-in sempre, para forms em que o aceite obrigatório já é o pedido de emails.
+    O integrations.js troca os outros campos pelos inp_* do Emarsys e envia. -#}
+{% macro emarsysFields(formId, optin=false) %}
+<input type="hidden" name="CID" value="1095776552">
+<input type="hidden" name="f" value="{{ formId }}">
+<input type="hidden" name="p" value="2">
+<input type="hidden" name="a" value="r">
+<input type="hidden" name="inp_17832" value="SIM">
+{%- if optin %}
+<input type="hidden" name="optin" value="y">
+{%- endif %}
+{% endmacro %}
+
 {#- Formulário de lead. O envio é feito por integrations/integrations.js (data-lead-form);
-    o consent.js insere o aceite da política antes do botão.
-    Campos: first_name, last_name, email, company_name, mobile_phone, message (o integrations.js junta o nome completo em name). -#}
-{% macro leadForm(id, submitLabel, withMessage=true, compact=false) %}
+    o consent.js insere o aceite da política antes do botão. Com emarsysForm (ID do formulário no Emarsys), vai para lá.
+    Campos: first_name, last_name, email, company_name, mobile_phone, message (o integrations.js junta o nome completo em name).
+    Os maxlength são os limites dos campos no Emarsys. -#}
+{% macro leadForm(id, submitLabel, withMessage=true, compact=false, emarsysForm) %}
 <form class="lead-form{% if compact %} lead-form--single{% endif %}" data-lead-form="{{ id }}" method="post" action="#">
+  {%- if emarsysForm %}{{ emarsysFields(emarsysForm) }}{% endif %}
   <div class="ds-field">
     <label class="ds-field__label" for="{{ id }}-first-name">Nombre</label>
-    <input class="ds-input" id="{{ id }}-first-name" name="first_name" type="text" autocomplete="given-name" required>
+    <input class="ds-input" id="{{ id }}-first-name" name="first_name" type="text" autocomplete="given-name" maxlength="60" required>
   </div>
   <div class="ds-field">
     <label class="ds-field__label" for="{{ id }}-last-name">Apellido{% if compact %} <span class="optional">(opcional)</span>{% endif %}</label>
-    <input class="ds-input" id="{{ id }}-last-name" name="last_name" type="text" autocomplete="family-name"{% if not compact %} required{% endif %}>
+    <input class="ds-input" id="{{ id }}-last-name" name="last_name" type="text" autocomplete="family-name" maxlength="60"{% if not compact %} required{% endif %}>
   </div>
   <div class="ds-field">
     <label class="ds-field__label" for="{{ id }}-email">E-mail</label>
-    <input class="ds-input" id="{{ id }}-email" name="email" type="email" autocomplete="email" required>
+    <input class="ds-input" id="{{ id }}-email" name="email" type="email" autocomplete="email" maxlength="255" required>
   </div>
   {%- if not compact %}
   <div class="ds-field">
     <label class="ds-field__label" for="{{ id }}-phone">Teléfono</label>
-    <input class="ds-input" id="{{ id }}-phone" name="mobile_phone" type="tel" autocomplete="tel" inputmode="tel" required>
+    <input class="ds-input" id="{{ id }}-phone" name="mobile_phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="60" required>
   </div>
   {%- endif %}
   <div class="ds-field{% if not compact %} ds-field--full{% endif %}">
     <label class="ds-field__label" for="{{ id }}-company">Empresa{% if compact %} <span class="optional">(opcional)</span>{% endif %}</label>
-    <input class="ds-input" id="{{ id }}-company" name="company_name" type="text" autocomplete="organization"{% if not compact %} required{% endif %}>
+    <input class="ds-input" id="{{ id }}-company" name="company_name" type="text" autocomplete="organization" maxlength="255"{% if not compact %} required{% endif %}>
   </div>
   {%- if withMessage %}
   <div class="ds-field ds-field--full">
     <label class="ds-field__label" for="{{ id }}-message">Mensaje <span class="optional">(opcional)</span></label>
-    <textarea class="ds-textarea" id="{{ id }}-message" name="message" rows="4" placeholder="Contanos qué necesita tu empresa: productos, cantidades, plazos."></textarea>
+    <textarea class="ds-textarea" id="{{ id }}-message" name="message" rows="4" maxlength="255" placeholder="Contanos qué necesita tu empresa: productos, cantidades, plazos."></textarea>
   </div>
   {%- endif %}
   <div class="lead-form__actions">

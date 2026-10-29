@@ -4,6 +4,7 @@
  *   GTM-MWCB764   Google Tag Manager (contém a tag Google GA4 G-XXFDQFJ3QX)
  *   G-JE1WMSCC61  GA4 via gtag direto (antes pelo plugin "GA Google Analytics")
  *   RD Station    formulários de lead (hoje retornam 404) -> <form data-lead-form>
+ * Os formulários do site (Contacto e Lanzamientos) vão para o Emarsys (link.iplace.com.uy).
  *
  * Uso, no <head> de todas as páginas (consent.js sempre antes):
  *   <script src="/integrations/consent.js"></script>
@@ -15,6 +16,8 @@
   'use strict';
 
   var CONFIG = Object.assign({
+    // Cadastro dos formulários do Emarsys; conta e formulário vêm nos campos ocultos de cada form.
+    emarsysUrl: 'https://link.iplace.com.uy/u/register.php',
     gtmId: 'GTM-MWCB764',
     ga4Id: 'G-JE1WMSCC61',
     // IDs que recebem hits; bloqueados em localhost para não poluir os relatórios.
@@ -109,6 +112,36 @@
       { event_type: 'CONVERSION', event_family: 'CDP', payload: payload });
   }
 
+  // Emarsys: forms com os campos ocultos do formulário de lá (CID, f, p, a: emarsysFields em macros.njk).
+  // Os campos do site viram os inp_* do Emarsys; CID, f, p, a, optin e inp_* seguem como estão;
+  // o resto (aceite da política, versão) fica no site.
+  var EMARSYS_FIELDS = {
+    first_name: 'inp_1', last_name: 'inp_2', email: 'inp_3', company_name: 'inp_18',
+    mobile_phone: 'inp_37', rut: 'inp_13176', message: 'inp_17834'
+  };
+  var EMARSYS_PARAMS = /^(CID|f|p|a|optin|inp_\d+)$/;
+
+  // Telefone só com dígitos e o 598 na frente, como o 55 dos formulários do Brasil:
+  // "099 123 456", "99123456" e "+598 99 123 456" viram 59899123456. Com + ou 00 de outro país, fica como veio.
+  function phoneUy(value) {
+    var digits = value.replace(/\D/g, '').replace(/^00/, '');
+    if (/^\s*(\+|00)/.test(value) || digits.indexOf('598') === 0) return digits.replace(/^5980/, '598');
+    return '598' + digits.replace(/^0+/, '');
+  }
+
+  function sendToEmarsys(fields) {
+    var query = new URLSearchParams();
+    Object.keys(fields).forEach(function (k) {
+      if (EMARSYS_FIELDS[k]) query.set(EMARSYS_FIELDS[k], k === 'mobile_phone' ? phoneUy(fields[k]) : fields[k]);
+      else if (EMARSYS_PARAMS.test(k)) query.set(k, fields[k]);
+    });
+    // "Quiero recibir novedades" (consent.js) é o opt-in do Emarsys.
+    if (fields.acepta_comunicaciones) query.set('optin', 'y');
+    // GET, como o form gerado no Emarsys. A resposta de outro domínio não é legível (no-cors):
+    // só falha se a requisição não sair.
+    return fetch(CONFIG.emarsysUrl + '?' + query, { mode: 'no-cors' });
+  }
+
   function whatsappUrl(fields) {
     var lines = ['Hola, soy ' + (fields.name || '') +
       (fields.company_name ? ' de ' + fields.company_name : '') + '.'];
@@ -136,7 +169,8 @@
     if (!fields.name && fields.first_name) {
       fields.name = [fields.first_name, fields.last_name].filter(Boolean).join(' ');
     }
-    var method = CONFIG.rdPublicToken ? 'rdstation' : CONFIG.leadEndpoint ? 'endpoint' : 'whatsapp';
+    var method = fields.CID ? 'emarsys'
+      : CONFIG.rdPublicToken ? 'rdstation' : CONFIG.leadEndpoint ? 'endpoint' : 'whatsapp';
     var track = function () {
       gtag('event', 'generate_lead', { form_id: id, lead_method: method });
       window.dataLayer.push({ event: 'lead_submit', form_id: id, lead_method: method });
@@ -150,13 +184,13 @@
     }
 
     setStatus(form, 'sending', 'Enviando…');
-    var request = method === 'rdstation'
-      ? sendToRd(id, fields)
+    var request = method === 'emarsys' ? sendToEmarsys(fields)
+      : method === 'rdstation' ? sendToRd(id, fields)
       : post(CONFIG.leadEndpoint, Object.assign({ form_id: id }, utm, fields));
     request.then(function () {
       track();
       form.reset();
-      setStatus(form, 'sent', '¡Gracias! Te contactaremos a la brevedad.');
+      setStatus(form, 'sent', form.getAttribute('data-lead-sent') || '¡Gracias! Te contactaremos a la brevedad.');
     }, function () {
       setStatus(form, 'error', 'No pudimos enviar el formulario. <a href="' + whatsappUrl(fields) +
         '" target="_blank" rel="noopener">Escribinos por WhatsApp</a>.');

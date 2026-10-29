@@ -83,9 +83,9 @@ Não envie o `_site/` do computador, que pode ter mudanças ainda fora da `main`
 
 ## Formulários
 
-- Só a página de Contacto tem formulário de lead (`<form data-lead-form>`); as demais levam a ela. O envio é do
-  `integrations/integrations.js` (hoje abre o WhatsApp; RD Station ou endpoint por configuração).
-- Lanzamientos continua postando direto no Responsys (`a.newsiplace.com.uy`), como no WordPress.
+- Formulários: Contacto (as demais páginas levam a ela) e o pre registro de Lanzamientos, os dois `<form data-lead-form>`.
+  O `integrations/integrations.js` envia ao Emarsys (forms 1558 e 1557): campos e parâmetros em
+  `integrations/README.md`, seção "Emarsys".
 
 ## Pendências de conteúdo (confirmar com o time comercial)
 

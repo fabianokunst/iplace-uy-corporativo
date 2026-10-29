@@ -20,40 +20,40 @@ permalink: /lanzamientos/
       <div class="form-card__head">
         <h3 class="ds-h3">Quiero más información</h3>
       </div>
-      {#- Formulário Responsys (iplaceuycorp_lancamentos_2023), o mesmo do WordPress: envia direto, sem integrations.js.
-          O aceite abaixo não tem "name" para não ir ao Responsys; só bloqueia o envio até ser marcado. #}
-      <form class="lead-form" id="iplaceuycorp_lancamentos_2023" name="iplaceuycorp_lancamentos_2023" action="https://a.newsiplace.com.uy/pub/rf" method="post">
-        <input type="hidden" name="_ri_" value="X0Gzc2X%3DAQpglLjHJlDQGza0Ma3ze3R4oH1bkbpzfo22uOnEKtHtD3TqBXuVwjpnpgHlpgneHmgJoXX0Gzc2X%3DAQpglLjHJlDQG4vqh9zeUazbho5iYzfJFTv8M5nEKtHtD3TqBXu">
-        <input type="hidden" name="_ei_" value="ETBGZZ9VFHl8YVdvw-jG6Nk">
-        <input type="hidden" name="_di_" value="o480btvtf38ppnscj0vqs7gjqss0cu19pm2e0pq8rubkigktrqbg">
+      {#- Formulário 1557 do Emarsys, enviado pelo integrations.js. O aceite abaixo já se chama acepta_privacidad,
+          então o consent.js não acrescenta o dele; como o aceite diz que avisaremos dos lançamentos por email,
+          o opt-in vai sempre (optin=true). Os maxlength são os limites dos campos no Emarsys. #}
+      <form class="lead-form" id="iplaceuycorp_lancamentos_2023" data-lead-form="lanzamientos-uy" data-lead-sent="¡Listo! Te avisaremos por email de los lanzamientos." method="post" action="#">
+        {{- m.emarsysFields(1557, optin=true) }}
         <div class="ds-field">
-          <label class="ds-field__label" for="NOMBRE">Nombre</label>
-          <input class="ds-input" id="NOMBRE" name="NOMBRE" type="text" autocomplete="given-name" required>
+          <label class="ds-field__label" for="lanzamientos-first-name">Nombre</label>
+          <input class="ds-input" id="lanzamientos-first-name" name="first_name" type="text" autocomplete="given-name" maxlength="60" required>
         </div>
         <div class="ds-field">
-          <label class="ds-field__label" for="APELLIDO">Apellido <span class="optional">(opcional)</span></label>
-          <input class="ds-input" id="APELLIDO" name="APELLIDO" type="text" autocomplete="family-name">
+          <label class="ds-field__label" for="lanzamientos-last-name">Apellido <span class="optional">(opcional)</span></label>
+          <input class="ds-input" id="lanzamientos-last-name" name="last_name" type="text" autocomplete="family-name" maxlength="60">
         </div>
         <div class="ds-field">
-          <label class="ds-field__label" for="EMPRESA">Empresa</label>
-          <input class="ds-input" id="EMPRESA" name="EMPRESA" type="text" autocomplete="organization" required>
+          <label class="ds-field__label" for="lanzamientos-company">Empresa</label>
+          <input class="ds-input" id="lanzamientos-company" name="company_name" type="text" autocomplete="organization" maxlength="255" required>
         </div>
         <div class="ds-field">
-          <label class="ds-field__label" for="RUT">RUT</label>
-          <input class="ds-input" id="RUT" name="RUT" type="text" inputmode="numeric" required>
+          <label class="ds-field__label" for="lanzamientos-rut">RUT</label>
+          <input class="ds-input" id="lanzamientos-rut" name="rut" type="text" inputmode="numeric" maxlength="255" required>
         </div>
         <div class="ds-field">
-          <label class="ds-field__label" for="TELEFONO">Teléfono</label>
-          <input class="ds-input" id="TELEFONO" name="TELEFONO" type="tel" autocomplete="tel" inputmode="tel" placeholder="+598" required>
+          <label class="ds-field__label" for="lanzamientos-phone">Teléfono</label>
+          <input class="ds-input" id="lanzamientos-phone" name="mobile_phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+598" maxlength="60" required>
         </div>
         <div class="ds-field">
-          <label class="ds-field__label" for="EMAIL_ADDRESS_">E-mail</label>
-          <input class="ds-input" id="EMAIL_ADDRESS_" name="EMAIL_ADDRESS_" type="email" autocomplete="email" required>
+          <label class="ds-field__label" for="lanzamientos-email">E-mail</label>
+          <input class="ds-input" id="lanzamientos-email" name="email" type="email" autocomplete="email" maxlength="255" required>
         </div>
         <div class="lead-form__actions">
-          <label class="consent-check"><input type="checkbox" required> <span>Leí y acepto la <a href="/politica-de-privacidad/" target="_blank" rel="noopener">Política de Privacidad</a>. Usaremos estos datos para avisarte de los lanzamientos.</span></label>
+          <label class="consent-check"><input type="checkbox" name="acepta_privacidad" value="si" required> <span>Leí y acepto la <a href="/politica-de-privacidad/" target="_blank" rel="noopener">Política de Privacidad</a>. Usaremos estos datos para avisarte de los lanzamientos.</span></label>
           <button class="ds-btn ds-btn--primary" type="submit">Finalizar registro</button>
         </div>
+        <p data-lead-status aria-live="polite"></p>
       </form>
     </div>
   </div>
