@@ -1132,8 +1132,8 @@ En cada formulario, los campos marcados como opcionales podés dejarlos vacíos.
 
 ## 4. Cómo se envían los formularios
 
-- **Formularios de contacto:** al enviarlos se abre WhatsApp con tu mensaje listo. Este sitio no guarda los datos; nos llegan solo cuando enviás el mensaje desde WhatsApp.
-- **Pre registro de lanzamientos:** los datos se envían a Oracle Responsys, la plataforma que usamos para avisarte por email de los lanzamientos.
+- **Formularios de contacto:** los datos se envían a SAP Emarsys, la plataforma que usamos para gestionar tu consulta y, solo si marcaste la casilla, enviarte novedades por email. Este sitio no guarda los datos.
+- **Pre registro de lanzamientos:** los datos se envían a SAP Emarsys, la plataforma que usamos para avisarte por email de los lanzamientos.
 
 ## 5. Para qué los usamos
 
@@ -1149,8 +1149,8 @@ La base legal es tu consentimiento libre, previo, expreso e informado (artículo
 No vendemos tus datos. Solo los compartimos con proveedores que nos prestan servicios y los tratan por cuenta nuestra:
 
 - **Google LLC** (Estados Unidos): Google Analytics y Google Tag Manager, solo si aceptaste las cookies analíticas, y YouTube, solo si reproducís el video de la página de inicio.
-- **WhatsApp LLC** (Meta, Estados Unidos): cuando enviás un formulario de contacto o nos escribís por WhatsApp.
-- **Oracle Corporation** (Estados Unidos): Oracle Responsys, para el pre registro de lanzamientos y el envío de emails.
+- **WhatsApp LLC** (Meta, Estados Unidos): cuando nos escribís por WhatsApp.
+- **Emarsys eMarketing Systems GmbH** (grupo SAP, Austria): SAP Emarsys, para los formularios de contacto, el pre registro de lanzamientos y el envío de emails.
 - **Hostinger International Ltd.** : hosting del sitio, con servidores en Brasil.
 
 Algunos de estos proveedores están en países que no tienen un nivel de protección declarado adecuado por la Unidad Reguladora y de Control de Datos Personales (URCDP), como Estados Unidos. En esos casos la transferencia internacional se realiza con tu consentimiento o con garantías contractuales adecuadas, según el artículo 23 de la Ley N° 18.331.
