@@ -48,6 +48,8 @@ Não envie o `_site/` do computador, que pode ter mudanças ainda fora da `main`
 - Os links para `.css` e `.js` ganham `?v=` com o hash do arquivo: o `.htaccess` guarda esses arquivos por 30 dias
   no navegador, e a versão nova entra junto com o HTML novo.
 - `404.njk` é uma página própria, sem o layout, porque aparece em qualquer endereço (ver o comentário no arquivo).
+- Animações: os heróis entram só com CSS (seção "Movimento" do `site.css`); os blocos abaixo da dobra entram ao
+  rolar se a classe estiver nas listas `SURFACE`, `RISE` ou `RULE` do `site.js`. Com movimento reduzido, nada anima.
 
 ## Estrutura
 
