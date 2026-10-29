@@ -1,0 +1,2 @@
+# Texto sempre com quebra de linha LF (padrão de servidores e do Linux do GitHub Actions).
+* text=auto eol=lf

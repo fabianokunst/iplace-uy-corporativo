@@ -1,3 +1,12 @@
+# Gerados: o GitHub Actions instala as dependências e monta o _site/ a cada push.
 node_modules/
 _site/
+
+# Downloads pela metade e lixo do sistema/editores
 *.part
+*.tmp
+*.log
+__pycache__/
+Thumbs.db
+desktop.ini
+.DS_Store
