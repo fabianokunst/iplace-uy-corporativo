@@ -1,0 +1,2935 @@
+{
+ "family": "iPad",
+ "slug": "ipad",
+ "source": "https://iplacecorp.com.uy/productos/compara-ipad/",
+ "title": "Compará los modelos de iPad",
+ "models": [
+  {
+   "id": "ipad-pro-de-12-9-6a-generacion",
+   "name": "iPad Pro de 12.9” (6ª generación)",
+   "group": "Modelos de iPad actuales",
+   "image": "/assets/img/compare/ipad/ipad-pro-de-12-9-6a-generacion.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#868487"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e3e4e5"
+    }
+   ]
+  },
+  {
+   "id": "ipad-pro-de-11-4a-generacion",
+   "name": "iPad Pro de 11” (4ª generación)",
+   "group": "Modelos de iPad actuales",
+   "image": "/assets/img/compare/ipad/ipad-pro-de-11-4a-generacion.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#868487"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e3e4e5"
+    }
+   ]
+  },
+  {
+   "id": "ipad-air-5a-generacion",
+   "name": "iPad Air (5ª generación)",
+   "group": "Modelos de iPad actuales",
+   "image": "/assets/img/compare/ipad/ipad-air-5a-generacion.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#6b696e"
+    },
+    {
+     "name": "Blanco estelar",
+     "swatch": "#e5e0d8"
+    },
+    {
+     "name": "Rosa",
+     "swatch": "#e8d2cf"
+    },
+    {
+     "name": "Morado",
+     "swatch": "#b9b8d1"
+    },
+    {
+     "name": "Azul",
+     "swatch": "#88aebf"
+    }
+   ]
+  },
+  {
+   "id": "ipad-10a-generacion",
+   "name": "iPad (10ª generación)",
+   "group": "Modelos de iPad actuales",
+   "image": "/assets/img/compare/ipad/ipad-10a-generacion.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Color plata",
+     "swatch": "#e3e4e5"
+    },
+    {
+     "name": "Azul",
+     "swatch": "#6480a3"
+    },
+    {
+     "name": "Magenta",
+     "swatch": "#de6274"
+    },
+    {
+     "name": "Amarillo",
+     "swatch": "#f0d95b"
+    }
+   ]
+  },
+  {
+   "id": "ipad-9a-generacion",
+   "name": "iPad (9ª generación)",
+   "group": "Modelos de iPad actuales",
+   "image": "/assets/img/compare/ipad/ipad-9a-generacion.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#68696e"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e3e4e5"
+    }
+   ]
+  },
+  {
+   "id": "ipad-mini-6a-generacion",
+   "name": "iPad mini (6ª generación)",
+   "group": "Modelos de iPad actuales",
+   "image": "/assets/img/compare/ipad/ipad-mini-6a-generacion.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#6b696e"
+    },
+    {
+     "name": "Blanco estelar",
+     "swatch": "#e3dcd1"
+    },
+    {
+     "name": "Rosa",
+     "swatch": "#e8d2cf"
+    },
+    {
+     "name": "Morado",
+     "swatch": "#b9b8d1"
+    }
+   ]
+  },
+  {
+   "id": "ipad-pro-de-12-9-5a-generacion",
+   "name": "iPad Pro de 12.9” (5ª generación)",
+   "group": "Más modelos de iPad",
+   "image": "/assets/img/compare/ipad/ipad-pro-de-12-9-5a-generacion.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#68696e"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e3e4e5"
+    }
+   ]
+  },
+  {
+   "id": "ipad-pro-de-12-9-4a-generacion",
+   "name": "iPad Pro de 12.9” (4ª generación)",
+   "group": "Más modelos de iPad",
+   "image": "/assets/img/compare/ipad/ipad-pro-de-12-9-4a-generacion.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#68696d"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    }
+   ]
+  },
+  {
+   "id": "ipad-pro-de-12-9-3a-generacion",
+   "name": "iPad Pro de 12.9” (3ª generación)",
+   "group": "Más modelos de iPad",
+   "image": "/assets/img/compare/ipad/ipad-pro-de-12-9-3a-generacion.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#68696d"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    }
+   ]
+  },
+  {
+   "id": "ipad-pro-de-12-9-2a-generacion",
+   "name": "iPad Pro de 12.9” (2ª generación)",
+   "group": "Más modelos de iPad",
+   "image": "/assets/img/compare/ipad/ipad-pro-de-12-9-2a-generacion.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#b1b2b7"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#e3ccb4"
+    }
+   ]
+  },
+  {
+   "id": "ipad-pro-de-12-9-1a-generacion",
+   "name": "iPad Pro de 12.9” (1ª generación)",
+   "group": "Más modelos de iPad",
+   "image": "/assets/img/compare/ipad/ipad-pro-de-12-9-1a-generacion.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#b1b2b7"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#e3ccb4"
+    }
+   ]
+  },
+  {
+   "id": "ipad-pro-de-11-3a-generacion",
+   "name": "iPad Pro de 11” (3ª generación)",
+   "group": "Más modelos de iPad",
+   "image": "/assets/img/compare/ipad/ipad-pro-de-11-3a-generacion.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#68696e"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e3e4e5"
+    }
+   ]
+  },
+  {
+   "id": "ipad-pro-de-11-2a-generacion",
+   "name": "iPad Pro de 11” (2ª generación)",
+   "group": "Más modelos de iPad",
+   "image": "/assets/img/compare/ipad/ipad-pro-de-11-2a-generacion.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#68696d"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    }
+   ]
+  },
+  {
+   "id": "ipad-pro-de-11-1a-generacion",
+   "name": "iPad Pro de 11” (1ª generación)",
+   "group": "Más modelos de iPad",
+   "image": "/assets/img/compare/ipad/ipad-pro-de-11-1a-generacion.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#68696d"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    }
+   ]
+  },
+  {
+   "id": "ipad-pro-de-10-5",
+   "name": "iPad Pro de 10.5”",
+   "group": "Más modelos de iPad",
+   "image": "/assets/img/compare/ipad/ipad-pro-de-10-5.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#b1b2b7"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#e3ccb4"
+    },
+    {
+     "name": "Color oro rosa",
+     "swatch": "#ecc6c1"
+    }
+   ]
+  },
+  {
+   "id": "ipad-pro-de-9-7",
+   "name": "iPad Pro de 9.7”",
+   "group": "Más modelos de iPad",
+   "image": "/assets/img/compare/ipad/ipad-pro-de-9-7.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#b1b2b7"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#e3ccb4"
+    },
+    {
+     "name": "Color oro rosa",
+     "swatch": "#ecc5c1"
+    }
+   ]
+  },
+  {
+   "id": "ipad-air-4a-generacion",
+   "name": "iPad Air (4ª generación)",
+   "group": "Más modelos de iPad",
+   "image": "/assets/img/compare/ipad/ipad-air-4a-generacion.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#68696e"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e3e4e5"
+    },
+    {
+     "name": "Color oro rosa",
+     "swatch": "#edc5c1"
+    },
+    {
+     "name": "Azul cielo",
+     "swatch": "#cee3f6"
+    },
+    {
+     "name": "Verde",
+     "swatch": "#cddfca"
+    }
+   ]
+  },
+  {
+   "id": "ipad-air-3a-generacion",
+   "name": "iPad Air (3ª generación)",
+   "group": "Más modelos de iPad",
+   "image": "/assets/img/compare/ipad/ipad-air-3a-generacion.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#68696d"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#f6cdb9"
+    }
+   ]
+  },
+  {
+   "id": "ipad-air-2",
+   "name": "iPad Air 2",
+   "group": "Más modelos de iPad",
+   "image": "/assets/img/compare/ipad/ipad-air-2.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#b1b2b7"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#e3ccb4"
+    }
+   ]
+  },
+  {
+   "id": "ipad-air-1a-generacion",
+   "name": "iPad Air (1ª generación)",
+   "group": "Más modelos de iPad",
+   "image": "/assets/img/compare/ipad/ipad-air-1a-generacion.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#b1b2b7"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    }
+   ]
+  },
+  {
+   "id": "ipad-8a-generacion",
+   "name": "iPad (8ª generación)",
+   "group": "Más modelos de iPad",
+   "image": "/assets/img/compare/ipad/ipad-8a-generacion.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#68696d"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#f6cdb9"
+    }
+   ]
+  },
+  {
+   "id": "ipad-7a-generacion",
+   "name": "iPad (7ª generación)",
+   "group": "Más modelos de iPad",
+   "image": "/assets/img/compare/ipad/ipad-7a-generacion.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#68696d"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#f6cdb9"
+    }
+   ]
+  },
+  {
+   "id": "ipad-6a-generacion",
+   "name": "iPad (6ª generación)",
+   "group": "Más modelos de iPad",
+   "image": "/assets/img/compare/ipad/ipad-6a-generacion.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#b1b2b7"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#f6cdb9"
+    }
+   ]
+  },
+  {
+   "id": "ipad-5a-generacion",
+   "name": "iPad (5ª generación)",
+   "group": "Más modelos de iPad",
+   "image": "/assets/img/compare/ipad/ipad-5a-generacion.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#b1b2b7"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#e3ccb4"
+    }
+   ]
+  },
+  {
+   "id": "ipad-mini-5a-generacion",
+   "name": "iPad mini (5ª generación)",
+   "group": "Más modelos de iPad",
+   "image": "/assets/img/compare/ipad/ipad-mini-5a-generacion.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#68696d"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#f6cdb9"
+    }
+   ]
+  },
+  {
+   "id": "ipad-mini-4",
+   "name": "iPad mini 4",
+   "group": "Más modelos de iPad",
+   "image": "/assets/img/compare/ipad/ipad-mini-4.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#b1b2b7"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#e3ccb4"
+    }
+   ]
+  },
+  {
+   "id": "ipad-mini-3",
+   "name": "iPad mini 3",
+   "group": "Más modelos de iPad",
+   "image": "/assets/img/compare/ipad/ipad-mini-3.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#b1b2b7"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#e3ccb4"
+    }
+   ]
+  },
+  {
+   "id": "ipad-mini-2",
+   "name": "iPad mini 2",
+   "group": "Más modelos de iPad",
+   "image": "/assets/img/compare/ipad/ipad-mini-2.webp",
+   "imageWidth": 153,
+   "imageHeight": 181,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#b1b2b7"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    }
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "label": "Modelos de iPad actuales",
+   "models": [
+    "ipad-pro-de-12-9-6a-generacion",
+    "ipad-pro-de-11-4a-generacion",
+    "ipad-air-5a-generacion",
+    "ipad-10a-generacion",
+    "ipad-9a-generacion",
+    "ipad-mini-6a-generacion"
+   ]
+  },
+  {
+   "label": "Más modelos de iPad",
+   "models": [
+    "ipad-pro-de-12-9-5a-generacion",
+    "ipad-pro-de-12-9-4a-generacion",
+    "ipad-pro-de-12-9-3a-generacion",
+    "ipad-pro-de-12-9-2a-generacion",
+    "ipad-pro-de-12-9-1a-generacion",
+    "ipad-pro-de-11-3a-generacion",
+    "ipad-pro-de-11-2a-generacion",
+    "ipad-pro-de-11-1a-generacion",
+    "ipad-pro-de-10-5",
+    "ipad-pro-de-9-7",
+    "ipad-air-4a-generacion",
+    "ipad-air-3a-generacion",
+    "ipad-air-2",
+    "ipad-air-1a-generacion",
+    "ipad-8a-generacion",
+    "ipad-7a-generacion",
+    "ipad-6a-generacion",
+    "ipad-5a-generacion",
+    "ipad-mini-5a-generacion",
+    "ipad-mini-4",
+    "ipad-mini-3",
+    "ipad-mini-2"
+   ]
+  }
+ ],
+ "defaults": [
+  "ipad-pro-de-12-9-6a-generacion",
+  "ipad-air-5a-generacion",
+  "ipad-10a-generacion",
+  "ipad-9a-generacion",
+  "ipad-mini-6a-generacion"
+ ],
+ "responsive": {
+  "large": {
+   "columns": 5,
+   "defaults": [
+    "ipad-pro-de-12-9-6a-generacion",
+    "ipad-air-5a-generacion",
+    "ipad-10a-generacion",
+    "ipad-9a-generacion",
+    "ipad-mini-6a-generacion"
+   ]
+  },
+  "medium": {
+   "columns": 3,
+   "defaults": [
+    "ipad-air-5a-generacion",
+    "ipad-10a-generacion",
+    "ipad-9a-generacion"
+   ]
+  },
+  "small": {
+   "columns": 2,
+   "defaults": [
+    "ipad-10a-generacion",
+    "ipad-9a-generacion"
+   ]
+  }
+ },
+ "sections": [
+  {
+   "title": "Resumen",
+   "rows": [
+    {
+     "values": {
+      "ipad-pro-de-12-9-6a-generacion": [
+       {
+        "value": "12.9”"
+       },
+       "Pantalla Liquid Retina XDR Tecnología ProMotion y True Tone"
+      ],
+      "ipad-pro-de-11-4a-generacion": [
+       {
+        "value": "11”"
+       },
+       "Pantalla Liquid Retina Tecnología ProMotion y True Tone"
+      ],
+      "ipad-air-5a-generacion": [
+       {
+        "value": "10.9”"
+       },
+       "Pantalla Liquid Retina True Tone"
+      ],
+      "ipad-10a-generacion": [
+       {
+        "value": "10.9”"
+       },
+       "Pantalla Liquid Retina True Tone"
+      ],
+      "ipad-9a-generacion": [
+       {
+        "value": "10.2”"
+       },
+       "Pantalla Retina\nTrue Tone"
+      ],
+      "ipad-mini-6a-generacion": [
+       {
+        "value": "8.3”"
+       },
+       "Pantalla Liquid Retina True Tone"
+      ],
+      "ipad-pro-de-12-9-5a-generacion": [
+       {
+        "value": "12.9”"
+       },
+       "Pantalla Liquid Retina XDR Tecnología ProMotion y True Tone"
+      ],
+      "ipad-pro-de-12-9-4a-generacion": [
+       {
+        "value": "12.9”"
+       },
+       "Pantalla Liquid Retina Tecnología ProMotion y True Tone"
+      ],
+      "ipad-pro-de-12-9-3a-generacion": [
+       {
+        "value": "12.9”"
+       },
+       "Pantalla Liquid Retina Tecnología ProMotion y True Tone"
+      ],
+      "ipad-pro-de-12-9-2a-generacion": [
+       {
+        "value": "12.9”"
+       },
+       "Pantalla Retina\nTecnología ProMotion y True Tone"
+      ],
+      "ipad-pro-de-12-9-1a-generacion": [
+       {
+        "value": "12.9”"
+       },
+       "Pantalla Retina"
+      ],
+      "ipad-pro-de-11-3a-generacion": [
+       {
+        "value": "11”"
+       },
+       "Pantalla Liquid Retina Tecnología ProMotion y True Tone"
+      ],
+      "ipad-pro-de-11-2a-generacion": [
+       {
+        "value": "11”"
+       },
+       "Pantalla Liquid Retina Tecnología ProMotion y True Tone"
+      ],
+      "ipad-pro-de-11-1a-generacion": [
+       {
+        "value": "11”"
+       },
+       "Pantalla Liquid Retina Tecnología ProMotion y True Tone"
+      ],
+      "ipad-pro-de-10-5": [
+       {
+        "value": "10.5”"
+       },
+       "Pantalla Retina\nTecnología ProMotion y True Tone"
+      ],
+      "ipad-pro-de-9-7": [
+       {
+        "value": "9.7”"
+       },
+       "Pantalla Retina\nTrue Tone"
+      ],
+      "ipad-air-4a-generacion": [
+       {
+        "value": "10.9”"
+       },
+       "Pantalla Liquid Retina True Tone"
+      ],
+      "ipad-air-3a-generacion": [
+       {
+        "value": "10.5”"
+       },
+       "Pantalla Retina\nTrue Tone"
+      ],
+      "ipad-air-2": [
+       {
+        "value": "9.7”"
+       },
+       "Pantalla Retina"
+      ],
+      "ipad-air-1a-generacion": [
+       {
+        "value": "9.7”"
+       },
+       "Pantalla Retina"
+      ],
+      "ipad-8a-generacion": [
+       {
+        "value": "10.2”"
+       },
+       "Pantalla Retina"
+      ],
+      "ipad-7a-generacion": [
+       {
+        "value": "10.2”"
+       },
+       "Pantalla Retina"
+      ],
+      "ipad-6a-generacion": [
+       {
+        "value": "9.7”"
+       },
+       "Pantalla Retina"
+      ],
+      "ipad-5a-generacion": [
+       {
+        "value": "9.7”"
+       },
+       "Pantalla Retina"
+      ],
+      "ipad-mini-5a-generacion": [
+       {
+        "value": "7.9”"
+       },
+       "Pantalla Retina\nTrue Tone"
+      ],
+      "ipad-mini-4": [
+       {
+        "value": "7.9”"
+       },
+       "Pantalla Retina"
+      ],
+      "ipad-mini-3": [
+       {
+        "value": "7.9”"
+       },
+       "Pantalla Retina"
+      ],
+      "ipad-mini-2": [
+       {
+        "value": "7.9”"
+       },
+       "Pantalla Retina"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "Chip",
+   "rows": [
+    {
+     "values": {
+      "ipad-pro-de-12-9-6a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/m2_chip_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip M2"
+      ],
+      "ipad-pro-de-11-4a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/m2_chip_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip M2"
+      ],
+      "ipad-air-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/m1_chip_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip M1"
+      ],
+      "ipad-10a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/a14_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A14 Bionic"
+      ],
+      "ipad-9a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/a13_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A13 Bionic"
+      ],
+      "ipad-mini-6a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/a15_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A15 Bionic"
+      ],
+      "ipad-pro-de-12-9-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/m1_chip_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip M1"
+      ],
+      "ipad-pro-de-12-9-4a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/a12z_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A12Z Bionic"
+      ],
+      "ipad-pro-de-12-9-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/a12x_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A12X Bionic"
+      ],
+      "ipad-pro-de-12-9-2a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/a10x_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A10X Fusion"
+      ],
+      "ipad-pro-de-12-9-1a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/a9x_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A9X"
+      ],
+      "ipad-pro-de-11-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/m1_chip_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip M1"
+      ],
+      "ipad-pro-de-11-2a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/a12z_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A12Z Bionic"
+      ],
+      "ipad-pro-de-11-1a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/a12x_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A12X Bionic"
+      ],
+      "ipad-pro-de-10-5": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/a10x_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A10X Fusion"
+      ],
+      "ipad-pro-de-9-7": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/a9x_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A9X"
+      ],
+      "ipad-air-4a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/a14_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A14 Bionic"
+      ],
+      "ipad-air-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/a12_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A12 Bionic"
+      ],
+      "ipad-air-2": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/a8x_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A8X"
+      ],
+      "ipad-air-1a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/a7_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A7"
+      ],
+      "ipad-8a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/a12_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A12 Bionic"
+      ],
+      "ipad-7a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/a10_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A10 Fusion"
+      ],
+      "ipad-6a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/a10_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A10 Fusion"
+      ],
+      "ipad-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/a9_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A9"
+      ],
+      "ipad-mini-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/a12_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A12 Bionic"
+      ],
+      "ipad-mini-4": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/a8_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A8"
+      ],
+      "ipad-mini-3": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/a7_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A7"
+      ],
+      "ipad-mini-2": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/a7_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A7"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "Cámara",
+   "rows": [
+    {
+     "values": {
+      "ipad-pro-de-12-9-6a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_pro_gen6_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 12 MP y cámara ultra gran angular de 10 MP"
+      ],
+      "ipad-pro-de-11-4a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_pro_gen6_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 12 MP y cámara ultra gran angular de 10 MP"
+      ],
+      "ipad-air-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_gen10_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 12 MP"
+      ],
+      "ipad-10a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_gen10_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 12 MP"
+      ],
+      "ipad-9a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_gen9_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 8 MP"
+      ],
+      "ipad-mini-6a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_mini_gen6_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 12 MP"
+      ],
+      "ipad-pro-de-12-9-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_pro_gen6_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 12 MP y cámara ultra gran angular de 10 MP"
+      ],
+      "ipad-pro-de-12-9-4a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_pro_gen6_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 12 MP y cámara ultra gran angular de 10 MP"
+      ],
+      "ipad-pro-de-12-9-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_mini_gen6_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 12 MP"
+      ],
+      "ipad-pro-de-12-9-2a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_gen10_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 12 MP"
+      ],
+      "ipad-pro-de-12-9-1a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_12_9_gen1_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 8 MP"
+      ],
+      "ipad-pro-de-11-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_pro_gen6_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 12 MP y cámara ultra gran angular de 10 MP"
+      ],
+      "ipad-pro-de-11-2a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_pro_gen6_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 12 MP y cámara ultra gran angular de 10 MP"
+      ],
+      "ipad-pro-de-11-1a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_mini_gen6_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 12 MP"
+      ],
+      "ipad-pro-de-10-5": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_gen10_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 12 MP"
+      ],
+      "ipad-pro-de-9-7": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_pro_9_7_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 12 MP"
+      ],
+      "ipad-air-4a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_gen10_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 12 MP"
+      ],
+      "ipad-air-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_gen9_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 8 MP"
+      ],
+      "ipad-air-2": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_12_9_gen1_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 8 MP"
+      ],
+      "ipad-air-1a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_gen9_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 5 MP"
+      ],
+      "ipad-8a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_gen9_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 8 MP"
+      ],
+      "ipad-7a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_gen9_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 8 MP"
+      ],
+      "ipad-6a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_gen9_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 8 MP"
+      ],
+      "ipad-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_gen9_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 8 MP"
+      ],
+      "ipad-mini-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_gen9_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 8 MP"
+      ],
+      "ipad-mini-4": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_mini_gen4_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 8 MP"
+      ],
+      "ipad-mini-3": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_gen9_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 5 MP"
+      ],
+      "ipad-mini-2": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/ipad_gen9_camera_icon.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Cámara gran angular de 5 MP"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "Cámara frontal",
+   "rows": [
+    {
+     "values": {
+      "ipad-pro-de-12-9-6a-generacion": [
+       {
+        "value": "12 MP"
+       },
+       "Sistema de cámara TrueDepth con ultra gran angular"
+      ],
+      "ipad-pro-de-11-4a-generacion": [
+       {
+        "value": "12 MP"
+       },
+       "Sistema de cámara TrueDepth con ultra gran angular"
+      ],
+      "ipad-air-5a-generacion": [
+       {
+        "value": "12 MP"
+       },
+       "Cámara frontal ultra gran angular"
+      ],
+      "ipad-10a-generacion": [
+       {
+        "value": "12 MP"
+       },
+       "Cámara frontal ultra gran angular en horizontal"
+      ],
+      "ipad-9a-generacion": [
+       {
+        "value": "12 MP"
+       },
+       "Cámara frontal ultra gran angular"
+      ],
+      "ipad-mini-6a-generacion": [
+       {
+        "value": "12 MP"
+       },
+       "Cámara frontal ultra gran angular"
+      ],
+      "ipad-pro-de-12-9-5a-generacion": [
+       {
+        "value": "12 MP"
+       },
+       "Sistema de cámara TrueDepth con ultra gran angular"
+      ],
+      "ipad-pro-de-12-9-4a-generacion": [
+       {
+        "value": "7 MP"
+       },
+       "Cámara TrueDepth"
+      ],
+      "ipad-pro-de-12-9-3a-generacion": [
+       {
+        "value": "7 MP"
+       },
+       "Cámara TrueDepth"
+      ],
+      "ipad-pro-de-12-9-2a-generacion": [
+       {
+        "value": "7 MP"
+       },
+       "Cámara FaceTime HD"
+      ],
+      "ipad-pro-de-12-9-1a-generacion": [
+       {
+        "value": "1.2 MP"
+       },
+       "Cámara FaceTime HD"
+      ],
+      "ipad-pro-de-11-3a-generacion": [
+       {
+        "value": "12 MP"
+       },
+       "Sistema de cámara TrueDepth con ultra gran angular"
+      ],
+      "ipad-pro-de-11-2a-generacion": [
+       {
+        "value": "7 MP"
+       },
+       "Cámara TrueDepth"
+      ],
+      "ipad-pro-de-11-1a-generacion": [
+       {
+        "value": "7 MP"
+       },
+       "Cámara TrueDepth"
+      ],
+      "ipad-pro-de-10-5": [
+       {
+        "value": "7 MP"
+       },
+       "Cámara FaceTime HD"
+      ],
+      "ipad-pro-de-9-7": [
+       {
+        "value": "5 MP"
+       },
+       "Cámara FaceTime HD"
+      ],
+      "ipad-air-4a-generacion": [
+       {
+        "value": "7 MP"
+       },
+       "Cámara FaceTime HD"
+      ],
+      "ipad-air-3a-generacion": [
+       {
+        "value": "7 MP"
+       },
+       "Cámara FaceTime HD"
+      ],
+      "ipad-air-2": [
+       {
+        "value": "1.2 MP"
+       },
+       "Cámara FaceTime HD"
+      ],
+      "ipad-air-1a-generacion": [
+       {
+        "value": "1.2 MP"
+       },
+       "Cámara FaceTime HD"
+      ],
+      "ipad-8a-generacion": [
+       {
+        "value": "1.2 MP"
+       },
+       "Cámara FaceTime HD"
+      ],
+      "ipad-7a-generacion": [
+       {
+        "value": "1.2 MP"
+       },
+       "Cámara FaceTime HD"
+      ],
+      "ipad-6a-generacion": [
+       {
+        "value": "1.2 MP"
+       },
+       "Cámara FaceTime HD"
+      ],
+      "ipad-5a-generacion": [
+       {
+        "value": "1.2 MP"
+       },
+       "Cámara FaceTime HD"
+      ],
+      "ipad-mini-5a-generacion": [
+       {
+        "value": "7 MP"
+       },
+       "Cámara FaceTime HD"
+      ],
+      "ipad-mini-4": [
+       {
+        "value": "1.2 MP"
+       },
+       "Cámara FaceTime HD"
+      ],
+      "ipad-mini-3": [
+       {
+        "value": "1.2 MP"
+       },
+       "Cámara FaceTime HD"
+      ],
+      "ipad-mini-2": [
+       {
+        "value": "1.2 MP"
+       },
+       "Cámara FaceTime HD"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "Conector",
+   "rows": [
+    {
+     "values": {
+      "ipad-pro-de-12-9-6a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/usb_c_thunderbolt_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector USB-C compatible con Thunderbolt/USB 4"
+      ],
+      "ipad-pro-de-11-4a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/usb_c_thunderbolt_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector USB-C compatible con Thunderbolt/USB 4"
+      ],
+      "ipad-air-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/usb_c_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector USB-C"
+      ],
+      "ipad-10a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/usb_c_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector USB-C"
+      ],
+      "ipad-9a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/lightning_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector Lightning"
+      ],
+      "ipad-mini-6a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/usb_c_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector USB-C"
+      ],
+      "ipad-pro-de-12-9-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/usb_c_thunderbolt_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector USB-C compatible con Thunderbolt/USB 4"
+      ],
+      "ipad-pro-de-12-9-4a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/usb_c_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector USB-C"
+      ],
+      "ipad-pro-de-12-9-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/usb_c_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector USB-C"
+      ],
+      "ipad-pro-de-12-9-2a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/lightning_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector Lightning"
+      ],
+      "ipad-pro-de-12-9-1a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/lightning_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector Lightning"
+      ],
+      "ipad-pro-de-11-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/usb_c_thunderbolt_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector USB-C compatible con Thunderbolt/USB 4"
+      ],
+      "ipad-pro-de-11-2a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/usb_c_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector USB-C"
+      ],
+      "ipad-pro-de-11-1a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/usb_c_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector USB-C"
+      ],
+      "ipad-pro-de-10-5": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/lightning_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector Lightning"
+      ],
+      "ipad-pro-de-9-7": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/lightning_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector Lightning"
+      ],
+      "ipad-air-4a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/usb_c_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector USB-C"
+      ],
+      "ipad-air-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/lightning_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector Lightning"
+      ],
+      "ipad-air-2": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/lightning_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector Lightning"
+      ],
+      "ipad-air-1a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/lightning_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector Lightning"
+      ],
+      "ipad-8a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/lightning_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector Lightning"
+      ],
+      "ipad-7a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/lightning_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector Lightning"
+      ],
+      "ipad-6a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/lightning_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector Lightning"
+      ],
+      "ipad-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/lightning_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector Lightning"
+      ],
+      "ipad-mini-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/lightning_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector Lightning"
+      ],
+      "ipad-mini-4": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/lightning_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector Lightning"
+      ],
+      "ipad-mini-3": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/lightning_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector Lightning"
+      ],
+      "ipad-mini-2": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/lightning_icon.webp",
+        "width": 43,
+        "height": 25
+       },
+       "Conector Lightning"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "Conexión celular",
+   "rows": [
+    {
+     "values": {
+      "ipad-pro-de-12-9-6a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/5g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Compatible con 5G"
+      ],
+      "ipad-pro-de-11-4a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/5g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Compatible con 5G"
+      ],
+      "ipad-air-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/5g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Compatible con 5G"
+      ],
+      "ipad-10a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/5g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Compatible con 5G"
+      ],
+      "ipad-9a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/4g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Red 4G LTE"
+      ],
+      "ipad-mini-6a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/5g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Compatible con 5G"
+      ],
+      "ipad-pro-de-12-9-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/5g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Compatible con 5G"
+      ],
+      "ipad-pro-de-12-9-4a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/4g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Red 4G LTE"
+      ],
+      "ipad-pro-de-12-9-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/4g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Red 4G LTE"
+      ],
+      "ipad-pro-de-12-9-2a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/4g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Red 4G LTE"
+      ],
+      "ipad-pro-de-12-9-1a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/4g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Red 4G LTE"
+      ],
+      "ipad-pro-de-11-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/5g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Compatible con 5G"
+      ],
+      "ipad-pro-de-11-2a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/4g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Red 4G LTE"
+      ],
+      "ipad-pro-de-11-1a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/4g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Red 4G LTE"
+      ],
+      "ipad-pro-de-10-5": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/4g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Red 4G LTE"
+      ],
+      "ipad-pro-de-9-7": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/4g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Red 4G LTE"
+      ],
+      "ipad-air-4a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/4g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Red 4G LTE"
+      ],
+      "ipad-air-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/4g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Red 4G LTE"
+      ],
+      "ipad-air-2": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/4g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Red 4G LTE"
+      ],
+      "ipad-air-1a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/4g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Red 4G LTE"
+      ],
+      "ipad-8a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/4g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Red 4G LTE"
+      ],
+      "ipad-7a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/4g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Red 4G LTE"
+      ],
+      "ipad-6a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/4g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Red 4G LTE"
+      ],
+      "ipad-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/4g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Red 4G LTE"
+      ],
+      "ipad-mini-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/4g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Red 4G LTE"
+      ],
+      "ipad-mini-4": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/4g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Red 4G LTE"
+      ],
+      "ipad-mini-3": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/4g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Red 4G LTE"
+      ],
+      "ipad-mini-2": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/4g_icon.webp",
+        "width": 48,
+        "height": 34
+       },
+       "Red 4G LTE"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "Privacidad",
+   "rows": [
+    {
+     "values": {
+      "ipad-pro-de-12-9-6a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/face_id_icon.webp",
+        "width": 41,
+        "height": 47
+       },
+       "Face ID"
+      ],
+      "ipad-pro-de-11-4a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/face_id_icon.webp",
+        "width": 41,
+        "height": 47
+       },
+       "Face ID"
+      ],
+      "ipad-air-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/touch_id_vertical_icon.webp",
+        "width": 41,
+        "height": 47
+       },
+       "Touch ID"
+      ],
+      "ipad-10a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/touch_id_vertical_icon.webp",
+        "width": 41,
+        "height": 47
+       },
+       "Touch ID"
+      ],
+      "ipad-9a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/touch_id_round_icon.webp",
+        "width": 41,
+        "height": 47
+       },
+       "Touch ID"
+      ],
+      "ipad-mini-6a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/touch_id_vertical_icon.webp",
+        "width": 41,
+        "height": 47
+       },
+       "Touch ID"
+      ],
+      "ipad-pro-de-12-9-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/face_id_icon.webp",
+        "width": 41,
+        "height": 47
+       },
+       "Face ID"
+      ],
+      "ipad-pro-de-12-9-4a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/face_id_icon.webp",
+        "width": 41,
+        "height": 47
+       },
+       "Face ID"
+      ],
+      "ipad-pro-de-12-9-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/face_id_icon.webp",
+        "width": 41,
+        "height": 47
+       },
+       "Face ID"
+      ],
+      "ipad-pro-de-12-9-2a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/touch_id_round_icon.webp",
+        "width": 41,
+        "height": 47
+       },
+       "Touch ID"
+      ],
+      "ipad-pro-de-12-9-1a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/touch_id_round_icon.webp",
+        "width": 41,
+        "height": 47
+       },
+       "Touch ID"
+      ],
+      "ipad-pro-de-11-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/face_id_icon.webp",
+        "width": 41,
+        "height": 47
+       },
+       "Face ID"
+      ],
+      "ipad-pro-de-11-2a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/face_id_icon.webp",
+        "width": 41,
+        "height": 47
+       },
+       "Face ID"
+      ],
+      "ipad-pro-de-11-1a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/face_id_icon.webp",
+        "width": 41,
+        "height": 47
+       },
+       "Face ID"
+      ],
+      "ipad-pro-de-10-5": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/touch_id_round_icon.webp",
+        "width": 41,
+        "height": 47
+       },
+       "Touch ID"
+      ],
+      "ipad-pro-de-9-7": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/touch_id_round_icon.webp",
+        "width": 41,
+        "height": 47
+       },
+       "Touch ID"
+      ],
+      "ipad-air-4a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/touch_id_vertical_icon.webp",
+        "width": 41,
+        "height": 47
+       },
+       "Touch ID"
+      ],
+      "ipad-air-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/touch_id_round_icon.webp",
+        "width": 41,
+        "height": 47
+       },
+       "Touch ID"
+      ],
+      "ipad-air-2": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/touch_id_round_icon.webp",
+        "width": 41,
+        "height": 47
+       },
+       "Touch ID"
+      ],
+      "ipad-air-1a-generacion": [
+       "—"
+      ],
+      "ipad-8a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/touch_id_round_icon.webp",
+        "width": 41,
+        "height": 47
+       },
+       "Touch ID"
+      ],
+      "ipad-7a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/touch_id_round_icon.webp",
+        "width": 41,
+        "height": 47
+       },
+       "Touch ID"
+      ],
+      "ipad-6a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/touch_id_round_icon.webp",
+        "width": 41,
+        "height": 47
+       },
+       "Touch ID"
+      ],
+      "ipad-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/touch_id_round_icon.webp",
+        "width": 41,
+        "height": 47
+       },
+       "Touch ID"
+      ],
+      "ipad-mini-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/touch_id_round_icon.webp",
+        "width": 41,
+        "height": 47
+       },
+       "Touch ID"
+      ],
+      "ipad-mini-4": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/touch_id_round_icon.webp",
+        "width": 41,
+        "height": 47
+       },
+       "Touch ID"
+      ],
+      "ipad-mini-3": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/touch_id_round_icon.webp",
+        "width": 41,
+        "height": 47
+       },
+       "Touch ID"
+      ],
+      "ipad-mini-2": [
+       "—"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "Capacidad",
+   "rows": [
+    {
+     "values": {
+      "ipad-pro-de-12-9-6a-generacion": [
+       "Hasta",
+       {
+        "value": "2 TB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-pro-de-11-4a-generacion": [
+       "Hasta",
+       {
+        "value": "2 TB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-air-5a-generacion": [
+       "Hasta",
+       {
+        "value": "256 GB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-10a-generacion": [
+       "Hasta",
+       {
+        "value": "256 GB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-9a-generacion": [
+       "Hasta",
+       {
+        "value": "256 GB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-mini-6a-generacion": [
+       "Hasta",
+       {
+        "value": "256 GB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-pro-de-12-9-5a-generacion": [
+       "Hasta",
+       {
+        "value": "2 TB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-pro-de-12-9-4a-generacion": [
+       "Hasta",
+       {
+        "value": "1 TB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-pro-de-12-9-3a-generacion": [
+       "Hasta",
+       {
+        "value": "1 TB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-pro-de-12-9-2a-generacion": [
+       "Hasta",
+       {
+        "value": "512 GB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-pro-de-12-9-1a-generacion": [
+       "Hasta",
+       {
+        "value": "256 GB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-pro-de-11-3a-generacion": [
+       "Hasta",
+       {
+        "value": "2 TB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-pro-de-11-2a-generacion": [
+       "Hasta",
+       {
+        "value": "1 TB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-pro-de-11-1a-generacion": [
+       "Hasta",
+       {
+        "value": "1 TB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-pro-de-10-5": [
+       "Hasta",
+       {
+        "value": "512 GB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-pro-de-9-7": [
+       "Hasta",
+       {
+        "value": "256 GB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-air-4a-generacion": [
+       "Hasta",
+       {
+        "value": "256 GB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-air-3a-generacion": [
+       "Hasta",
+       {
+        "value": "256 GB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-air-2": [
+       "Hasta",
+       {
+        "value": "128 GB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-air-1a-generacion": [
+       "Hasta",
+       {
+        "value": "128 GB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-8a-generacion": [
+       "Hasta",
+       {
+        "value": "128 GB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-7a-generacion": [
+       "Hasta",
+       {
+        "value": "128 GB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-6a-generacion": [
+       "Hasta",
+       {
+        "value": "128 GB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-5a-generacion": [
+       "Hasta",
+       {
+        "value": "128 GB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-mini-5a-generacion": [
+       "Hasta",
+       {
+        "value": "256 GB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-mini-4": [
+       "Hasta",
+       {
+        "value": "128 GB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-mini-3": [
+       "Hasta",
+       {
+        "value": "128 GB"
+       },
+       "de almacenamiento"
+      ],
+      "ipad-mini-2": [
+       "Hasta",
+       {
+        "value": "128 GB"
+       },
+       "de almacenamiento"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "Compatibilidad con el Apple Pencil",
+   "rows": [
+    {
+     "values": {
+      "ipad-pro-de-12-9-6a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/pencil_icon.webp",
+        "width": 34,
+        "height": 34
+       },
+       "Compatible con el Apple Pencil (segunda generación)"
+      ],
+      "ipad-pro-de-11-4a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/pencil_icon.webp",
+        "width": 34,
+        "height": 34
+       },
+       "Compatible con el Apple Pencil (segunda generación)"
+      ],
+      "ipad-air-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/pencil_icon.webp",
+        "width": 34,
+        "height": 34
+       },
+       "Compatible con el Apple Pencil (segunda generación)"
+      ],
+      "ipad-10a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/pencil_icon.webp",
+        "width": 34,
+        "height": 34
+       },
+       "Compatible con el Apple Pencil (primera generación)"
+      ],
+      "ipad-9a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/pencil_icon.webp",
+        "width": 34,
+        "height": 34
+       },
+       "Compatible con el Apple Pencil (primera generación)"
+      ],
+      "ipad-mini-6a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/pencil_icon.webp",
+        "width": 34,
+        "height": 34
+       },
+       "Compatible con el Apple Pencil (segunda generación)"
+      ],
+      "ipad-pro-de-12-9-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/pencil_icon.webp",
+        "width": 34,
+        "height": 34
+       },
+       "Compatible con el Apple Pencil (segunda generación)"
+      ],
+      "ipad-pro-de-12-9-4a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/pencil_icon.webp",
+        "width": 34,
+        "height": 34
+       },
+       "Compatible con el Apple Pencil (segunda generación)"
+      ],
+      "ipad-pro-de-12-9-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/pencil_icon.webp",
+        "width": 34,
+        "height": 34
+       },
+       "Compatible con el Apple Pencil (segunda generación)"
+      ],
+      "ipad-pro-de-12-9-2a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/pencil_icon.webp",
+        "width": 34,
+        "height": 34
+       },
+       "Compatible con el Apple Pencil (primera generación)"
+      ],
+      "ipad-pro-de-12-9-1a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/pencil_icon.webp",
+        "width": 34,
+        "height": 34
+       },
+       "Compatible con el Apple Pencil (primera generación)"
+      ],
+      "ipad-pro-de-11-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/pencil_icon.webp",
+        "width": 34,
+        "height": 34
+       },
+       "Compatible con el Apple Pencil (segunda generación)"
+      ],
+      "ipad-pro-de-11-2a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/pencil_icon.webp",
+        "width": 34,
+        "height": 34
+       },
+       "Compatible con el Apple Pencil (segunda generación)"
+      ],
+      "ipad-pro-de-11-1a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/pencil_icon.webp",
+        "width": 34,
+        "height": 34
+       },
+       "Compatible con el Apple Pencil (segunda generación)"
+      ],
+      "ipad-pro-de-10-5": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/pencil_icon.webp",
+        "width": 34,
+        "height": 34
+       },
+       "Compatible con el Apple Pencil (primera generación)"
+      ],
+      "ipad-pro-de-9-7": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/pencil_icon.webp",
+        "width": 34,
+        "height": 34
+       },
+       "Compatible con el Apple Pencil (primera generación)"
+      ],
+      "ipad-air-4a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/pencil_icon.webp",
+        "width": 34,
+        "height": 34
+       },
+       "Compatible con el Apple Pencil (segunda generación)"
+      ],
+      "ipad-air-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/pencil_icon.webp",
+        "width": 34,
+        "height": 34
+       },
+       "Compatible con el Apple Pencil (primera generación)"
+      ],
+      "ipad-air-2": [
+       "—"
+      ],
+      "ipad-air-1a-generacion": [
+       "—"
+      ],
+      "ipad-8a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/pencil_icon.webp",
+        "width": 34,
+        "height": 34
+       },
+       "Compatible con el Apple Pencil (primera generación)"
+      ],
+      "ipad-7a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/pencil_icon.webp",
+        "width": 34,
+        "height": 34
+       },
+       "Compatible con el Apple Pencil (primera generación)"
+      ],
+      "ipad-6a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/pencil_icon.webp",
+        "width": 34,
+        "height": 34
+       },
+       "Compatible con el Apple Pencil (primera generación)"
+      ],
+      "ipad-5a-generacion": [
+       "—"
+      ],
+      "ipad-mini-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/pencil_icon.webp",
+        "width": 34,
+        "height": 34
+       },
+       "Compatible con el Apple Pencil (primera generación)"
+      ],
+      "ipad-mini-4": [
+       "—"
+      ],
+      "ipad-mini-3": [
+       "—"
+      ],
+      "ipad-mini-2": [
+       "—"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "Compatibilidad con teclados",
+   "rows": [
+    {
+     "values": {
+      "ipad-pro-de-12-9-6a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/magic_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con el Magic Keyboard y el Smart Keyboard Folio"
+      ],
+      "ipad-pro-de-11-4a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/magic_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con el Magic Keyboard y el Smart Keyboard Folio"
+      ],
+      "ipad-air-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/magic_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con el Magic Keyboard y el Smart Keyboard Folio"
+      ],
+      "ipad-10a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/magic_keyboard_folio_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con el Magic Keyboard Folio"
+      ],
+      "ipad-9a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/smart_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con el Smart Keyboard"
+      ],
+      "ipad-mini-6a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/bluetooth_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con teclados Bluetooth"
+      ],
+      "ipad-pro-de-12-9-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/magic_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con el Magic Keyboard y el Smart Keyboard Folio"
+      ],
+      "ipad-pro-de-12-9-4a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/magic_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con el Magic Keyboard y el Smart Keyboard Folio"
+      ],
+      "ipad-pro-de-12-9-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/magic_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con el Magic Keyboard y el Smart Keyboard Folio"
+      ],
+      "ipad-pro-de-12-9-2a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/smart_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con el Smart Keyboard"
+      ],
+      "ipad-pro-de-12-9-1a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/smart_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con el Smart Keyboard"
+      ],
+      "ipad-pro-de-11-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/magic_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con el Magic Keyboard y el Smart Keyboard Folio"
+      ],
+      "ipad-pro-de-11-2a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/magic_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con el Magic Keyboard y el Smart Keyboard Folio"
+      ],
+      "ipad-pro-de-11-1a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/magic_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con el Magic Keyboard y el Smart Keyboard Folio"
+      ],
+      "ipad-pro-de-10-5": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/smart_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con el Smart Keyboard"
+      ],
+      "ipad-pro-de-9-7": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/smart_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con el Smart Keyboard"
+      ],
+      "ipad-air-4a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/magic_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con el Magic Keyboard y el Smart Keyboard Folio"
+      ],
+      "ipad-air-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/smart_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con el Smart Keyboard"
+      ],
+      "ipad-air-2": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/bluetooth_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con teclados Bluetooth"
+      ],
+      "ipad-air-1a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/bluetooth_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con teclados Bluetooth"
+      ],
+      "ipad-8a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/smart_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con el Smart Keyboard"
+      ],
+      "ipad-7a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/smart_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con el Smart Keyboard"
+      ],
+      "ipad-6a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/bluetooth_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con teclados Bluetooth"
+      ],
+      "ipad-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/bluetooth_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con teclados Bluetooth"
+      ],
+      "ipad-mini-5a-generacion": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/bluetooth_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con teclados Bluetooth"
+      ],
+      "ipad-mini-4": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/bluetooth_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con teclados Bluetooth"
+      ],
+      "ipad-mini-3": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/bluetooth_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con teclados Bluetooth"
+      ],
+      "ipad-mini-2": [
+       {
+        "icon": "/assets/img/compare/ipad/icons/bluetooth_keyboard_icon.webp",
+        "width": 57,
+        "height": 46
+       },
+       "Compatible con teclados Bluetooth"
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "footnotesTitle": "Avisos legales",
+ "footnotes": [
+  "Pantalla: Las pantallas tienen las esquinas redondeadas. Si se mide como rectángulo en diagonal, la pantalla del iPad Pro de 12.9 pulgadas tiene 12.9 pulgadas, la del iPad Pro de 11 pulgadas tiene 11 pulgadas, la del iPad Air y el iPad (décima generación) tiene 10.86 pulgadas y la del iPad mini tiene 8.3 pulgadas. El área real de visualización es menor. La pantalla Liquid Retina XDR sólo está disponible en el modelo de 12.9 pulgadas.",
+  "Conexión celular e inalámbrica: Se requiere un plan de datos. 5G y 4G LTE están disponibles en algunos mercados y a través de operadores específicos. Las velocidades varían según las condiciones del lugar y el operador. Para obtener más información sobre la compatibilidad con 5G y LTE, comunícate con tu operador y visita apple.com/la/ipad/cellular.",
+  "Accesorios: Los accesorios se venden por separado. La compatibilidad varía según la generación. Se requiere un adaptador de USB-C a Apple Pencil para que el Apple Pencil (primera generación) funcione con el iPad (décima generación). Sujeto a disponibilidad.",
+  "Capacidad: El espacio disponible es menor y varía según distintos factores. La capacidad de almacenamiento está sujeta a cambios dependiendo de la versión de software, la configuración y el modelo de iPad. 1 GB = 1,000 millones de bytes; 1 TB = 1 millón de millones de bytes. La capacidad formateada real es menor."
+ ],
+ "footnotesHtml": [
+  "<strong>Pantalla:</strong> Las pantallas tienen las esquinas redondeadas. Si se mide como rectángulo en diagonal, la pantalla del iPad Pro de 12.9 pulgadas tiene 12.9 pulgadas, la del iPad Pro de 11 pulgadas tiene 11 pulgadas, la del iPad Air y el iPad (décima generación) tiene 10.86 pulgadas y la del iPad mini tiene 8.3 pulgadas. El área real de visualización es menor. La pantalla Liquid Retina XDR sólo está disponible en el modelo de 12.9 pulgadas.",
+  "<strong>Conexión celular e inalámbrica:</strong> Se requiere un plan de datos. 5G y 4G LTE están disponibles en algunos mercados y a través de operadores específicos. Las velocidades varían según las condiciones del lugar y el operador. Para obtener más información sobre la compatibilidad con 5G y LTE, comunícate con tu operador y visita <a href=\"https://www.apple.com/la/ipad/cellular\">apple.com/la/ipad/cellular</a>.",
+  "<strong>Accesorios:</strong> Los accesorios se venden por separado. La compatibilidad varía según la generación. Se requiere un adaptador de USB-C a Apple Pencil para que el Apple Pencil (primera generación) funcione con el iPad (décima generación). Sujeto a disponibilidad.",
+  "<strong>Capacidad:</strong> El espacio disponible es menor y varía según distintos factores. La capacidad de almacenamiento está sujeta a cambios dependiendo de la versión de software, la configuración y el modelo de iPad. 1 GB = 1,000 millones de bytes; 1 TB = 1 millón de millones de bytes. La capacidad formateada real es menor."
+ ]
+}

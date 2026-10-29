@@ -48,8 +48,10 @@ A cada push na `main`, o GitHub Actions gera o site, publica o preview em
 | `src/_includes/` | Layout, cabeçalho, rodapé, ícones e macros (`pageHero`, `people`, `leadForm`). |
 | `src/assets/css/tokens.css` | Tokens do DS. `ds.css` é o `bundle.css` do DS sem alterações. `site.css` é o do site. |
 | `src/static/` | Copiado para a raiz: `.htaccess` (redirects do blog, HTTPS), `robots.txt`. |
-| `assets-src/wp-uploads/` | Imagens originais do WordPress. `npm run images` gera os WebP em `src/assets/img/`. |
+| `assets-src/wp-uploads/` | Imagens originais do WordPress usadas pelos scripts (as que o site não usa foram removidas; estão no histórico do Git). |
+| `scripts/` | `images.py` (`npm run images`) gera os WebP em `src/assets/img/`; `favicons.py` gera favicon e ícones. Precisam de Python com Pillow. |
 | `integrations/`, `politica-de-privacidad.html` | Cookies, GTM/GA4, formulários e política. Mantidos por outra frente: ver `integrations/README.md`. |
+| `.github/workflows/pages.yml` | Build e publicação a cada push (preview no GitHub Pages e branch `site`). |
 
 ## SEO, IA e ícones
 
@@ -79,3 +81,13 @@ A cada push na `main`, o GitHub Actions gera o site, publica o preview em
 - "Recompra de equipos" apontava para `iplacecorp.com.br/buyback`, que não existe mais; agora leva ao formulário.
   "Leasing operacional" ainda aponta para a página do Brasil (em português).
 - Rodrigo não tem foto (o WordPress usava o logo); o cartão mostra as iniciais.
+
+## Comparadores
+
+- Dados extraídos das 4 páginas do WordPress (92 modelos), sem cortes. Para atualizar, edite
+  `src/_data/compare/<família>.json`: cada célula é uma lista de itens — texto (`"\n"` quebra linha),
+  `{ "value": "6.1 pulgadas" }` (número em destaque) ou `{ "icon": "...", "width", "height" }`.
+- As páginas mostram 3 modelos lado a lado (2 no celular); cada coluna troca pelo seletor (`assets/js/compare.js`).
+- "Comprar" leva ao bloco de especialistas da própria página, como no WordPress. Não há preços.
+- Os títulos das linhas são só para leitores de tela, como no original; alguns vieram trocados do construtor
+  da página (ex.: no Apple Watch, "Tamaño de la caja" guarda resistência ao pó e botão de Ação).

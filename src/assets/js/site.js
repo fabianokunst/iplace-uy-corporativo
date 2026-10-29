@@ -1,4 +1,4 @@
-// Comportamento do site: menu mobile, vídeo sob demanda, movimento (cabeçalho, revelação, atalhos) e comparadores.
+// Comportamento do site: menu mobile, vídeo sob demanda e movimento (cabeçalho, revelação, atalhos).
 (function () {
   'use strict';
 
@@ -124,48 +124,5 @@
     }, { passive: true });
   }
 
-  // Comparadores: cada coluna troca de modelo pelo <select>. Sem JS, ficam os modelos padrão.
-  document.querySelectorAll('[data-compare]').forEach(function (root) {
-    var data = JSON.parse(root.querySelector('script[type="application/json"]').textContent);
-    var byId = {};
-    data.models.forEach(function (m) { byId[m.id] = m; });
-
-    function fillCell(el, values) {
-      el.textContent = '';
-      (values || ['—']).forEach(function (v) {
-        var span = document.createElement('span');
-        span.textContent = v;
-        if (v === '—') { span.className = 'muted'; span.setAttribute('aria-label', 'No aplicable'); }
-        el.appendChild(span);
-      });
-    }
-
-    function render(col, id) {
-      var m = byId[id];
-      root.querySelectorAll('[data-col="' + col + '"]').forEach(function (el) {
-        var kind = el.getAttribute('data-kind');
-        if (kind === 'head') {
-          var img = el.querySelector('img');
-          if (img) {
-            if (m.image) { img.src = m.image; img.alt = m.name; img.hidden = false; } else { img.hidden = true; }
-          }
-          el.querySelector('.compare__name').textContent = m.name;
-          var price = el.querySelector('.compare__price');
-          if (price) price.textContent = m.price || '';
-          var buy = el.querySelector('[data-buy]');
-          if (buy) {
-            buy.hidden = !(m.buyUrl && m.available !== false);
-            if (m.buyUrl) buy.href = m.buyUrl;
-          }
-        } else if (kind === 'cell') {
-          var s = el.getAttribute('data-s'), r = el.getAttribute('data-r');
-          fillCell(el, data.sections[s].rows[r].values[id]);
-        }
-      });
-    }
-
-    root.querySelectorAll('select[data-col]').forEach(function (select) {
-      select.addEventListener('change', function () { render(select.getAttribute('data-col'), select.value); });
-    });
-  });
+  // Os comparadores têm script próprio: assets/js/compare.js.
 })();

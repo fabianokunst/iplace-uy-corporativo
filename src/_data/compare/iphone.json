@@ -1,0 +1,2823 @@
+{
+ "family": "iPhone",
+ "slug": "iphone",
+ "source": "https://iplacecorp.com.uy/productos/compara-iphone/",
+ "title": "Compará los modelos de iPhone",
+ "models": [
+  {
+   "id": "iphone-14-pro-max",
+   "name": "iPhone 14 Pro Max",
+   "group": "Nuevos modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-14-pro-max.webp",
+   "imageWidth": 169,
+   "imageHeight": 210,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Morado oscuro",
+     "swatch": "#594f63"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#f4e8ce"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#f0f2f2"
+    },
+    {
+     "name": "Negro espacial",
+     "swatch": "#403e3d"
+    }
+   ]
+  },
+  {
+   "id": "iphone-14-pro",
+   "name": "iPhone 14 Pro",
+   "group": "Nuevos modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-14-pro.webp",
+   "imageWidth": 158,
+   "imageHeight": 193,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Morado oscuro",
+     "swatch": "#594f63"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#f4e8ce"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#f0f2f2"
+    },
+    {
+     "name": "Negro espacial",
+     "swatch": "#403e3d"
+    }
+   ]
+  },
+  {
+   "id": "iphone-14-plus",
+   "name": "iPhone 14 Plus",
+   "group": "Nuevos modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-14-plus.webp",
+   "imageWidth": 155,
+   "imageHeight": 210,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Azul",
+     "swatch": "#a0b4c7"
+    },
+    {
+     "name": "Morado",
+     "swatch": "#e6ddeb"
+    },
+    {
+     "name": "Color medianoche",
+     "swatch": "#222930"
+    },
+    {
+     "name": "Blanco estelar",
+     "swatch": "#faf6f2"
+    },
+    {
+     "name": "PRODUCT (RED)",
+     "swatch": "#fc0324"
+    }
+   ]
+  },
+  {
+   "id": "iphone-14",
+   "name": "iPhone 14",
+   "group": "Nuevos modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-14.webp",
+   "imageWidth": 146,
+   "imageHeight": 192,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Azul",
+     "swatch": "#a0b4c7"
+    },
+    {
+     "name": "Morado",
+     "swatch": "#e6ddeb"
+    },
+    {
+     "name": "Color medianoche",
+     "swatch": "#222930"
+    },
+    {
+     "name": "Blanco estelar",
+     "swatch": "#faf6f2"
+    },
+    {
+     "name": "PRODUCT (RED)",
+     "swatch": "#fc0324"
+    }
+   ]
+  },
+  {
+   "id": "iphone-13-pro-max",
+   "name": "iPhone 13 Pro Max",
+   "group": "Más modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-13-pro-max.webp",
+   "imageWidth": 159,
+   "imageHeight": 209,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Verde alpino",
+     "swatch": "#576856"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#f1f2ed"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#fae7cf"
+    },
+    {
+     "name": "Color grafito",
+     "swatch": "#54524f"
+    },
+    {
+     "name": "Azul Sierra",
+     "swatch": "#a7c1d9"
+    }
+   ]
+  },
+  {
+   "id": "iphone-13-pro",
+   "name": "iPhone 13 Pro",
+   "group": "Más modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-13-pro.webp",
+   "imageWidth": 153,
+   "imageHeight": 194,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Verde alpino",
+     "swatch": "#576856"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#f1f2ed"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#fae7cf"
+    },
+    {
+     "name": "Color grafito",
+     "swatch": "#54524f"
+    },
+    {
+     "name": "Azul Sierra",
+     "swatch": "#a7c1d9"
+    }
+   ]
+  },
+  {
+   "id": "iphone-13",
+   "name": "iPhone 13",
+   "group": "Más modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-13.webp",
+   "imageWidth": 142,
+   "imageHeight": 193,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Verde",
+     "swatch": "#394c38"
+    },
+    {
+     "name": "Rosa",
+     "swatch": "#faddd7"
+    },
+    {
+     "name": "Azul",
+     "swatch": "#276787"
+    },
+    {
+     "name": "Color medianoche",
+     "swatch": "#232a31"
+    },
+    {
+     "name": "Blanco estelar",
+     "swatch": "#faf6f2"
+    },
+    {
+     "name": "PRODUCT (RED)",
+     "swatch": "#bf0013"
+    }
+   ]
+  },
+  {
+   "id": "iphone-13-mini",
+   "name": "iPhone 13 mini",
+   "group": "Más modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-13-mini.webp",
+   "imageWidth": 131,
+   "imageHeight": 174,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Verde",
+     "swatch": "#394c38"
+    },
+    {
+     "name": "Rosa",
+     "swatch": "#faddd7"
+    },
+    {
+     "name": "Azul",
+     "swatch": "#276787"
+    },
+    {
+     "name": "Color medianoche",
+     "swatch": "#232a31"
+    },
+    {
+     "name": "Blanco estelar",
+     "swatch": "#faf6f2"
+    },
+    {
+     "name": "PRODUCT (RED)",
+     "swatch": "#bf0013"
+    }
+   ]
+  },
+  {
+   "id": "iphone-12-pro-max",
+   "name": "iPhone 12 Pro Max",
+   "group": "Más modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-12-pro-max.webp",
+   "imageWidth": 154,
+   "imageHeight": 209,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Azul pacífico",
+     "swatch": "#2d4e5c"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#fcebd3"
+    },
+    {
+     "name": "Color grafito",
+     "swatch": "#52514d"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e3e4df"
+    }
+   ]
+  },
+  {
+   "id": "iphone-12-pro",
+   "name": "iPhone 12 Pro",
+   "group": "Más modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-12-pro.webp",
+   "imageWidth": 143,
+   "imageHeight": 194,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Azul pacífico",
+     "swatch": "#2d4e5c"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#fcebd3"
+    },
+    {
+     "name": "Color grafito",
+     "swatch": "#52514d"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e3e4df"
+    }
+   ]
+  },
+  {
+   "id": "iphone-12",
+   "name": "iPhone 12",
+   "group": "Más modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-12.webp",
+   "imageWidth": 143,
+   "imageHeight": 193,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Morado",
+     "swatch": "#b7afe6"
+    },
+    {
+     "name": "Azul",
+     "swatch": "#023b63"
+    },
+    {
+     "name": "Verde",
+     "swatch": "#d8efd5"
+    },
+    {
+     "name": "PRODUCT (RED)",
+     "swatch": "#d82e2e"
+    },
+    {
+     "name": "Blanco",
+     "swatch": "#f6f2ef"
+    },
+    {
+     "name": "Negro",
+     "swatch": "#25212b"
+    }
+   ]
+  },
+  {
+   "id": "iphone-12-mini",
+   "name": "iPhone 12 mini",
+   "group": "Más modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-12-mini.webp",
+   "imageWidth": 128,
+   "imageHeight": 173,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Morado",
+     "swatch": "#b7afe6"
+    },
+    {
+     "name": "Azul",
+     "swatch": "#023b63"
+    },
+    {
+     "name": "Verde",
+     "swatch": "#d8efd5"
+    },
+    {
+     "name": "PRODUCT (RED)",
+     "swatch": "#d82e2e"
+    },
+    {
+     "name": "Blanco",
+     "swatch": "#f6f2ef"
+    },
+    {
+     "name": "Negro",
+     "swatch": "#25212b"
+    }
+   ]
+  },
+  {
+   "id": "iphone-11-pro-max",
+   "name": "iPhone 11 Pro Max",
+   "group": "Más modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-11-pro-max.webp",
+   "imageWidth": 155,
+   "imageHeight": 212,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Verde medianoche",
+     "swatch": "#4e5851"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#ebebe3"
+    },
+    {
+     "name": "Gris espacial",
+     "swatch": "#535150"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#fad7bd"
+    }
+   ]
+  },
+  {
+   "id": "iphone-11-pro",
+   "name": "iPhone 11 Pro",
+   "group": "Más modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-11-pro.webp",
+   "imageWidth": 147,
+   "imageHeight": 196,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Verde medianoche",
+     "swatch": "#4e5851"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#ebebe3"
+    },
+    {
+     "name": "Gris espacial",
+     "swatch": "#535150"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#fad7bd"
+    }
+   ]
+  },
+  {
+   "id": "iphone-11",
+   "name": "iPhone 11",
+   "group": "Más modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-11.webp",
+   "imageWidth": 145,
+   "imageHeight": 197,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Morado",
+     "swatch": "#d1cdda"
+    },
+    {
+     "name": "Amarillo",
+     "swatch": "#ffe681"
+    },
+    {
+     "name": "Verde",
+     "swatch": "#aee1cd"
+    },
+    {
+     "name": "Negro",
+     "swatch": "#1f2020"
+    },
+    {
+     "name": "Blanco",
+     "swatch": "#f9f6ef"
+    },
+    {
+     "name": "PRODUCT (RED)",
+     "swatch": "#ba0c2e"
+    }
+   ]
+  },
+  {
+   "id": "iphone-se-3a-generacion",
+   "name": "iPhone SE (3ª generación)",
+   "group": "Nuevos modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-se-3a-generacion.webp",
+   "imageWidth": 127,
+   "imageHeight": 185,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Color medianoche",
+     "swatch": "#232a31"
+    },
+    {
+     "name": "Blanco estelar",
+     "swatch": "#faf6f2"
+    },
+    {
+     "name": "PRODUCT (RED)",
+     "swatch": "#bf0013"
+    }
+   ]
+  },
+  {
+   "id": "iphone-se-2a-generacion",
+   "name": "iPhone SE (2ª generación)",
+   "group": "Más modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-se-2a-generacion.webp",
+   "imageWidth": 115,
+   "imageHeight": 185,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Negro",
+     "swatch": "#262529"
+    },
+    {
+     "name": "Blanco",
+     "swatch": "#f3f3f3"
+    },
+    {
+     "name": "PRODUCT (RED)",
+     "swatch": "#b41325"
+    }
+   ]
+  },
+  {
+   "id": "iphone-xs-max",
+   "name": "iPhone XS Max",
+   "group": "Más modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-xs-max.webp",
+   "imageWidth": 138,
+   "imageHeight": 212,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Color plata",
+     "swatch": "#e4e4e2"
+    },
+    {
+     "name": "Gris espacial",
+     "swatch": "#262529"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#fadcc2"
+    }
+   ]
+  },
+  {
+   "id": "iphone-xs",
+   "name": "iPhone XS",
+   "group": "Más modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-xs.webp",
+   "imageWidth": 129,
+   "imageHeight": 192,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Color plata",
+     "swatch": "#e4e4e2"
+    },
+    {
+     "name": "Gris espacial",
+     "swatch": "#262529"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#fadcc2"
+    }
+   ]
+  },
+  {
+   "id": "iphone-xr",
+   "name": "iPhone XR",
+   "group": "Más modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-xr.webp",
+   "imageWidth": 133,
+   "imageHeight": 201,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Azul",
+     "swatch": "#48aee6"
+    },
+    {
+     "name": "Blanco",
+     "swatch": "#f3f3f3"
+    },
+    {
+     "name": "Negro",
+     "swatch": "#2e3034"
+    },
+    {
+     "name": "Amarillo",
+     "swatch": "#f9d045"
+    },
+    {
+     "name": "Coral",
+     "swatch": "#ff6e5a"
+    },
+    {
+     "name": "PRODUCT (RED)",
+     "swatch": "#b41325"
+    }
+   ]
+  },
+  {
+   "id": "iphone-x",
+   "name": "iPhone X",
+   "group": "Más modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-x.webp",
+   "imageWidth": 136,
+   "imageHeight": 194,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Color plata",
+     "swatch": "#e4e4e2"
+    },
+    {
+     "name": "Gris espacial",
+     "swatch": "#262529"
+    }
+   ]
+  },
+  {
+   "id": "iphone-8-plus",
+   "name": "iPhone 8 Plus",
+   "group": "Más modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-8-plus.webp",
+   "imageWidth": 133,
+   "imageHeight": 212,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    },
+    {
+     "name": "Gris espacial",
+     "swatch": "#272729"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#f7e8dd"
+    }
+   ]
+  },
+  {
+   "id": "iphone-8",
+   "name": "iPhone 8",
+   "group": "Más modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-8.webp",
+   "imageWidth": 116,
+   "imageHeight": 186,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    },
+    {
+     "name": "Gris espacial",
+     "swatch": "#272729"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#f7e8dd"
+    }
+   ]
+  },
+  {
+   "id": "iphone-7-plus",
+   "name": "iPhone 7 Plus",
+   "group": "Más modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-7-plus.webp",
+   "imageWidth": 133,
+   "imageHeight": 212,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    },
+    {
+     "name": "Negro",
+     "swatch": "#2e3034"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#e3ccb4"
+    },
+    {
+     "name": "Color oro rosa",
+     "swatch": "#ecc6c1"
+    }
+   ]
+  },
+  {
+   "id": "iphone-7",
+   "name": "iPhone 7",
+   "group": "Más modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-7.webp",
+   "imageWidth": 116,
+   "imageHeight": 186,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    },
+    {
+     "name": "Negro",
+     "swatch": "#2e3034"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#e3ccb4"
+    },
+    {
+     "name": "Color oro rosa",
+     "swatch": "#ecc6c1"
+    }
+   ]
+  },
+  {
+   "id": "iphone-6s-plus",
+   "name": "iPhone 6s Plus",
+   "group": "Más modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-6s-plus.webp",
+   "imageWidth": 132,
+   "imageHeight": 211,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    },
+    {
+     "name": "Gris espacial",
+     "swatch": "#b1b2b7"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#e3ccb4"
+    },
+    {
+     "name": "Color oro rosa",
+     "swatch": "#ecc6c1"
+    }
+   ]
+  },
+  {
+   "id": "iphone-6s",
+   "name": "iPhone 6s",
+   "group": "Más modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-6s.webp",
+   "imageWidth": 115,
+   "imageHeight": 185,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    },
+    {
+     "name": "Gris espacial",
+     "swatch": "#b1b2b7"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#e3ccb4"
+    },
+    {
+     "name": "Color oro rosa",
+     "swatch": "#ecc6c1"
+    }
+   ]
+  },
+  {
+   "id": "iphone-6-plus",
+   "name": "iPhone 6 Plus",
+   "group": "Más modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-6-plus.webp",
+   "imageWidth": 132,
+   "imageHeight": 211,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    },
+    {
+     "name": "Gris espacial",
+     "swatch": "#b1b2b7"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#e3ccb4"
+    }
+   ]
+  },
+  {
+   "id": "iphone-6",
+   "name": "iPhone 6",
+   "group": "Más modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-6.webp",
+   "imageWidth": 116,
+   "imageHeight": 185,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Color plata",
+     "swatch": "#e2e3e4"
+    },
+    {
+     "name": "Gris espacial",
+     "swatch": "#b1b2b7"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#e3ccb4"
+    }
+   ]
+  },
+  {
+   "id": "iphone-se-1a-generacion",
+   "name": "iPhone SE (1ª generación)",
+   "group": "Más modelos de iPhone",
+   "image": "/assets/img/compare/iphone/iphone-se-1a-generacion.webp",
+   "imageWidth": 99,
+   "imageHeight": 167,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Indisponible.",
+   "available": false,
+   "colors": [
+    {
+     "name": "Color plata",
+     "swatch": "#e4e4e2"
+    },
+    {
+     "name": "Gris espacial",
+     "swatch": "#262529"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#fadcc2"
+    },
+    {
+     "name": "Color oro rosa",
+     "swatch": "#ecc6c1"
+    }
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "label": "Nuevos modelos de iPhone",
+   "models": [
+    "iphone-14-pro-max",
+    "iphone-14-pro",
+    "iphone-14-plus",
+    "iphone-14",
+    "iphone-se-3a-generacion"
+   ]
+  },
+  {
+   "label": "Más modelos de iPhone",
+   "models": [
+    "iphone-13-pro-max",
+    "iphone-13-pro",
+    "iphone-13",
+    "iphone-13-mini",
+    "iphone-12-pro-max",
+    "iphone-12-pro",
+    "iphone-12",
+    "iphone-12-mini",
+    "iphone-11-pro-max",
+    "iphone-11-pro",
+    "iphone-11",
+    "iphone-se-2a-generacion",
+    "iphone-xs-max",
+    "iphone-xs",
+    "iphone-xr",
+    "iphone-x",
+    "iphone-8-plus",
+    "iphone-8",
+    "iphone-7-plus",
+    "iphone-7",
+    "iphone-6s-plus",
+    "iphone-6s",
+    "iphone-6-plus",
+    "iphone-6",
+    "iphone-se-1a-generacion"
+   ]
+  }
+ ],
+ "defaults": [
+  "iphone-14-pro-max",
+  "iphone-14-pro",
+  "iphone-14-plus",
+  "iphone-14",
+  "iphone-se-3a-generacion"
+ ],
+ "responsive": {
+  "large": {
+   "columns": 5,
+   "defaults": [
+    "iphone-14-pro-max",
+    "iphone-14-pro",
+    "iphone-14-plus",
+    "iphone-14",
+    "iphone-se-3a-generacion"
+   ]
+  },
+  "medium": {
+   "columns": 3,
+   "defaults": [
+    "iphone-14-pro-max",
+    "iphone-14-pro",
+    "iphone-14-plus"
+   ]
+  },
+  "small": {
+   "columns": 2,
+   "defaults": [
+    "iphone-14-pro-max",
+    "iphone-14-pro"
+   ]
+  }
+ },
+ "sections": [
+  {
+   "title": "Resumen",
+   "rows": [
+    {
+     "values": {
+      "iphone-14-pro-max": [
+       {
+        "value": "6.7 pulgadas"
+       },
+       "Pantalla Super Retina XDR",
+       "Tecnología ProMotion",
+       "Pantalla siempre activa"
+      ],
+      "iphone-14-pro": [
+       {
+        "value": "6.1 pulgadas"
+       },
+       "Pantalla Super Retina XDR",
+       "Tecnología ProMotion",
+       "Pantalla siempre activa"
+      ],
+      "iphone-14-plus": [
+       {
+        "value": "6.7 pulgadas"
+       },
+       "Pantalla Super Retina XDR"
+      ],
+      "iphone-14": [
+       {
+        "value": "6.1 pulgadas"
+       },
+       "Pantalla Super Retina XDR"
+      ],
+      "iphone-13-pro-max": [
+       {
+        "value": "6.7 pulgadas"
+       },
+       "Pantalla Super Retina XDR",
+       "Tecnología ProMotion"
+      ],
+      "iphone-13-pro": [
+       {
+        "value": "6.1 pulgadas"
+       },
+       "Pantalla Super Retina XDR",
+       "Tecnología ProMotion"
+      ],
+      "iphone-13": [
+       {
+        "value": "6.1 pulgadas"
+       },
+       "Pantalla Super Retina XDR"
+      ],
+      "iphone-13-mini": [
+       {
+        "value": "5.4 pulgadas"
+       },
+       "Pantalla Super Retina XDR"
+      ],
+      "iphone-12-pro-max": [
+       {
+        "value": "6.7 pulgadas"
+       },
+       "Pantalla Super Retina XDR"
+      ],
+      "iphone-12-pro": [
+       {
+        "value": "6.1 pulgadas"
+       },
+       "Pantalla Super Retina XDR"
+      ],
+      "iphone-12": [
+       {
+        "value": "6.1 pulgadas"
+       },
+       "Pantalla Super Retina XDR"
+      ],
+      "iphone-12-mini": [
+       {
+        "value": "5.4 pulgadas"
+       },
+       "Pantalla Super Retina XDR"
+      ],
+      "iphone-11-pro-max": [
+       {
+        "value": "6.5 pulgadas"
+       },
+       "Pantalla Super Retina XDR"
+      ],
+      "iphone-11-pro": [
+       {
+        "value": "5.8 pulgadas"
+       },
+       "Pantalla Super Retina XDR"
+      ],
+      "iphone-11": [
+       {
+        "value": "6.1 pulgadas"
+       },
+       "Pantalla Liquid Retina HD"
+      ],
+      "iphone-se-3a-generacion": [
+       {
+        "value": "4.7 pulgadas"
+       },
+       "Pantalla Retina HD"
+      ],
+      "iphone-se-2a-generacion": [
+       {
+        "value": "4.7 pulgadas"
+       },
+       "Pantalla Retina HD"
+      ],
+      "iphone-xs-max": [
+       {
+        "value": "6.5 pulgadas"
+       },
+       "Pantalla Super Retina HD"
+      ],
+      "iphone-xs": [
+       {
+        "value": "5.8 pulgadas"
+       },
+       "Pantalla Super Retina HD"
+      ],
+      "iphone-xr": [
+       {
+        "value": "6.1 pulgadas"
+       },
+       "Pantalla Liquid Retina HD"
+      ],
+      "iphone-x": [
+       {
+        "value": "5.8 pulgadas"
+       },
+       "Pantalla Super Retina HD"
+      ],
+      "iphone-8-plus": [
+       {
+        "value": "5.5 pulgadas"
+       },
+       "Pantalla Retina HD"
+      ],
+      "iphone-8": [
+       {
+        "value": "4.7 pulgadas"
+       },
+       "Pantalla Retina HD"
+      ],
+      "iphone-7-plus": [
+       {
+        "value": "5.5 pulgadas"
+       },
+       "Pantalla Retina HD"
+      ],
+      "iphone-7": [
+       {
+        "value": "4.7 pulgadas"
+       },
+       "Pantalla Retina HD"
+      ],
+      "iphone-6s-plus": [
+       {
+        "value": "5.5 pulgadas"
+       },
+       "Pantalla Retina HD"
+      ],
+      "iphone-6s": [
+       {
+        "value": "4.7 pulgadas"
+       },
+       "Pantalla Retina HD"
+      ],
+      "iphone-6-plus": [
+       {
+        "value": "5.5 pulgadas"
+       },
+       "Pantalla Retina HD"
+      ],
+      "iphone-6": [
+       {
+        "value": "4.7 pulgadas"
+       },
+       "Pantalla Retina HD"
+      ],
+      "iphone-se-1a-generacion": [
+       {
+        "value": "4 pulgadas"
+       },
+       "Pantalla Retina"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "Dynamic Island",
+   "rows": [
+    {
+     "values": {
+      "iphone-14-pro-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_dynamic_island.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Dynamic Island\nUna nueva forma de interactuar con tu iPhone"
+      ],
+      "iphone-14-pro": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_dynamic_island.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Dynamic Island\nUna nueva forma de interactuar con tu iPhone"
+      ],
+      "iphone-14-plus": [
+       "—"
+      ],
+      "iphone-14": [
+       "—"
+      ],
+      "iphone-13-pro-max": [
+       "—"
+      ],
+      "iphone-13-pro": [
+       "—"
+      ],
+      "iphone-13": [
+       "—"
+      ],
+      "iphone-13-mini": [
+       "—"
+      ],
+      "iphone-12-pro-max": [
+       "—"
+      ],
+      "iphone-12-pro": [
+       "—"
+      ],
+      "iphone-12": [
+       "—"
+      ],
+      "iphone-12-mini": [
+       "—"
+      ],
+      "iphone-11-pro-max": [
+       "—"
+      ],
+      "iphone-11-pro": [
+       "—"
+      ],
+      "iphone-11": [
+       "—"
+      ],
+      "iphone-se-3a-generacion": [
+       "—"
+      ],
+      "iphone-se-2a-generacion": [
+       "—"
+      ],
+      "iphone-xs-max": [
+       "—"
+      ],
+      "iphone-xs": [
+       "—"
+      ],
+      "iphone-xr": [
+       "—"
+      ],
+      "iphone-x": [
+       "—"
+      ],
+      "iphone-8-plus": [
+       "—"
+      ],
+      "iphone-8": [
+       "—"
+      ],
+      "iphone-7-plus": [
+       "—"
+      ],
+      "iphone-7": [
+       "—"
+      ],
+      "iphone-6s-plus": [
+       "—"
+      ],
+      "iphone-6s": [
+       "—"
+      ],
+      "iphone-6-plus": [
+       "—"
+      ],
+      "iphone-6": [
+       "—"
+      ],
+      "iphone-se-1a-generacion": [
+       "—"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "Seguridad",
+   "rows": [
+    {
+     "values": {
+      "iphone-14-pro-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS",
+       "Detección de Choques"
+      ],
+      "iphone-14-pro": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS",
+       "Detección de Choques"
+      ],
+      "iphone-14-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS",
+       "Detección de Choques"
+      ],
+      "iphone-14": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS",
+       "Detección de Choques"
+      ],
+      "iphone-13-pro-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS"
+      ],
+      "iphone-13-pro": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS"
+      ],
+      "iphone-13": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS"
+      ],
+      "iphone-13-mini": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS"
+      ],
+      "iphone-12-pro-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS"
+      ],
+      "iphone-12-pro": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS"
+      ],
+      "iphone-12": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS"
+      ],
+      "iphone-12-mini": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS"
+      ],
+      "iphone-11-pro-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS"
+      ],
+      "iphone-11-pro": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS"
+      ],
+      "iphone-11": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS"
+      ],
+      "iphone-se-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS"
+      ],
+      "iphone-se-2a-generacion": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS"
+      ],
+      "iphone-xs-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS"
+      ],
+      "iphone-xs": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS"
+      ],
+      "iphone-xr": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS"
+      ],
+      "iphone-x": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS"
+      ],
+      "iphone-8-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS"
+      ],
+      "iphone-8": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS"
+      ],
+      "iphone-7-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS"
+      ],
+      "iphone-7": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS"
+      ],
+      "iphone-6s-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS"
+      ],
+      "iphone-6s": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS"
+      ],
+      "iphone-6-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS"
+      ],
+      "iphone-6": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS"
+      ],
+      "iphone-se-1a-generacion": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_sos.webp",
+        "width": 41,
+        "height": 41
+       },
+       "Emergencia SOS"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "Cámara",
+   "rows": [
+    {
+     "values": {
+      "iphone-14-pro-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_14_pro_max.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de cámaras Pro\nGran angular de 48 MP | Ultra gran angular | Teleobjetivo",
+       "Cámara frontal TrueDepth con autoenfoque"
+      ],
+      "iphone-14-pro": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_14_pro_max.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de cámaras Pro\nGran angular de 48 MP | Ultra gran angular | Teleobjetivo",
+       "Cámara frontal TrueDepth con autoenfoque"
+      ],
+      "iphone-14-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_14_plus.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema avanzado de dos cámaras\nGran angular de 12 MP | Ultra gran angular",
+       "Cámara frontal TrueDepth con autoenfoque"
+      ],
+      "iphone-14": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_14_plus.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema avanzado de dos cámaras\nGran angular de 12 MP | Ultra gran angular",
+       "Cámara frontal TrueDepth con autoenfoque"
+      ],
+      "iphone-13-pro-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_13_pro_max.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de cámaras Pro\nGran angular de 12 MP | Ultra gran angular | Teleobjetivo",
+       "Cámara frontal TrueDepth"
+      ],
+      "iphone-13-pro": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_13_pro_max.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de cámaras Pro\nGran angular de 12 MP | Ultra gran angular | Teleobjetivo",
+       "Cámara frontal TrueDepth"
+      ],
+      "iphone-13": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_13.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de dos cámaras\nGran angular de 12 MP | Ultra gran angular",
+       "Cámara frontal TrueDepth"
+      ],
+      "iphone-13-mini": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_13.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de dos cámaras\nGran angular de 12 MP | Ultra gran angular",
+       "Cámara frontal TrueDepth"
+      ],
+      "iphone-12-pro-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_12_pro_max.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de cámaras Pro\nGran angular de 12 MP | Ultra gran angular | Teleobjetivo",
+       "Cámara frontal TrueDepth"
+      ],
+      "iphone-12-pro": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_12_pro_max.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de cámaras Pro\nGran angular de 12 MP | Ultra gran angular | Teleobjetivo",
+       "Cámara frontal TrueDepth"
+      ],
+      "iphone-12": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_12.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de dos cámaras\nGran angular de 12 MP | Ultra gran angular",
+       "Cámara frontal TrueDepth"
+      ],
+      "iphone-12-mini": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_12.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de dos cámaras\nGran angular de 12 MP | Ultra gran angular",
+       "Cámara frontal TrueDepth"
+      ],
+      "iphone-11-pro-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_11_pro_max.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de cámaras Pro\nGran angular de 12 MP | Ultra gran angular | Teleobjetivo",
+       "Cámara frontal TrueDepth"
+      ],
+      "iphone-11-pro": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_11_pro_max.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de cámaras Pro\nGran angular de 12 MP | Ultra gran angular | Teleobjetivo",
+       "Cámara frontal TrueDepth"
+      ],
+      "iphone-11": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_11.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de dos cámaras\nGran angular de 12 MP | Ultra gran angular",
+       "Cámara frontal TrueDepth"
+      ],
+      "iphone-se-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_se_3rdGen.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema avanzado de cámara única\nGran angular de 12 MP",
+       "Cámara frontal"
+      ],
+      "iphone-se-2a-generacion": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_se_3rdGen.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de\ncámara única\nGran angular de 12 MP",
+       "Cámara frontal"
+      ],
+      "iphone-xs-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_XS.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de\ndos cámaras\nGran angular de 12 MP | Teleobjetivo",
+       "Cámara frontal TrueDepth"
+      ],
+      "iphone-xs": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_XS.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de\ndos cámaras\nGran angular de 12 MP | Teleobjetivo",
+       "Cámara frontal TrueDepth"
+      ],
+      "iphone-xr": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_cameraiphone_XR.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de\ncámara única\nGran angular de 12 MP",
+       "Cámara frontal TrueDepth"
+      ],
+      "iphone-x": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_XS.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de\ndos cámaras\nGran angular de 12 MP | Teleobjetivo",
+       "Cámara frontal TrueDepth"
+      ],
+      "iphone-8-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_8_plus.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de\ndos cámaras\nGran angular de 12 MP | Teleobjetivo",
+       "Cámara frontal"
+      ],
+      "iphone-8": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_se_3rdGen.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de\ncámara única\nGran angular de 12 MP",
+       "Cámara frontal"
+      ],
+      "iphone-7-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_8_plus.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de\ndos cámaras\nGran angular de 12 MP | Teleobjetivo",
+       "Cámara frontal"
+      ],
+      "iphone-7": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_se_3rdGen.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de\ncámara única\nGran angular de 12 MP",
+       "Cámara frontal"
+      ],
+      "iphone-6s-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_6s_plus.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de\ncámara única\nGran angular de 12 MP",
+       "Cámara frontal"
+      ],
+      "iphone-6s": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_6s_plus.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de\ncámara única\nGran angular de 12 MP",
+       "Cámara frontal"
+      ],
+      "iphone-6-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_6s_plus.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de\ncámara única\nGran angular de 8 MP",
+       "Cámara frontal"
+      ],
+      "iphone-6": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_6s_plus.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de\ncámara única\nGran angular de 8 MP",
+       "Cámara frontal"
+      ],
+      "iphone-se-1a-generacion": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_camera_iphone_se_1stGen.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Sistema de\ncámara única\nGran angular de 12 MP",
+       "Cámara frontal"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "Batería",
+   "rows": [
+    {
+     "values": {
+      "iphone-14-pro-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 29 horas de reproducción de video"
+      ],
+      "iphone-14-pro": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 23 horas de reproducción de video"
+      ],
+      "iphone-14-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 26 horas de reproducción de video"
+      ],
+      "iphone-14": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 20 horas de reproducción de video"
+      ],
+      "iphone-13-pro-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 28 horas de reproducción de video"
+      ],
+      "iphone-13-pro": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 22 horas de reproducción de video"
+      ],
+      "iphone-13": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 19 horas de reproducción de video"
+      ],
+      "iphone-13-mini": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 17 horas de reproducción de video"
+      ],
+      "iphone-12-pro-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 20 horas de reproducción de video"
+      ],
+      "iphone-12-pro": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 17 horas de reproducción de video"
+      ],
+      "iphone-12": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 17 horas de reproducción de video"
+      ],
+      "iphone-12-mini": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 15 horas de reproducción de video"
+      ],
+      "iphone-11-pro-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 20 horas de reproducción de video"
+      ],
+      "iphone-11-pro": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 18 horas de reproducción de video"
+      ],
+      "iphone-11": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 17 horas de reproducción de video"
+      ],
+      "iphone-se-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 15 horas de reproducción de video"
+      ],
+      "iphone-se-2a-generacion": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 13 horas de reproducción de video"
+      ],
+      "iphone-xs-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 15 horas de reproducción de video"
+      ],
+      "iphone-xs": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 14 horas de reproducción de video"
+      ],
+      "iphone-xr": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 16 horas de reproducción de video"
+      ],
+      "iphone-x": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 13 horas de reproducción de video"
+      ],
+      "iphone-8-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 14 horas de reproducción de video"
+      ],
+      "iphone-8": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 13 horas de reproducción de video"
+      ],
+      "iphone-7-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 14 horas de reproducción de video"
+      ],
+      "iphone-7": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 13 horas de reproducción de video"
+      ],
+      "iphone-6s-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 14 horas de reproducción de video"
+      ],
+      "iphone-6s": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 11 horas de reproducción de video"
+      ],
+      "iphone-6-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 14 horas de reproducción de video"
+      ],
+      "iphone-6": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 11 horas de reproducción de video"
+      ],
+      "iphone-se-1a-generacion": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_newbattery.webp",
+        "width": 48,
+        "height": 26
+       },
+       "Hasta 13 horas de reproducción de video"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "Chip",
+   "rows": [
+    {
+     "values": {
+      "iphone-14-pro-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A16_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A16 Bionic con GPU de 5 núcleos"
+      ],
+      "iphone-14-pro": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A16_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A16 Bionic con GPU de 5 núcleos"
+      ],
+      "iphone-14-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A15_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A15 Bionic con GPU de 5 núcleos"
+      ],
+      "iphone-14": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A15_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A15 Bionic con GPU de 5 núcleos"
+      ],
+      "iphone-13-pro-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A15_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A15 Bionic con GPU de 5 núcleos"
+      ],
+      "iphone-13-pro": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A15_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A15 Bionic con GPU de 5 núcleos"
+      ],
+      "iphone-13": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A15_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A15 Bionic con GPU de 4 núcleos"
+      ],
+      "iphone-13-mini": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A15_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A15 Bionic con GPU de 4 núcleos"
+      ],
+      "iphone-12-pro-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A14_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A14 Bionic con GPU de 4 núcleos"
+      ],
+      "iphone-12-pro": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A14_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A14 Bionic con GPU de 4 núcleos"
+      ],
+      "iphone-12": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A14_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A14 Bionic con GPU de 4 núcleos"
+      ],
+      "iphone-12-mini": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A14_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A14 Bionic con GPU de 4 núcleos"
+      ],
+      "iphone-11-pro-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A13_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A13 Bionic con GPU de 4 núcleos"
+      ],
+      "iphone-11-pro": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A13_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A13 Bionic con GPU de 4 núcleos"
+      ],
+      "iphone-11": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A13_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A13 Bionic con GPU de 4 núcleos"
+      ],
+      "iphone-se-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A15_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A15 Bionic con GPU de 4 núcleos"
+      ],
+      "iphone-se-2a-generacion": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A13_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A13 Bionic con GPU de 4 núcleos"
+      ],
+      "iphone-xs-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A12_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A12 Bionic con GPU de 4 núcleos"
+      ],
+      "iphone-xs": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A12_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A12 Bionic con GPU de 4 núcleos"
+      ],
+      "iphone-xr": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A12_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A12 Bionic con GPU de 4 núcleos"
+      ],
+      "iphone-x": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A11_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A11 Bionic con GPU de 3 núcleos"
+      ],
+      "iphone-8-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A11_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A11 Bionic con GPU de 3 núcleos"
+      ],
+      "iphone-8": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A11_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A11 Bionic con GPU de 3 núcleos"
+      ],
+      "iphone-7-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A10_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A10 Fusion"
+      ],
+      "iphone-7": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A10_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A10 Fusion"
+      ],
+      "iphone-6s-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A9_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A9"
+      ],
+      "iphone-6s": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A9_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A9"
+      ],
+      "iphone-6-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A8_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A8"
+      ],
+      "iphone-6": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A8_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A8"
+      ],
+      "iphone-se-1a-generacion": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_A9_chip.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Chip A9"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "Face ID/Touch ID",
+   "rows": [
+    {
+     "values": {
+      "iphone-14-pro-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_face_id.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Face ID"
+      ],
+      "iphone-14-pro": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_face_id.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Face ID"
+      ],
+      "iphone-14-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_face_id.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Face ID"
+      ],
+      "iphone-14": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_face_id.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Face ID"
+      ],
+      "iphone-13-pro-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_face_id.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Face ID"
+      ],
+      "iphone-13-pro": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_face_id.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Face ID"
+      ],
+      "iphone-13": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_face_id.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Face ID"
+      ],
+      "iphone-13-mini": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_face_id.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Face ID"
+      ],
+      "iphone-12-pro-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_face_id.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Face ID"
+      ],
+      "iphone-12-pro": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_face_id.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Face ID"
+      ],
+      "iphone-12": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_face_id.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Face ID"
+      ],
+      "iphone-12-mini": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_face_id.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Face ID"
+      ],
+      "iphone-11-pro-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_face_id.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Face ID"
+      ],
+      "iphone-11-pro": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_face_id.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Face ID"
+      ],
+      "iphone-11": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_face_id.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Face ID"
+      ],
+      "iphone-se-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_touch_id.webp",
+        "width": 39,
+        "height": 38
+       },
+       "Touch ID"
+      ],
+      "iphone-se-2a-generacion": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_touch_id.webp",
+        "width": 39,
+        "height": 38
+       },
+       "Touch ID"
+      ],
+      "iphone-xs-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_face_id.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Face ID"
+      ],
+      "iphone-xs": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_face_id.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Face ID"
+      ],
+      "iphone-xr": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_face_id.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Face ID"
+      ],
+      "iphone-x": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_face_id.webp",
+        "width": 38,
+        "height": 38
+       },
+       "Face ID"
+      ],
+      "iphone-8-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_touch_id.webp",
+        "width": 39,
+        "height": 38
+       },
+       "Touch ID"
+      ],
+      "iphone-8": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_touch_id.webp",
+        "width": 39,
+        "height": 38
+       },
+       "Touch ID"
+      ],
+      "iphone-7-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_touch_id.webp",
+        "width": 39,
+        "height": 38
+       },
+       "Touch ID"
+      ],
+      "iphone-7": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_touch_id.webp",
+        "width": 39,
+        "height": 38
+       },
+       "Touch ID"
+      ],
+      "iphone-6s-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_touch_id.webp",
+        "width": 39,
+        "height": 38
+       },
+       "Touch ID"
+      ],
+      "iphone-6s": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_touch_id.webp",
+        "width": 39,
+        "height": 38
+       },
+       "Touch ID"
+      ],
+      "iphone-6-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_touch_id.webp",
+        "width": 39,
+        "height": 38
+       },
+       "Touch ID"
+      ],
+      "iphone-6": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_touch_id.webp",
+        "width": 39,
+        "height": 38
+       },
+       "Touch ID"
+      ],
+      "iphone-se-1a-generacion": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_touch_id.webp",
+        "width": 39,
+        "height": 38
+       },
+       "Touch ID"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "Red celular",
+   "rows": [
+    {
+     "values": {
+      "iphone-14-pro-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_5G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Compatible con 5G"
+      ],
+      "iphone-14-pro": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_5G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Compatible con 5G"
+      ],
+      "iphone-14-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_5G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Compatible con 5G"
+      ],
+      "iphone-14": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_5G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Compatible con 5G"
+      ],
+      "iphone-13-pro-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_5G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Compatible con 5G"
+      ],
+      "iphone-13-pro": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_5G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Compatible con 5G"
+      ],
+      "iphone-13": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_5G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Compatible con 5G"
+      ],
+      "iphone-13-mini": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_5G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Compatible con 5G"
+      ],
+      "iphone-12-pro-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_5G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Compatible con 5G"
+      ],
+      "iphone-12-pro": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_5G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Compatible con 5G"
+      ],
+      "iphone-12": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_5G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Compatible con 5G"
+      ],
+      "iphone-12-mini": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_5G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Compatible con 5G"
+      ],
+      "iphone-11-pro-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_4G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Red 4G LTE"
+      ],
+      "iphone-11-pro": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_4G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Red 4G LTE"
+      ],
+      "iphone-11": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_4G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Red 4G LTE"
+      ],
+      "iphone-se-3a-generacion": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_5G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Compatible con 5G"
+      ],
+      "iphone-se-2a-generacion": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_4G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Red 4G LTE"
+      ],
+      "iphone-xs-max": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_4G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Red 4G LTE"
+      ],
+      "iphone-xs": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_4G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Red 4G LTE"
+      ],
+      "iphone-xr": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_4G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Red 4G LTE"
+      ],
+      "iphone-x": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_4G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Red 4G LTE"
+      ],
+      "iphone-8-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_4G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Red 4G LTE"
+      ],
+      "iphone-8": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_4G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Red 4G LTE"
+      ],
+      "iphone-7-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_4G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Red 4G LTE"
+      ],
+      "iphone-7": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_4G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Red 4G LTE"
+      ],
+      "iphone-6s-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_4G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Red 4G LTE"
+      ],
+      "iphone-6s": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_4G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Red 4G LTE"
+      ],
+      "iphone-6-plus": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_4G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Red 4G LTE"
+      ],
+      "iphone-6": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_4G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Red 4G LTE"
+      ],
+      "iphone-se-1a-generacion": [
+       {
+        "icon": "/assets/img/compare/iphone/icons/icon_4G.webp",
+        "width": 47,
+        "height": 33
+       },
+       "Red 4G LTE"
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "footnotesTitle": "Avisos legales",
+ "footnotes": [
+  "Pantalla: La pantalla tiene esquinas redondeadas que siguen el elegante diseño curvo del teléfono, y las esquinas se encuentran dentro de un rectángulo estándar. Si se mide en forma de rectángulo estándar, la pantalla tiene 5.42 pulgadas (iPhone 13 mini, iPhone 12 mini), 5.85 pulgadas (iPhone 11 Pro, iPhone XS, iPhone X), 6.06 pulgadas (iPhone 14, iPhone 13 Pro, iPhone 13, iPhone 12 Pro, iPhone 12, iPhone 11, iPhone XR), 6.12 pulgadas (iPhone 14 Pro), 6.46 pulgadas (iPhone 11 Pro Max, iPhone XS Max), 6.68 pulgadas (iPhone 14 Plus, iPhone 13 Pro Max, iPhone 12 Pro Max) o 6.69 pulgadas (iPhone 14 Pro Max) en diagonal. El área real de visualización es menor.",
+  "Energía y batería: La duración de la batería depende de la configuración de la red y de muchos otros factores; los resultados reales pueden ser diferentes. La batería tiene ciclos de carga limitados y eventualmente necesitará ser reemplazada. La duración de la batería y el número de ciclos de carga varían según el uso y la configuración. Para obtener más información, visita apple.com/la/batteries y apple.com/la/iphone/battery.html.",
+  "Conexión celular e inalámbrica: Se requiere un plan de datos. 5G, Gigabit LTE y LTE están disponibles en algunos mercados y a través de operadores específicos. Las velocidades se basan en un rendimiento teórico y varían según las condiciones del lugar y el operador. Para obtener más información sobre la compatibilidad con 5G y LTE, comunícate con tu operador y visita apple.com/la/iphone/cellular."
+ ],
+ "footnotesHtml": [
+  "<strong>Pantalla:</strong> La pantalla tiene esquinas redondeadas que siguen el elegante diseño curvo del teléfono, y las esquinas se encuentran dentro de un rectángulo estándar. Si se mide en forma de rectángulo estándar, la pantalla tiene 5.42 pulgadas (iPhone 13 mini, iPhone 12 mini), 5.85 pulgadas (iPhone 11 Pro, iPhone XS, iPhone X), 6.06 pulgadas (iPhone 14, iPhone 13 Pro, iPhone 13, iPhone 12 Pro, iPhone 12, iPhone 11, iPhone XR), 6.12 pulgadas (iPhone 14 Pro), 6.46 pulgadas (iPhone 11 Pro Max, iPhone XS Max), 6.68 pulgadas (iPhone 14 Plus, iPhone 13 Pro Max, iPhone 12 Pro Max) o 6.69 pulgadas (iPhone 14 Pro Max) en diagonal. El área real de visualización es menor.",
+  "<strong>Energía y batería:</strong> La duración de la batería depende de la configuración de la red y de muchos otros factores; los resultados reales pueden ser diferentes. La batería tiene ciclos de carga limitados y eventualmente necesitará ser reemplazada. La duración de la batería y el número de ciclos de carga varían según el uso y la configuración. Para obtener más información, visita <a href=\"https://www.apple.com/la/batteries/\">apple.com/la/batteries</a> y <a href=\"https://www.apple.com/la/iphone/battery.html\">apple.com/la/iphone/battery.html</a>.",
+  "<strong>Conexión celular e inalámbrica:</strong> Se requiere un plan de datos. 5G, Gigabit LTE y LTE están disponibles en algunos mercados y a través de operadores específicos. Las velocidades se basan en un rendimiento teórico y varían según las condiciones del lugar y el operador. Para obtener más información sobre la compatibilidad con 5G y LTE, comunícate con tu operador y visita <a href=\"https://www.apple.com/la/iphone/cellular/\">apple.com/la/iphone/cellular</a>."
+ ]
+}

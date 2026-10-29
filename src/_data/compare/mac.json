@@ -1,0 +1,1846 @@
+{
+ "family": "Mac",
+ "slug": "mac",
+ "source": "https://iplacecorp.com.uy/productos/compara-mac/",
+ "title": "Compará los modelos de Mac",
+ "models": [
+  {
+   "id": "macbook-pro-de-14-pulgadas-2021",
+   "name": "MacBook Pro de 14 pulgadas (2021)",
+   "group": "Notebooks",
+   "image": "/assets/img/compare/mac/macbook-pro-de-14-pulgadas-2021.webp",
+   "imageWidth": 152,
+   "imageHeight": 94,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#7d7e80"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e3e4e5"
+    }
+   ]
+  },
+  {
+   "id": "macbook-pro-de-16-pulgadas-2021",
+   "name": "MacBook Pro de 16 pulgadas (2021)",
+   "group": "Notebooks",
+   "image": "/assets/img/compare/mac/macbook-pro-de-16-pulgadas-2021.webp",
+   "imageWidth": 167,
+   "imageHeight": 104,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#7d7e80"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e3e4e5"
+    }
+   ]
+  },
+  {
+   "id": "macbook-air-m2-2022",
+   "name": "MacBook Air (M2, 2022)",
+   "group": "Notebooks",
+   "image": "/assets/img/compare/mac/macbook-air-m2-2022.webp",
+   "imageWidth": 146,
+   "imageHeight": 89,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Color medianoche",
+     "swatch": "#2e3642"
+    },
+    {
+     "name": "Blanco estelar",
+     "swatch": "#f0e4d3"
+    },
+    {
+     "name": "Gris espacial",
+     "swatch": "#7d7e80"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e3e4e5"
+    }
+   ]
+  },
+  {
+   "id": "macbook-air-m1-2020",
+   "name": "MacBook Air (M1, 2020)",
+   "group": "Notebooks",
+   "image": "/assets/img/compare/mac/macbook-air-m1-2020.webp",
+   "imageWidth": 155,
+   "imageHeight": 90,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#7d7e80"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e3e4e5"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#dfccb7"
+    }
+   ]
+  },
+  {
+   "id": "macbook-air-pantalla-retina-2020",
+   "name": "MacBook Air (pantalla Retina, 2020)",
+   "group": "Notebooks",
+   "image": "/assets/img/compare/mac/macbook-air-pantalla-retina-2020.webp",
+   "imageWidth": 155,
+   "imageHeight": 90,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#abaeb3"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#c7c8ca"
+    },
+    {
+     "name": "Color oro",
+     "swatch": "#dfccb7"
+    }
+   ]
+  },
+  {
+   "id": "macbook-air-2017",
+   "name": "MacBook Air (2017)",
+   "group": "Notebooks",
+   "image": "/assets/img/compare/mac/macbook-air-2017.webp",
+   "imageWidth": 154,
+   "imageHeight": 90,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Color plata",
+     "swatch": "#c7c8ca"
+    }
+   ]
+  },
+  {
+   "id": "macbook-pro-de-13-pulgadas-m2-2022",
+   "name": "MacBook Pro de 13 pulgadas (M2, 2022)",
+   "group": "Notebooks",
+   "image": "/assets/img/compare/mac/macbook-pro-de-13-pulgadas-m2-2022.webp",
+   "imageWidth": 151,
+   "imageHeight": 89,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#7d7e80"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#e3e4e5"
+    }
+   ]
+  },
+  {
+   "id": "macbook-pro-de-13-pulgadas-m1-2020",
+   "name": "MacBook Pro de 13 pulgadas (M1, 2020)",
+   "group": "Notebooks",
+   "image": "/assets/img/compare/mac/macbook-pro-de-13-pulgadas-m1-2020.webp",
+   "imageWidth": 150,
+   "imageHeight": 89,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#abaeb3"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#c7c8ca"
+    }
+   ]
+  },
+  {
+   "id": "macbook-pro-de-13-pulgadas-dos-puertos-thunderbolt-3-2020",
+   "name": "MacBook Pro de 13 pulgadas (dos puertos Thunderbolt 3, 2020)",
+   "group": "Notebooks",
+   "image": "/assets/img/compare/mac/macbook-pro-de-13-pulgadas-dos-puertos-thunderbolt-3-2020.webp",
+   "imageWidth": 150,
+   "imageHeight": 89,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#abaeb3"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#c7c8ca"
+    }
+   ]
+  },
+  {
+   "id": "macbook-pro-de-13-pulgadas-dos-puertos-thunderbolt-3-2016",
+   "name": "MacBook Pro de 13 pulgadas (dos puertos Thunderbolt 3, 2016)",
+   "group": "Notebooks",
+   "image": "/assets/img/compare/mac/macbook-pro-de-13-pulgadas-dos-puertos-thunderbolt-3-2016.webp",
+   "imageWidth": 150,
+   "imageHeight": 89,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#abaeb3"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#c7c8ca"
+    }
+   ]
+  },
+  {
+   "id": "macbook-pro-de-13-pulgadas-cuatro-puertos-thunderbolt-3-2020",
+   "name": "MacBook Pro de 13 pulgadas (cuatro puertos Thunderbolt 3, 2020)",
+   "group": "Notebooks",
+   "image": "/assets/img/compare/mac/macbook-pro-de-13-pulgadas-cuatro-puertos-thunderbolt-3-2020.webp",
+   "imageWidth": 150,
+   "imageHeight": 89,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#abaeb3"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#c7c8ca"
+    }
+   ]
+  },
+  {
+   "id": "macbook-pro-de-16-pulgadas-2019",
+   "name": "MacBook Pro de 16 pulgadas (2019)",
+   "group": "Notebooks",
+   "image": "/assets/img/compare/mac/macbook-pro-de-16-pulgadas-2019.webp",
+   "imageWidth": 175,
+   "imageHeight": 102,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#abaeb3"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#c7c8ca"
+    }
+   ]
+  },
+  {
+   "id": "imac-de-21-5-pulgadas",
+   "name": "iMac de 21.5 pulgadas",
+   "group": "Desktops",
+   "image": "/assets/img/compare/mac/imac-de-21-5-pulgadas.webp",
+   "imageWidth": 126,
+   "imageHeight": 108,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Color plata",
+     "swatch": "#c7c8ca"
+    }
+   ]
+  },
+  {
+   "id": "imac-de-21-5-pulgadas-pantalla-retina-4k",
+   "name": "iMac de 21.5 pulgadas (pantalla Retina 4K)",
+   "group": "Desktops",
+   "image": "/assets/img/compare/mac/imac-de-21-5-pulgadas-pantalla-retina-4k.webp",
+   "imageWidth": 126,
+   "imageHeight": 108,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Color plata",
+     "swatch": "#c7c8ca"
+    }
+   ]
+  },
+  {
+   "id": "imac-de-24-pulgadas-m1-dos-puertos-2021",
+   "name": "iMac de 24 pulgadas (M1, dos puertos, 2021)",
+   "group": "Desktops",
+   "image": "/assets/img/compare/mac/imac-de-24-pulgadas-m1-dos-puertos-2021.webp",
+   "imageWidth": 130,
+   "imageHeight": 110,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Azul",
+     "swatch": "linear-gradient(90deg, #26476d 50%, #a8bed2 50%)"
+    },
+    {
+     "name": "Verde",
+     "swatch": "linear-gradient(90deg, #10505b 50%, #a3beb4 50%)"
+    },
+    {
+     "name": "Rosa",
+     "swatch": "linear-gradient(90deg, #b62c31 50%, #edb9af 50%)"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#c7c8ca"
+    }
+   ]
+  },
+  {
+   "id": "imac-de-24-pulgadas-m1-cuatro-puertos-2021",
+   "name": "iMac de 24 pulgadas (M1, cuatro puertos, 2021)",
+   "group": "Desktops",
+   "image": "/assets/img/compare/mac/imac-de-24-pulgadas-m1-cuatro-puertos-2021.webp",
+   "imageWidth": 130,
+   "imageHeight": 110,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Azul",
+     "swatch": "linear-gradient(90deg, #26476d 50%, #a8bed2 50%)"
+    },
+    {
+     "name": "Verde",
+     "swatch": "linear-gradient(90deg, #10505b 50%, #a3beb4 50%)"
+    },
+    {
+     "name": "Rosa",
+     "swatch": "linear-gradient(90deg, #b62c31 50%, #edb9af 50%)"
+    },
+    {
+     "name": "Color plata",
+     "swatch": "#c7c8ca"
+    },
+    {
+     "name": "Amarillo",
+     "swatch": "linear-gradient(90deg, #e0901a 50%, #e9ca95 50%)"
+    },
+    {
+     "name": "Naranja",
+     "swatch": "linear-gradient(90deg, #e86740 50%, #e9aa95 50%)"
+    },
+    {
+     "name": "Morado",
+     "swatch": "linear-gradient(90deg, #353b71 50%, #acaccb 50%)"
+    }
+   ]
+  },
+  {
+   "id": "imac-de-27-pulgadas-pantalla-retina-5k",
+   "name": "iMac de 27 pulgadas (pantalla Retina 5K)",
+   "group": "Desktops",
+   "image": "/assets/img/compare/mac/imac-de-27-pulgadas-pantalla-retina-5k.webp",
+   "imageWidth": 154,
+   "imageHeight": 124,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Color plata",
+     "swatch": "#c7c8ca"
+    }
+   ]
+  },
+  {
+   "id": "imac-pro",
+   "name": "iMac Pro",
+   "group": "Desktops",
+   "image": "/assets/img/compare/mac/imac-pro.webp",
+   "imageWidth": 154,
+   "imageHeight": 124,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#7a7b80"
+    }
+   ]
+  },
+  {
+   "id": "mac-mini-m1-2020",
+   "name": "Mac mini (M1, 2020)",
+   "group": "Desktops",
+   "image": "/assets/img/compare/mac/mac-mini-m1-2020.webp",
+   "imageWidth": 72,
+   "imageHeight": 15,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Color plata",
+     "swatch": "#c7c8ca"
+    }
+   ]
+  },
+  {
+   "id": "mac-mini-2018",
+   "name": "Mac mini (2018)",
+   "group": "Desktops",
+   "image": "/assets/img/compare/mac/mac-mini-2018.webp",
+   "imageWidth": 72,
+   "imageHeight": 15,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Gris espacial",
+     "swatch": "#7a7b80"
+    }
+   ]
+  },
+  {
+   "id": "mac-mini-finales-del-2014",
+   "name": "Mac mini (finales del 2014)",
+   "group": "Desktops",
+   "image": "/assets/img/compare/mac/mac-mini-finales-del-2014.webp",
+   "imageWidth": 72,
+   "imageHeight": 15,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Color plata",
+     "swatch": "#c7c8ca"
+    }
+   ]
+  },
+  {
+   "id": "mac-studio-2022",
+   "name": "Mac Studio (2022)",
+   "group": "Desktops",
+   "image": "/assets/img/compare/mac/mac-studio-2022.webp",
+   "imageWidth": 72,
+   "imageHeight": 36,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Color plata",
+     "swatch": "#c7c8ca"
+    }
+   ]
+  },
+  {
+   "id": "mac-pro",
+   "name": "Mac Pro",
+   "group": "Desktops",
+   "image": "/assets/img/compare/mac/mac-pro.webp",
+   "imageWidth": 54,
+   "imageHeight": 127,
+   "buyUrl": "#contato-produtos",
+   "buyLabel": "Comprar",
+   "available": true,
+   "colors": [
+    {
+     "name": "Color plata",
+     "swatch": "#c7c8ca"
+    }
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "label": "Notebooks",
+   "models": [
+    "macbook-pro-de-14-pulgadas-2021",
+    "macbook-pro-de-16-pulgadas-2021",
+    "macbook-air-m2-2022",
+    "macbook-air-m1-2020",
+    "macbook-air-pantalla-retina-2020",
+    "macbook-air-2017",
+    "macbook-pro-de-13-pulgadas-m2-2022",
+    "macbook-pro-de-13-pulgadas-m1-2020",
+    "macbook-pro-de-13-pulgadas-dos-puertos-thunderbolt-3-2020",
+    "macbook-pro-de-13-pulgadas-dos-puertos-thunderbolt-3-2016",
+    "macbook-pro-de-13-pulgadas-cuatro-puertos-thunderbolt-3-2020",
+    "macbook-pro-de-16-pulgadas-2019"
+   ]
+  },
+  {
+   "label": "Desktops",
+   "models": [
+    "imac-de-21-5-pulgadas",
+    "imac-de-21-5-pulgadas-pantalla-retina-4k",
+    "imac-de-24-pulgadas-m1-dos-puertos-2021",
+    "imac-de-24-pulgadas-m1-cuatro-puertos-2021",
+    "imac-de-27-pulgadas-pantalla-retina-5k",
+    "imac-pro",
+    "mac-mini-m1-2020",
+    "mac-mini-2018",
+    "mac-mini-finales-del-2014",
+    "mac-studio-2022",
+    "mac-pro"
+   ]
+  }
+ ],
+ "defaults": [
+  "macbook-air-m1-2020",
+  "macbook-air-m2-2022",
+  "macbook-pro-de-13-pulgadas-m2-2022",
+  "macbook-pro-de-14-pulgadas-2021",
+  "macbook-pro-de-16-pulgadas-2021"
+ ],
+ "responsive": {
+  "large": {
+   "columns": 5,
+   "defaults": [
+    "macbook-air-m1-2020",
+    "macbook-air-m2-2022",
+    "macbook-pro-de-13-pulgadas-m2-2022",
+    "macbook-pro-de-14-pulgadas-2021",
+    "macbook-pro-de-16-pulgadas-2021"
+   ]
+  },
+  "medium": {
+   "columns": 3,
+   "defaults": [
+    "macbook-air-m1-2020",
+    "macbook-air-m2-2022",
+    "macbook-pro-de-13-pulgadas-m2-2022"
+   ]
+  },
+  "small": {
+   "columns": 2,
+   "defaults": [
+    "macbook-air-m2-2022",
+    "macbook-pro-de-13-pulgadas-m2-2022"
+   ]
+  }
+ },
+ "sections": [
+  {
+   "title": "Resumen",
+   "rows": [
+    {
+     "values": {
+      "macbook-pro-de-14-pulgadas-2021": [
+       {
+        "value": "14.2”"
+       },
+       "Pantalla Liquid Retina XDR"
+      ],
+      "macbook-pro-de-16-pulgadas-2021": [
+       {
+        "value": "16.2”"
+       },
+       "Pantalla Liquid Retina XDR"
+      ],
+      "macbook-air-m2-2022": [
+       {
+        "value": "13.6”"
+       },
+       "Pantalla Liquid Retina"
+      ],
+      "macbook-air-m1-2020": [
+       {
+        "value": "13.3”"
+       },
+       "Pantalla Retina"
+      ],
+      "macbook-air-pantalla-retina-2020": [
+       {
+        "value": "13.3”"
+       },
+       "Pantalla Retina"
+      ],
+      "macbook-air-2017": [
+       {
+        "value": "13.3”"
+       },
+       "Pantalla"
+      ],
+      "macbook-pro-de-13-pulgadas-m2-2022": [
+       {
+        "value": "13.3”"
+       },
+       "Pantalla Retina"
+      ],
+      "macbook-pro-de-13-pulgadas-m1-2020": [
+       {
+        "value": "13.3”"
+       },
+       "Pantalla Retina"
+      ],
+      "macbook-pro-de-13-pulgadas-dos-puertos-thunderbolt-3-2020": [
+       {
+        "value": "13.3”"
+       },
+       "Pantalla Retina"
+      ],
+      "macbook-pro-de-13-pulgadas-dos-puertos-thunderbolt-3-2016": [
+       {
+        "value": "13.3”"
+       },
+       "Pantalla Retina"
+      ],
+      "macbook-pro-de-13-pulgadas-cuatro-puertos-thunderbolt-3-2020": [
+       {
+        "value": "13.3”"
+       },
+       "Pantalla Retina"
+      ],
+      "macbook-pro-de-16-pulgadas-2019": [
+       {
+        "value": "16”"
+       },
+       "Pantalla Retina"
+      ],
+      "imac-de-21-5-pulgadas": [
+       {
+        "value": "21.5”"
+       },
+       "Pantalla"
+      ],
+      "imac-de-21-5-pulgadas-pantalla-retina-4k": [
+       {
+        "value": "21.5”"
+       },
+       "Pantalla Retina 4K"
+      ],
+      "imac-de-24-pulgadas-m1-dos-puertos-2021": [
+       {
+        "value": "24”"
+       },
+       "Pantalla Retina 4.5K"
+      ],
+      "imac-de-24-pulgadas-m1-cuatro-puertos-2021": [
+       {
+        "value": "24”"
+       },
+       "Pantalla Retina 4.5K"
+      ],
+      "imac-de-27-pulgadas-pantalla-retina-5k": [
+       {
+        "value": "27”"
+       },
+       "Pantalla Retina 5K"
+      ],
+      "imac-pro": [
+       {
+        "value": "27”"
+       },
+       "Pantalla Retina 5K"
+      ],
+      "mac-mini-m1-2020": [
+       "—"
+      ],
+      "mac-mini-2018": [
+       "—"
+      ],
+      "mac-mini-finales-del-2014": [
+       "—"
+      ],
+      "mac-studio-2022": [
+       "—"
+      ],
+      "mac-pro": [
+       "—"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "Chip",
+   "rows": [
+    {
+     "values": {
+      "macbook-pro-de-14-pulgadas-2021": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_M1_Max_M1_Pro.webp",
+        "width": 94,
+        "height": 42
+       },
+       "Chip M1 Pro de Apple o chip M1 Max de Apple"
+      ],
+      "macbook-pro-de-16-pulgadas-2021": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_M1_Max_M1_Pro.webp",
+        "width": 94,
+        "height": 42
+       },
+       "Chip M1 Pro de Apple o chip M1 Max de Apple"
+      ],
+      "macbook-air-m2-2022": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_M2_chip.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Chip M2 de Apple"
+      ],
+      "macbook-air-m1-2020": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_M1_chip.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Chip M1 de Apple"
+      ],
+      "macbook-air-pantalla-retina-2020": [
+       "Hasta un procesador",
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_intel.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Core i7"
+      ],
+      "macbook-air-2017": [
+       "Hasta un procesador",
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_intel.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Core i7"
+      ],
+      "macbook-pro-de-13-pulgadas-m2-2022": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_M2_chip.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Chip M2 de Apple"
+      ],
+      "macbook-pro-de-13-pulgadas-m1-2020": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_M1_chip.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Chip M1 de Apple"
+      ],
+      "macbook-pro-de-13-pulgadas-dos-puertos-thunderbolt-3-2020": [
+       "Hasta un procesador",
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_intel.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Core i7"
+      ],
+      "macbook-pro-de-13-pulgadas-dos-puertos-thunderbolt-3-2016": [
+       "Hasta un procesador",
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_intel.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Core i7"
+      ],
+      "macbook-pro-de-13-pulgadas-cuatro-puertos-thunderbolt-3-2020": [
+       "Hasta un procesador",
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_intel.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Core i7"
+      ],
+      "macbook-pro-de-16-pulgadas-2019": [
+       "Hasta un procesador",
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_intel.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Core i9"
+      ],
+      "imac-de-21-5-pulgadas": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_intel.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Core i5"
+      ],
+      "imac-de-21-5-pulgadas-pantalla-retina-4k": [
+       "Hasta un procesador",
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_intel.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Core i7"
+      ],
+      "imac-de-24-pulgadas-m1-dos-puertos-2021": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_M1_chip.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Chip M1 de Apple"
+      ],
+      "imac-de-24-pulgadas-m1-cuatro-puertos-2021": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_M1_chip.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Chip M1 de Apple"
+      ],
+      "imac-de-27-pulgadas-pantalla-retina-5k": [
+       "Hasta un procesador",
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_intel.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Core i9"
+      ],
+      "imac-pro": [
+       "Procesador",
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_intel.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Xeon W"
+      ],
+      "mac-mini-m1-2020": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_M1_chip.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Chip M1 de Apple"
+      ],
+      "mac-mini-2018": [
+       "Hasta un procesador",
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_intel.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Core i7"
+      ],
+      "mac-mini-finales-del-2014": [
+       "Hasta un procesador",
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_intel.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Core i7"
+      ],
+      "mac-studio-2022": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_M1_Max_M1_Ultra.webp",
+        "width": 94,
+        "height": 42
+       },
+       "Chip M1 Max de Apple o chip M1 Ultra de Apple"
+      ],
+      "mac-pro": [
+       "Procesador",
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_intel.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Xeon W"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "CPU",
+   "rows": [
+    {
+     "values": {
+      "macbook-pro-de-14-pulgadas-2021": [
+       "CPU de hasta",
+       {
+        "value": "10 núcleos"
+       }
+      ],
+      "macbook-pro-de-16-pulgadas-2021": [
+       "CPU de",
+       {
+        "value": "10 núcleos"
+       }
+      ],
+      "macbook-air-m2-2022": [
+       "CPU de",
+       {
+        "value": "8 núcleos"
+       }
+      ],
+      "macbook-air-m1-2020": [
+       "CPU de",
+       {
+        "value": "8 núcleos"
+       }
+      ],
+      "macbook-air-pantalla-retina-2020": [
+       "CPU de hasta",
+       {
+        "value": "4 núcleos"
+       }
+      ],
+      "macbook-air-2017": [
+       "CPU de",
+       {
+        "value": "2 núcleos"
+       }
+      ],
+      "macbook-pro-de-13-pulgadas-m2-2022": [
+       "CPU de",
+       {
+        "value": "8 núcleos"
+       }
+      ],
+      "macbook-pro-de-13-pulgadas-m1-2020": [
+       "CPU de",
+       {
+        "value": "8 núcleos"
+       }
+      ],
+      "macbook-pro-de-13-pulgadas-dos-puertos-thunderbolt-3-2020": [
+       "CPU de",
+       {
+        "value": "4 núcleos"
+       }
+      ],
+      "macbook-pro-de-13-pulgadas-dos-puertos-thunderbolt-3-2016": [
+       "CPU de",
+       {
+        "value": "2 núcleos"
+       }
+      ],
+      "macbook-pro-de-13-pulgadas-cuatro-puertos-thunderbolt-3-2020": [
+       "CPU de",
+       {
+        "value": "4 núcleos"
+       }
+      ],
+      "macbook-pro-de-16-pulgadas-2019": [
+       "CPU de hasta",
+       {
+        "value": "8 núcleos"
+       }
+      ],
+      "imac-de-21-5-pulgadas": [
+       "CPU de",
+       {
+        "value": "2 núcleos"
+       }
+      ],
+      "imac-de-21-5-pulgadas-pantalla-retina-4k": [
+       "CPU de hasta",
+       {
+        "value": "6 núcleos"
+       }
+      ],
+      "imac-de-24-pulgadas-m1-dos-puertos-2021": [
+       "CPU de",
+       {
+        "value": "8 núcleos"
+       }
+      ],
+      "imac-de-24-pulgadas-m1-cuatro-puertos-2021": [
+       "CPU de",
+       {
+        "value": "8 núcleos"
+       }
+      ],
+      "imac-de-27-pulgadas-pantalla-retina-5k": [
+       "CPU de hasta",
+       {
+        "value": "10 núcleos"
+       }
+      ],
+      "imac-pro": [
+       "CPU de hasta",
+       {
+        "value": "18 núcleos"
+       }
+      ],
+      "mac-mini-m1-2020": [
+       "CPU de",
+       {
+        "value": "8 núcleos"
+       }
+      ],
+      "mac-mini-2018": [
+       "CPU de hasta",
+       {
+        "value": "6 núcleos"
+       }
+      ],
+      "mac-mini-finales-del-2014": [
+       "CPU de",
+       {
+        "value": "2 núcleos"
+       }
+      ],
+      "mac-studio-2022": [
+       "CPU de hasta",
+       {
+        "value": "20 núcleos"
+       }
+      ],
+      "mac-pro": [
+       "CPU de hasta",
+       {
+        "value": "28 núcleos"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "GPU",
+   "rows": [
+    {
+     "values": {
+      "macbook-pro-de-14-pulgadas-2021": [
+       "GPU de hasta",
+       {
+        "value": "32 núcleos"
+       }
+      ],
+      "macbook-pro-de-16-pulgadas-2021": [
+       "GPU de hasta",
+       {
+        "value": "32 núcleos"
+       }
+      ],
+      "macbook-air-m2-2022": [
+       "GPU de hasta",
+       {
+        "value": "10 núcleos"
+       }
+      ],
+      "macbook-air-m1-2020": [
+       "GPU de",
+       {
+        "value": "7 núcleos"
+       }
+      ],
+      "macbook-air-pantalla-retina-2020": [
+       "GPU",
+       {
+        "value": "Intel"
+       },
+       "Iris Plus Graphics"
+      ],
+      "macbook-air-2017": [
+       "GPU",
+       {
+        "value": "Intel"
+       },
+       "HD Graphics 6000"
+      ],
+      "macbook-pro-de-13-pulgadas-m2-2022": [
+       "GPU de",
+       {
+        "value": "10 núcleos"
+       }
+      ],
+      "macbook-pro-de-13-pulgadas-m1-2020": [
+       "GPU de",
+       {
+        "value": "8 núcleos"
+       }
+      ],
+      "macbook-pro-de-13-pulgadas-dos-puertos-thunderbolt-3-2020": [
+       "GPU",
+       {
+        "value": "Intel"
+       },
+       "Iris Plus Graphics 645"
+      ],
+      "macbook-pro-de-13-pulgadas-dos-puertos-thunderbolt-3-2016": [
+       "GPU",
+       {
+        "value": "Intel"
+       },
+       "Iris Graphics 540"
+      ],
+      "macbook-pro-de-13-pulgadas-cuatro-puertos-thunderbolt-3-2020": [
+       "GPU",
+       {
+        "value": "Intel"
+       },
+       "Iris Plus Graphics"
+      ],
+      "macbook-pro-de-16-pulgadas-2019": [
+       "Hasta un GPU",
+       {
+        "value": "AMD"
+       },
+       "Radeon Pro 5600M"
+      ],
+      "imac-de-21-5-pulgadas": [
+       "GPU",
+       {
+        "value": "Intel"
+       },
+       "Iris Plus Graphics 640"
+      ],
+      "imac-de-21-5-pulgadas-pantalla-retina-4k": [
+       "Hasta un GPU",
+       {
+        "value": "AMD"
+       },
+       "Radeon Pro Vega 20"
+      ],
+      "imac-de-24-pulgadas-m1-dos-puertos-2021": [
+       "GPU de",
+       {
+        "value": "7 núcleos"
+       }
+      ],
+      "imac-de-24-pulgadas-m1-cuatro-puertos-2021": [
+       "GPU de",
+       {
+        "value": "8 núcleos"
+       }
+      ],
+      "imac-de-27-pulgadas-pantalla-retina-5k": [
+       "Hasta un GPU",
+       {
+        "value": "AMD"
+       },
+       "Radeon Pro 5700 XT"
+      ],
+      "imac-pro": [
+       "Hasta un GPU",
+       {
+        "value": "AMD"
+       },
+       "Radeon Pro Vega 64X"
+      ],
+      "mac-mini-m1-2020": [
+       "GPU de",
+       {
+        "value": "8 núcleos"
+       }
+      ],
+      "mac-mini-2018": [
+       "GPU",
+       {
+        "value": "Intel"
+       },
+       "UHD Graphics 630"
+      ],
+      "mac-mini-finales-del-2014": [
+       "Hasta un GPU",
+       {
+        "value": "Intel"
+       },
+       "Iris Graphics"
+      ],
+      "mac-studio-2022": [
+       "GPU de hasta",
+       {
+        "value": "64 núcleos"
+       }
+      ],
+      "mac-pro": [
+       "Hasta un GPU",
+       {
+        "value": "AMD"
+       },
+       "Radeon Pro W6800X Duo"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "Memoria",
+   "rows": [
+    {
+     "values": {
+      "macbook-pro-de-14-pulgadas-2021": [
+       "Hasta",
+       {
+        "value": "64 GB"
+       },
+       "de memoria unificada"
+      ],
+      "macbook-pro-de-16-pulgadas-2021": [
+       "Hasta",
+       {
+        "value": "64 GB"
+       },
+       "de memoria unificada"
+      ],
+      "macbook-air-m2-2022": [
+       "Hasta",
+       {
+        "value": "24 GB"
+       },
+       "de memoria unificada"
+      ],
+      "macbook-air-m1-2020": [
+       "Hasta",
+       {
+        "value": "16 GB"
+       },
+       "de memoria unificada"
+      ],
+      "macbook-air-pantalla-retina-2020": [
+       "Hasta",
+       {
+        "value": "16 GB"
+       },
+       "de memoria"
+      ],
+      "macbook-air-2017": [
+       {
+        "value": "8 GB"
+       },
+       "de memoria"
+      ],
+      "macbook-pro-de-13-pulgadas-m2-2022": [
+       "Hasta",
+       {
+        "value": "24 GB"
+       },
+       "de memoria unificada"
+      ],
+      "macbook-pro-de-13-pulgadas-m1-2020": [
+       "Hasta",
+       {
+        "value": "16 GB"
+       },
+       "de memoria unificada"
+      ],
+      "macbook-pro-de-13-pulgadas-dos-puertos-thunderbolt-3-2020": [
+       "Hasta",
+       {
+        "value": "16 GB"
+       },
+       "de memoria"
+      ],
+      "macbook-pro-de-13-pulgadas-dos-puertos-thunderbolt-3-2016": [
+       "Hasta",
+       {
+        "value": "16 GB"
+       },
+       "de memoria"
+      ],
+      "macbook-pro-de-13-pulgadas-cuatro-puertos-thunderbolt-3-2020": [
+       "Hasta",
+       {
+        "value": "32 GB"
+       },
+       "de memoria"
+      ],
+      "macbook-pro-de-16-pulgadas-2019": [
+       "Hasta",
+       {
+        "value": "64 GB"
+       },
+       "de memoria"
+      ],
+      "imac-de-21-5-pulgadas": [
+       "Hasta",
+       {
+        "value": "16 GB"
+       },
+       "de memoria"
+      ],
+      "imac-de-21-5-pulgadas-pantalla-retina-4k": [
+       "Hasta",
+       {
+        "value": "32 GB"
+       },
+       "de memoria"
+      ],
+      "imac-de-24-pulgadas-m1-dos-puertos-2021": [
+       "Hasta",
+       {
+        "value": "16 GB"
+       },
+       "de memoria unificada"
+      ],
+      "imac-de-24-pulgadas-m1-cuatro-puertos-2021": [
+       "Hasta",
+       {
+        "value": "16 GB"
+       },
+       "de memoria unificada"
+      ],
+      "imac-de-27-pulgadas-pantalla-retina-5k": [
+       "Hasta",
+       {
+        "value": "128 GB"
+       },
+       "de memoria"
+      ],
+      "imac-pro": [
+       "Hasta",
+       {
+        "value": "256 GB"
+       },
+       "de memoria"
+      ],
+      "mac-mini-m1-2020": [
+       "Hasta",
+       {
+        "value": "16 GB"
+       },
+       "de memoria unificada"
+      ],
+      "mac-mini-2018": [
+       "Hasta",
+       {
+        "value": "64 GB"
+       },
+       "de memoria"
+      ],
+      "mac-mini-finales-del-2014": [
+       "Hasta",
+       {
+        "value": "16 GB"
+       },
+       "de memoria"
+      ],
+      "mac-studio-2022": [
+       "Hasta",
+       {
+        "value": "128 GB"
+       },
+       "de memoria unificada"
+      ],
+      "mac-pro": [
+       "Hasta",
+       {
+        "value": "1.5 TB"
+       },
+       "de memoria"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "Capacidad de almacenamiento",
+   "rows": [
+    {
+     "values": {
+      "macbook-pro-de-14-pulgadas-2021": [
+       "Hasta",
+       {
+        "value": "8 TB"
+       },
+       "de almacenamiento"
+      ],
+      "macbook-pro-de-16-pulgadas-2021": [
+       "Hasta",
+       {
+        "value": "8 TB"
+       },
+       "de almacenamiento"
+      ],
+      "macbook-air-m2-2022": [
+       "Hasta",
+       {
+        "value": "2 TB"
+       },
+       "de almacenamiento"
+      ],
+      "macbook-air-m1-2020": [
+       "Hasta",
+       {
+        "value": "2 TB"
+       },
+       "de almacenamiento"
+      ],
+      "macbook-air-pantalla-retina-2020": [
+       "Hasta",
+       {
+        "value": "2 TB"
+       },
+       "de almacenamiento"
+      ],
+      "macbook-air-2017": [
+       "Hasta",
+       {
+        "value": "512 GB"
+       },
+       "de almacenamiento"
+      ],
+      "macbook-pro-de-13-pulgadas-m2-2022": [
+       "Hasta",
+       {
+        "value": "2 TB"
+       },
+       "de almacenamiento"
+      ],
+      "macbook-pro-de-13-pulgadas-m1-2020": [
+       "Hasta",
+       {
+        "value": "2 TB"
+       },
+       "de almacenamiento"
+      ],
+      "macbook-pro-de-13-pulgadas-dos-puertos-thunderbolt-3-2020": [
+       "Hasta",
+       {
+        "value": "2 TB"
+       },
+       "de almacenamiento"
+      ],
+      "macbook-pro-de-13-pulgadas-dos-puertos-thunderbolt-3-2016": [
+       "Hasta",
+       {
+        "value": "1 TB"
+       },
+       "de almacenamiento"
+      ],
+      "macbook-pro-de-13-pulgadas-cuatro-puertos-thunderbolt-3-2020": [
+       "Hasta",
+       {
+        "value": "4 TB"
+       },
+       "de almacenamiento"
+      ],
+      "macbook-pro-de-16-pulgadas-2019": [
+       "Hasta",
+       {
+        "value": "8 TB"
+       },
+       "de almacenamiento"
+      ],
+      "imac-de-21-5-pulgadas": [
+       "Hasta",
+       {
+        "value": "1 TB"
+       },
+       "de almacenamiento"
+      ],
+      "imac-de-21-5-pulgadas-pantalla-retina-4k": [
+       "Hasta",
+       {
+        "value": "1 TB"
+       },
+       "de almacenamiento"
+      ],
+      "imac-de-24-pulgadas-m1-dos-puertos-2021": [
+       "Hasta",
+       {
+        "value": "1 TB"
+       },
+       "de almacenamiento"
+      ],
+      "imac-de-24-pulgadas-m1-cuatro-puertos-2021": [
+       "Hasta",
+       {
+        "value": "2 TB"
+       },
+       "de almacenamiento"
+      ],
+      "imac-de-27-pulgadas-pantalla-retina-5k": [
+       "Hasta",
+       {
+        "value": "8 TB"
+       },
+       "de almacenamiento"
+      ],
+      "imac-pro": [
+       "Hasta",
+       {
+        "value": "4 TB"
+       },
+       "de almacenamiento"
+      ],
+      "mac-mini-m1-2020": [
+       "Hasta",
+       {
+        "value": "2 TB"
+       },
+       "de almacenamiento"
+      ],
+      "mac-mini-2018": [
+       "Hasta",
+       {
+        "value": "2 TB"
+       },
+       "de almacenamiento"
+      ],
+      "mac-mini-finales-del-2014": [
+       "Hasta",
+       {
+        "value": "2 TB"
+       },
+       "de almacenamiento"
+      ],
+      "mac-studio-2022": [
+       "Hasta",
+       {
+        "value": "8 TB"
+       },
+       "de almacenamiento"
+      ],
+      "mac-pro": [
+       "Hasta",
+       {
+        "value": "8 TB"
+       },
+       "de almacenamiento"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "Batería",
+   "rows": [
+    {
+     "values": {
+      "macbook-pro-de-14-pulgadas-2021": [
+       "Hasta",
+       {
+        "value": "17 horas"
+       },
+       "de batería"
+      ],
+      "macbook-pro-de-16-pulgadas-2021": [
+       "Hasta",
+       {
+        "value": "21 horas"
+       },
+       "de batería"
+      ],
+      "macbook-air-m2-2022": [
+       "Hasta",
+       {
+        "value": "18 horas"
+       },
+       "de batería"
+      ],
+      "macbook-air-m1-2020": [
+       "Hasta",
+       {
+        "value": "18 horas"
+       },
+       "de batería"
+      ],
+      "macbook-air-pantalla-retina-2020": [
+       "Hasta",
+       {
+        "value": "12 horas"
+       },
+       "de batería"
+      ],
+      "macbook-air-2017": [
+       "Hasta",
+       {
+        "value": "12 horas"
+       },
+       "de batería"
+      ],
+      "macbook-pro-de-13-pulgadas-m2-2022": [
+       "Hasta",
+       {
+        "value": "20 horas"
+       },
+       "de batería"
+      ],
+      "macbook-pro-de-13-pulgadas-m1-2020": [
+       "Hasta",
+       {
+        "value": "20 horas"
+       },
+       "de batería"
+      ],
+      "macbook-pro-de-13-pulgadas-dos-puertos-thunderbolt-3-2020": [
+       "Hasta",
+       {
+        "value": "10 horas"
+       },
+       "de batería"
+      ],
+      "macbook-pro-de-13-pulgadas-dos-puertos-thunderbolt-3-2016": [
+       "Hasta",
+       {
+        "value": "10 horas"
+       },
+       "de batería"
+      ],
+      "macbook-pro-de-13-pulgadas-cuatro-puertos-thunderbolt-3-2020": [
+       "Hasta",
+       {
+        "value": "10 horas"
+       },
+       "de batería"
+      ],
+      "macbook-pro-de-16-pulgadas-2019": [
+       "Hasta",
+       {
+        "value": "11 horas"
+       },
+       "de batería"
+      ],
+      "imac-de-21-5-pulgadas": [
+       "—"
+      ],
+      "imac-de-21-5-pulgadas-pantalla-retina-4k": [
+       "—"
+      ],
+      "imac-de-24-pulgadas-m1-dos-puertos-2021": [
+       "—"
+      ],
+      "imac-de-24-pulgadas-m1-cuatro-puertos-2021": [
+       "—"
+      ],
+      "imac-de-27-pulgadas-pantalla-retina-5k": [
+       "—"
+      ],
+      "imac-pro": [
+       "—"
+      ],
+      "mac-mini-m1-2020": [
+       "—"
+      ],
+      "mac-mini-2018": [
+       "—"
+      ],
+      "mac-mini-finales-del-2014": [
+       "—"
+      ],
+      "mac-studio-2022": [
+       "—"
+      ],
+      "mac-pro": [
+       "—"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "Conectividad",
+   "rows": [
+    {
+     "values": {
+      "macbook-pro-de-14-pulgadas-2021": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_touch_id.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Touch ID"
+      ],
+      "macbook-pro-de-16-pulgadas-2021": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_touch_id.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Touch ID"
+      ],
+      "macbook-air-m2-2022": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_touch_id.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Touch ID"
+      ],
+      "macbook-air-m1-2020": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_touch_id.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Touch ID"
+      ],
+      "macbook-air-pantalla-retina-2020": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_touch_id.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Touch ID"
+      ],
+      "macbook-air-2017": [
+       "—"
+      ],
+      "macbook-pro-de-13-pulgadas-m2-2022": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_touch_bar_id.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Touch Bar y Touch ID"
+      ],
+      "macbook-pro-de-13-pulgadas-m1-2020": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_touch_bar_id.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Touch Bar y Touch ID"
+      ],
+      "macbook-pro-de-13-pulgadas-dos-puertos-thunderbolt-3-2020": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_touch_bar_id.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Touch Bar y Touch ID"
+      ],
+      "macbook-pro-de-13-pulgadas-dos-puertos-thunderbolt-3-2016": [
+       "—"
+      ],
+      "macbook-pro-de-13-pulgadas-cuatro-puertos-thunderbolt-3-2020": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_touch_bar_id.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Touch Bar y Touch ID"
+      ],
+      "macbook-pro-de-16-pulgadas-2019": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_touch_bar_id.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Touch Bar y Touch ID"
+      ],
+      "imac-de-21-5-pulgadas": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_magic_keyboard.webp",
+        "width": 50,
+        "height": 42
+       },
+       "Magic Keyboard"
+      ],
+      "imac-de-21-5-pulgadas-pantalla-retina-4k": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_magic_keyboard.webp",
+        "width": 50,
+        "height": 42
+       },
+       "Magic Keyboard"
+      ],
+      "imac-de-24-pulgadas-m1-dos-puertos-2021": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_magic_keyboard_Lock_key.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Magic Keyboard con tecla de bloqueo\nDisponible con Touch ID"
+      ],
+      "imac-de-24-pulgadas-m1-cuatro-puertos-2021": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_keyboard_touch_id.webp",
+        "width": 42,
+        "height": 42
+       },
+       "Magic Keyboard con Touch ID"
+      ],
+      "imac-de-27-pulgadas-pantalla-retina-5k": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_magic_keyboard.webp",
+        "width": 50,
+        "height": 42
+       },
+       "Magic Keyboard"
+      ],
+      "imac-pro": [
+       {
+        "icon": "/assets/img/compare/mac/icons/icon_magic_keyboard_keypad.webp",
+        "width": 94,
+        "height": 42
+       },
+       "Magic Keyboard con teclado numérico"
+      ],
+      "mac-mini-m1-2020": [
+       "—"
+      ],
+      "mac-mini-2018": [
+       "—"
+      ],
+      "mac-mini-finales-del-2014": [
+       "—"
+      ],
+      "mac-studio-2022": [
+       "—"
+      ],
+      "mac-pro": [
+       "—"
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "footnotesTitle": "Avisos legales",
+ "footnotes": [
+  "No todas las configuraciones están disponibles en todos los países. Las afirmaciones sobre el rendimiento varían según el modelo y la configuración.",
+  "Pantalla: El tamaño de la pantalla se mide en diagonal. Las pantallas de la MacBook Air de 13.6 pulgadas y las MacBook Pro de 14 pulgadas y 16 pulgadas tienen esquinas redondeadas en la parte superior. Si se miden en forma de rectángulo estándar, las pantallas tienen 13.6 pulgadas, 14.2 pulgadas y 16.2 pulgadas en diagonal (el área real de visualización es menor). La medida exacta de la pantalla de la iMac de 24 pulgadas es de 23.5 pulgadas en diagonal.",
+  "Almacenamiento: 1 GB = 1,000 millones de bytes y 1 TB = 1 millón de millones de bytes. La capacidad formateada real es menor.",
+  "Batería: La duración de la batería varía según el uso y la configuración. Para obtener más información, visita apple.com/la/batteries."
+ ],
+ "footnotesHtml": [
+  "No todas las configuraciones están disponibles en todos los países. Las afirmaciones sobre el rendimiento varían según el modelo y la configuración.",
+  "<strong>Pantalla:</strong> El tamaño de la pantalla se mide en diagonal. Las pantallas de la MacBook Air de 13.6 pulgadas y las MacBook Pro de 14 pulgadas y 16 pulgadas tienen esquinas redondeadas en la parte superior. Si se miden en forma de rectángulo estándar, las pantallas tienen 13.6 pulgadas, 14.2 pulgadas y 16.2 pulgadas en diagonal (el área real de visualización es menor). La medida exacta de la pantalla de la iMac de 24 pulgadas es de 23.5 pulgadas en diagonal.",
+  "<strong>Almacenamiento:</strong> 1 GB = 1,000 millones de bytes y 1 TB = 1 millón de millones de bytes. La capacidad formateada real es menor.",
+  "<strong>Batería:</strong> La duración de la batería varía según el uso y la configuración. Para obtener más información, visita <a href=\"https://www.apple.com/la/batteries\">apple.com/la/batteries</a>."
+ ]
+}

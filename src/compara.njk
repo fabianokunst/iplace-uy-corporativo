@@ -1,0 +1,126 @@
+---
+layout: layouts/base.njk
+families:
+  - { slug: mac, label: Mac }
+  - { slug: ipad, label: iPad }
+  - { slug: iphone, label: iPhone }
+  - { slug: watch, label: Apple Watch }
+pagination:
+  data: families
+  size: 1
+  alias: fam
+permalink: "/productos/compara-{{ fam.slug }}/"
+eleventyComputed:
+  title: "Compará los modelos de {{ fam.label }}"
+  description: "Compará los modelos de {{ fam.label }} lado a lado y consultá con los especialistas de iPlace Corporativo la mejor opción para tu empresa."
+---
+{#- Os 4 comparadores saem daqui, com os dados de _data/compare/<slug>.json.
+    Sem JavaScript aparecem os 3 primeiros modelos padrão; com JS (assets/js/compare.js)
+    cada <select> troca o modelo da coluna. -#}
+{% import "macros.njk" as m with context %}
+{%- set data = compare[fam.slug] %}
+{%- set defaults = data.defaults.slice(0, 3) %}
+{#- Altura da área das imagens = imagem mais alta da família (Mac é baixo, iPhone é alto). #}
+{%- set heights = [] %}
+{%- for model in data.models %}{% set _ = heights.push(model.imageHeight) %}{% endfor %}
+{%- set mediaH = (heights | sort(true)) | first %}
+
+{%- macro cell(items) -%}
+{%- for it in (items or ['—']) -%}
+{%- if it.icon %}<img src="{{ it.icon }}" alt="" width="{{ it.width }}" height="{{ it.height }}" loading="lazy">
+{%- elif it.value %}<strong class="cmp__value">{{ it.value }}</strong>
+{%- elif it == '—' %}<span class="cmp__na" aria-label="No aplicable">—</span>
+{%- else %}<span>{{ it }}</span>{% endif -%}
+{%- endfor -%}
+{%- endmacro %}
+
+<link rel="stylesheet" href="/assets/css/compare.css">
+
+{{ m.pageHero(fam.label, 'Comparador', data.title, 'Elegí un modelo en cada columna para ver sus diferencias.', '', '', {label: 'Productos', url: '/productos/'}) }}
+
+<div class="cmp" data-comparator data-base="{{ '/' | relative }}" style="--cmp-media: {{ mediaH }}px">
+  <script type="application/json">{{ { models: data.models, sections: data.sections } | dump | replace("</", "<\\/") | safe }}</script>
+
+  <div class="cmp__pickers">
+    <div class="ds-container cmp__row">
+      {%- for id in defaults %}
+      {%- set c = loop.index0 %}
+      <div class="cmp__col cmp__col--{{ c }}">
+        <label class="ds-visually-hidden" for="cmp-{{ fam.slug }}-{{ c }}">Modelo para la columna {{ c + 1 }}</label>
+        <select class="ds-select" id="cmp-{{ fam.slug }}-{{ c }}" data-col="{{ c }}">
+          {%- for group in data.groups %}
+          <optgroup label="{{ group.label }}">
+            {%- for mid in group.models %}
+            {%- set opt = data.models | find('id', mid) %}
+            <option value="{{ opt.id }}"{% if opt.id == id %} selected{% endif %}>{{ opt.name }}</option>
+            {%- endfor %}
+          </optgroup>
+          {%- endfor %}
+        </select>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+
+  <div class="ds-container">
+    <div class="cmp__row cmp__heads">
+      {%- for id in defaults %}
+      {%- set c = loop.index0 %}
+      {%- set model = data.models | find('id', id) %}
+      <div class="cmp__head cmp__col--{{ c }}" data-col="{{ c }}" data-kind="head">
+        <div class="cmp__media"><img src="{{ model.image }}" alt="{{ model.name }}" width="{{ model.imageWidth }}" height="{{ model.imageHeight }}"></div>
+        <ul class="cmp__swatches" aria-label="Colores: {% for col in model.colors %}{{ col.name }}{% if not loop.last %}, {% endif %}{% endfor %}">
+          {%- for col in model.colors %}<li style="background: {{ col.swatch }}" title="{{ col.name }}"></li>{% endfor -%}
+        </ul>
+        <p class="cmp__name">{{ model.name }}</p>
+        {%- if model.available === false %}
+        <p class="cmp__status" data-status>No disponible</p>
+        <a class="ds-btn ds-btn--outline ds-btn--small" data-buy href="#contato-produtos" hidden>{{ model.buyLabel or 'Comprar' }}</a>
+        {%- else %}
+        <p class="cmp__status" data-status hidden>No disponible</p>
+        <a class="ds-btn ds-btn--outline ds-btn--small" data-buy href="#contato-produtos">{{ model.buyLabel or 'Comprar' }}</a>
+        {%- endif %}
+      </div>
+      {%- endfor %}
+    </div>
+
+    {%- for section in data.sections %}
+    {%- set s = loop.index0 %}
+    <section class="cmp__section" aria-labelledby="cmp-s{{ s }}">
+      <h2 class="ds-visually-hidden" id="cmp-s{{ s }}">{{ section.title | replace("- 2", "") }}</h2>
+      {%- for row in section.rows %}
+      {%- set r = loop.index0 %}
+      <div class="cmp__row">
+        {%- for id in defaults %}
+        <div class="cmp__cell cmp__col--{{ loop.index0 }}" data-col="{{ loop.index0 }}" data-kind="cell" data-s="{{ s }}" data-r="{{ r }}">{{ cell(row.values[id]) }}</div>
+        {%- endfor %}
+      </div>
+      {%- endfor %}
+    </section>
+    {%- endfor %}
+
+    {%- if data.footnotesHtml and data.footnotesHtml.length %}
+    <details class="cmp__notes">
+      <summary>{{ data.footnotesTitle or 'Avisos legales' }}</summary>
+      <ol>
+        {%- for note in data.footnotesHtml %}<li>{{ note | safe }}</li>{% endfor %}
+      </ol>
+    </details>
+    {%- endif %}
+  </div>
+</div>
+
+<section class="section section--sunken" id="contato-produtos" aria-labelledby="contacto-title">
+  <div class="ds-container">
+    <div class="section__head">
+      <h2 class="site-title" id="contacto-title">Conectá a nuestros especialistas</h2>
+      <p class="lead">Consultá precios, plazos y condiciones para tu empresa.</p>
+    </div>
+    <div class="band-stack">
+      {{ m.people(['diego']) }}
+      {{ m.social() }}
+    </div>
+  </div>
+</section>
+
+<script src="/assets/js/compare.js" defer></script>

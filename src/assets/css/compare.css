@@ -1,0 +1,76 @@
+/* Comparadores (/productos/compara-*). 3 colunas; 2 abaixo de 640px. Só tokens do DS. */
+.cmp { --cols: 3; }
+@media (max-width: 639px) {
+  .cmp { --cols: 2; }
+  .cmp__col--2 { display: none; }
+}
+
+.cmp__row {
+  display: grid;
+  grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
+  gap: var(--ds-medium);
+}
+@media (min-width: 768px) { .cmp__row { gap: var(--ds-x-big); } }
+
+/* Seletores fixos sob o cabeçalho */
+.cmp__pickers {
+  position: sticky;
+  top: 64px;
+  z-index: 5;
+  padding-block: var(--ds-small);
+  background: var(--ds-white);
+  border-bottom: 1px solid var(--ds-border);
+}
+.cmp .ds-select { font-size: var(--ds-medium-text); font-weight: var(--ds-weight-bold); }
+
+/* Cabeça de cada coluna */
+.cmp__heads { padding-block: var(--ds-x-big); border-bottom: 1px solid var(--ds-border); }
+.cmp__head { display: flex; flex-direction: column; align-items: center; gap: var(--ds-small); text-align: center; }
+/* Cada imagem sai no tamanho de exibição da Apple (width/height do HTML), que mostra o tamanho
+   relativo entre os aparelhos; os arquivos são 2x. No celular, limita a altura. */
+.cmp__media { display: flex; align-items: flex-end; justify-content: center; height: var(--cmp-media, 220px); width: 100%; }
+.cmp__media img { height: auto; max-width: 100%; max-height: 100%; object-fit: contain; }
+@media (max-width: 767px) { .cmp__media { height: min(var(--cmp-media, 150px), 150px); } }
+.cmp__swatches { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; min-height: 12px; margin-top: var(--ds-small); }
+.cmp__swatches li { width: 12px; height: 12px; border-radius: 50%; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15); }
+.cmp__name {
+  font-family: var(--ds-font-display);
+  font-weight: var(--ds-weight-heading);
+  font-size: var(--ds-h3-mini);
+  line-height: 1.2;
+  text-wrap: balance;
+}
+@media (min-width: 768px) { .cmp__name { font-size: var(--ds-h5); } }
+.cmp__status { font-size: var(--ds-medium-text); color: var(--ds-text-secondary); }
+
+/* Linhas de especificação */
+.cmp__section { padding-block: var(--ds-big); border-bottom: 1px solid var(--ds-border); }
+.cmp__cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--ds-x-small);
+  text-align: center;
+  font-size: var(--ds-medium-text);
+  line-height: 1.45;
+  color: var(--ds-gray-2);
+}
+@media (min-width: 768px) { .cmp__cell { font-size: var(--ds-big-text); } }
+.cmp__cell > span { white-space: pre-line; }
+.cmp__cell > img { margin-bottom: var(--ds-x-small); }
+.cmp__value {
+  font-family: var(--ds-font-display);
+  font-weight: var(--ds-weight-heading);
+  font-size: var(--ds-h5);
+  line-height: 1.15;
+  color: var(--ds-black);
+}
+@media (min-width: 768px) { .cmp__value { font-size: var(--ds-h3); } }
+.cmp__na { color: var(--ds-gray-4); font-size: var(--ds-h5); }
+
+/* Avisos legais */
+.cmp__notes { margin-block: var(--ds-x-big) var(--ds-giant); color: var(--ds-text-secondary); font-size: var(--ds-small-text); line-height: 1.5; }
+.cmp__notes > summary { cursor: pointer; font-size: var(--ds-medium-text); font-weight: var(--ds-weight-bold); color: var(--ds-text); padding-block: var(--ds-small); }
+.cmp__notes ol { list-style: decimal; padding-left: var(--ds-big); margin-top: var(--ds-small); }
+.cmp__notes li + li { margin-top: var(--ds-small); }
+.ds .cmp__notes a { color: var(--ds-link); }
