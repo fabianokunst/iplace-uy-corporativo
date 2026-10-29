@@ -30,19 +30,27 @@ faq:
   <div class="ds-container hero__grid">
     <div class="hero__copy">
       <p><span class="ds-badge ds-badge--brand">Apple Premium Reseller</span></p>
-      <h1 class="site-display" id="hero-title">iPlace Corporativo, el único Apple Premium Reseller del Uruguay para tu empresa</h1>
+      <h1 class="site-display" id="hero-title">{{ m.words('iPlace Corporativo,') }} <span class="hl">{{ m.words('el único Apple Premium Reseller', 2) }}</span> {{ m.words('del Uruguay para tu empresa', 7) }}</h1>
       <div class="ds-cluster">
         <a class="ds-btn ds-btn--brand" href="/contacto/">Hablá con nuestros especialistas</a>
         <a class="ds-btn ds-btn--alpha" href="/soluciones/">Conocé las soluciones</a>
       </div>
     </div>
     <div class="hero__media">
-      <img src="/assets/img/home/equipo.webp" alt="Equipo de trabajo en una oficina con computadoras Mac" width="680" height="700" fetchpriority="high">
+      <div class="hero__frame">
+        <img src="/assets/img/home/equipo.webp" alt="Equipo de trabajo en una oficina con computadoras Mac" width="680" height="700" fetchpriority="high">
+      </div>
+      {#- Cartões flutuantes decorativos: repetem textos da página, por isso ficam fora da leitura de tela. #}
+      <div class="hero__card" aria-hidden="true">
+        <span class="icon-disc icon-disc--brand"><svg class="ds-icon"><use href="#i-fine"/></svg></span>
+        <span><strong>Especialistas</strong> en todo el ecosistema Apple</span>
+      </div>
+      <div class="hero__chip" aria-hidden="true"><svg class="ds-icon ds-icon--small"><use href="#i-entrega"/></svg>Envío gratis y rápido</div>
     </div>
   </div>
 </section>
 
-<section class="section--tight" aria-label="Beneficios">
+<section class="benefits-band" aria-label="Beneficios">
   <div class="ds-container">
     <ul class="benefits">
       <li><span class="icon-disc" aria-hidden="true"><svg class="ds-icon"><use href="#i-avaliacao"/></svg></span>Beneficios especiales</li>

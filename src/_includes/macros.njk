@@ -1,8 +1,16 @@
 {#- Blocos reutilizados pelas páginas. Importe com: {% import "macros.njk" as m with context %} -#}
 
+{#- Título com entrada palavra por palavra: cada palavra sobe de dentro de uma máscara (site.css, "Entrada").
+    start desloca o atraso quando o título é montado em partes (ex.: trecho destacado na home). -#}
+{% macro words(text, start=0) -%}
+{%- for w in text.split(' ') -%}
+<span class="w"><span style="--i: {{ start + loop.index0 }}">{{ w | safe }}</span></span>{% if not loop.last %} {% endif %}
+{%- endfor -%}
+{%- endmacro %}
+
 {#- Topo das páginas internas: migalhas, título, texto de apoio e faixa fotográfica. -#}
 {% macro pageHero(crumb, eyebrow, title, lead, image, imageAlt, parent) %}
-<section class="page-hero">
+<section class="page-hero{% if image %} page-hero--media{% endif %}">
   <div class="ds-container">
     <nav aria-label="Ruta de navegación">
       <ol class="ds-breadcrumb">
@@ -13,12 +21,14 @@
     </nav>
     <div class="page-hero__copy">
       {%- if eyebrow %}<p class="eyebrow">{{ eyebrow }}</p>{% endif %}
-      <h1 class="site-display">{{ title | safe }}</h1>
+      <h1 class="site-display">{{ words(title) }}</h1>
       {%- if lead %}<p class="lead">{{ lead | safe }}</p>{% endif %}
       {%- if caller %}{{ caller() }}{% endif %}
     </div>
     {%- if image %}
-    <img class="page-hero__media" src="{{ image }}" alt="{{ imageAlt }}" width="1920" height="270" fetchpriority="high">
+    <div class="page-hero__media">
+      <img src="{{ image }}" alt="{{ imageAlt }}" width="1920" height="270" fetchpriority="high">
+    </div>
     {%- endif %}
   </div>
 </section>

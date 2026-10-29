@@ -65,7 +65,7 @@ lines:
       <nav aria-label="Ruta de navegación">
         <ol class="ds-breadcrumb"><li><a href="/">Inicio</a></li><li aria-current="page">Productos</li></ol>
       </nav>
-      <h1 class="site-display" id="productos-title">Una línea de productos completa para negocios de alta performance</h1>
+      <h1 class="site-display" id="productos-title">{{ m.words('Una línea de productos completa para negocios de alta performance') }}</h1>
       <p class="hero__lead">iPlace Corporativo, canal especializado en venta de productos Apple para empresas, posee en su portafolio las mejores soluciones para que los profesionales trabajen de forma intuitiva, segura y productiva, ampliando la creatividad y colaboración en cualquier segmento de mercado.</p>
     </div>
     <div class="hero__media hero__media--contain">
@@ -79,13 +79,26 @@ lines:
     <div class="section__head">
       <h2 class="site-title" id="lineas-title">Conozca nuestros productos y plataformas</h2>
     </div>
-    <div>
+  </div>
+  {#- Atalhos fixos sob o cabeçalho; site.js marca a linha visível (aria-current). #}
+  <nav class="subnav" aria-label="Líneas de productos">
+    <div class="ds-container">
+      <ul class="subnav__list">
+        {%- for line in lines %}
+        <li><a href="#{{ line.name | slugify }}">{{ line.name }}</a></li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </nav>
+  <div class="ds-container">
+    <div class="product-list">
       {%- for line in lines %}
       <article class="product-row" id="{{ line.name | slugify }}">
         <div class="product-row__media">
           <img src="{{ line.image }}" alt="{{ line.alt }}" width="{{ line.w }}" height="{{ line.h }}" loading="lazy">
         </div>
         <div class="product-row__copy">
+          <p class="product-row__index" aria-hidden="true">{{ ("0" + loop.index) if loop.index < 10 else loop.index }}</p>
           <h3 class="site-title">{{ line.name }}</h3>
           <p class="text">{{ line.text }}</p>
           <div class="ds-cluster">
