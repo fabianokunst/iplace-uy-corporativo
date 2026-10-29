@@ -443,6 +443,9 @@ main { flex: 1 0 auto; overflow-x: clip; }
   .lead-form--single { grid-template-columns: minmax(0, 1fr); }
 }
 .ds .ds-field__label .optional { font-weight: var(--ds-weight-regular); color: var(--ds-text-secondary); }
+/* Telefone com o +598 fixo na frente (macro phoneInput), no lugar do ícone do ds-input-group. */
+.ds-input-group > .phone-prefix { position: absolute; left: var(--ds-medium); font-size: var(--ds-big-text); color: var(--ds-text); pointer-events: none; }
+.ds-input-group > .phone-prefix + .ds-input { padding-left: calc(var(--ds-medium) + 3em); }
 .lead-form__actions { display: flex; flex-direction: column; align-items: flex-start; gap: var(--ds-medium); padding-top: var(--ds-x-small); }
 .lead-form--single .lead-form__actions .ds-btn { width: 100%; }
 /* Bloco de aceite que o consent.js insere antes do botão; caixa igual à Choice do DS. */
