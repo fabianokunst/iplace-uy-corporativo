@@ -112,14 +112,14 @@
       { event_type: 'CONVERSION', event_family: 'CDP', payload: payload });
   }
 
-  // Emarsys: forms com os campos ocultos do formulário de lá (CID, f, p, a: emarsysFields em macros.njk).
-  // Os campos do site viram os inp_* do Emarsys; CID, f, p, a, optin e inp_* seguem como estão;
+  // Emarsys: forms com os campos ocultos do formulário de lá (CID, f, p, a...: emarsysFields em macros.njk).
+  // Os campos do site viram os inp_* do Emarsys; os do Emarsys seguem como estão, inclusive os vazios;
   // o resto (aceite da política, versão) fica no site.
   var EMARSYS_FIELDS = {
     first_name: 'inp_1', last_name: 'inp_2', email: 'inp_3', company_name: 'inp_18',
     mobile_phone: 'inp_37', rut: 'inp_13176', message: 'inp_17834'
   };
-  var EMARSYS_PARAMS = /^(CID|f|p|a|optin|inp_\d+)$/;
+  var EMARSYS_PARAMS = /^(CID|SID|UID|f|p|a|el|llid|c|counted|RID|mailnow|optin|inp_\d+)$/;
 
   // Telefone só com dígitos e o 598 na frente, como o 55 dos formulários do Brasil:
   // "099 123 456", "99123456" e "+598 99 123 456" viram 59899123456. Com + ou 00 de outro país, fica como veio.
@@ -129,11 +129,12 @@
     return '598' + digits.replace(/^0+/, '');
   }
 
-  function sendToEmarsys(fields) {
+  function sendToEmarsys(form, fields) {
     var query = new URLSearchParams();
+    // Direto do form, porque fields não tem os vazios, e sem eles o Emarsys não cadastra.
+    new FormData(form).forEach(function (v, k) { if (EMARSYS_PARAMS.test(k)) query.set(k, v); });
     Object.keys(fields).forEach(function (k) {
       if (EMARSYS_FIELDS[k]) query.set(EMARSYS_FIELDS[k], k === 'mobile_phone' ? phoneUy(fields[k]) : fields[k]);
-      else if (EMARSYS_PARAMS.test(k)) query.set(k, fields[k]);
     });
     // "Quiero recibir novedades" (consent.js) é o opt-in do Emarsys.
     if (fields.acepta_comunicaciones) query.set('optin', 'y');
@@ -184,7 +185,7 @@
     }
 
     setStatus(form, 'sending', 'Enviando…');
-    var request = method === 'emarsys' ? sendToEmarsys(fields)
+    var request = method === 'emarsys' ? sendToEmarsys(form, fields)
       : method === 'rdstation' ? sendToRd(id, fields)
       : post(CONFIG.leadEndpoint, Object.assign({ form_id: id }, utm, fields));
     request.then(function () {
