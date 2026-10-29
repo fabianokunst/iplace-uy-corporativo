@@ -46,8 +46,10 @@ Todo envio bem-sucedido dispara `generate_lead` (GA4) e `lead_submit` (dataLayer
 
 Os formulários foram gerados no Emarsys (conta `CID=1095776552`); o site manda os mesmos parâmetros por GET para
 `https://link.iplace.com.uy/u/register.php`, em segundo plano, e mostra a mensagem de sucesso na própria página.
-O macro `emarsysFields(f)` (`src/_includes/macros.njk`) põe no form os campos ocultos `CID`, `f`, `p=2`, `a=r` e
-`inp_17832=SIM` ("Formulário iPlace Corp UY", marca a origem); `leadForm(..., emarsysForm=ID)` já o inclui.
+O macro `emarsysFields(f)` (`src/_includes/macros.njk`) põe no form os campos ocultos `CID`, `f`, `p=2`, `a=r`,
+`inp_17832=SIM` ("Formulário iPlace Corp UY", marca a origem) e os que vêm vazios no HTML gerado (`SID`, `UID`, `el`,
+`llid`, `c`, `counted`, `RID`, `mailnow`); `leadForm(..., emarsysForm=ID)` já o inclui. Os vazios precisam ir:
+sem eles o Emarsys responde "No user could be found" e não cadastra (testado em 29/10/2026).
 
 | Campo do site | Emarsys |
 |---|---|

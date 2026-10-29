@@ -63,15 +63,24 @@
 </ul>
 {% endmacro %}
 
-{#- Campos ocultos dos formulários do Emarsys (link.iplace.com.uy), como no HTML gerado lá: conta (CID),
-    formulário (f), página e ação de cadastro (p, a) e "Formulário iPlace Corp UY" (inp_17832) sempre SIM.
+{#- Campos ocultos dos formulários do Emarsys (link.iplace.com.uy), iguais aos do HTML gerado lá: conta (CID),
+    formulário (f), página e ação de cadastro (p, a), os vazios e "Formulário iPlace Corp UY" (inp_17832) sempre SIM.
+    Os vazios também precisam ir: sem eles o Emarsys responde "No user could be found" e não cadastra.
     optin=true manda o opt-in sempre, para forms em que o aceite obrigatório já é o pedido de emails.
     O integrations.js troca os outros campos pelos inp_* do Emarsys e envia. -#}
 {% macro emarsysFields(formId, optin=false) %}
 <input type="hidden" name="CID" value="1095776552">
+<input type="hidden" name="SID" value="">
+<input type="hidden" name="UID" value="">
 <input type="hidden" name="f" value="{{ formId }}">
 <input type="hidden" name="p" value="2">
 <input type="hidden" name="a" value="r">
+<input type="hidden" name="el" value="">
+<input type="hidden" name="llid" value="">
+<input type="hidden" name="c" value="">
+<input type="hidden" name="counted" value="">
+<input type="hidden" name="RID" value="">
+<input type="hidden" name="mailnow" value="">
 <input type="hidden" name="inp_17832" value="SIM">
 {%- if optin %}
 <input type="hidden" name="optin" value="y">
