@@ -513,6 +513,8 @@ form[data-state="error"] [data-lead-status] { padding: var(--ds-small) var(--ds-
 .site-footer { background: var(--ds-surface-sunken); color: var(--ds-gray-2); padding-block: clamp(48px, 6vw, 80px) var(--ds-x-big); font-size: var(--ds-medium-text); }
 .site-footer__grid { display: flex; flex-wrap: wrap; gap: 40px var(--ds-giant); }
 .site-footer__grid > * { flex: 1 1 150px; min-width: 0; }
+/* Contacto parte da largura do próprio conteúdo: o e-mail cabe numa linha e, se faltar espaço, quebra antes do "@". */
+.site-footer__contact { flex-basis: max-content; }
 .site-footer__brand { flex: 1.6 1 260px; display: flex; flex-direction: column; align-items: flex-start; gap: var(--ds-medium); max-width: 22em; font-size: 0.9375rem; line-height: 1.5; }
 .site-footer__brand img { height: 48px; width: auto; }
 .ds .site-footer__title { margin-bottom: var(--ds-medium); font-family: var(--ds-font-text); font-size: var(--ds-medium-text); font-weight: var(--ds-weight-bold); line-height: 1.2; color: var(--ds-black); letter-spacing: 0; }

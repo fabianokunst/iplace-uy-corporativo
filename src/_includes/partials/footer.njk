@@ -24,13 +24,13 @@
           <li><a href="/productos/ipad-para-empresas/">iPad para empresas</a></li>
         </ul>
       </nav>
-      <div>
+      <div class="site-footer__contact">
         <h2 class="site-footer__title">Contacto</h2>
         <ul class="site-footer__list">
           {%- for phone in site.footerPhones %}
           <li><a href="{{ phone.href }}">{{ phone.label }}</a></li>
           {%- endfor %}
-          <li><a href="mailto:{{ site.footerEmail }}">{{ site.footerEmail }}</a></li>
+          <li><a href="mailto:{{ site.footerEmail }}">{{ site.footerEmail | replace("@", "<wbr>@") | safe }}</a></li>
           <li><a href="/contacto/">Hablá con nuestros especialistas</a></li>
         </ul>
       </div>
