@@ -22,9 +22,9 @@
   if (window.iplaceConsent) return;
 
   var CONFIG = Object.assign({
-    policyUrl: '/politica-de-privacidad.html',
+    policyUrl: '/politica-de-privacidad/',
     // Mudou cookies, fornecedores ou a política? Troque a versão para pedir o aceite de novo.
-    version: '2026-10-28',
+    version: '2026-10-29',
     // A lei não fixa prazo; 12 meses é a prática usual para renovar o pedido.
     maxAgeDays: 365,
     // Categorias opcionais exibidas. Inclua 'marketing' quando o GTM tiver tags de publicidade.

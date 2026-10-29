@@ -564,3 +564,106 @@ Especialista iPlace Corporativo
 
 [+598 96 438 030](https://api.whatsapp.com/send/?phone=59896438030&text=Hola%2C%20todo%20bien%3F%20Me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20iPlace%20Corporativo.)
 [Enviar un correo](mailto:rodrigo.ferullo@iplace.com.uy)
+
+---
+
+Página: Política de Privacidad y Cookies
+URL: https://iplacecorp.com.uy/politica-de-privacidad/
+
+Legal
+
+# Política de Privacidad y Cookies
+
+Qué datos recopilamos en este sitio, para qué los usamos, con quién los compartimos y cómo podés ejercer tus derechos.
+
+Última actualización: 29 de octubre de 2026
+
+## 1. Quién es responsable de tus datos
+
+El responsable de la base de datos es **Situal S.A.** , RUT 21.860626.0019, con domicilio en Héctor Miranda 2361, oficina 102, Montevideo, Uruguay (en adelante, “iPlace”). iPlace Corporativo es el canal de iPlace para empresas.
+
+Para cualquier consulta sobre privacidad o para ejercer tus derechos, escribinos a [contacto@iplace.com.uy](mailto:contacto@iplace.com.uy) o llamá al [0800 2010](tel:08002010), de lunes a viernes de 9 a 18 h.
+
+## 2. Normativa aplicable
+
+Tratamos tus datos según la Ley N° 18.331 de Protección de Datos Personales y Acción de Habeas Data, su Decreto reglamentario N° 414/009, los artículos 37 a 40 de la Ley N° 19.670 y el Decreto N° 64/020.
+
+## 3. Qué datos recopilamos
+
+- **Formularios de contacto** (Contacto, Soluciones, iPad para empresas y novedades en la página de inicio): nombre y apellido, email, empresa, teléfono y el mensaje que escribas, según el formulario.
+- **Pre registro de lanzamientos:** nombre, apellido, empresa, RUT de la empresa, teléfono y email.
+- **Origen de la visita:** los parámetros de campaña (UTM) del enlace por el que llegaste. Se guardan solo durante tu visita y únicamente se asocian a tu consulta si enviás un formulario.
+- **Datos de navegación, solo si aceptás las cookies analíticas:** páginas visitadas, tipo de dispositivo y navegador, ubicación aproximada y un identificador aleatorio.
+
+En cada formulario, los campos marcados como opcionales podés dejarlos vacíos. Los demás son necesarios para responder tu consulta o registrarte: sin ellos el formulario no se envía, y si los datos no son correctos puede que no podamos contactarte. No solicitamos datos sensibles.
+
+## 4. Cómo se envían los formularios
+
+- **Formularios de contacto:** al enviarlos se abre WhatsApp con tu mensaje listo. Este sitio no guarda los datos; nos llegan solo cuando enviás el mensaje desde WhatsApp.
+- **Pre registro de lanzamientos:** los datos se envían a Oracle Responsys, la plataforma que usamos para avisarte por email de los lanzamientos.
+
+## 5. Para qué los usamos
+
+- Responder tus consultas y preparar propuestas comerciales para tu empresa.
+- Avisarte de los lanzamientos de Apple, si hiciste el pre registro.
+- Enviarte novedades y ofertas de iPlace, solo si marcaste la casilla correspondiente.
+- Medir y mejorar el funcionamiento del sitio, solo si aceptaste las cookies analíticas.
+
+La base legal es tu consentimiento libre, previo, expreso e informado (artículo 9 de la Ley N° 18.331). Podés revocarlo en cualquier momento, sin efecto retroactivo, y darte de baja de las comunicaciones desde el enlace de cada email o escribiéndonos.
+
+## 6. Con quién compartimos tus datos
+
+No vendemos tus datos. Solo los compartimos con proveedores que nos prestan servicios y los tratan por cuenta nuestra:
+
+- **Google LLC** (Estados Unidos): Google Analytics y Google Tag Manager, solo si aceptaste las cookies analíticas, y YouTube, solo si reproducís el video de la página de inicio.
+- **WhatsApp LLC** (Meta, Estados Unidos): cuando enviás un formulario de contacto o nos escribís por WhatsApp.
+- **Oracle Corporation** (Estados Unidos): Oracle Responsys, para el pre registro de lanzamientos y el envío de emails.
+- **Hostinger International Ltd.** : hosting del sitio, con servidores en Brasil.
+
+Algunos de estos proveedores están en países que no tienen un nivel de protección declarado adecuado por la Unidad Reguladora y de Control de Datos Personales (URCDP), como Estados Unidos. En esos casos la transferencia internacional se realiza con tu consentimiento o con garantías contractuales adecuadas, según el artículo 23 de la Ley N° 18.331.
+
+Los enlaces a Instagram, Facebook y LinkedIn llevan a esos sitios, que tienen sus propias políticas de privacidad.
+
+## 7. Cuánto tiempo los guardamos
+
+Conservamos los datos de tus consultas mientras sean necesarios para atenderte y mantener la relación comercial con tu empresa, y los del pre registro y las novedades hasta que te des de baja. Después los eliminamos o los anonimizamos. Las cookies duran el plazo indicado en la sección 10.
+
+## 8. Tus derechos
+
+En forma gratuita, podés:
+
+- **Acceder** a los datos que tenemos sobre vos.
+- Pedir su **rectificación, actualización, inclusión o supresión** .
+- **Revocar tu consentimiento** y dejar de recibir comunicaciones comerciales.
+
+Escribinos a [contacto@iplace.com.uy](mailto:contacto@iplace.com.uy) indicando tu nombre y adjuntando un documento que acredite tu identidad. Respondemos dentro de los 5 días hábiles previstos en los artículos 14 y 15 de la Ley N° 18.331.
+
+Si considerás que no atendimos tu solicitud correctamente, podés presentar una denuncia ante la [Unidad Reguladora y de Control de Datos Personales (URCDP)](https://www.gub.uy/unidad-reguladora-control-datos-personales).
+
+## 9. Seguridad
+
+Aplicamos medidas técnicas y organizativas para proteger tus datos contra pérdida, acceso no autorizado o alteración. Si ocurriera un incidente de seguridad que afecte tus datos, lo comunicaremos a la URCDP y a las personas afectadas, según el Decreto N° 64/020.
+
+## 10. Cookies
+
+Las cookies son pequeños archivos que el sitio guarda en tu navegador. Usamos solo las necesarias para que el sitio funcione y, si nos das tu consentimiento, cookies analíticas. Las cookies analíticas no se instalan hasta que hacés clic en “Aceptar”.
+
+Cookie Proveedor Finalidad Duración Tipo
+
+iplace_consent iPlace (propia) Guarda tu elección sobre cookies, la versión de esta política y la fecha. 12 meses Necesaria
+
+iplace_utm (almacenamiento de sesión) iPlace (propia) Recuerda durante tu visita el origen de la campaña, para asociarlo a tu consulta solo si enviás un formulario. No te identifica. Hasta cerrar la pestaña Necesaria
+
+_ga Google Analytics (Google LLC, EE. UU.) Distingue visitantes mediante un identificador aleatorio para generar estadísticas. 2 años Analítica
+
+_ga_<ID> Google Analytics (Google LLC, EE. UU.) Mantiene el estado de la sesión de navegación. 2 años Analítica
+
+El video de la página de inicio se carga desde YouTube (youtube-nocookie.com) solo cuando hacés clic para reproducirlo. A partir de ese momento, Google puede guardar cookies y datos en tu navegador según su propia política de privacidad.
+
+Podés cambiar o retirar tu consentimiento en cualquier momento. Si lo retirás, borramos las cookies analíticas de tu navegador.
+
+También podés bloquear o borrar las cookies desde la configuración de tu navegador. Si bloqueás las necesarias, el sitio te volverá a pedir tu elección en cada visita.
+
+## 11. Cambios a esta política
+
+Podemos actualizar esta política. Si el cambio afecta las cookies o los proveedores, el sitio te volverá a pedir tu consentimiento. La fecha de la última actualización figura al comienzo de esta página.

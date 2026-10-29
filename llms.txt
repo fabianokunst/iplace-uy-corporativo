@@ -23,6 +23,7 @@ Datos clave:
 - [Soluciones Apple para empresas](https://iplacecorp.com.uy/soluciones/): Servicios para que tu empresa adopte Apple: asesoría en la elección de los dispositivos, soporte de TI y acompañamiento en toda la migración.
 - [Lanzamientos Apple para empresas](https://iplacecorp.com.uy/lanzamientos/): Hacé tu pre registro y recibí de primera mano las novedades sobre la llegada de los nuevos lanzamientos de Apple para empresas en Uruguay.
 - [Contacto con especialistas Apple](https://iplacecorp.com.uy/contacto/): Hablá con los especialistas de iPlace Corporativo por WhatsApp, correo o formulario. Soluciones Apple para empresas en Uruguay.
+- [Política de Privacidad y Cookies](https://iplacecorp.com.uy/politica-de-privacidad/): Cómo iPlace Corporativo trata tus datos personales y usa cookies en este sitio, según la Ley N° 18.331 de Protección de Datos Personales del Uruguay.
 
 ## Contacto
 
@@ -37,4 +38,3 @@ Datos clave:
 
 - [Contenido completo del sitio](https://iplacecorp.com.uy/llms-full.txt): el texto de todas las páginas en Markdown, en un solo archivo.
 - [Mapa del sitio](https://iplacecorp.com.uy/sitemap.xml)
-- [Política de Privacidad](https://iplacecorp.com.uy/politica-de-privacidad.html)
