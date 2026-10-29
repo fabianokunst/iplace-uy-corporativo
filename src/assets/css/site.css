@@ -500,6 +500,19 @@ form[data-state="error"] [data-lead-status] { padding: var(--ds-small) var(--ds-
 
 /* Comparadores: assets/css/compare.css (carregado só nessas páginas). */
 
+/* ---------- Texto legal (Política de Privacidad) ---------- */
+.legal { max-width: 760px; font-size: var(--ds-big-text); line-height: 1.6; color: var(--ds-gray-2); }
+.legal > * + * { margin-top: var(--ds-medium); }
+.ds .legal h2 { margin-top: var(--ds-x-big); font-size: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem); line-height: 1.25; letter-spacing: -0.015em; color: var(--ds-text); scroll-margin-top: calc(var(--site-header-h) + var(--ds-big)); }
+.legal strong { color: var(--ds-text); }
+.legal ul { display: grid; gap: var(--ds-small); padding-left: 1.25em; list-style: disc; }
+.legal li::marker { color: var(--ds-text-secondary); }
+.legal code { font-size: 0.9em; }
+.ds .legal__updated { font-size: var(--ds-medium-text); color: var(--ds-text-secondary); }
+.legal__table { overflow-x: auto; }
+.legal__table table { min-width: 600px; font-size: var(--ds-medium-text); line-height: 1.45; }
+.ds .legal__table th { width: auto; color: var(--ds-text); background: var(--ds-surface-sunken); }
+
 /* ---------- Rodapé ---------- */
 .site-footer {
   position: relative; isolation: isolate; overflow: hidden;

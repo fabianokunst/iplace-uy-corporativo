@@ -35,7 +35,6 @@ A cada push na `main`, o GitHub Actions gera o site, publica o preview em
 - Em atributos HTML (`href`, `src`, `srcset`, `action`), escreva links a partir da raiz (`/contacto/`,
   `/assets/img/...`): o build converte. Não use o filtro `url`; dentro de `<script>`, use `| relative`.
 - CSS, JS e `manifest.webmanifest` não passam pela conversão: neles, use caminhos relativos ao próprio arquivo.
-- `politica-de-privacidad.html` é copiada como está: caminhos relativos e sem `/` no início.
 - `404.njk` é uma página própria, sem o layout, porque aparece em qualquer endereço (ver o comentário no arquivo).
 
 ## Estrutura
@@ -50,7 +49,8 @@ A cada push na `main`, o GitHub Actions gera o site, publica o preview em
 | `src/static/` | Copiado para a raiz: `.htaccess` (redirects do blog, HTTPS), `robots.txt`. |
 | `assets-src/wp-uploads/` | Imagens originais do WordPress usadas pelos scripts (as que o site não usa foram removidas; estão no histórico do Git). |
 | `scripts/` | `images.py` (`npm run images`) gera os WebP em `src/assets/img/`; `favicons.py` gera favicon e ícones. Precisam de Python com Pillow. |
-| `integrations/`, `politica-de-privacidad.html` | Cookies, GTM/GA4, formulários e política. Mantidos por outra frente: ver `integrations/README.md`. |
+| `integrations/` | Cookies, GTM/GA4 e formulários. Mantidos por outra frente: ver `integrations/README.md`. |
+| `src/politica-de-privacidad.njk` | Política de Privacidad y Cookies. Ao mudar cookies, fornecedores ou formulários, atualize o texto e a `version` do `consent.js`. |
 | `.github/workflows/pages.yml` | Build e publicação a cada push (preview no GitHub Pages e branch `site`). |
 
 ## SEO, IA e ícones

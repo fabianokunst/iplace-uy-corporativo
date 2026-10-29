@@ -14,7 +14,7 @@ Em todas as páginas, dentro do `<head>`, nesta ordem:
 E no rodapé, um link para o visitante mudar a escolha de cookies:
 
 ```html
-<a href="#" data-cookie-settings>Configuración de cookies</a> · <a href="/politica-de-privacidad.html">Política de Privacidad</a>
+<a href="#" data-cookie-settings>Configuración de cookies</a> · <a href="/politica-de-privacidad/">Política de Privacidad</a>
 ```
 
 Não use o `<noscript>` do GTM: sem JavaScript não há como pedir consentimento, e a lei uruguaia exige consentimento prévio (ver "Cookies e privacidade").
@@ -65,7 +65,7 @@ Teste: `integrations/demo.html`, `demo.html?leadEndpoint=URL` ou `demo.html?rdPu
 O site segue a Lei 18.331 (e Lei 19.670, Decretos 414/009 e 64/020). Diferente da LGPD, ela não tem "legítimo
 interesse" como base geral: analytics e publicidade só com consentimento prévio e expresso.
 
-**O que o código já faz** (`consent.js` + `politica-de-privacidad.html` na raiz):
+**O que o código já faz** (`consent.js` + página `src/politica-de-privacidad.njk`):
 
 - Banner com "Aceptar", "Rechazar" (mesmo peso visual) e "Configurar"; nenhuma opção vem pré-marcada.
 - GTM e GA4 só carregam depois do aceite; Google Consent Mode v2 começa com tudo `denied`.
@@ -74,7 +74,7 @@ interesse" como base geral: analytics e publicidade só com consentimento prévi
 - O visitante reabre as preferências por qualquer `[data-cookie-settings]`; sem esse link, aparece um botão flutuante.
 - Evento `cookie_consent_update` no dataLayer para gatilhos no GTM.
 
-**Ao mudar cookies ou fornecedores:** atualize a tabela da seção 9 da política e a `version` no `consent.js`
+**Ao mudar cookies ou fornecedores:** atualize a política (seções 6 e 10 e a data) e a `version` no `consent.js`
 (isso pede o consentimento de novo a todos). Para tags de publicidade (Google Ads, Meta), ative a categoria
 `marketing` com `window.IPLACE_CONSENT = { categories: ['analytics', 'marketing'] }` antes do `consent.js`.
 
@@ -84,10 +84,11 @@ precisa da mesma configuração (`ad_storage` para publicidade).
 
 **Pendências antes de publicar** (jurídico/responsável pelos dados):
 
-1. Preencher os `[COMPLETAR]` da política: razão social, RUT, endereço, e-mail de privacidade, prazo de retenção,
-   hosting e número de registro. Revisar o `[REVISAR]` do RD Station.
-2. Registrar a base de dados de contatos/leads na URCDP (art. 28). Não existe equivalente na LGPD.
-3. Transferência internacional (art. 23): Google (EUA), RD Station (Brasil) e hosting. Confirmar se o país é
+1. Confirmar os dados da política (29/10/2026): responsável Situal S.A., RUT 21.860626.0019, Héctor Miranda 2361
+   of. 102 e `contacto@iplace.com.uy`, tirados do rodapé e da política de `iplace.com.uy`. A conservação está por
+   critério, sem prazo fixo. Se `rdPublicToken` ou `leadEndpoint` for configurado, incluir o serviço na política.
+2. Registrar a base de dados de contatos/leads na URCDP (art. 28) e acrescentar o número na política. Não existe equivalente na LGPD.
+3. Transferência internacional (art. 23): Google, WhatsApp e Oracle Responsys (EUA) e Hostinger (servidor no Brasil). Confirmar se o país é
    considerado adequado pela URCDP; se não, usar cláusulas contratuais.
 4. Procedimento interno para notificar incidentes à URCDP em até 72 horas (Decreto 64/020).
 5. Verificar se a empresa precisa nomear Delegado de Proteção de Dados (Decreto 64/020).

@@ -7,5 +7,4 @@ eleventyExcludeFromCollections: true
 {%- for item in collections.all | navOrder(site.nav) %}{% if item.url and item.url.endsWith('/') %}
   <url><loc>{{ site.url }}{{ item.url }}</loc><lastmod>{{ item.date.toISOString().slice(0, 10) }}</lastmod></url>
 {%- endif %}{% endfor %}
-  <url><loc>{{ site.url }}/politica-de-privacidad.html</loc></url>
 </urlset>

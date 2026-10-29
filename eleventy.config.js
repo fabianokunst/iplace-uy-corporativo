@@ -25,12 +25,10 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'src/assets': 'assets' });
   eleventyConfig.addPassthroughCopy({ 'src/static': '/' });
 
-  // Mantidos pelas sessões de integrações e de privacidade, na raiz do projeto.
+  // Mantidos pela sessão de integrações, na raiz do projeto.
   eleventyConfig.addPassthroughCopy({ 'integrations/consent.js': 'integrations/consent.js' });
   eleventyConfig.addPassthroughCopy({ 'integrations/integrations.js': 'integrations/integrations.js' });
-  eleventyConfig.addPassthroughCopy({ 'politica-de-privacidad.html': 'politica-de-privacidad.html' });
   eleventyConfig.addWatchTarget('integrations/');
-  eleventyConfig.addWatchTarget('politica-de-privacidad.html');
 
   // Link de WhatsApp com a mensagem padrão do site atual.
   eleventyConfig.addFilter('whatsapp', (number, text) =>
