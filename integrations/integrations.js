@@ -132,6 +132,10 @@
     var id = form.getAttribute('data-lead-form');
     var fields = {};
     new FormData(form).forEach(function (v, k) { if (String(v).trim()) fields[k] = String(v).trim(); });
+    // Nome e sobrenome vêm em campos separados; RD Station e WhatsApp usam o nome completo.
+    if (!fields.name && fields.first_name) {
+      fields.name = [fields.first_name, fields.last_name].filter(Boolean).join(' ');
+    }
     var method = CONFIG.rdPublicToken ? 'rdstation' : CONFIG.leadEndpoint ? 'endpoint' : 'whatsapp';
     var track = function () {
       gtag('event', 'generate_lead', { form_id: id, lead_method: method });
