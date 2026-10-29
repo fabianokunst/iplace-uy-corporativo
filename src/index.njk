@@ -207,31 +207,16 @@ faq:
   </div>
 </section>
 
-<section class="section" aria-labelledby="socios-title">
-  <div class="ds-container partners">
-    <div>
-      <p class="eyebrow">Nuestros socios</p>
-      <h2 class="site-title--sm" id="socios-title">Empresas e instituciones que confían en iPlace Corporativo.</h2>
-    </div>
-    <img src="/assets/img/home/socios.webp" width="822" height="192" loading="lazy"
-      alt="Itaú, CUSAI (Cámara Uruguaya de Servicios de Arquitectura e Ingeniería), Cámara de Diseño de Uruguay, Light iT, Universidad Católica del Uruguay y CEDU (Cámara de la Economía Digital del Uruguay), entre otros.">
-  </div>
-</section>
-
-<section class="section section--sunken" aria-labelledby="contacto-title">
-  <div class="ds-container split">
-    <div class="split__aside">
-      <p class="eyebrow">Contacto</p>
-      <h2 class="site-title" id="contacto-title">Hablá directamente con nuestro especialista.</h2>
-      <p class="lead">Atención en soluciones corporativas, por WhatsApp o por correo.</p>
-      {{ m.people(['rodrigo']) }}
-      {{ m.social() }}
-    </div>
-    <div class="split__main form-card">
-      <div class="form-card__head">
-        <h2 class="form-card__title">Registrate y recibí contenidos exclusivos sobre productos Apple.</h2>
+<section class="section section--flush-bottom" aria-labelledby="socios-title">
+  <div class="ds-container">
+    {#- Painel Gray #5: o fundo da imagem dos logos é o mesmo #f2f2f2, então só os cartões brancos aparecem. #}
+    <div class="panel panel--sunken partners">
+      <div>
+        <p class="eyebrow">Nuestros socios</p>
+        <h2 class="site-title--sm" id="socios-title">Empresas e instituciones que confían en iPlace Corporativo.</h2>
       </div>
-      {{ m.leadForm('contenidos-uy', 'Registrarme', false, true) }}
+      <img src="/assets/img/home/socios.webp" width="822" height="192" loading="lazy"
+        alt="Itaú, CUSAI (Cámara Uruguaya de Servicios de Arquitectura e Ingeniería), Cámara de Diseño de Uruguay, Light iT, Universidad Católica del Uruguay y CEDU (Cámara de la Economía Digital del Uruguay), entre otros.">
     </div>
   </div>
 </section>
