@@ -9,6 +9,8 @@ pagination:
   data: families
   size: 1
   alias: fam
+  # Sem isto, só o comparador de Mac entra nas coleções (sitemap.xml, llms.txt, llms-full.txt).
+  addAllPagesToCollections: true
 permalink: "/productos/compara-{{ fam.slug }}/"
 eleventyComputed:
   title: "Compará los modelos de {{ fam.label }}"

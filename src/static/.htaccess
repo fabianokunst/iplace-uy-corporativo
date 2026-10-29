@@ -21,9 +21,13 @@ DirectorySlash On
 
 <IfModule mod_alias.c>
   # --- Blog (fora do site estático) -------------------------------------------
-  RedirectMatch 301 ^/blog/?$ /
+  # /blog/ e a paginação (/blog/2/, /page/2/), arquivos por data (/2024/06/)
+  RedirectMatch 301 ^/blog(/.*)?$ /
+  RedirectMatch 301 ^/(page|20[0-9]{2})/ /
   RedirectMatch 301 ^/(category|tag|author)/ /
   RedirectMatch 301 ^/(feed|comments/feed)/?$ /
+  # Sitemaps do WordPress, que o Search Console pode ter registrados
+  RedirectMatch 301 ^/(wp-sitemap.*|sitemap_index|post-sitemap|page-sitemap)\.xml$ /sitemap.xml
   RedirectMatch 301 ^/shop/?$ /productos/
 
   # Posts sobre produtos
