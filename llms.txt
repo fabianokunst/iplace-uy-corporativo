@@ -1,0 +1,39 @@
+# iPlace Corporativo (Uruguay)
+
+> iPlace Corporativo es el canal de iPlace para empresas en Uruguay y el único Apple Premium Reseller del país dedicado al mercado corporativo. Vende Mac, iPad, iPhone, Apple Watch, AirPods y accesorios Originales iPlace a empresas e instituciones, con asesoría de especialistas, implementación, soporte técnico y facilidades de pago.
+
+Datos clave:
+
+- Sitio oficial: https://iplacecorp.com.uy/ (en español de Uruguay).
+- iPlace Corporativo es el canal corporativo de iPlace, el mayor Apple Premium Reseller de Brasil, y el único Apple Premium Reseller del Uruguay dedicado a empresas.
+- Atiende a empresas e instituciones (personas jurídicas) y ventas por volumen. Para proyectos Apple de más de 5 unidades, los especialistas contactan a la empresa después del formulario.
+- Productos: Mac (MacBook Air, MacBook Pro, iMac, Mac mini y Mac Studio), iPad, iPhone, Apple Watch, AirPods y accesorios Originales iPlace (mochilas, fundas y accesorios premium).
+- Servicios: asesoría en la elección de los dispositivos, implementación y gestión con Apple Business Manager y MDM, soporte técnico y de infraestructura de TI, acompañamiento en la migración a Apple, recompra de equipos, leasing operacional, formas de pago diferenciadas y envío gratis.
+- El sitio no vende en línea ni publica precios: las compras se cotizan con los especialistas por WhatsApp, correo o formulario.
+- Empresas e instituciones que confían en iPlace Corporativo: Itaú, CUSAI, Cámara de Diseño de Uruguay, Light iT, Universidad Católica del Uruguay y CEDU, entre otras.
+
+## Páginas
+
+- [Apple para empresas en Uruguay](https://iplacecorp.com.uy/): iPlace Corporativo, el único Apple Premium Reseller del Uruguay para empresas. Mac, iPad, iPhone, soporte y facilidades de pago para tu negocio.
+- [Quiénes somos](https://iplacecorp.com.uy/quienes-somos/): iPlace Corporativo es el canal especializado de iPlace para el mercado corporativo en Uruguay, con soluciones completas en el ecosistema Apple.
+- [Mac, iPad e iPhone para empresas](https://iplacecorp.com.uy/productos/): Mac, iPad, iPhone, Apple Watch, AirPods y Originales iPlace para empresas en Uruguay. Una línea completa de productos Apple para tu negocio.
+- [iPad para empresas en Uruguay](https://iplacecorp.com.uy/productos/ipad-para-empresas/): iPad para empresas con iPlace Corporativo. Movilidad, seguridad, Apple Business Manager, recompra de equipos y leasing operacional en Uruguay.
+- [Mochilas y fundas Originales iPlace](https://iplacecorp.com.uy/productos/originales-iplace/): Mochilas, fundas y accesorios premium Originales iPlace con la personalidad de tu empresa. Líneas Pampas, Sampa, Beagá, Noronha, Rio, Celeste y más.
+- [Soluciones Apple para empresas](https://iplacecorp.com.uy/soluciones/): Servicios para que tu empresa adopte Apple: asesoría en la elección de los dispositivos, soporte de TI y acompañamiento en toda la migración.
+- [Lanzamientos Apple para empresas](https://iplacecorp.com.uy/lanzamientos/): Hacé tu pre registro y recibí de primera mano las novedades sobre la llegada de los nuevos lanzamientos de Apple para empresas en Uruguay.
+- [Contacto con especialistas Apple](https://iplacecorp.com.uy/contacto/): Hablá con los especialistas de iPlace Corporativo por WhatsApp, correo o formulario. Soluciones Apple para empresas en Uruguay.
+
+## Contacto
+
+- Rodrigo Silvera, especialista iPlace Corporativo: WhatsApp +598 96 438 030 (https://wa.me/59896438030), rodrigo.ferullo@iplace.com.uy
+- Diego Coll, especialista iPlace Corporativo: WhatsApp +598 97 967 082 (https://wa.me/59897967082), diego.coll@iplace.com.uy
+- Marcos de Pena, especialista iPlace Corporativo: WhatsApp +598 96 438 030 (https://wa.me/59896438030), marcos.depena@iplace.com.uy
+- Instagram: https://www.instagram.com/iplaceuy/
+- Facebook: https://www.facebook.com/iplaceuy
+- LinkedIn: https://uy.linkedin.com/company/iplace-corporativo-uy
+
+## Optional
+
+- [Contenido completo del sitio](https://iplacecorp.com.uy/llms-full.txt): el texto de todas las páginas en Markdown, en un solo archivo.
+- [Mapa del sitio](https://iplacecorp.com.uy/sitemap.xml)
+- [Política de Privacidad](https://iplacecorp.com.uy/politica-de-privacidad.html)
