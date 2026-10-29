@@ -210,31 +210,40 @@ main { flex: 1 0 auto; overflow-x: clip; }
 }
 
 /* ---------- Ecossistema em blocos (home) ---------- */
-.bento { display: flex; flex-direction: column; gap: var(--ds-medium); }
-.bento__row { display: flex; flex-wrap: wrap; gap: var(--ds-medium); }
+/* Uma grade só para todas as linhas, para as colunas coincidirem: 3 colunas no desktop (Mac ocupa 2),
+   2 no tablet (Mac e Originales na largura toda), 1 no celular. */
+.bento { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--ds-medium); }
+@media (min-width: 640px) {
+  .bento { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .bento-tile--wide, .bento-tile--brand { grid-column: 1 / -1; }
+}
+@media (min-width: 1024px) {
+  .bento { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .bento-tile--wide { grid-column: span 2; }
+}
 /* Bloco de produto: foto sobre Gray #5; no hover, borda Gray #4 (product tile do DS). */
 .bento-tile {
-  flex: 1 1 300px; min-width: 0; min-height: 420px;
+  min-width: 0; min-height: 420px;
   display: flex; flex-direction: column; gap: var(--ds-x-big);
   padding: clamp(28px, 3vw, 44px); overflow: hidden;
   border: 1px solid transparent; border-radius: var(--site-radius); background: var(--ds-gray-5);
   transition: border-color var(--ds-duration) var(--ds-ease);
 }
 .bento-tile:hover { border-color: var(--ds-gray-4); }
-.bento-tile--wide { flex: 2 1 560px; }
 .bento-tile__copy { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
 .bento-tile__copy p { max-width: 28em; font-size: 1.0625rem; line-height: 1.45; color: var(--ds-gray-2); }
 .bento-tile__img { width: 100%; height: 240px; margin-top: auto; object-fit: contain; }
 .bento-tile--wide .bento-tile__img { height: auto; max-height: 300px; }
 .bento-tile--brand {
-  flex-basis: 100%; flex-direction: row; flex-wrap: wrap; align-items: center; min-height: 0;
+  flex-direction: row; flex-wrap: wrap; align-items: center; min-height: 0;
   padding: clamp(32px, 4vw, 56px); background: var(--ds-brand); color: var(--ds-black);
 }
 .bento-tile--brand:hover { border-color: transparent; }
 .bento-tile--brand .bento-tile__copy { flex: 1 1 420px; min-width: 0; gap: var(--ds-medium); }
 .bento-tile--brand .bento-tile__copy p { color: var(--ds-black); }
+.bento-tile--brand .eyebrow::before { background: var(--ds-black); }
 .bento-tile--brand .bento-tile__img { flex: 1 1 340px; min-width: 0; max-width: 520px; height: auto; margin: 0 auto; }
-@media (min-width: 960px) { .bento-tile { min-height: 460px; } .bento-tile--wide { min-height: 500px; } .bento-tile--brand { min-height: 0; } }
+@media (min-width: 960px) { .bento-tile { min-height: 460px; } .bento-tile--brand { min-height: 0; } }
 
 /* ---------- Cartões de recurso ---------- */
 .features { display: grid; gap: var(--ds-medium); grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); }
