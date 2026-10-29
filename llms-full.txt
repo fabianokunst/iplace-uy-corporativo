@@ -1123,7 +1123,7 @@ Tratamos tus datos según la Ley N° 18.331 de Protección de Datos Personales y
 
 ## 3. Qué datos recopilamos
 
-- **Formularios de contacto** (Contacto, Soluciones, iPad para empresas y novedades en la página de inicio): nombre y apellido, email, empresa, teléfono y el mensaje que escribas, según el formulario.
+- **Formularios de contacto** (Contacto, Soluciones, iPad para empresas y novedades en la página de inicio): nombre y apellido, email, empresa, RUT de la empresa, teléfono y el mensaje que escribas, según el formulario.
 - **Pre registro de lanzamientos:** nombre, apellido, empresa, RUT de la empresa, teléfono y email.
 - **Origen de la visita:** los parámetros de campaña (UTM) del enlace por el que llegaste. Se guardan solo durante tu visita y únicamente se asocian a tu consulta si enviás un formulario.
 - **Datos de navegación, solo si aceptás las cookies analíticas:** páginas visitadas, tipo de dispositivo y navegador, ubicación aproximada y un identificador aleatorio.
