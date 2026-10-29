@@ -29,23 +29,31 @@ faq:
 <section class="hero" aria-labelledby="hero-title">
   <div class="ds-container hero__grid">
     <div class="hero__copy">
-      <p><span class="ds-badge ds-badge--brand">Apple Premium Reseller</span></p>
-      <h1 class="site-display" id="hero-title">{{ m.words('iPlace Corporativo,') }} <span class="hl">{{ m.words('el único Apple Premium Reseller', 2) }}</span> {{ m.words('del Uruguay para tu empresa', 7) }}</h1>
+      <span class="ds-badge ds-badge--brand">Apple Premium Reseller</span>
+      <h1 class="site-display" id="hero-title">El único <span class="marker">Apple Premium Reseller</span> del Uruguay para tu empresa.</h1>
+      <p class="lead">iPlace Corporativo es el canal de iPlace para empresas: Mac, iPad, iPhone, soporte y facilidades de pago para tu negocio.</p>
       <div class="ds-cluster">
-        <a class="ds-btn ds-btn--brand" href="/contacto/">Hablá con nuestros especialistas</a>
-        <a class="ds-btn ds-btn--alpha" href="/soluciones/">Conocé las soluciones</a>
+        <a class="ds-btn ds-btn--primary" href="/contacto/">Hablá con nuestros especialistas</a>
+        <a class="ds-btn ds-btn--outline" href="/soluciones/">Conocé las soluciones</a>
       </div>
     </div>
-    <div class="hero__media">
-      <div class="hero__frame">
-        <img src="/assets/img/home/equipo.webp" alt="Equipo de trabajo en una oficina con computadoras Mac" width="680" height="700" fetchpriority="high">
+    <div class="hero__mosaic">
+      <div class="hero__photo">
+        <img src="/assets/img/fotos/equipo-mesa.webp" alt="Equipo trabajando con MacBook e iPad en una mesa compartida" width="800" height="654" fetchpriority="high">
       </div>
-      {#- Cartões flutuantes decorativos: repetem textos da página, por isso ficam fora da leitura de tela. #}
-      <div class="hero__card" aria-hidden="true">
-        <span class="icon-disc icon-disc--brand"><svg class="ds-icon"><use href="#i-fine"/></svg></span>
-        <span><strong>Especialistas</strong> en todo el ecosistema Apple</span>
+      <div class="hero__tile hero__tile--eco">
+        <p>Todo el ecosistema Apple</p>
+        <img src="/assets/img/productos/familia-mac-menor.webp" alt="MacBook, iMac, iPad, iPhone y Apple Watch" width="1020" height="371">
       </div>
-      <div class="hero__chip" aria-hidden="true"><svg class="ds-icon ds-icon--small"><use href="#i-entrega"/></svg>Envío gratis y rápido</div>
+      <div class="hero__tile hero__tile--team">
+        <div class="avatars" aria-hidden="true">
+          <img src="/assets/img/equipo/diego-coll.webp" alt="" width="48" height="48">
+          <img src="/assets/img/equipo/marcos-de-pena.webp" alt="" width="48" height="48">
+          <span class="avatars__initials">RS</span>
+        </div>
+        <p class="hero__team-title">Especialistas en todo el ecosistema Apple</p>
+        <a class="more-link more-link--light" href="/contacto/">Escribinos por WhatsApp <svg class="ds-icon" aria-hidden="true"><use href="#i-seta"/></svg></a>
+      </div>
     </div>
   </div>
 </section>
@@ -62,16 +70,135 @@ faq:
   </div>
 </section>
 
-<section class="section" aria-labelledby="soluciones-title">
-  <div class="ds-container media-split">
-    <div class="media-split__copy">
-      <p class="eyebrow">Para empresas</p>
-      <h2 class="site-title" id="soluciones-title">Soluciones Apple para su empresa</h2>
-      <p class="text">Mayor productividad, mejor retorno sobre su inversión, total compatibilidad con las principales herramientas del mercado e integración entre dispositivos y colaboradores. Son muchos los beneficios que Mac, iPhone e iPad pueden traer para su empresa.</p>
-      <p class="text">Conozca las soluciones de iPlace Corporativo (el mayor Apple Premium Reseller) y cuente con nosotros para acelerar los negocios de su empresa.</p>
-      <a class="ds-btn ds-btn--primary" href="/soluciones/">Ver soluciones</a>
+<section class="section" aria-labelledby="eco-title">
+  <div class="ds-container">
+    <div class="section__head section__head--row">
+      <div>
+        <p class="eyebrow">Productos</p>
+        <h2 class="site-title" id="eco-title">Todo el ecosistema Apple para tu empresa.</h2>
+      </div>
+      <a class="ds-btn ds-btn--outline" href="/productos/">Ver todos los productos</a>
     </div>
-    <div class="media-split__media">
+    <div class="bento">
+      <div class="bento__row">
+        <article class="bento-tile bento-tile--wide">
+          <div class="bento-tile__copy">
+            <h3 class="tile-title">Mac</h3>
+            <p>Desempeño increíble, pantalla Retina brillante y recursos de seguridad integrados. Trabajan mucho, para que trabajes mucho mejor.</p>
+            <a class="more-link" href="/productos/compara-mac/">Compará los modelos <svg class="ds-icon" aria-hidden="true"><use href="#i-seta"/></svg></a>
+          </div>
+          <img class="bento-tile__img" src="/assets/img/productos/mac.webp" alt="MacBook Air, MacBook Pro, iMac, Mac mini y Mac Studio" width="1000" height="357" loading="lazy">
+        </article>
+        <article class="bento-tile">
+          <div class="bento-tile__copy">
+            <h3 class="tile-title">iPhone</h3>
+            <p>El chip más rápido e inteligente en un smartphone y herramientas de productividad incluidas.</p>
+            <a class="more-link" href="/productos/compara-iphone/">Compará los modelos <svg class="ds-icon" aria-hidden="true"><use href="#i-seta"/></svg></a>
+          </div>
+          <img class="bento-tile__img" src="/assets/img/productos/iphone.webp" alt="Familia iPhone" width="524" height="476" loading="lazy">
+        </article>
+      </div>
+      <div class="bento__row">
+        <article class="bento-tile">
+          <div class="bento-tile__copy">
+            <h3 class="tile-title">iPad</h3>
+            <p>Desempeño excelente, diseño portátil y los recursos de productividad de iPadOS.</p>
+            <a class="more-link" href="/productos/ipad-para-empresas/">iPad para empresas <svg class="ds-icon" aria-hidden="true"><use href="#i-seta"/></svg></a>
+          </div>
+          <img class="bento-tile__img" src="/assets/img/productos/ipad.webp" alt="Familia iPad" width="1000" height="765" loading="lazy">
+        </article>
+        <article class="bento-tile">
+          <div class="bento-tile__copy">
+            <h3 class="tile-title">Apple Watch</h3>
+            <p>Tu compañero ideal, con Detección de Choques y Fases del Sueño.</p>
+            <a class="more-link" href="/productos/compara-watch/">Compará los modelos <svg class="ds-icon" aria-hidden="true"><use href="#i-seta"/></svg></a>
+          </div>
+          <img class="bento-tile__img" src="/assets/img/productos/watch.webp" alt="Apple Watch" width="1000" height="600" loading="lazy">
+        </article>
+        <article class="bento-tile">
+          <div class="bento-tile__copy">
+            <h3 class="tile-title">AirPods</h3>
+            <p>Listos para usar con iPhone, Apple Watch, iPad o Mac apenas salen del estuche.</p>
+            <a class="more-link" href="/contacto/">Consultá a un especialista <svg class="ds-icon" aria-hidden="true"><use href="#i-seta"/></svg></a>
+          </div>
+          <img class="bento-tile__img" src="/assets/img/productos/airpods.webp" alt="Familia AirPods" width="1000" height="719" loading="lazy">
+        </article>
+      </div>
+      <article class="bento-tile bento-tile--brand">
+        <div class="bento-tile__copy">
+          <p class="eyebrow">Originales iPlace</p>
+          <h3 class="tile-title">La personalidad de tu empresa, estampada en productos premium.</h3>
+          <p>Mochilas, fundas y accesorios con acabados impecables. Diseño, tecnología y calidad iPlace Corporativo.</p>
+          <a class="ds-btn ds-btn--primary" href="/productos/originales-iplace/">Ver los Originales</a>
+        </div>
+        <img class="bento-tile__img" src="/assets/img/productos/originales.webp" alt="Mochila, funda y accesorios de cuero Originales iPlace" width="629" height="455" loading="lazy">
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sunken" aria-labelledby="socio-title">
+  <div class="ds-container split">
+    <div class="split__aside">
+      <p class="eyebrow">Por qué iPlace Corporativo</p>
+      <h2 class="site-title" id="socio-title">El mejor socio de negocios para tu empresa.</h2>
+      <p class="lead">Mayor productividad, mejor retorno sobre la inversión y seguridad integrada, con quien más sabe de Apple.</p>
+      <a class="ds-btn ds-btn--primary" href="/contacto/">Hablá con nuestros especialistas</a>
+    </div>
+    <ol class="split__main features features--tall">
+      <li class="feature">
+        <div class="feature__top">
+          <span class="icon-disc icon-disc--big" aria-hidden="true"><svg class="ds-icon"><use href="#i-avaliacao"/></svg></span>
+          <span class="feature__num" aria-hidden="true">01</span>
+        </div>
+        <h3 class="card-title">Especialistas Apple</h3>
+        <p>Equipo de especialistas en todo el ecosistema Apple, de la elección de los dispositivos al soporte.</p>
+      </li>
+      <li class="feature">
+        <div class="feature__top">
+          <span class="icon-disc icon-disc--big" aria-hidden="true"><svg class="ds-icon"><use href="#i-pacote"/></svg></span>
+          <span class="feature__num" aria-hidden="true">02</span>
+        </div>
+        <h3 class="card-title">Soluciones a medida</h3>
+        <p>Portafolio de servicios y soluciones a medida para tu negocio, con implementación y MDM.</p>
+      </li>
+      <li class="feature">
+        <div class="feature__top">
+          <span class="icon-disc icon-disc--big" aria-hidden="true"><svg class="ds-icon"><use href="#i-dinheiro"/></svg></span>
+          <span class="feature__num" aria-hidden="true">03</span>
+        </div>
+        <h3 class="card-title">Facilidades de pago</h3>
+        <p>Formas de adquisición diferenciadas, con recompra de equipos y leasing operacional.</p>
+      </li>
+      <li class="feature">
+        <div class="feature__top">
+          <span class="icon-disc icon-disc--big" aria-hidden="true"><svg class="ds-icon"><use href="#i-seguranca"/></svg></span>
+          <span class="feature__num" aria-hidden="true">04</span>
+        </div>
+        <h3 class="card-title">Socio oficial de Apple</h3>
+        <p>La seguridad de contar con el único socio de negocios de Apple en Uruguay.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section section--flush-bottom" aria-labelledby="servicios-title">
+  <div class="ds-container">
+    <div class="panel panel--dark panel__split">
+      <div class="panel__copy">
+        <p class="eyebrow">Servicios</p>
+        <h2 class="site-title--sm" id="servicios-title">Los mejores servicios en productos Apple para que tu empresa opere a la perfección.</h2>
+        <ul class="checklist">
+          <li><svg class="ds-icon" aria-hidden="true"><use href="#i-fine"/></svg>Asesoría en la elección de los dispositivos</li>
+          <li><svg class="ds-icon" aria-hidden="true"><use href="#i-fine"/></svg>Implementación y gestión con Apple Business Manager y MDM</li>
+          <li><svg class="ds-icon" aria-hidden="true"><use href="#i-fine"/></svg>Soporte técnico y para la infraestructura de TI</li>
+          <li><svg class="ds-icon" aria-hidden="true"><use href="#i-fine"/></svg>Recompra de equipos y leasing operacional</li>
+        </ul>
+        <div class="ds-cluster">
+          <a class="ds-btn ds-btn--brand" href="/soluciones/">Ver soluciones</a>
+          <a class="ds-btn ds-btn--alpha" href="/contacto/">Hablá con un especialista</a>
+        </div>
+      </div>
       <button class="video" type="button" data-youtube="DbFjyE4pKDo" aria-label="Reproducir video: iPlace, clientes corporativos">
         <img src="/assets/img/home/video.webp" alt="" width="1000" height="563" loading="lazy">
         <span class="video__play" aria-hidden="true"><svg class="ds-icon"><use href="#i-play"/></svg></span>
@@ -80,84 +207,62 @@ faq:
   </div>
 </section>
 
-<section class="section section--sunken" aria-labelledby="socio-title">
-  <div class="ds-container media-split media-split--reverse">
-    <div class="media-split__copy">
-      <h2 class="site-title" id="socio-title">El mejor socio de negocios para tu empresa</h2>
-      <ul class="checklist">
-        <li><svg class="ds-icon" aria-hidden="true"><use href="#i-fine"/></svg>Equipo de especialistas en todo el ecosistema Apple.</li>
-        <li><svg class="ds-icon" aria-hidden="true"><use href="#i-fine"/></svg>Portafolio de servicios y soluciones a medida para tu negocio.</li>
-        <li><svg class="ds-icon" aria-hidden="true"><use href="#i-fine"/></svg>Facilidades de adquisición y pago diferenciadas.</li>
-        <li><svg class="ds-icon" aria-hidden="true"><use href="#i-fine"/></svg>La seguridad de contar con el único socio de negocios de Apple en Uruguay.</li>
-      </ul>
-      <a class="ds-btn ds-btn--primary" href="/contacto/">Hablá con nuestros especialistas</a>
-    </div>
-    <div class="media-split__media">
-      <img src="/assets/img/fotos/especialista.webp" alt="Profesional hablando por teléfono frente a un iMac" width="800" height="533" loading="lazy">
-    </div>
-  </div>
-</section>
-
-<section class="section" aria-label="Servicios y productos">
-  <div class="ds-container band-stack">
-    <div class="cta-band cta-band--dark">
-      <div class="cta-band__copy">
-        <h2 class="site-title">Los mejores servicios en productos Apple para que tu empresa opere a la perfección</h2>
-        <a class="ds-btn ds-btn--brand" href="/soluciones/">Ver más</a>
-      </div>
-      <img src="/assets/img/home/servicios-ipad.webp" alt="Persona usando un iPad Pro" width="1200" height="500" loading="lazy">
-    </div>
-    <div class="cta-band">
-      <img src="/assets/img/home/ecosistema.webp" alt="Mac, iPad, iPhone, Apple Watch, AirPods y Apple TV" width="550" height="250" loading="lazy">
-      <div class="cta-band__copy">
-        <h2 class="site-title">Todo el ecosistema Apple para tu empresa</h2>
-        <a class="ds-btn ds-btn--primary" href="/productos/">Ver productos</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section section--sunken" aria-labelledby="socios-title">
+<section class="section" aria-labelledby="socios-title">
   <div class="ds-container partners">
-    <div class="text-stack">
-      <h2 class="site-title" id="socios-title">Nuestros socios</h2>
-      <p class="text">Empresas e instituciones que confían en iPlace Corporativo.</p>
+    <div>
+      <p class="eyebrow">Nuestros socios</p>
+      <h2 class="site-title--sm" id="socios-title">Empresas e instituciones que confían en iPlace Corporativo.</h2>
     </div>
     <img src="/assets/img/home/socios.webp" width="822" height="192" loading="lazy"
       alt="Itaú, CUSAI (Cámara Uruguaya de Servicios de Arquitectura e Ingeniería), Cámara de Diseño de Uruguay, Light iT, Universidad Católica del Uruguay y CEDU (Cámara de la Economía Digital del Uruguay), entre otros.">
   </div>
 </section>
 
-<section class="section" aria-label="Contacto y novedades">
-  <div class="ds-container media-split media-split--top">
-    <div class="media-split__copy">
-      <h2 class="site-title">Contacto</h2>
-      <p class="text">Hablá directamente con nuestro especialista en soluciones corporativas.</p>
+<section class="section section--sunken" aria-labelledby="contacto-title">
+  <div class="ds-container split">
+    <div class="split__aside">
+      <p class="eyebrow">Contacto</p>
+      <h2 class="site-title" id="contacto-title">Hablá directamente con nuestro especialista.</h2>
+      <p class="lead">Atención en soluciones corporativas, por WhatsApp o por correo.</p>
       {{ m.people(['rodrigo']) }}
       {{ m.social() }}
     </div>
-    <div class="form-card">
+    <div class="split__main form-card">
       <div class="form-card__head">
-        <h2 class="ds-h3">¡Registrate y recibí contenidos exclusivos sobre productos Apple!</h2>
+        <h2 class="form-card__title">Registrate y recibí contenidos exclusivos sobre productos Apple.</h2>
       </div>
       {{ m.leadForm('contenidos-uy', 'Registrarme', false, true) }}
     </div>
   </div>
 </section>
 
-<section class="section section--sunken" aria-labelledby="faq-title">
-  <div class="ds-container">
-    <div class="section__head">
-      <h2 class="site-title" id="faq-title">Preguntas frecuentes</h2>
-      <p class="lead">Lo que más nos preguntan las empresas sobre trabajar con Apple e iPlace Corporativo.</p>
+<section class="section" aria-labelledby="faq-title">
+  <div class="ds-container split">
+    <div class="split__aside">
+      <p class="eyebrow">Preguntas frecuentes</p>
+      <h2 class="site-title" id="faq-title">Lo que más nos preguntan las empresas.</h2>
+      <p class="lead">Sobre trabajar con Apple e iPlace Corporativo.</p>
+      <a class="ds-btn ds-btn--outline" href="/contacto/">Hacé tu consulta</a>
     </div>
-    <div class="ds-accordion">
+    <div class="split__main ds-accordion">
       {%- for item in faq %}
-      <details class="ds-accordion__item">
+      <details class="ds-accordion__item"{% if loop.first %} open{% endif %}>
         <summary>{{ item.q }}</summary>
         <div class="ds-accordion__panel"><p>{{ item.a }}</p></div>
       </details>
       {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--flush" aria-labelledby="cta-title">
+  <div class="ds-container">
+    <div class="cta-band">
+      <div class="cta-band__copy">
+        <h2 class="cta-band__title" id="cta-title">Llevá el ecosistema Apple a tu empresa.</h2>
+        <p>Completá el formulario y nuestros especialistas se contactan con vos.</p>
+      </div>
+      <a class="ds-btn ds-btn--primary" href="/contacto/">Contactate aquí</a>
     </div>
   </div>
 </section>

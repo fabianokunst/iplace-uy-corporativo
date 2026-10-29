@@ -7,22 +7,38 @@ description: Hablá con los especialistas de iPlace Corporativo por WhatsApp, co
 permalink: /contacto/
 ---
 {% import "macros.njk" as m with context %}
+{{ m.pageHero('Contacto', '', 'Hablá con nosotros.', 'Estamos siempre listos para servirte. Completá el formulario o escribinos directamente a nuestros especialistas.') }}
 
-{{ m.pageHero('Contacto', 'Contacto', 'Hablá con nosotros', 'Estamos siempre listos para servirte.', '/assets/img/hero/contacto.webp', 'Teclado Magic Keyboard y Magic Mouse sobre un escritorio') }}
-
-<section class="section" aria-label="Formulario y canales de contacto">
-  <div class="ds-container media-split media-split--top">
-    <div class="form-card">
+<section class="section section--flush" aria-label="Formulario y canales de contacto">
+  <div class="ds-container split">
+    <div class="split__main form-card">
       <div class="form-card__head">
-        <h2 class="ds-h3">Completá el formulario y entrá en contacto con nuestros canales de atención.</h2>
+        <h2 class="form-card__title">Completá el formulario y entrá en contacto con nuestros canales de atención.</h2>
       </div>
       {{ m.leadForm('contacto-uy', 'Enviar') }}
     </div>
-    <div class="media-split__copy">
-      <h2 class="site-title">Contactanos ahora mismo</h2>
-      <p class="text">¿Preferís hablar directamente? Escribinos por WhatsApp o por correo.</p>
+    <aside class="split__aside channels" aria-label="Canales de atención">
       {{ m.people(['rodrigo']) }}
-      {{ m.social() }}
-    </div>
+      <div class="channel">
+        <span class="icon-disc" aria-hidden="true"><svg class="ds-icon"><use href="#i-telefone"/></svg></span>
+        <div class="channel__body">
+          <p class="channel__label">Teléfonos</p>
+          {%- for phone in site.footerPhones | reverse %}
+          <a class="channel__value" href="{{ phone.href }}">{{ phone.label }}</a>
+          {%- endfor %}
+        </div>
+      </div>
+      <div class="channel">
+        <span class="icon-disc" aria-hidden="true"><svg class="ds-icon"><use href="#i-email"/></svg></span>
+        <div class="channel__body">
+          <p class="channel__label">Correo</p>
+          <a class="channel__value" href="mailto:{{ site.footerEmail }}">{{ site.footerEmail }}</a>
+        </div>
+      </div>
+      <div class="channel channel--stack">
+        <p class="channel__label">Redes sociales</p>
+        {{ m.social() }}
+      </div>
+    </aside>
   </div>
 </section>

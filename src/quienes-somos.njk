@@ -6,56 +6,79 @@ description: iPlace Corporativo es el canal especializado de iPlace para el merc
 permalink: /quienes-somos/
 ---
 {% import "macros.njk" as m with context %}
-
-{{ m.pageHero('Quiénes somos', 'Quiénes somos', 'iPlace, el único Apple Premium Reseller del Uruguay para empresas.', '', '/assets/img/hero/quienes-somos.webp', 'Equipo trabajando con Mac en una oficina abierta') }}
-
-<section class="section" aria-labelledby="canal-title">
-  <div class="ds-container media-split">
-    <div class="media-split__copy">
-      <h2 class="site-title" id="canal-title">iPlace Corporativo es el canal especializado de iPlace para el mercado corporativo.</h2>
-      <p class="text">Enfocados en soluciones completas que trabajan en sinergia y ecosistema Apple, contribuimos con estrategias y acciones que atiendan las exigencias de las empresas de los más variados portes y sectores. Por ser una empresa especializada en dispositivos Apple, iPlace Corporativo comprende todas las particularidades de las implementaciones y también asegura la agilidad en la conducción de los negocios.</p>
+<section class="page-hero" aria-labelledby="quienes-title">
+  <div class="ds-container page-hero__inner">
+    {{ m.breadcrumb('Quiénes somos') }}
+    <div class="page-hero__copy">
+      <p class="eyebrow">Quiénes somos</p>
+      <h1 class="site-display" id="quienes-title">iPlace, el único <span class="marker">Apple Premium Reseller</span> del Uruguay para empresas.</h1>
     </div>
-    <div class="media-split__media">
-      <img src="/assets/img/fotos/equipo-mesa.webp" alt="Equipo trabajando con MacBook e iPad en una mesa compartida" width="800" height="654" loading="lazy">
+    <div class="gallery">
+      <img src="/assets/img/fotos/equipo-mesa.webp" alt="Equipo trabajando con MacBook e iPad en una mesa compartida" width="800" height="654" fetchpriority="high">
+      <img src="/assets/img/fotos/dispositivos.webp" alt="Persona usando iPhone e iPad junto a una MacBook" width="800" height="689">
+      <img src="/assets/img/fotos/especialista.webp" alt="Consultor hablando por teléfono frente a un iMac" width="800" height="533">
+    </div>
+  </div>
+</section>
+
+<section class="section section--flush" aria-labelledby="canal-title">
+  <div class="ds-container editorial">
+    <h2 class="site-title--sm" id="canal-title">El canal especializado de iPlace para el mercado corporativo.</h2>
+    <div class="editorial__body">
+      <p>Enfocados en soluciones completas que trabajan en sinergia y ecosistema Apple, contribuimos con estrategias y acciones que atiendan las exigencias de las empresas de los más variados portes y sectores. Por ser una empresa especializada en dispositivos Apple, iPlace Corporativo comprende todas las particularidades de las implementaciones y también asegura la agilidad en la conducción de los negocios.</p>
     </div>
   </div>
 </section>
 
 <section class="section section--sunken" aria-label="Nuestra propuesta">
-  <div class="ds-container media-split media-split--reverse">
-    <div class="media-split__copy">
-      <p class="eyebrow">Nuestra propuesta</p>
-      {#- Texto que se "pinta" conforme a rolagem (site.css, "Rolagem"). #}
-      <p class="statement"><span>iPlace ofrece soluciones que facilitan el gerenciamiento de los dispositivos, automatizan las actualizaciones y optimizan la lógica de trabajo en el día a día, siempre de acuerdo con el perfil de la empresa. Esto garantiza la seguridad, confiabilidad y personalización de cada proyecto. Es así que materializamos la mejor experiencia Apple en el segmento empresarial.</span></p>
-    </div>
-    <div class="media-split__media">
-      <img src="/assets/img/fotos/dispositivos.webp" alt="Persona usando iPhone e iPad junto a una MacBook" width="800" height="689" loading="lazy">
-    </div>
-  </div>
-</section>
-
-<section class="section" aria-labelledby="consultores-title">
-  <div class="ds-container media-split">
-    <div class="media-split__copy">
-      <p class="eyebrow">Atención personalizada</p>
-      <h2 class="site-title" id="consultores-title">Consultores especializados</h2>
-      <p class="text">iPlace Corporativo tiene las mejores alternativas de productos y servicios para mejorar los procesos, aumentar la productividad y potencializar los resultados.</p>
-      <a class="ds-btn ds-btn--primary" href="/contacto/">Hable con un especialista</a>
-    </div>
-    <div class="media-split__media">
-      <img src="/assets/img/fotos/especialista.webp" alt="Consultor hablando por teléfono frente a un iMac" width="800" height="533" loading="lazy">
-    </div>
-  </div>
-</section>
-
-<section class="section section--sunken" aria-labelledby="contacto-title">
   <div class="ds-container">
-    <div class="section__head">
-      <h2 class="site-title" id="contacto-title">Contacta a Rodrigo</h2>
+    <div class="section__head section__head--wide">
+      <p class="eyebrow">Nuestra propuesta</p>
+      <p class="statement">iPlace ofrece soluciones que facilitan el gerenciamiento de los dispositivos, automatizan las actualizaciones y optimizan la lógica de trabajo en el día a día, siempre de acuerdo con el perfil de la empresa. <span class="statement__muted">Esto garantiza la seguridad, confiabilidad y personalización de cada proyecto. Es así que materializamos la mejor experiencia Apple en el segmento empresarial.</span></p>
     </div>
-    <div class="band-stack">
-      {{ m.people(['rodrigo']) }}
+    <ul class="features features--3">
+      <li class="feature">
+        <span class="icon-disc icon-disc--big" aria-hidden="true"><svg class="ds-icon"><use href="#i-seguranca"/></svg></span>
+        <h3 class="card-title">Seguridad</h3>
+        <p>Gerenciamiento de los dispositivos y actualizaciones automatizadas en cada proyecto.</p>
+      </li>
+      <li class="feature">
+        <span class="icon-disc icon-disc--big" aria-hidden="true"><svg class="ds-icon"><use href="#i-fine"/></svg></span>
+        <h3 class="card-title">Confiabilidad</h3>
+        <p>Conocimiento de todas las particularidades de las implementaciones Apple.</p>
+      </li>
+      <li class="feature">
+        <span class="icon-disc icon-disc--big" aria-hidden="true"><svg class="ds-icon"><use href="#i-avaliacao"/></svg></span>
+        <h3 class="card-title">Personalización</h3>
+        <p>Soluciones de acuerdo con el perfil, el tamaño y el sector de cada empresa.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section section--flush-bottom" aria-labelledby="consultores-title">
+  <div class="ds-container">
+    <div class="panel panel--dark panel--media panel__split">
+      <img class="panel__photo" src="/assets/img/fotos/especialista.webp" alt="Consultor hablando por teléfono frente a un iMac" width="800" height="533" loading="lazy">
+      <div class="panel__copy">
+        <p class="eyebrow">Atención personalizada</p>
+        <h2 class="site-title" id="consultores-title">Consultores especializados.</h2>
+        <p class="lead">iPlace Corporativo tiene las mejores alternativas de productos y servicios para mejorar los procesos, aumentar la productividad y potencializar los resultados.</p>
+        <a class="ds-btn ds-btn--brand" href="/contacto/">Hable con un especialista</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="contacto-title">
+  <div class="ds-container split split--center">
+    <div class="split__aside">
+      <h2 class="site-title--sm" id="contacto-title">Contactá a Rodrigo.</h2>
+      <p class="lead">Nuestro especialista en soluciones corporativas.</p>
       {{ m.social() }}
+    </div>
+    <div class="split__main">
+      {{ m.people(['rodrigo']) }}
     </div>
   </div>
 </section>

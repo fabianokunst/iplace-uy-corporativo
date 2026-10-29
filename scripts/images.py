@@ -15,15 +15,9 @@ OUT = os.path.join(ROOT, 'src', 'assets', 'img')
 # nome de saída: (arquivo original, recorte (x0, y0, x1, y1) ou None, largura máxima)
 JOBS = {
     # Home
-    'home/equipo': ('home-01-desk.jpg', (860, 0, 1540, 700), 680),
-    'home/servicios-ipad': ('home-03-desk.jpg', (300, 0, 1500, 500), 1200),
-    'home/ecosistema': ('iplacecorpuy-faixa-desk-01.jpg', (90, 0, 640, 250), 550),
     'home/socios': ('home-iplacecorpuy-socios-desk.jpg', (436, 34, 1258, 226), 822),
     'home/video': ('video-iplace-corp.jpg', None, 1000),
     # Faixas fotográficas do topo das páginas (sem o texto gravado)
-    'hero/quienes-somos': ('quem-somos.jpg', (0, 0, 1920, 255), 1920),
-    'hero/soluciones': ('solucoes-desk.jpg', (0, 0, 1920, 260), 1920),
-    'hero/contacto': ('contato-desk2.jpg', (0, 0, 1920, 260), 1920),
     'hero/lanzamientos': ('iplace-corp-uy-lanzamientos-desk-min.jpg', (0, 0, 1920, 285), 1920),
     'hero/originales': ('banner-originales-desk-1.jpg', (0, 0, 1920, 300), 1920),
     'hero/productos': ('Produtos-desk-1.jpg', None, 859),

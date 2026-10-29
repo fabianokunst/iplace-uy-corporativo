@@ -58,68 +58,79 @@ lines:
     url: /productos/originales-iplace/
 ---
 {% import "macros.njk" as m with context %}
-
-<section class="hero" aria-labelledby="productos-title">
-  <div class="ds-container hero__grid">
-    <div class="hero__copy">
-      <nav aria-label="Ruta de navegación">
-        <ol class="ds-breadcrumb"><li><a href="/">Inicio</a></li><li aria-current="page">Productos</li></ol>
-      </nav>
-      <h1 class="site-display" id="productos-title">{{ m.words('Una línea de productos completa para negocios de alta performance') }}</h1>
-      <p class="hero__lead">iPlace Corporativo, canal especializado en venta de productos Apple para empresas, posee en su portafolio las mejores soluciones para que los profesionales trabajen de forma intuitiva, segura y productiva, ampliando la creatividad y colaboración en cualquier segmento de mercado.</p>
+<section class="page-hero" aria-labelledby="productos-title">
+  <div class="ds-container page-hero__inner">
+    {{ m.breadcrumb('Productos') }}
+    <div class="page-hero__row">
+      <div class="page-hero__copy">
+        <h1 class="site-display" id="productos-title">Una línea completa para negocios de alta performance.</h1>
+      </div>
+      <p class="lead">Las mejores soluciones Apple para que los profesionales trabajen de forma intuitiva, segura y productiva, ampliando la creatividad y la colaboración en cualquier segmento de mercado.</p>
     </div>
-    <div class="hero__media hero__media--contain">
+    <div class="page-hero__frame">
       <img src="/assets/img/hero/productos.webp" alt="Apple TV, MacBook Pro, iPad Pro, iPhone, AirPods Pro y Apple Watch" width="859" height="500" fetchpriority="high">
     </div>
   </div>
 </section>
 
-<section class="section" aria-labelledby="lineas-title">
+{#- Atalhos fixos sob o cabeçalho; site.js marca a linha visível (aria-current). #}
+<nav class="subnav" aria-label="Líneas de productos">
   <div class="ds-container">
-    <div class="section__head">
-      <h2 class="site-title" id="lineas-title">Conozca nuestros productos y plataformas</h2>
-    </div>
-  </div>
-  {#- Atalhos fixos sob o cabeçalho; site.js marca a linha visível (aria-current). #}
-  <nav class="subnav" aria-label="Líneas de productos">
-    <div class="ds-container">
-      <ul class="subnav__list">
-        {%- for line in lines %}
-        <li><a href="#{{ line.name | slugify }}">{{ line.name }}</a></li>
-        {%- endfor %}
-      </ul>
-    </div>
-  </nav>
-  <div class="ds-container">
-    <div class="product-list">
+    <ul class="subnav__list">
       {%- for line in lines %}
-      <article class="product-row" id="{{ line.name | slugify }}">
-        <div class="product-row__media">
-          <img src="{{ line.image }}" alt="{{ line.alt }}" width="{{ line.w }}" height="{{ line.h }}" loading="lazy">
-        </div>
-        <div class="product-row__copy">
-          <p class="product-row__index" aria-hidden="true">{{ ("0" + loop.index) if loop.index < 10 else loop.index }}</p>
-          <h3 class="site-title">{{ line.name }}</h3>
-          <p class="text">{{ line.text }}</p>
-          <div class="ds-cluster">
-            <a class="ds-btn ds-btn--primary" href="{{ line.url }}">{{ line.cta }}</a>
-            {%- if line.extra %}<a class="ds-btn ds-btn--outline" href="{{ line.extra.url }}">{{ line.extra.label }}</a>{% endif %}
-          </div>
-        </div>
-      </article>
+      <li><a href="#{{ line.name | slugify }}">{{ line.name }}</a></li>
       {%- endfor %}
+    </ul>
+  </div>
+</nav>
+
+<section class="section" aria-label="Líneas de productos">
+  <div class="ds-container product-list">
+    {%- for line in lines %}
+    <article class="product-row" id="{{ line.name | slugify }}">
+      <div class="product-row__media{% if loop.last %} product-row__media--brand{% endif %}">
+        <img src="{{ line.image }}" alt="{{ line.alt }}" width="{{ line.w }}" height="{{ line.h }}" loading="lazy">
+      </div>
+      <div class="product-row__copy">
+        <p class="product-row__index" aria-hidden="true">{{ ("0" + loop.index) if loop.index < 10 else loop.index }} / {{ ("0" + loop.length) if loop.length < 10 else loop.length }}</p>
+        <h2 class="site-display product-row__title">{{ line.name }}</h2>
+        <p class="text">{{ line.text }}</p>
+        <div class="ds-cluster">
+          <a class="ds-btn ds-btn--primary" href="{{ line.url }}">{{ line.cta }}</a>
+          {%- if line.extra %}<a class="ds-btn ds-btn--outline" href="{{ line.extra.url }}">{{ line.extra.label }}</a>{% endif %}
+        </div>
+      </div>
+    </article>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="section section--flush" aria-labelledby="compara-title">
+  <div class="ds-container">
+    <div class="panel panel--dark panel__split">
+      <div class="panel__copy">
+        <h2 class="site-title--sm" id="compara-title">¿No sabés cuál elegir?</h2>
+        <p class="lead">Compará los modelos lado a lado: pantalla, chip, cámaras y conectividad.</p>
+      </div>
+      <div class="ds-cluster">
+        <a class="ds-btn ds-btn--alpha" href="/productos/compara-mac/">Mac</a>
+        <a class="ds-btn ds-btn--alpha" href="/productos/compara-ipad/">iPad</a>
+        <a class="ds-btn ds-btn--alpha" href="/productos/compara-iphone/">iPhone</a>
+        <a class="ds-btn ds-btn--alpha" href="/productos/compara-watch/">Apple Watch</a>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="section section--sunken" aria-labelledby="contacto-title">
   <div class="ds-container">
-    <div class="section__head">
-      <h2 class="site-title" id="contacto-title">Contacto</h2>
-    </div>
-    <div class="band-stack">
-      {{ m.people(['diego', 'marcos']) }}
+    <div class="section__head section__head--row">
+      <div>
+        <p class="eyebrow">Contacto</p>
+        <h2 class="site-title" id="contacto-title">Hablá con nuestros especialistas.</h2>
+      </div>
       {{ m.social() }}
     </div>
+    {{ m.people(['diego', 'marcos']) }}
   </div>
 </section>

@@ -2,7 +2,7 @@
   <div class="ds-container">
     <div class="site-footer__grid">
       <div class="site-footer__brand">
-        <img src="/assets/img/brand/corporativo-white.png" alt="iPlace Corporativo, Apple Premium Reseller" width="101" height="48">
+        <img src="/assets/img/brand/corporativo-black.png" alt="iPlace Corporativo, Apple Premium Reseller" width="101" height="48" loading="lazy">
         <p>El canal especializado de iPlace para el mercado corporativo en Uruguay.</p>
       </div>
       <nav aria-label="Sitio">
@@ -12,6 +12,16 @@
           <li><a href="{{ item.url }}">{{ item.label }}</a></li>
           {%- endfor %}
           <li><a href="/productos/originales-iplace/">Originales iPlace</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Comparadores">
+        <h2 class="site-footer__title">Compará los modelos</h2>
+        <ul class="site-footer__list">
+          <li><a href="/productos/compara-mac/">Mac</a></li>
+          <li><a href="/productos/compara-ipad/">iPad</a></li>
+          <li><a href="/productos/compara-iphone/">iPhone</a></li>
+          <li><a href="/productos/compara-watch/">Apple Watch</a></li>
+          <li><a href="/productos/ipad-para-empresas/">iPad para empresas</a></li>
         </ul>
       </nav>
       <div>
@@ -26,9 +36,9 @@
       </div>
       <div>
         <h2 class="site-footer__title">Redes sociales</h2>
-        <ul class="site-footer__social">
+        <ul class="site-footer__list">
           {%- for s in site.social %}
-          <li><a href="{{ s.url }}" target="_blank" rel="noopener" aria-label="{{ s.label }}"><svg class="ds-icon ds-icon--small" aria-hidden="true"><use href="#i-{{ s.label | lower }}"/></svg><span>{{ s.label }}</span></a></li>
+          <li><a href="{{ s.url }}" target="_blank" rel="noopener"><svg class="ds-icon ds-icon--small" aria-hidden="true"><use href="#i-{{ s.label | lower }}"/></svg>{{ s.label }}</a></li>
           {%- endfor %}
         </ul>
       </div>
