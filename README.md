@@ -62,7 +62,7 @@ A cada push na `main`, o GitHub Actions gera o site, publica o preview em
 - `sitemap.xml` usa a data do último commit de cada página (`src/src.11tydata.json`).
 - O preview no GitHub Pages recebe `noindex` no navegador; o canônico de todas as páginas é `iplacecorp.com.uy`.
 - Favicon e ícones: `python scripts/favicons.py` gera `favicon.svg/.ico`, `apple-touch-icon.png` e os ícones do
-  `manifest.webmanifest` a partir do "iP" e do anel do logo.
+  `manifest.webmanifest` a partir do anel do logo (sem letras).
 
 ## Formulários
 

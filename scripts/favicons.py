@@ -1,14 +1,13 @@
 """Gera o favicon e os ícones do site a partir do logo iPlace.
 
 Uso:  python scripts/favicons.py
-Desenho: o "iP" do logo em branco, dentro do anel verde iPlace (aberto à esquerda,
-como no logo), sobre fundo preto. O SVG e os PNG/ICO saem da mesma geometria.
+Desenho: só o anel verde iPlace (aberto à esquerda, como no logo), sem letras,
+sobre fundo preto. O SVG e os PNG/ICO saem da mesma geometria.
 Escreve em src/static/ (raiz do site) e em src/assets/img/brand/.
 """
 import math
 import os
-import re
-from PIL import Image, ImageChops, ImageDraw
+from PIL import Image, ImageDraw
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATIC = os.path.join(ROOT, 'src', 'static')
@@ -20,66 +19,6 @@ VIEW = 512           # viewBox do desenho
 TILE_RADIUS = 112    # cantos do quadrado nos ícones com fundo transparente
 RING_R, RING_W = 216, 36  # raio externo e espessura do anel
 RING_GAP = 0.37      # meia-altura da abertura, em fração do raio (proporção do logo)
-LETTER_SCALE = 2.0
-
-# Letras "i" e "P" do logo iPlace (viewBox 512 do favicon antigo).
-LETTERS = [
-    'M56.1381 201.304C49.4024 201.304 43.9231 206.765 43.9231 213.48C43.9231 220.194 49.4024 225.657 56.1381 225.657'
-    'C62.8736 225.657 68.3529 220.194 68.3529 213.48C68.3529 206.765 62.8736 201.304 56.1381 201.304Z',
-    'M66.8519 231.225H45.6677V307.346H66.8519V231.225Z',
-    'M138.886 246.742C137.246 247.924 135.431 248.795 133.477 249.351C131.487 249.873 129.533 250.151 127.648 250.151'
-    'H106.778V218.945H127.927C130.231 218.945 132.395 219.189 134.419 219.64C136.338 220.093 138.048 220.893 139.48 222.041'
-    'C140.945 223.189 142.097 224.755 142.969 226.738C143.842 228.79 144.296 231.4 144.296 234.531'
-    'C144.296 237.557 143.772 240.062 142.795 242.045C141.782 243.993 140.491 245.559 138.886 246.742Z'
-    'M158.465 212.995C155.812 209.656 152.044 206.838 147.192 204.646C142.376 202.454 136.129 201.341 128.625 201.341'
-    'H85.7336V307.346H106.743V267.79H128.625C136.164 267.79 142.376 266.712 147.192 264.555'
-    'C152.044 262.398 155.812 259.614 158.465 256.274C161.082 252.934 162.932 249.282 163.874 245.385'
-    'C164.816 241.593 165.305 237.975 165.305 234.704C165.305 231.434 164.816 227.817 163.874 223.954'
-    'C162.932 219.988 161.117 216.301 158.465 212.995Z',
-]
-LETTERS_BOX = (43.9231, 201.304, 165.305, 307.346)  # x0, y0, x1, y1
-
-
-def parse_path(d):
-    """Subcaminhos de um path SVG com M/L/H/V/C/Z absolutos, curvas achatadas em pontos."""
-    tokens = re.findall(r'[MLHVCZ]|-?\d*\.?\d+', d)
-    subpaths, points, x, y, cmd, i = [], [], 0.0, 0.0, None, 0
-    while i < len(tokens):
-        if tokens[i].isalpha():
-            cmd = tokens[i]
-            i += 1
-            if cmd == 'Z':
-                subpaths.append(points)
-                points = []
-                continue
-        nums = lambda n: [float(t) for t in tokens[i:i + n]]
-        if cmd == 'M' or cmd == 'L':
-            x, y = nums(2); i += 2
-            points.append((x, y))
-        elif cmd == 'H':
-            x = nums(1)[0]; i += 1
-            points.append((x, y))
-        elif cmd == 'V':
-            y = nums(1)[0]; i += 1
-            points.append((x, y))
-        elif cmd == 'C':
-            x1, y1, x2, y2, x3, y3 = nums(6); i += 6
-            for s in range(1, 17):
-                t = s / 16
-                u = 1 - t
-                points.append((u**3 * x + 3 * u * u * t * x1 + 3 * u * t * t * x2 + t**3 * x3,
-                               u**3 * y + 3 * u * u * t * y1 + 3 * u * t * t * y2 + t**3 * y3))
-            x, y = x3, y3
-    if points:
-        subpaths.append(points)
-    return subpaths
-
-
-def letters_transform():
-    """Escala o "iP" e centraliza no desenho."""
-    x0, y0, x1, y1 = LETTERS_BOX
-    cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
-    return lambda p: (VIEW / 2 + (p[0] - cx) * LETTER_SCALE, VIEW / 2 + (p[1] - cy) * LETTER_SCALE)
 
 
 def ring_points(steps=180):
@@ -105,14 +44,10 @@ def ring_svg_path():
 
 
 def write_svg():
-    x0, y0, x1, y1 = LETTERS_BOX
-    cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
-    t = f'translate({VIEW / 2:g} {VIEW / 2:g}) scale({LETTER_SCALE:g}) translate({-cx:.4f} {-cy:.4f})'
     svg = (
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {VIEW} {VIEW}">'
         f'<rect width="{VIEW}" height="{VIEW}" rx="{TILE_RADIUS}" fill="{BLACK}"/>'
         f'<path fill="{LIME}" d="{ring_svg_path()}"/>'
-        f'<g fill="{WHITE}" transform="{t}">' + ''.join(f'<path d="{d}"/>' for d in LETTERS) + '</g>'
         '</svg>\n'
     )
     with open(os.path.join(STATIC, 'favicon.svg'), 'w', encoding='utf-8', newline='\n') as fh:
@@ -120,7 +55,7 @@ def write_svg():
 
 
 def render(size, rounded=True, content=1.0):
-    """Desenha o ícone em `size` px. `content` reduz anel e letras (área segura dos ícones maskable)."""
+    """Desenha o ícone em `size` px. `content` reduz o anel (área segura dos ícones maskable)."""
     ss = max(4, math.ceil(1024 / size))  # superamostragem: desenha maior e reduz com média por área
     big = size * ss
     k = big / VIEW
@@ -134,16 +69,6 @@ def render(size, rounded=True, content=1.0):
     else:
         draw.rectangle((0, 0, big, big), fill=BLACK)
     draw.polygon([to_px(p) for p in ring_points()], fill=LIME)
-
-    # Letras com regra even-odd (o miolo do "P" é um furo).
-    move = letters_transform()
-    mask = Image.new('L', (big, big), 0)
-    for d in LETTERS:
-        for sub in parse_path(d):
-            layer = Image.new('L', (big, big), 0)
-            ImageDraw.Draw(layer).polygon([to_px(move(p)) for p in sub], fill=255)
-            mask = ImageChops.logical_xor(mask.convert('1'), layer.convert('1')).convert('L')
-    img.paste(WHITE, (0, 0), mask)
     return img.reduce(ss)
 
 
