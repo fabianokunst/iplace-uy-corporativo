@@ -1,5 +1,5 @@
-// Comportamento do site: menu mobile, vídeo sob demanda e atalhos de Productos.
-// Sem animações de entrada: o DS só anima cor e borda (site.css).
+// Comportamento do site: menu mobile, vídeo sob demanda, entrada dos blocos ao rolar e atalhos de Productos.
+// A entrada dos heróis é só CSS (site.css, "Movimento").
 (function () {
   'use strict';
 
@@ -37,6 +37,39 @@
       btn.replaceWith(frame);
     }, { once: true });
   });
+
+  // Entrada ao rolar (site.css, "Movimento"): blocos abaixo da dobra ganham .reveal e entram (.is-in) quando
+  // chegam à tela, em sequência se chegam juntos. O que já aparece ao carregar fica como está, e um bloco
+  // dentro de outro que já sobe inteiro não anima de novo. Sem JS ou com movimento reduzido, nada é escondido.
+  var SURFACE = '.bento-tile, .panel, .cta-band, .product-row__media, .media-split__media > *, .panel__photo';
+  var RISE = '.section__head > *, .split__aside > *, .ds-accordion, .editorial > *, .prose-cols > *, .media-split__copy > *, '
+    + '.panel__copy > *, .product-row__copy > *, .bento-tile__copy, .cta-band__copy, .cta-band > .ds-btn, .partners > *, '
+    + '.productivity > *, .band-stack > *, .feature, .tile, .line, .person, .channel, .form-card, .pillars > li, .step';
+  var RULE = '.editorial, .pillars > li, .step';
+  if (!reduceMotion && 'IntersectionObserver' in window) {
+    var revealer = new IntersectionObserver(function (entries) {
+      var n = 0;
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        revealer.unobserve(entry.target);
+        entry.target.style.setProperty('--reveal-delay', Math.min(n++, 5) * 90 + 'ms');
+        entry.target.classList.add('is-in');
+      });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    var fold = window.innerHeight;
+    var below = [];
+    document.querySelectorAll(SURFACE + ', ' + RISE + ', ' + RULE).forEach(function (el) {
+      if (!el.closest('.hero, .page-hero') && el.getBoundingClientRect().top >= fold) below.push(el);
+    });
+    // Em ordem de documento: os que entram juntos seguem a ordem de leitura.
+    below.forEach(function (el) {
+      if (el.parentElement.closest('.reveal:not(.reveal--surface)')) return;
+      if (el.matches(SURFACE)) el.classList.add('reveal', 'reveal--surface');
+      else if (el.matches(RISE)) el.classList.add('reveal');
+      if (el.matches(RULE)) el.classList.add('reveal-rule');
+      revealer.observe(el);
+    });
+  }
 
   // Atalhos de Productos: marca a linha que está no meio da tela e centraliza a pílula.
   var subnav = document.querySelector('.subnav');

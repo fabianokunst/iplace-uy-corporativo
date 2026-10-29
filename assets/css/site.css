@@ -2,7 +2,8 @@
    Cores, tipos e espaços vêm dos tokens --ds-*; o que o DS não define (cabeçalho, rodapé, heróis,
    blocos institucionais) é composto aqui. Extensões ao DS estão marcadas com "extensão".
    Segue o DS: base branca, preto nas ações, verde iPlace só como acento (selo, sublinhado, marcadores,
-   faixas curtas), cores chapadas sem gradiente nem transparência, movimento só em cor e borda (160ms). */
+   faixas curtas), cores chapadas sem gradiente nem transparência, interações só em cor e borda (160ms).
+   Entradas dos heróis e dos blocos ao rolar: seção "Movimento", no fim. */
 
 /* ---------- Superfícies e ritmo (extensão) ---------- */
 :root {
@@ -48,8 +49,9 @@ main { flex: 1 0 auto; overflow-x: clip; }
 .ds p.text { font-size: 1.0625rem; line-height: 1.55; color: var(--ds-gray-2); }
 .text-stack > * + * { margin-top: var(--ds-medium); }
 
-/* Sublinhado verde em trechos dos títulos (o verde nunca é cor de texto). */
-.marker, .hl { box-shadow: inset 0 -0.2em 0 var(--ds-brand); -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+/* Sublinhado verde em trechos dos títulos (o verde nunca é cor de texto). Fundo de uma cor só, para
+   poder ser desenhado da esquerda para a direita nos heróis; numa quebra de linha, segue na linha de baixo. */
+.marker, .hl { background: linear-gradient(var(--ds-brand), var(--ds-brand)) 0 100% / 100% 0.2em no-repeat; }
 
 .eyebrow {
   display: inline-flex; align-items: center; gap: 10px;
@@ -532,3 +534,87 @@ form[data-state="error"] [data-lead-status] { padding: var(--ds-small) var(--ds-
 .img-narrow { max-width: 360px; margin-inline: auto; }
 .brand-mark { height: 64px; width: auto; align-self: flex-start; }
 .accessory__img { height: 180px; width: auto; max-width: 100%; align-self: flex-start; object-fit: contain; }
+
+/* ---------- Movimento (extensão) ----------
+   Interações seguem o DS (cor e borda, 160ms); as entradas são do site. Heróis entram ao carregar, só
+   com CSS: o texto sobe em sequência (--d), a foto se abre e o sublinhado verde se desenha. Blocos
+   abaixo da dobra entram quando chegam à tela: site.js marca .reveal e, na hora, .is-in. Só opacidade,
+   posição, recorte e escala, nada que mexa no layout. Desligado com movimento reduzido e na impressão;
+   sem JS, só os heróis animam e nada fica escondido. */
+:root {
+  --motion-ease: cubic-bezier(0.16, 1, 0.3, 1);   /* arranca rápido e assenta devagar */
+  --motion-rise: 900ms;
+  --motion-unveil: 1300ms;
+}
+/* Recorte da abertura com o mesmo canto da mídia; os traços desenhados usam a cor da borda de cada bloco. */
+.video, .panel__photo { --unveil-radius: var(--ds-radius-md); }
+.media-split__media--contain > * { --unveil-radius: 0px; }
+.pillars > li { --rule: var(--ds-black); }
+.step { --rule: var(--ds-gray-3); }
+.editorial { --rule: var(--ds-border); }
+
+/* Só "from" (exceto o recorte): terminam no estilo normal do elemento. */
+@keyframes rise { from { opacity: 0; translate: 0 var(--rise, 24px); } }
+@keyframes unveil {
+  from { opacity: 0; clip-path: inset(var(--unveil, 6%) round var(--unveil-radius, var(--site-radius))); }
+  to { clip-path: inset(0 round var(--unveil-radius, var(--site-radius))); }
+}
+@keyframes settle { from { scale: 1.08; } }
+@keyframes slide-in { from { opacity: 0; translate: -12px 0; } }
+@keyframes draw { from { background-size: 0 0.2em; } }
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  /* Heróis */
+  .hero__copy > *, .page-hero__inner > nav, .page-hero__copy > *, .page-hero__row > .lead, .page-hero__actions,
+  .hero__tile--eco img, .page-hero__frame img, .page-hero__product img, .benefits li {
+    animation: rise var(--motion-rise) var(--motion-ease) var(--d, 0ms) backwards;
+  }
+  .hero .site-display, .page-hero .site-display { --rise: 32px; animation-duration: 1100ms; }
+  .hero__photo, .hero__tile, .page-hero__media, .page-hero__frame, .page-hero__photo, .page-hero .gallery img {
+    animation: unveil var(--motion-unveil) var(--motion-ease) var(--d, 0ms) backwards;
+  }
+  .hero__photo img, .page-hero__media img { animation: settle 1800ms var(--motion-ease) var(--d, 0ms) backwards; }
+  .hero .marker, .page-hero .marker { animation: draw 1000ms var(--motion-ease) calc(var(--d, 0ms) + 600ms) backwards; }
+  .hero .avatars > * { animation: slide-in 700ms var(--motion-ease) var(--d, 0ms) backwards; }
+  .page-hero__frame img, .page-hero__product img, .hero__tile--eco img { --rise: 40px; animation-duration: 1300ms; }
+
+  .hero__copy > :nth-child(2) { --d: 80ms; }
+  .hero__copy > :nth-child(3) { --d: 200ms; }
+  .hero__copy > :nth-child(4) { --d: 280ms; }
+  .hero__photo { --d: 120ms; }
+  .hero__tile--eco { --d: 260ms; }
+  .hero__tile--eco img { --d: 420ms; }
+  .hero__tile--team { --d: 380ms; }
+  .hero .avatars > :nth-child(1) { --d: 560ms; }
+  .hero .avatars > :nth-child(2) { --d: 630ms; }
+  .hero .avatars > :nth-child(3) { --d: 700ms; }
+  .benefits li:nth-child(1) { --d: 480ms; }
+  .benefits li:nth-child(2) { --d: 550ms; }
+  .benefits li:nth-child(3) { --d: 620ms; }
+  .benefits li:nth-child(4) { --d: 690ms; }
+  .benefits li:nth-child(5) { --d: 760ms; }
+  .page-hero__copy > :nth-child(1) { --d: 60ms; }
+  .page-hero__copy > :nth-child(2) { --d: 140ms; }
+  .page-hero__copy > :nth-child(3), .page-hero__row > .lead { --d: 240ms; }
+  .page-hero__copy > :nth-child(4), .page-hero__actions { --d: 320ms; }
+  .page-hero__media, .page-hero__frame, .page-hero__photo, .page-hero__product img, .page-hero .gallery img:nth-child(1) { --d: 260ms; }
+  .page-hero .gallery img:nth-child(2) { --d: 380ms; }
+  .page-hero .gallery img:nth-child(3) { --d: 500ms; }
+  .page-hero__frame img { --d: 440ms; }
+
+  /* Ao rolar: o bloco espera invisível e entra ao chegar à tela; --reveal-delay escalona os que chegam juntos.
+     Superfícies (fotos, painéis, blocos de produto) se abrem; o produto recortado sobe dentro do palco. */
+  .reveal:not(.is-in) { opacity: 0; }
+  .reveal.is-in { animation: rise var(--motion-rise) var(--motion-ease) var(--reveal-delay, 0ms) backwards; }
+  .reveal--surface.is-in { animation-name: unveil; animation-duration: var(--motion-unveil); }
+  .reveal--surface.is-in :is(.bento-tile__img, .product-row__media img) {
+    --rise: 40px; animation: rise 1300ms var(--motion-ease) calc(var(--reveal-delay, 0ms) + 160ms) backwards;
+  }
+  /* Fios no topo (pilares, passos, editorial) se desenham da esquerda para a direita. */
+  .ds .reveal-rule { position: relative; border-top-color: transparent; }
+  .reveal-rule::before {
+    content: ""; position: absolute; top: -1px; left: 0; right: 0; height: 1px; background: var(--rule);
+    scale: 0 1; transform-origin: left; transition: scale 1400ms var(--motion-ease) var(--reveal-delay, 0ms);
+  }
+  .reveal-rule.is-in::before { scale: 1 1; }
+}
