@@ -7,18 +7,22 @@ permalink: /lanzamientos/
 ---
 {% import "macros.njk" as m with context %}
 
-{{ m.pageHero('Lanzamientos', 'Lanzamientos', 'Lanzamientos Apple', '', '/assets/img/hero/lanzamientos.webp', 'iPhone e iPad sobre un fondo gris') }}
-
-<section class="section" aria-labelledby="registro-title">
-  <div class="ds-container media-split media-split--top">
-    <div class="media-split__copy">
-      <p class="eyebrow">Pre registro</p>
-      <h2 class="site-title" id="registro-title">Hacé tu pre registro</h2>
-      <p class="lead">Registrate ahora y recibí de primera mano todas las notificaciones sobre la llegada de los nuevos lanzamientos de Apple. ¡No te lo pierdas!</p>
-    </div>
-    <div class="form-card">
+{#- Formulário já no topo, ao lado do título, para aparecer sem rolar; a foto só preenche a coluna do texto
+    no desktop (site.css, "Lanzamientos"). #}
+<section class="page-hero" aria-labelledby="lanzamientos-title">
+  <div class="ds-container page-hero__inner">
+    {{ m.breadcrumb('Lanzamientos') }}
+    <div class="launch">
+      <div class="launch__copy">
+        <h1 class="site-display" id="lanzamientos-title">Lanzamientos Apple</h1>
+        <p class="lead">Registrate ahora y recibí de primera mano todas las notificaciones sobre la llegada de los nuevos lanzamientos de Apple. ¡No te lo pierdas!</p>
+      </div>
+      <div class="launch__media">
+        <img src="/assets/img/hero/lanzamientos.webp" alt="iPhone e iPad sobre un fondo gris" width="1920" height="285" fetchpriority="high">
+      </div>
+    <div class="form-card launch__form">
       <div class="form-card__head">
-        <h3 class="ds-h3">Quiero más información</h3>
+        <h2 class="form-card__title">Hacé tu pre registro</h2>
       </div>
       {#- Formulário 1557 do Emarsys, enviado pelo integrations.js. O aceite abaixo já se chama acepta_privacidad,
           então o consent.js não acrescenta o dele; como o aceite diz que avisaremos dos lançamentos por email,
@@ -55,6 +59,7 @@ permalink: /lanzamientos/
         </div>
         <p data-lead-status aria-live="polite"></p>
       </form>
+    </div>
     </div>
   </div>
 </section>
