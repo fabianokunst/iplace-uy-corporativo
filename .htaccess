@@ -52,6 +52,9 @@ DirectorySlash On
 
   # Áreas do WordPress que deixaram de existir
   RedirectMatch 410 ^/(wp-admin|wp-login\.php|xmlrpc\.php|wp-json|wp-includes)
+
+  # Pasta .git que o deploy por Git do hPanel deixa no public_html
+  RedirectMatch 404 ^/\.git(/|$)
 </IfModule>
 
 <IfModule mod_headers.c>
