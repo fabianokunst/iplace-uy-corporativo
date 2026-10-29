@@ -329,8 +329,9 @@ main { flex: 1 0 auto; overflow-x: clip; }
 .launch { display: grid; gap: var(--ds-x-big); grid-template-areas: "copy" "form"; }
 .launch__copy { grid-area: copy; display: flex; flex-direction: column; align-items: flex-start; gap: 20px; }
 .launch__form { grid-area: form; }
-.launch__media { grid-area: media; display: none; min-height: 220px; overflow: hidden; border-radius: var(--site-radius); background: var(--ds-gray-5); }
-.launch__media img { width: 100%; height: 100%; object-fit: cover; object-position: 85% 50%; }
+/* A linha de produtos tem fundo preto chapado: a moldura é do mesmo preto e o "cover" só corta preto. */
+.launch__media { grid-area: media; display: none; min-height: 220px; overflow: hidden; border-radius: var(--site-radius); background: var(--ds-black); }
+.launch__media img { width: 100%; height: 100%; object-fit: cover; }
 @media (min-width: 960px) {
   .launch {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); grid-template-rows: auto 1fr;
@@ -572,8 +573,8 @@ form[data-state="error"] [data-lead-status] { padding: var(--ds-small) var(--ds-
    sem JS, só os heróis animam e nada fica escondido. */
 :root {
   --motion-ease: cubic-bezier(0.16, 1, 0.3, 1);   /* arranca rápido e assenta devagar */
-  --motion-rise: 900ms;
-  --motion-unveil: 1300ms;
+  --motion-rise: 600ms;      /* entradas curtas e com pouco deslocamento: sutis */
+  --motion-unveil: 800ms;
 }
 /* Recorte da abertura com o mesmo canto da mídia; os traços desenhados usam a cor da borda de cada bloco. */
 .video, .panel__photo { --unveil-radius: var(--ds-radius-md); }
@@ -583,29 +584,29 @@ form[data-state="error"] [data-lead-status] { padding: var(--ds-small) var(--ds-
 .editorial { --rule: var(--ds-border); }
 
 /* Só "from" (exceto o recorte): terminam no estilo normal do elemento. */
-@keyframes rise { from { opacity: 0; translate: 0 var(--rise, 24px); } }
+@keyframes rise { from { opacity: 0; translate: 0 var(--rise, 12px); } }
 @keyframes unveil {
-  from { opacity: 0; clip-path: inset(var(--unveil, 6%) round var(--unveil-radius, var(--site-radius))); }
+  from { opacity: 0; clip-path: inset(var(--unveil, 2%) round var(--unveil-radius, var(--site-radius))); }
   to { clip-path: inset(0 round var(--unveil-radius, var(--site-radius))); }
 }
-@keyframes settle { from { scale: 1.08; } }
-@keyframes slide-in { from { opacity: 0; translate: -12px 0; } }
+@keyframes settle { from { scale: 1.03; } }
+@keyframes slide-in { from { opacity: 0; translate: -6px 0; } }
 @keyframes draw { from { background-size: 0 0.2em; } }
 
 @media screen and (prefers-reduced-motion: no-preference) {
   /* Heróis */
   .hero__copy > *, .page-hero__inner > nav, .page-hero__copy > *, .page-hero__row > .lead, .page-hero__actions,
-  .hero__tile--eco img, .page-hero__frame img, .page-hero__product img, .benefits li {
+  .launch__copy > *, .launch__form, .hero__tile--eco img, .page-hero__frame img, .page-hero__product img, .benefits li {
     animation: rise var(--motion-rise) var(--motion-ease) var(--d, 0ms) backwards;
   }
-  .hero .site-display, .page-hero .site-display { --rise: 32px; animation-duration: 1100ms; }
-  .hero__photo, .hero__tile, .page-hero__media, .page-hero__frame, .page-hero__photo, .page-hero .gallery img {
+  .hero .site-display, .page-hero .site-display { --rise: 16px; animation-duration: 700ms; }
+  .hero__photo, .hero__tile, .page-hero__media, .page-hero__frame, .page-hero__photo, .page-hero .gallery img, .launch__media {
     animation: unveil var(--motion-unveil) var(--motion-ease) var(--d, 0ms) backwards;
   }
-  .hero__photo img, .page-hero__media img { animation: settle 1800ms var(--motion-ease) var(--d, 0ms) backwards; }
-  .hero .marker, .page-hero .marker { animation: draw 1000ms var(--motion-ease) calc(var(--d, 0ms) + 600ms) backwards; }
+  .hero__photo img, .page-hero__media img, .launch__media img { animation: settle 1200ms var(--motion-ease) var(--d, 0ms) backwards; }
+  .hero .marker, .page-hero .marker { animation: draw 700ms var(--motion-ease) calc(var(--d, 0ms) + 300ms) backwards; }
   .hero .avatars > * { animation: slide-in 700ms var(--motion-ease) var(--d, 0ms) backwards; }
-  .page-hero__frame img, .page-hero__product img, .hero__tile--eco img { --rise: 40px; animation-duration: 1300ms; }
+  .page-hero__frame img, .page-hero__product img, .hero__tile--eco img { --rise: 20px; animation-duration: 800ms; }
 
   .hero__copy > :nth-child(2) { --d: 80ms; }
   .hero__copy > :nth-child(3) { --d: 200ms; }
@@ -630,6 +631,9 @@ form[data-state="error"] [data-lead-status] { padding: var(--ds-small) var(--ds-
   .page-hero .gallery img:nth-child(2) { --d: 380ms; }
   .page-hero .gallery img:nth-child(3) { --d: 500ms; }
   .page-hero__frame img { --d: 440ms; }
+  .launch__copy > :nth-child(2) { --d: 120ms; }
+  .launch__form { --d: 160ms; }
+  .launch__media { --d: 240ms; }
 
   /* Ao rolar: o bloco espera invisível e entra ao chegar à tela; --reveal-delay escalona os que chegam juntos.
      Superfícies (fotos, painéis, blocos de produto) se abrem; o produto recortado sobe dentro do palco. */
@@ -637,13 +641,13 @@ form[data-state="error"] [data-lead-status] { padding: var(--ds-small) var(--ds-
   .reveal.is-in { animation: rise var(--motion-rise) var(--motion-ease) var(--reveal-delay, 0ms) backwards; }
   .reveal--surface.is-in { animation-name: unveil; animation-duration: var(--motion-unveil); }
   .reveal--surface.is-in :is(.bento-tile__img, .product-row__media img) {
-    --rise: 40px; animation: rise 1300ms var(--motion-ease) calc(var(--reveal-delay, 0ms) + 160ms) backwards;
+    --rise: 20px; animation: rise 800ms var(--motion-ease) calc(var(--reveal-delay, 0ms) + 100ms) backwards;
   }
   /* Fios no topo (pilares, passos, editorial) se desenham da esquerda para a direita. */
   .ds .reveal-rule { position: relative; border-top-color: transparent; }
   .reveal-rule::before {
     content: ""; position: absolute; top: -1px; left: 0; right: 0; height: 1px; background: var(--rule);
-    scale: 0 1; transform-origin: left; transition: scale 1400ms var(--motion-ease) var(--reveal-delay, 0ms);
+    scale: 0 1; transform-origin: left; transition: scale 900ms var(--motion-ease) var(--reveal-delay, 0ms);
   }
   .reveal-rule.is-in::before { scale: 1 1; }
 }
