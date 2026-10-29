@@ -1,6 +1,9 @@
-// Comportamento do site: menu mobile, vídeo sob demanda e movimento (cabeçalho, revelação, atalhos).
+// Comportamento do site: menu mobile, vídeo sob demanda e atalhos de Productos.
+// Sem animações de entrada: o DS só anima cor e borda (site.css).
 (function () {
   'use strict';
+
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // Menu mobile
   var header = document.querySelector('.site-header');
@@ -35,60 +38,6 @@
     }, { once: true });
   });
 
-  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  // Cabeçalho mais leve depois que a página rola. A barra de progresso é CSS scroll-driven;
-  // aqui só o reserva para navegadores sem animation-timeline.
-  var progress = document.querySelector('.scroll-progress');
-  var needsProgress = progress && !reduceMotion && !(window.CSS && CSS.supports('animation-timeline: scroll()'));
-  var ticking = false;
-  function onScroll() {
-    ticking = false;
-    var y = window.scrollY;
-    if (header) header.classList.toggle('is-scrolled', y > 8);
-    if (needsProgress) {
-      var max = document.documentElement.scrollHeight - window.innerHeight;
-      progress.style.setProperty('--progress', max > 0 ? Math.min(y / max, 1) : 0);
-    }
-  }
-  window.addEventListener('scroll', function () {
-    if (!ticking) { ticking = true; requestAnimationFrame(onScroll); }
-  }, { passive: true });
-  onScroll();
-
-  // Revelação: blocos abaixo da dobra entram quando chegam à tela (site.css, "Revelação").
-  // O que já está visível ao carregar fica como está; sem JS ou com movimento reduzido, nada é escondido.
-  // Listas (checklist, especialistas) revelam item a item, por isso o contêiner fica de fora.
-  var REVEAL = '.section__head, .media-split__copy > :not(.checklist):not(.people), .media-split__media, .prose-cols > *, '
-    + '.checklist li, .person, .feature, .tile, .line, .product-row, .cta-band, .form-card, .partners > *, .line-nav li, .social';
-  if (!reduceMotion && 'IntersectionObserver' in window) {
-    var revealer = new IntersectionObserver(function (entries) {
-      var batch = 0;
-      entries.forEach(function (entry) {
-        if (!entry.isIntersecting) return;
-        var el = entry.target;
-        revealer.unobserve(el);
-        var delay = Math.min(batch++, 5) * 90;
-        el.style.setProperty('--reveal-delay', delay + 'ms');
-        el.classList.add('is-in');
-        // Terminada a entrada, o elemento volta às próprias transições (hover dos cartões).
-        setTimeout(function () {
-          el.classList.remove('reveal', 'reveal--media', 'is-in');
-          el.style.removeProperty('--reveal-delay');
-        }, delay + 1900);
-      });
-    }, { rootMargin: '0px 0px -12% 0px' });
-
-    var fold = window.innerHeight;
-    document.querySelectorAll(REVEAL).forEach(function (el) {
-      if (el.closest('.hero, .page-hero') || el.parentElement.closest('.reveal')) return;
-      if (el.getBoundingClientRect().top < fold) return;
-      el.classList.add('reveal');
-      if (el.matches('.media-split__media:not(.media-split__media--contain)')) el.classList.add('reveal--media');
-      revealer.observe(el);
-    });
-  }
-
   // Atalhos de Productos: marca a linha que está no meio da tela e centraliza a pílula.
   var subnav = document.querySelector('.subnav');
   if (subnav && 'IntersectionObserver' in window) {
@@ -111,17 +60,6 @@
       var target = document.getElementById(id);
       if (target) spy.observe(target);
     });
-  }
-
-  // Luz que segue o cursor nos cartões e na faixa escura (site.css usa --mx/--my).
-  if (window.matchMedia('(hover: hover)').matches) {
-    document.addEventListener('pointermove', function (e) {
-      var card = e.target.closest && e.target.closest('.tile, .feature, .person, .cta-band--dark');
-      if (!card) return;
-      var r = card.getBoundingClientRect();
-      card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
-      card.style.setProperty('--my', (e.clientY - r.top) + 'px');
-    }, { passive: true });
   }
 
   // Os comparadores têm script próprio: assets/js/compare.js.
