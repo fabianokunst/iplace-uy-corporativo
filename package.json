@@ -4,8 +4,9 @@
   "description": "Sitio institucional estático de iPlace Corporativo Uruguay (iplacecorp.com.uy).",
   "type": "module",
   "scripts": {
-    "build": "eleventy",
-    "start": "eleventy --serve --port=5590",
+    "clean": "node -e \"require('node:fs').rmSync('_site', { recursive: true, force: true })\"",
+    "build": "npm run clean && eleventy",
+    "start": "npm run clean && eleventy --serve --port=5590",
     "images": "python scripts/images.py"
   },
   "devDependencies": {

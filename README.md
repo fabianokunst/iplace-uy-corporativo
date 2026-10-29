@@ -15,20 +15,30 @@ de um domínio, numa subpasta ou em qualquer hospedagem estática, sem configura
 ```bash
 npm install
 npm start          # http://localhost:5590, recarrega ao salvar
-npm run build      # gera _site/
+npm run build      # apaga e gera _site/ do zero
 ```
 
 ## Publicar
 
 A cada push na `main`, o GitHub Actions gera o site, publica o preview em
 <https://fabianokunst.github.io/iplace-uy-corporativo/> e grava o mesmo HTML na branch **`site`**.
+É a branch `site` que vai para a hospedagem: o que está na `main`, gerado do zero, igual ao preview.
+Não envie o `_site/` do computador, que pode ter mudanças ainda fora da `main`.
 
-- **Hostinger ou qualquer hospedagem:** no GitHub, troque para a branch `site` > Code > Download ZIP e
-  envie o conteúdo da pasta de dentro do ZIP para `public_html` (ou envie o conteúdo de `_site/`).
-  Não precisa de Node. Na Hostinger, o recurso Git do hPanel também pode implantar a branch `site` direto.
-- Antes da primeira publicação, apague o WordPress do `public_html` (guarde um backup completo).
+- Antes da primeira publicação, guarde um backup completo do WordPress e esvazie o `public_html`
+  (inclusive o `.htaccess` dele).
+- **Hostinger, automático (recomendado):** hPanel > Avançado > Git, repositório
+  `https://github.com/fabianokunst/iplace-uy-corporativo.git`, branch `site`, diretório em branco (= `public_html`).
+  Depois ative a implantação automática e cadastre a URL do webhook dela no GitHub (Settings > Webhooks):
+  cada push na `main` entra no ar sozinho, logo depois do preview.
+- **Manual, em qualquer hospedagem:** no GitHub, troque para a branch `site` > Code > Download ZIP, envie e
+  extraia no `public_html` e mova o conteúdo da pasta `iplace-uy-corporativo-site/` para a raiz: `index.html` e
+  `.htaccess` ficam direto no `public_html`. Não precisa de Node.
 - O `.htaccess` (redirects do blog, HTTPS) só vale em Apache/LiteSpeed, como a Hostinger. Em outros
   servidores é ignorado e o site funciona igual, só sem esses redirects.
+- Depois de publicar, confira que o `.htaccess` subiu (é arquivo oculto): `http://` e `www.` devem ir para
+  `https://iplacecorp.com.uy` e `/blog/` para a home. Teste um endereço inexistente (404) e envie o
+  `sitemap.xml` no Search Console.
 
 ## Ao editar
 
